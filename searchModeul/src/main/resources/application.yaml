@@ -19,3 +19,4 @@ logging:
 mybatis-plus:
   mapper-locations:
     classpath: com/zhang/mapper/*.xml
+

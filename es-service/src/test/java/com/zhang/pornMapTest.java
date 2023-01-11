@@ -2,8 +2,7 @@ package com.zhang;
 
 import com.alibaba.fastjson.JSON;
 import com.zhang.commons.PornIndexConstants;
-import com.zhang.entity.magnet_model;
-import com.zhang.service.porndoService;
+
 import org.apache.http.HttpHost;
 import org.apache.lucene.index.Term;
 import org.elasticsearch.action.bulk.BulkRequest;
@@ -115,6 +114,7 @@ public class pornMapTest {
         Aggregations aggregations = response.getAggregations();
         Terms ActressTerms = aggregations.get("actress_agg");
         List<? extends Terms.Bucket> buckets = ActressTerms.getBuckets();
+
         for (Terms.Bucket bucket:buckets){
             String actress = bucket.getKeyAsString();
             System.out.println(actress);
@@ -158,7 +158,7 @@ public class pornMapTest {
     @BeforeEach
     void setUp() {
         client = new RestHighLevelClient(RestClient.builder(
-                HttpHost.create("http://192.168.47.128:9200")
+                HttpHost.create("http://192.168.47.129:9200")
         ));
     }
 

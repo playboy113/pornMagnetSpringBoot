@@ -1,23 +1,12 @@
 package com.zhang.service;
 
-import com.zhang.entity.PageResult;
-import com.zhang.entity.RequestParams;
-import org.elasticsearch.client.RequestOptions;
-import org.elasticsearch.client.RestHighLevelClient;
-import org.elasticsearch.client.indices.GetIndexRequest;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import java.io.IOException;
+import java.util.List;
 
-@Service
-public class EsSearchService {
-    @Autowired
-    private  RestHighLevelClient client;
+public interface EsSearchService {
+    void createIndex(String indexName,String mapping_template) throws IOException;
 
+    void bulkRequest(String indexName) throws IOException;
 
-
-
-
-
+    List<String> esAggIndex(String indexName,String aggName,String fileName) throws IOException;
 }

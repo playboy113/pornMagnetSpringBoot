@@ -15,6 +15,7 @@ import java.io.IOException;
 
 
 @Slf4j
+@SpringBootApplication
 public class elasticSearchApplication {
     public static void main(String[] args) {
         SpringApplication.run(elasticSearchApplication.class);
@@ -22,7 +23,7 @@ public class elasticSearchApplication {
     @Bean
     public RestHighLevelClient restHighLevelClient(){
         return new RestHighLevelClient(RestClient.builder(
-                HttpHost.create("http://192.168.47.128:9200")
+                HttpHost.create("http://192.168.47.129:9200")
         ));
     }
     @Bean

@@ -1,11 +1,13 @@
 server:
-  port: 8080
+  port: 8082
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/magnet?useSSL=false
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
+  profiles:
+    active: es,main,service
 
 logging:
   level:
@@ -19,3 +21,4 @@ logging:
 mybatis-plus:
   mapper-locations:
     classpath: com/zhang/mapper/*.xml
+

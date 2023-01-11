@@ -53,4 +53,20 @@ public class PornIndexConstants {
             "    }\n" +
             "  }\n" +
             "}";
+
+    public static final String porn_types ="{\n" +
+            "  \"mappings\": {\n" +
+            "    \"properties\": {\n" +
+            "      \"id\": {\n" +
+            "        \"type\": \"keyword\"\n" +
+            "      },\n" +
+            "      \"num\": {\n" +
+            "        \"type\": \"keyword\"\n" +
+            "      },\n" +
+            "      \"types\": {\n" +
+            "        \"type\": \"keyword\"\n" +
+            "      }\n" +
+            "    }\n" +
+            "  }\n" +
+            "}";
 }

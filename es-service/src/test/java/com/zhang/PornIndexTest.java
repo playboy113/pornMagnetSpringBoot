@@ -1,10 +1,7 @@
 package com.zhang;
 
 import com.alibaba.fastjson.JSON;
-import com.zhang.entity.magnet_model;
 
-
-import com.zhang.service.porndoService;
 import org.apache.http.HttpHost;
 import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.index.IndexRequest;
@@ -33,12 +30,12 @@ import static com.zhang.commons.PornIndexConstants.MAPPING_TEMPLATE;
 public class PornIndexTest {
     private RestHighLevelClient client;
     @Autowired
-    private porndoService porndoService;
+    //private porndoService porndoService;
 
-    @Test
-    void testService(){
-        System.out.println(porndoService);
-    }
+//    @Test
+//    void testService(){
+//        System.out.println(porndoService);
+//    }
 
 
 
@@ -59,21 +56,13 @@ public class PornIndexTest {
 
 
     }
-    @Test
-    void testBulkRequest() throws IOException {
-        List<magnet_model> magnet_modelList = porndoService.selectAll();
 
-        BulkRequest request = new BulkRequest();
-        for (magnet_model model:magnet_modelList){
-            request.add(new IndexRequest("pornmagnet").id(String.valueOf(model.getId())).source(JSON.toJSONString(model),XContentType.JSON));
-        }
-        client.bulk(request,RequestOptions.DEFAULT);
-    }
+
 
     @BeforeEach
     void setUp() {
         client = new RestHighLevelClient(RestClient.builder(
-                HttpHost.create("http://192.168.47.128:9200")
+                HttpHost.create("http://192.168.47.129:9200")
         ));
     }
 
