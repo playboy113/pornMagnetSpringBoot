@@ -13,4 +13,6 @@ public interface porndoService {
     String queryMagnetByNum(String num);
 
     List<String> queryMagnetsByNums(String[] nums);
+
+    List<String> queryAggIndex(String indexName,String aggName,String fileName);
 }

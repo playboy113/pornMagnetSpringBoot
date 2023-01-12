@@ -23,13 +23,30 @@
         <finalName>searchModeul</finalName>
         <resources>
             <resource>
-                <directory>src/main/java</directory>
+                <directory>src/main/webapp</directory>
+                <!--注意此次必须要放在此目录下才能被访问到 -->
+                <targetPath>META-INF/resources</targetPath>
                 <includes>
+                    <include>**/**</include>
+                    <include>**/*.properties</include>
                     <include>**/*.xml</include>
                 </includes>
                 <filtering>false</filtering>
             </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                    <include>**/*</include>
+                    <include>**/*.yaml</include>
+
+                </includes>
+            </resource>
         </resources>
+
+
 
 
     </build>

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.websocket.server.PathParam;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,21 +21,21 @@ import java.util.Map;
 public class porndoController {
     @Autowired
     private porndoService porndoService;
-    @PostMapping("/index.do")
+    @RequestMapping("/index.do")
     public String index(HttpServletRequest request){
 //        List<magnet_model> magnet_models = porndoService.selectAll();
 //        request.setAttribute("magnet_models",magnet_models);
         return "porndos";
     }
 
-    @GetMapping("/selectAll")
+    @RequestMapping("/selectAll")
     public List<magnet_model> selectAll(){
         List<magnet_model> magnetList = porndoService.selectAll();
         return magnetList;
 
     }
 
-    @PostMapping("/porndos.do")
+    @RequestMapping("/porndos.do")
     @ResponseBody
     public  Object queryByConditionForPage(String title, String actress, String subline, String HD, String num, String types, String date,String producer,Integer pageNo, Integer pageSize) throws IOException {
         Map<String,Object> map = new HashMap<>();
@@ -124,6 +125,16 @@ public class porndoController {
     @RequestMapping("/searchPage.do")
     public String searchPage(){
         return "search";
+    }
+
+    @RequestMapping("/aggRequest.do")
+    public Map<String,Object> aggIndex(@PathParam("indexName") String indexName, @PathParam("aggName") String aggName, @PathParam("fileName") String fileName){
+        Map<String,Object> retMap = new HashMap<>();
+        List<String> aggList = porndoService.queryAggIndex(indexName,aggName,fileName);
+
+        retMap.put("aggList",aggList);
+        return retMap;
+
     }
 
 }
