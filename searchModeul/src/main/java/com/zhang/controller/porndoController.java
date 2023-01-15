@@ -1,5 +1,6 @@
 package com.zhang.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.zhang.entity.User;
 import com.zhang.entity.magnet_model;
 import com.zhang.service.porndoService;
@@ -11,10 +12,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.websocket.server.PathParam;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.lang.reflect.Array;
+import java.util.*;
+
 @Slf4j
 @RestController
 @RequestMapping("/pornMagnet")
@@ -133,6 +133,41 @@ public class porndoController {
         List<String> aggList = porndoService.queryAggIndex(indexName,aggName,fileName);
 
         retMap.put("aggList",aggList);
+        return retMap;
+
+    }
+
+    //根据选择的类别筛选
+    @RequestMapping("/queryMagnetsByTypes.do")
+    public Object queryMagnetBySelectTypes(String title, String actress, String subline, String HD, String num, String types, String date, String producer, Integer pageNo, Integer pageSize){
+        //将types从string转换为数组
+        //System.out.println(types);
+        List<String> typesList = JSON.parseArray(types, String.class);
+        String[] typesArr = new String[typesList.size()];
+        for (int i =0;i<typesList.size();i++){
+            typesArr[i] = typesList.get(i);
+        }
+        //System.out.println(Arrays.toString(typesArr));
+
+
+        Map<String,Object> map = new HashMap<>();
+        map.put("title",title);
+        map.put("actress",actress);
+        map.put("subline",subline);
+        map.put("HD",HD);
+        map.put("num",num);
+
+        map.put("typesArr",typesArr);
+
+        map.put("beginNo",(pageNo-1)*pageSize);
+        map.put("pageSize",pageSize);
+        map.put("date",date);
+        map.put("producer",producer);
+        List<magnet_model> magnet_models = porndoService.queryMagnetBySelectTypes(map);
+        int totalRows = porndoService.queryPagesBytypes(map);
+        Map<String,Object> retMap = new HashMap<>();
+        retMap.put("magnet_models",magnet_models);
+        retMap.put("totalRows",totalRows);
         return retMap;
 
     }

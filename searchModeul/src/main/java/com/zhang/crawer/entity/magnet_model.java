@@ -1,5 +1,8 @@
 package com.zhang.crawer.entity;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
 public class magnet_model {
 
     private String num;//番号

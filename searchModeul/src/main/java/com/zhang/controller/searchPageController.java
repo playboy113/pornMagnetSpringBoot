@@ -2,26 +2,28 @@ package com.zhang.controller;
 
 import com.zhang.commons.setHeader;
 import com.zhang.crawer.entity.magnet_model;
+
 import com.zhang.crawer.javmain.crawer_javdb;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-@RestController
-@RequestMapping("/crawler")
+@Controller
 @Slf4j
 public class searchPageController {
 
-    @PostMapping("/crawerMagnet.do")
-    public Map<String,Object> crawerMagnet(String magnetUrl,int pages) throws IOException, URISyntaxException {
+    @RequestMapping("/crawerMagnet.do")
+    @ResponseBody
+    public Map<String,Object> crawerMagnet(String magnetUrl,Integer pages) throws IOException, URISyntaxException {
         setHeader.setUp();
         if(magnetUrl.contains("page=")){
 

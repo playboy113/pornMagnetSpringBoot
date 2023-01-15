@@ -32,4 +32,7 @@ public interface magnet_modelMapper {
 
     List<String> queryMagnetsByNums(String[] nums);
 
+    List<magnet_model> queryMagnetBySelectTypes(Map<String,Object> map);
+
+    int queryPagesByTypes(Map<String, Object> map);
 }

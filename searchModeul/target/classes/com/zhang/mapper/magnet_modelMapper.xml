@@ -94,35 +94,52 @@
         from magnet_db
   </select>
   <select id="queryCountOfMagnet" resultType="java.lang.Integer" parameterType="map">
-    select distinct count(*) from magnet_db m
+    select distinct m.title,m.actress,m.subline,m.HD,m.magnet,m.num,
+    m.types,
+    m.date,m.producer
+    from magnet_db m
+    left join magnet_types t1
+    on m.num =t1.num
     <where>
       <if test="actress != null and actress != ''">
-        and m.actress like '%' #{actress}'%'
+        and m.actress like '%' #{actress} '%'
       </if>
-      <if test="types != null and types != ''">
-        and m.types like '%' #{types}'%'
-      </if>
-
       <if test="subline != null and subline != ''">
-        and m.subline like '%' #{subline}'%'
-      </if>
-      <if test="num != null and num != ''">
-        and m.num like '%' #{num}'%'
+        and m.subline like '%' #{subline} '%'
       </if>
       <if test="HD != null and HD != ''">
-        and m.HD like '%' #{HD}'%'
+        and m.HD like '%' #{HD} '%'
       </if>
       <if test="title != null and title != ''">
-        and m.title like '%' #{title}'%'
-      </if>
-      <if test="date != null and date != ''">
-        and #{date} >=  m.date
+        and m.title like '%' #{title} '%'
       </if>
       <if test="producer != null and producer != ''">
         and m.producer like '%' #{producer} '%'
       </if>
-      and m.magnet is not null
+      <if test="date != null and date != ''">
+        and #{date} >=  m.date
+      </if>
+      <if test="types != null and types != ''">
+        and t1.type1 like '%' #{types} '%'
+        or t1.type2 like '%' #{types} '%'
+        or t1.type3 like '%' #{types} '%'
+        or t1.type4 like '%' #{types} '%'
+        or t1.type5 like '%' #{types} '%'
+        or t1.type6 like '%' #{types} '%'
+        or t1.type7 like '%' #{types} '%'
+        or t1.type8 like '%' #{types} '%'
+        or t1.type9 like '%' #{types} '%'
+        or t1.type10 like '%' #{types} '%'
+        or t1.type11 like '%' #{types} '%'
+        or t1.type12 like '%' #{types} '%'
+        or t1.type13 like '%' #{types} '%'
+        or t1.type14 like '%' #{types} '%'
+        or t1.type15 like '%' #{types} '%'
+      </if>
     </where>
+    and m.magnet is not null
+    order by m.date desc
+
 
 
   </select>
@@ -185,6 +202,90 @@
     <foreach collection="array" item="num" open="(" close=")" separator=",">
       #{num}
     </foreach>
+  </select>
+  <select id="queryMagnetBySelectTypes"  resultMap="BaseResultMap" parameterType="map">
+
+    select distinct  m.title,m.actress,m.subline,m.HD,m.magnet,m.num,m.types,m.date,m.producer
+    from magnet_db m
+    <where>
+    <if test="actress != null and actress != ''">
+      and m.actress like '%' #{actress} '%'
+    </if>
+    <if test="subline != null and subline != ''">
+      and m.subline like '%' #{subline} '%'
+    </if>
+    <if test="HD != null and HD != ''">
+      and m.HD like '%' #{HD} '%'
+    </if>
+    <if test="title != null and title != ''">
+      and m.title like '%' #{title} '%'
+    </if>
+    <if test="producer != null and producer != ''">
+      and m.producer like '%' #{producer} '%'
+    </if>
+    <if test="date != null and date != ''">
+      and #{date} >=  m.date
+    </if>
+    and m.num in (select distinct t.num
+      from magnet_type2 t
+      <where>
+        <if test="typesArr != null and typesArr != ''">
+          and  t.types in
+          <foreach  collection="typesArr" item="typesArr" open="(" close=")" separator=",">
+                #{typesArr}
+          </foreach>
+        </if>
+      </where>)
+    and m.magnet is not null
+
+
+    </where>
+    order by m.date desc
+    limit #{beginNo},#{pageSize}
+
+
+
+
+
+
+  </select>
+  <select id="queryPagesByTypes" resultType="java.lang.Integer" parameterType="map">
+    select distinct  count(*)
+    from magnet_db m
+    <where>
+      <if test="actress != null and actress != ''">
+        and m.actress like '%' #{actress} '%'
+      </if>
+      <if test="subline != null and subline != ''">
+        and m.subline like '%' #{subline} '%'
+      </if>
+      <if test="HD != null and HD != ''">
+        and m.HD like '%' #{HD} '%'
+      </if>
+      <if test="title != null and title != ''">
+        and m.title like '%' #{title} '%'
+      </if>
+      <if test="producer != null and producer != ''">
+        and m.producer like '%' #{producer} '%'
+      </if>
+      <if test="date != null and date != ''">
+        and #{date} >=  m.date
+      </if>
+      and m.num in (select distinct t.num
+      from magnet_type2 t
+      <where>
+        <if test="typesArr != null and typesArr != ''">
+          and  t.types in
+          <foreach  collection="typesArr" item="typesArr" open="(" close=")" separator=",">
+            #{typesArr}
+          </foreach>
+        </if>
+      </where>)
+      and m.magnet is not null
+
+
+    </where>
+    order by m.date desc
   </select>
 
 

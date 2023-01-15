@@ -3,6 +3,7 @@ package com.zhang;
 import com.alibaba.fastjson.JSON;
 
 import org.apache.http.HttpHost;
+import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.client.RequestOptions;
@@ -28,6 +29,7 @@ import static com.zhang.commons.PornIndexConstants.MAPPING_TEMPLATE;
 
 @SpringBootTest
 public class PornIndexTest {
+    @Autowired
     private RestHighLevelClient client;
     @Autowired
     //private porndoService porndoService;
@@ -43,7 +45,7 @@ public class PornIndexTest {
 
     @Test
     void testExists() throws IOException {
-        GetIndexRequest request = new GetIndexRequest("pornmagnet");
+        GetIndexRequest request = new GetIndexRequest("porn_types");
         boolean isExists = client.indices().exists(request, RequestOptions.DEFAULT);
         System.out.println(isExists);
 
@@ -55,6 +57,12 @@ public class PornIndexTest {
         client.indices().create(request,RequestOptions.DEFAULT);
 
 
+    }
+
+    @Test
+    void deleteIndex() throws IOException {
+        DeleteIndexRequest req = new DeleteIndexRequest("porn_types");
+        client.indices().delete(req,RequestOptions.DEFAULT);
     }
 
 

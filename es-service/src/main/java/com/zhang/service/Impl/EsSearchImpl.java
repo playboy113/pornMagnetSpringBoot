@@ -5,6 +5,7 @@ import com.zhang.entity.PornTypes;
 import com.zhang.service.EsSearchService;
 import com.zhang.service.typesService;
 import lombok.extern.slf4j.Slf4j;
+import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.search.SearchRequest;
@@ -24,6 +25,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.zhang.commons.PornIndexConstants.MAPPING_TEMPLATE;
+import static com.zhang.commons.PornIndexConstants.porn_types;
+
 
 @Service
 @Slf4j
@@ -34,19 +38,21 @@ public class EsSearchImpl implements EsSearchService {
     private com.zhang.service.typesService typesService;
 
     @Override
-    public void createIndex(String indexName,String mapping_template) throws IOException {
-        GetIndexRequest request = new GetIndexRequest(indexName);
+    public void createIndex(String indexName) throws IOException {
 
-        boolean isExists = client.indices().exists(request, RequestOptions.DEFAULT);
-        if (!isExists ){
             CreateIndexRequest request2 = new CreateIndexRequest(indexName);
-            request2.source(mapping_template, XContentType.JSON);
-            client.indices().create(request2, RequestOptions.DEFAULT);
-        }else{
-           System.out.println("已经存在了");
-        }
+            if (indexName.equals("porn_types")){
+                request2.source(porn_types, XContentType.JSON);
+            }else{
+                request2.source(MAPPING_TEMPLATE, XContentType.JSON);
+
+            }
+
+        client.indices().create(request2, RequestOptions.DEFAULT);
+
 
     }
+
 
     @Override
     public void bulkRequest(String indexName) throws IOException {
@@ -61,9 +67,21 @@ public class EsSearchImpl implements EsSearchService {
 
     @Override
     public List<String> esAggIndex(String indexName, String aggName, String fileName) throws IOException {
+        //1。先看一下这个库存不存在
+        if (testExist(indexName)){
+
+            //存在则先删除
+            deleteIndex(indexName);
+
+        }
+        //不存在就直接新建
+        createIndex(indexName);
+        //新建后批量导入
+        bulkRequest(indexName);
+
         SearchRequest request = new SearchRequest(indexName);
         request.source().size(0);
-        request.source().aggregation(AggregationBuilders.terms(aggName).field(fileName).size(20));
+        request.source().aggregation(AggregationBuilders.terms(aggName).field(fileName).size(240));
         SearchResponse response = client.search(request, RequestOptions.DEFAULT);
         Aggregations aggregations = response.getAggregations();
         Terms ActressTerms = aggregations.get(aggName);
@@ -74,5 +92,22 @@ public class EsSearchImpl implements EsSearchService {
             aggList.add(actress);
         }
         return aggList;
+    }
+
+    @Override
+    public void deleteIndex(String indexName) throws IOException {
+        DeleteIndexRequest request = new DeleteIndexRequest(indexName);
+        client.indices().delete(request,RequestOptions.DEFAULT);
+    }
+
+    @Override
+    public boolean testExist(String indexName) throws IOException {
+        // 1.准备Request
+        GetIndexRequest request = new GetIndexRequest(indexName);
+        // 3.发送请求
+        boolean exists = client.indices().exists(request, RequestOptions.DEFAULT);
+
+
+        return exists;
     }
 }

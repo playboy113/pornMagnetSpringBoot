@@ -2,10 +2,12 @@ package com.zhang.crawer.db;
 
 import com.zhang.crawer.entity.magnet_model;
 import org.apache.commons.dbutils.QueryRunner;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 import java.sql.SQLException;
 import java.util.List;
-
+@ComponentScan
 public class MySqlControl {
     static javax.sql.DataSource ds =  MyDataSource.getDataSource("jdbc:mysql://127.0.0.1:3306/magnet?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false");
     static QueryRunner qr = new QueryRunner(ds);
@@ -93,19 +95,25 @@ public class MySqlControl {
 
 
     public static void insertTypes(String num,String[] splits) throws SQLException {
-        String[][] params = new String[1][16];
+        String[][] params = new String[1][2];
         params[0][0]=num;
-        if (splits.length<=16){
-            for (int i=0;i< splits.length;i++){
-                params[0][i+1]=splits[i];
-            }
-        }else{
-            for (int i=0;i<16;i++){
-                params[0][i+1]=splits[i];
-            }
+        for (int i=0;i< splits.length;i++){
+            params[0][1] = splits[i];
+            qr.batch("insert into magnet_type2(num,types) values(?,?)",params);
+
         }
 
-        qr.batch("insert into magnet_types(num,type1,type2,type3,type4,type5,type6,type7,type8,type9,type10,type11,type12,type13,type14,type15) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",params);
         qr.update("delete from magnet_types where num=''");
+    }
+
+    public static void insertActress(String num, String[] actressArr) throws SQLException {
+        String[][] params = new String[1][2];
+        params[0][0] = num;
+        for (int i=0;i<actressArr.length;i++){
+            params[0][1] = actressArr[i];
+            qr.batch("insert into magnet_actress(num,actress) values(?,?)",params);
+        }
+        qr.update("delete from magnet_actress where num=''");
+
     }
 }

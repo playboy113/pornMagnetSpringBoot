@@ -15,4 +15,7 @@ public interface porndoService {
     List<String> queryMagnetsByNums(String[] nums);
 
     List<String> queryAggIndex(String indexName,String aggName,String fileName);
+    List<magnet_model> queryMagnetBySelectTypes(Map<String,Object> map);
+
+    int queryPagesBytypes(Map<String, Object> map);
 }

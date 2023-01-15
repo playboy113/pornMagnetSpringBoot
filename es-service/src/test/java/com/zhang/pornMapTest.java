@@ -45,19 +45,6 @@ public class pornMapTest {
 
     private RestHighLevelClient client;
 
-    @Autowired
-    private porndoService service;
-
-    @Test
-    void testBulkRequest() throws IOException {
-        List<magnet_model> magnet_modelList = service.selectAll();
-
-        BulkRequest request = new BulkRequest();
-        for (magnet_model model:magnet_modelList){
-            request.add(new IndexRequest("pornmagnet").id(String.valueOf(model.getId())).source(JSON.toJSONString(model), XContentType.JSON));
-        }
-        client.bulk(request,RequestOptions.DEFAULT);
-    }
 
     @Test
     void testExists() throws IOException {
@@ -66,86 +53,7 @@ public class pornMapTest {
         System.out.println(isExists);
 
     }
-    @Test
-    void getSearch() throws IOException {
-        GetRequest request = new GetRequest("pornmagnet", "256");
-        GetResponse response = client.get(request, RequestOptions.DEFAULT);
-        String json = response.getSourceAsString();
-        magnet_model magnet_model = JSON.parseObject(json, magnet_model.class);
-        System.out.println(magnet_model.getTitle());
-    }
-    @Test
-    void testMatchAll() throws IOException {
-        SearchRequest request = new SearchRequest("pornmagnet");
-        request.source().query(QueryBuilders.matchAllQuery());
-        SearchResponse response = client.search(request, RequestOptions.DEFAULT);
-        SearchHits searchHits = response.getHits();
-        SearchHit[] hits = searchHits.getHits();
-        for (SearchHit hit:hits){
-            String json = hit.getSourceAsString();
-            magnet_model magnet_model = JSON.parseObject(json, magnet_model.class);
-            String title = magnet_model.getTitle();
-            System.out.println(title);
-        }
 
-
-    }
-
-    @Test
-    void testTermSearch() throws IOException {
-        SearchRequest request = new SearchRequest("pornmagnet");
-        request.source().query(QueryBuilders.termQuery("title","肉感"));
-        SearchResponse response = client.search(request, RequestOptions.DEFAULT);
-        SearchHits searchHits = response.getHits();
-        SearchHit[] hits = searchHits.getHits();
-        for (SearchHit hit:hits){
-            String json = hit.getSourceAsString();
-            magnet_model magnet_model = JSON.parseObject(json, magnet_model.class);
-            String title = magnet_model.getTitle();
-            System.out.println(title);
-        }
-    }
-    @Test
-    void testAggSearch() throws IOException {
-        SearchRequest request = new SearchRequest("pornmagnet");
-        request.source().size(0);
-        request.source().aggregation(AggregationBuilders.terms("actress_agg").field("producer").size(20));
-        SearchResponse response = client.search(request, RequestOptions.DEFAULT);
-        Aggregations aggregations = response.getAggregations();
-        Terms ActressTerms = aggregations.get("actress_agg");
-        List<? extends Terms.Bucket> buckets = ActressTerms.getBuckets();
-
-        for (Terms.Bucket bucket:buckets){
-            String actress = bucket.getKeyAsString();
-            System.out.println(actress);
-        }
-
-
-    }
-
-
-
-
-
-
-    private void handleResponse(SearchResponse response) {
-        SearchHits searchHits = response.getHits();
-        // 4.1.总条数
-        long total = searchHits.getTotalHits().value;
-        System.out.println("总条数：" + total);
-        // 4.2.获取文档数组
-        SearchHit[] hits = searchHits.getHits();
-        // 4.3.遍历
-        for (SearchHit hit : hits) {
-            // 4.4.获取source
-            String json = hit.getSourceAsString();
-            // 4.5.反序列化，非高亮的
-            magnet_model magnet_model = JSON.parseObject(json, magnet_model.class);
-            // 4.6.处理高亮结果
-            // 1)获取高亮map
-            System.out.println(magnet_model.getTitle());
-        }
-    }
 
 
     @Test

@@ -104,14 +104,24 @@
         </div>
 
 <!--        类别模块-->
-        <div>
-            <tbody >
-            <tr id="typesBody">
+        <div class="btn-group" data-toggle="buttons" id="typesBody">
+<!--            <label class="btn btn-default"  onclick=SupendButtonClick(this);><input type="checkbox" name="typeName" value="Checkbox 1"  > Checkbox 1</label>-->
+<!--            <label class="btn btn-default"  onclick=SupendButtonClick(this); >-->
+<!--                <input type="checkbox" name="typeName" value="Checkbox 2" > Checkbox 2-->
+<!--            </label>-->
+<!--            <label class="btn btn-default"  onclick=SupendButtonClick(this);>-->
+<!--                <input type="checkbox" name="typeName" value="Checkbox 3" > Checkbox 3-->
+<!--            </label>-->
 
-            </tr>
 
-            </tbody>
+
         </div>
+        <div>
+            <label>
+                <button type="button" class="btn btn-success" onclick="getVals()">确认类别</button>
+            </label>
+        </div>
+        <div id="types_pag1"></div>
 
 
 
@@ -172,8 +182,14 @@
 
 
     $(function(){
+        var arr = [];
+        //queryBySelectTypes(arr,1,10);
         queryTypes('porn_types','aggtypes','types');
-        queryActivityByConditionForPage(1,10);
+        //queryActivityByConditionForPage(1,10);
+        var typesArr = queryTypesArr('porn_types','aggtypes','types')
+        //alert(typesArr);
+
+
 
 
 
@@ -263,7 +279,7 @@
                 $.each(data.magnet_models,function (index,obj) {
                     htmlStr+="<tr class=\"active\">";
                     htmlStr+="<td><input type=\"checkbox\" value=\""+obj.num+"\"/></td>";
-                    htmlStr+="<td> <img src='./images/"+obj.num+".jpg' width='100' height='75' onclick='Big(this)'></td>";
+                    htmlStr+="<td> <img src='/images/"+obj.num+".jpg' width='100' height='75' onclick='Big(this)'></td>";
                     htmlStr+="<td><a style=\"text-decoration: none; cursor: pointer;\" onclick=\"window.location.href='workbench/activity/detailActivity.do?id="+obj.num+"'\">"+obj.num+"</a></td>";
                     htmlStr+="<td>"+obj.title+"</td>";
                     htmlStr+="<td>"+obj.subline+"</td>";
@@ -392,15 +408,25 @@
             url:'pornMagnet/aggRequest.do?indexName='+indexName+'&aggName='+aggName+'&fileName='+fileName,
             data:{
 
+
             },
             type:'post',
             dataType:'json',
             success:function(data){
+                var typesList = data.aggList;
+                //alert(data.aggList.length)
+                var typesArr = new Array(data.aggList.length);
 
+
+
+                //alert(typesArr)
                 var htmlStr ="";
                 $.each(data.aggList,function (index,obj) {
+                    typesArr[index] = obj;
 
-                    htmlStr="<td>"+obj+"</td>"
+
+
+                    htmlStr+="<label class=\"btn btn-default\"  onclick='SupendButtonClick(this);' ><input type=\"checkbox\" name=\"typeName\" value="+obj+">"+obj+"</label>";
 
 
                     // htmlStr+="<tr class=\"active\">";
@@ -423,6 +449,8 @@
 
                 });
                 $("#typesBody").html(htmlStr);
+                queryBySelectTypes(typesArr,1,10);
+
 
 
 
@@ -430,6 +458,203 @@
         })
 
     }
+//   点击选中
+    function SupendButtonClick(obj) {
+        var checkbox = $(obj);
+
+        var unchecked = checkbox.prop("checked");
+        // alert(unchecked)
+
+
+
+
+        // if (obj.getAttribute('class')==="btn btn-default"|| obj.getAttribute('class')==="btn btn-default active"){
+        //     obj.setAttribute('class',"btn btn-primary")
+        //
+        //
+        // }else{
+        //    obj.setAttribute('class',"btn btn-default")
+        //
+        //
+        // }
+    }
+    //获取类别信息
+    function getVals(){
+        var res = getRadioRes('typeName');
+        if (res.length==0){
+            queryActivityByConditionForPage(1,10);
+        }else{
+            queryBySelectTypes(res,1,10)
+        }
+
+        //queryBySelectTypes(res,1,10)
+        if(res.length < 1){
+            mui.toast('请选择');
+            return;
+        }
+        mui.toast(res);
+    }
+    function getRadioRes(className){
+        var rdsObj = document.getElementsByName(className);/*获取值*/
+        //alert(rdsObj.length);
+        //queryBySelectTypes(selectTypes,pageNo,pageSize)
+        var checkVal = new Array();
+        var k = 0;
+        for(i = 0; i< rdsObj.length; i++){
+            if(rdsObj[i].checked){
+                checkVal[k] = rdsObj[i].value;
+                k++;
+            }
+        }
+        return checkVal;
+    }
+    //根据类别信息查找
+    function queryBySelectTypes(selectTypes,pageNo,pageSize){
+        var title=$("#query-title").val();
+        var actress=$("#query-actress").val();
+        var subline=$("#query-subline").val();
+        var HD=$("#query-HD").val();
+        var num=$("#query-num").val();
+        var types = JSON.stringify(selectTypes);
+        var date=$("#query-date").val();
+        var producer=$("#query-producer").val();
+
+        $.ajax({
+            url:'pornMagnet/queryMagnetsByTypes.do',
+            data:{
+                title:title,
+                actress:actress,
+                subline:subline,
+                HD:HD,
+                num:num,
+                types:types,
+                date:date,
+                producer:producer,
+                pageNo: pageNo,
+                pageSize:pageSize
+
+
+
+            },
+            type:'post',
+            dataType:'json',
+            success:function(data){
+
+
+                var htmlStr = "";
+                $.each(data.magnet_models,function (index,obj) {
+
+                    htmlStr+="<tr class=\"active\">";
+                    htmlStr+="<td><input type=\"checkbox\" value=\""+obj.num+"\"/></td>";
+                    htmlStr+="<td> <img src='/images/"+obj.num+".jpg' width='100' height='75' onclick='Big(this)'></td>";
+                    htmlStr+="<td><a style=\"text-decoration: none; cursor: pointer;\" onclick=\"window.location.href='workbench/activity/detailActivity.do?id="+obj.num+"'\">"+obj.num+"</a></td>";
+                    htmlStr+="<td>"+obj.title+"</td>";
+                    htmlStr+="<td>"+obj.subline+"</td>";
+                    htmlStr+="<td>"+obj.HD+"</td>";
+                    htmlStr+="<td>"+obj.actress+"</td>";
+                    htmlStr+="<td>"+obj.types+"</td>";
+                    htmlStr+="<td>"+obj.producer+"</td>";
+                    htmlStr+="<td>"+obj.date+"</td>";
+
+                    // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
+                    htmlStr+="<td> <button type='button' onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
+                    htmlStr+="</tr>";
+
+
+
+                });
+                $("#tBody").html(htmlStr);
+                //计算总页数
+                var totalPages=1;
+                if(data.totalRows%pageSize==0){
+                    totalPages=data.totalRows/pageSize;
+                }else{
+                    totalPages=parseInt(data.totalRows/pageSize)+1;
+                }
+
+                //对容器调用bs_pagination工具函数,显示翻页信息
+                $("#demo_pag1").bs_pagination({
+                    currentPage:pageNo,//当前页号,相当于pageNo
+
+                    rowsPerPage:pageSize,//每页显示条数,相当于pageSize
+                    totalRows:data.totalRows,//总条数
+                    totalPages: totalPages,  //总页数,必填参数.
+
+                    visiblePageLinks:5,//最多可以显示的卡片数
+
+                    showGoToPage:true,//是否显示"跳转到"部分,默认true--显示
+                    showRowsPerPage:true,//是否显示"每页显示条数"部分。默认true--显示
+                    showRowsInfo:true,//是否显示记录的信息，默认true--显示
+
+                    //用户每次切换页号，都自动触发本函数;
+                    //每次返回切换页号之后的pageNo和pageSize
+                    onChangePage: function(event,pageObj) { // returns page_num and rows_per_page after a link has clicked
+                        //js代码
+                        //alert(pageObj.currentPage);
+                        //alert(pageObj.rowsPerPage);
+                        //queryActivityByConditionForPage(pageObj.currentPage,pageObj.rowsPerPage);
+                        queryBySelectTypes(selectTypes,pageObj.currentPage,pageObj.rowsPerPage)
+                    }
+                });
+
+
+            }
+        })
+
+
+
+
+    }
+    function queryTypesArr(indexName,aggName,fileName){
+
+            var typesArr = new Array();
+            $.ajax({
+                url:'pornMagnet/aggRequest.do?indexName='+indexName+'&aggName='+aggName+'&fileName='+fileName,
+                data:{
+                },
+                type:'post',
+                dataType:'json',
+                success:function(data){
+                    var typesList = data.aggList;
+                    //alert(data.aggList.length)
+                   //alert(typesArr)
+                    var htmlStr ="";
+                    $.each(data.aggList,function (index,obj) {
+                        typesArr[index] = obj;
+                      //htmlStr+="<label class=\"btn btn-default\"  onclick='SupendButtonClick(this);' ><input type=\"checkbox\" name=\"typeName\" value="+obj+">"+obj+"</label>";
+
+
+                        // htmlStr+="<tr class=\"active\">";
+                        // htmlStr+="<td><input type=\"checkbox\" value=\""+obj.num+"\"/></td>";
+                        // htmlStr+="<td> <img src='./images/"+obj.num+".jpg' width='100' height='75' onclick='Big(this)'></td>";
+                        // htmlStr+="<td><a style=\"text-decoration: none; cursor: pointer;\" onclick=\"window.location.href='workbench/activity/detailActivity.do?id="+obj.num+"'\">"+obj.num+"</a></td>";
+                        // htmlStr+="<td>"+obj.title+"</td>";
+                        // htmlStr+="<td>"+obj.subline+"</td>";
+                        // htmlStr+="<td>"+obj.HD+"</td>";
+                        // htmlStr+="<td>"+obj.actress+"</td>";
+                        // htmlStr+="<td>"+obj.types+"</td>";
+                        // htmlStr+="<td>"+obj.producer+"</td>";
+                        // htmlStr+="<td>"+obj.date+"</td>";
+                        //
+                        // // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
+                        // htmlStr+="<td> <button type='button' onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
+                        // htmlStr+="</tr>";
+
+                    });
+                    //$("#typesBody").html(htmlStr);
+                    //alert(typesArr)
+                    //return typesArr;
+                }
+            })
+        //alert(typesArr);
+
+
+
+    }
+
+
+
+
 
 
 

@@ -10,6 +10,7 @@ com\zhang\crawer\javmain\crawer_javdb.class
 com\zhang\mapper\magnet_modelMapper.class
 com\zhang\commons\Contants.class
 com\zhang\crawer\db\MyDataSource.class
+com\zhang\config\MyConfigurer.class
 com\zhang\crawer\javmain\crawer_javdb$Builder.class
 com\zhang\controller\searchPageController.class
 com\zhang\controller\porndoController.class

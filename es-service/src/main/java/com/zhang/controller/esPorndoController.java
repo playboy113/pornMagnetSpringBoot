@@ -44,7 +44,7 @@ public class esPorndoController {
     public void createIndex(@PathVariable("indexName") String indexName) throws IOException {
 
 
-        esSearchService.createIndex(indexName,porn_types);
+        esSearchService.createIndex(indexName);
         System.out.println("搞定");
 
     }

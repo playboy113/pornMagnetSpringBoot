@@ -17,22 +17,22 @@
 </head>
 <body>
 <form class="form-inline" role="form" style="position: relative;top: 8%; left: 5px;">
-<div class="form-group">
-    <div class="input-group">
-        <div class="input-group-addon">链接</div>
-        <input class="form-control" type="text" id="query-url">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-addon">链接</div>
+            <input class="form-control" type="text" id="query-url">
+        </div>
+        <div class="input-group">
+            <div class="input-group-addon">页数</div>
+            <input class="form-control" type="text" id="query-pages">
+        </div>
+
+
+
     </div>
-    <div class="input-group">
-        <div class="input-group-addon">页数</div>
-        <input class="form-control" type="text" id="query-pages">
-    </div>
-
-
-
-</div>
     <button type="button" class="btn btn-default" id="querySearchBtn">爬！！</button>
 </form>
-<button type="button" id="frontPageBtn" onclick=window.location.href='/porndos.html'>返回主页</button>
+<button type="button" id="frontPageBtn" onclick=window.location.href='index.do'>返回主页</button>
 </body>
 <script>
     $(function (){
@@ -40,7 +40,7 @@
             var magnetUrl = $("#query-url").val();
             var pages = $("#query-pages").val();
             $.ajax({
-                url:'crawler/crawerMagnet.do',
+                url:'crawerMagnet.do',
                 data:{
                     magnetUrl:magnetUrl,
                     pages:pages

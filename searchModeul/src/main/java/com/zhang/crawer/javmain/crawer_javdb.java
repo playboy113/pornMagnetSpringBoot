@@ -7,6 +7,10 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 import java.io.*;
 import java.net.URISyntaxException;
@@ -14,6 +18,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.*;
 
+@ComponentScan
 public class crawer_javdb {
 
     public ArrayList<magnet_model> javdb(String url) throws IOException, URISyntaxException {
@@ -36,7 +41,7 @@ public class crawer_javdb {
 
         Connection conn = Jsoup.connect(url);
         Connection conHeader = conn.headers(header);
-        Document doc = conHeader.timeout(Integer.MAX_VALUE).get();
+        Document doc = conHeader.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
         Elements elements = doc.getElementsByClass("item");
 
         try{
@@ -63,24 +68,29 @@ public class crawer_javdb {
                 }else{
                     model.setTitle(str.substring(str.indexOf(" "), str.length()-1));
                 }
-                String[] typesArr = new String[15];
 
+                String[] typesArr=null;
+                String[] actressArr=null;
                 //获取演员与類別以及片商
                 Elements dess = inner_doc.getElementsByClass("panel-block");
                 for (Element des : dess) {
                     if (des.select("strong").text().contains("演員")) {
                         model.setActress(des.select("a").text());
+
+                        String[] newActressArr = des.select("a").text().split(" ");
+                        actressArr = new String[newActressArr.length];
+                        for (int i=0;i< newActressArr.length;i++){
+                            actressArr[i] = newActressArr[i];
+                        }
+
+
+
                     } else if (des.select("strong").text().contains("類別")) {
                         model.setTypes(des.select("a").text());
                         String[] newTypesArr = des.select("a").text().split(" ");
-                        if(newTypesArr.length>15){
-                            for(int i=0;i<15;i++){
+                        typesArr = new String[newTypesArr.length];
+                        for (int i=0;i< newTypesArr.length;i++){
                                 typesArr[i] = newTypesArr[i];
-                            }
-                        }else{
-                            for (int i=0;i< newTypesArr.length;i++){
-                                typesArr[i] = newTypesArr[i];
-                            }
                         }
 
 
@@ -90,7 +100,9 @@ public class crawer_javdb {
                         model.setProducer(des.select("span").text());
                     }
                 }
+                //插入类别
                 MySqlControl.insertTypes(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim(),typesArr);
+                MySqlControl.insertActress(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim(),actressArr);
 
                 //获取画质与字幕、磁力链接
                 Elements inner_elements = inner_doc.getElementsByAttributeValue("class", "magnet-name column is-four-fifths");

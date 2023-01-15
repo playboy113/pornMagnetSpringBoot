@@ -29,7 +29,7 @@ public class porndoServiceImpl implements porndoService {
 
     @Override
     public int queryCountOfMagnet(Map<String, Object> map) {
-        return 0;
+        return magnet_modelMapper.queryCountOfMagnet(map);
     }
 
     @Override
@@ -57,6 +57,16 @@ public class porndoServiceImpl implements porndoService {
 
 
 
+    }
+
+    @Override
+    public List<magnet_model> queryMagnetBySelectTypes(Map<String, Object> map) {
+        return magnet_modelMapper.queryMagnetBySelectTypes(map);
+    }
+
+    @Override
+    public int queryPagesBytypes(Map<String, Object> map) {
+        return magnet_modelMapper.queryPagesByTypes(map);
     }
 
 
