@@ -1,0 +1,19 @@
+﻿LOG 2023/01/29
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/01/29 06:48:25
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/753653/index.m3u8?t=1674947895&m=TF3OAndTrQ66mImrQKFK0A --saveName 新女主台妹小鹿新作已发！“你都射在里面了，为什么还要插我”
+
+06:48:25.382 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/753653/index.m3u8?t=1674947895&m=TF3OAndTrQ66mImrQKFK0A
+06:48:28.147 / (NORMAL) 写出meta.json
+06:48:28.203 / (NORMAL) 开始下载文件
+06:48:28.219 / (NORMAL) 读取文件信息...
+06:48:28.266 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], 50 fps, 50 tbr, 90k tbn, 100 tbc
+06:48:28.266 / (NORMAL) PID 0x101: Audio aac, 48000 Hz, stereo, fltp, 4 kb/s
+06:48:28.282 / (NORMAL) 开始合并分片...
+06:48:28.506 / (NORMAL) 结果输出至 [ffreport.log]
+06:48:28.506 / (NORMAL) 任务结束
+
+Task End: 2023/01/29 06:48:28
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\新女主台妹小鹿新作已发！“你都射在里面了，为什么还要插我”_2023-01-29_06-48-28.mp4
+
+

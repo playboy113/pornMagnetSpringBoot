@@ -1,0 +1,55 @@
+﻿LOG 2023/01/29
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/01/29 19:56:13
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/109053/index.m3u8?t=1674995175&m=KNemzxRgVtgcCY2VOkq9Qg --saveName 大奶人妻，微露脸就是爽
+
+19:56:13.428 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/109053/index.m3u8?t=1674995175&m=KNemzxRgVtgcCY2VOkq9Qg
+19:56:16.713 / (NORMAL) 写出meta.json
+19:56:16.785 / (NORMAL) 开始下载文件
+19:56:19.660 / (NORMAL) 读取文件信息...
+19:56:19.699 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 480x384, 25 fps, 25 tbr, 90k tbn, 50 tbc
+19:56:19.699 / (NORMAL) PID 0x101: Audio aac, 22050 Hz, stereo, fltp, 133 kb/s
+19:56:21.369 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index7.ts
+19:56:21.690 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index10.ts
+19:56:21.794 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index3.ts
+19:56:22.372 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/109053/index7.ts
+19:56:22.702 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/109053/index10.ts
+19:56:22.796 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/109053/index3.ts
+19:56:22.811 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index11.ts
+19:56:23.805 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index7.ts
+19:56:23.827 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/109053/index11.ts
+19:56:24.810 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/109053/index7.ts
+19:56:25.048 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index14.ts
+19:56:25.507 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index13.ts
+19:56:25.671 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index15.ts
+19:56:26.058 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/109053/index14.ts
+19:56:26.383 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index7.ts
+19:56:26.510 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/109053/index13.ts
+19:56:26.680 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/109053/index15.ts
+19:56:27.398 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/109053/index7.ts
+19:56:27.470 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index14.ts
+19:56:27.494 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index17.ts
+19:56:28.094 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index13.ts
+19:56:28.473 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/109053/index14.ts
+19:56:28.505 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/109053/index17.ts
+19:56:28.894 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index15.ts
+19:56:29.103 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/109053/index13.ts
+19:56:29.852 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index14.ts
+19:56:29.879 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index17.ts
+19:56:29.908 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/109053/index15.ts
+19:56:30.859 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/109053/index14.ts
+19:56:30.890 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/109053/index17.ts
+19:56:31.632 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index15.ts
+19:56:32.276 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/109053/index17.ts
+19:56:32.637 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/109053/index15.ts
+19:56:32.810 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/109053/index3.ts
+19:56:33.292 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/109053/index17.ts
+19:56:33.822 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/109053/index3.ts
+19:56:41.372 / (NORMAL) 开始合并分片...
+19:56:41.470 / (NORMAL) 结果输出至 [ffreport.log]
+19:56:41.470 / (NORMAL) 任务结束
+
+Task End: 2023/01/29 19:56:41
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\大奶人妻，微露脸就是爽.mp4
+
+

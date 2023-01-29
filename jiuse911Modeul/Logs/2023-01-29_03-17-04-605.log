@@ -1,0 +1,76 @@
+﻿LOG 2023/01/29
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/01/29 03:17:04
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/758352/index.m3u8?t=1674935214&m=DiyuJhncFbUPuWc-L-jC6A --saveName 年度吃瓜大赏！戴小姐婚房偷情被丈夫探头记录片段（2）
+
+03:17:04.605 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/758352/index.m3u8?t=1674935214&m=DiyuJhncFbUPuWc-L-jC6A
+03:17:07.410 / (NORMAL) 写出meta.json
+03:17:07.470 / (NORMAL) 开始下载文件
+03:17:09.238 / (NORMAL) 读取文件信息...
+03:17:09.274 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336, 30 fps, 30 tbr, 90k tbn, 60 tbc
+03:17:09.274 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 139 kb/s
+03:17:10.495 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index6.ts
+03:17:10.496 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index1.ts
+03:17:10.531 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index9.ts
+03:17:11.508 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/758352/index1.ts
+03:17:11.508 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/758352/index6.ts
+03:17:11.540 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/758352/index9.ts
+03:17:12.713 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index1.ts
+03:17:12.716 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index12.ts
+03:17:12.721 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index6.ts
+03:17:12.800 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index9.ts
+03:17:13.659 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index14.ts
+03:17:13.726 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/758352/index1.ts
+03:17:13.726 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/758352/index12.ts
+03:17:13.726 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/758352/index6.ts
+03:17:13.805 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/758352/index9.ts
+03:17:14.446 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index15.ts
+03:17:14.669 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/758352/index14.ts
+03:17:14.917 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index1.ts
+03:17:14.937 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index6.ts
+03:17:14.973 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index16.ts
+03:17:14.996 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index9.ts
+03:17:15.458 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/758352/index15.ts
+03:17:15.875 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index14.ts
+03:17:15.923 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/758352/index1.ts
+03:17:15.939 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/758352/index6.ts
+03:17:15.986 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/758352/index16.ts
+03:17:16.002 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/758352/index9.ts
+03:17:16.650 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index15.ts
+03:17:16.886 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/758352/index14.ts
+03:17:17.000 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index18.ts
+03:17:17.120 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index1.ts
+03:17:17.145 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index6.ts
+03:17:17.199 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index9.ts
+03:17:17.225 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index16.ts
+03:17:17.440 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index20.ts
+03:17:17.656 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/758352/index15.ts
+03:17:18.005 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/758352/index18.ts
+03:17:18.238 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/758352/index16.ts
+03:17:18.329 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index22.ts
+03:17:18.341 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index23.ts
+03:17:18.443 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/758352/index20.ts
+03:17:18.852 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index15.ts
+03:17:19.206 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index18.ts
+03:17:19.342 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/758352/index23.ts
+03:17:19.342 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/758352/index22.ts
+03:17:19.417 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index16.ts
+03:17:19.863 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/758352/index15.ts
+03:17:20.216 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/758352/index18.ts
+03:17:20.421 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/758352/index16.ts
+03:17:21.033 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index22.ts
+03:17:21.074 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index15.ts
+03:17:21.411 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/758352/index18.ts
+03:17:22.036 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/758352/index22.ts
+03:17:22.414 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/758352/index18.ts
+03:17:29.322 / (NORMAL) 完成数量 20 of 24
+03:17:29.322 / (NORMAL) 重试次数 1 / 15
+03:17:32.328 / (NORMAL) 开始下载文件
+03:17:37.542 / (NORMAL) 开始合并分片...
+03:17:37.655 / (NORMAL) 结果输出至 [ffreport.log]
+03:17:37.655 / (NORMAL) 任务结束
+
+Task End: 2023/01/29 03:17:37
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\年度吃瓜大赏！戴小姐婚房偷情被丈夫探头记录片段（2）.mp4
+
+

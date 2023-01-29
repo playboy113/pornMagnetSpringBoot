@@ -1,0 +1,55 @@
+﻿LOG 2023/01/29
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/01/29 17:28:06
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/392682/index.m3u8?t=1674986288&m=yLpWFvFtqkl8dnmUgiMcaQ --saveName 极度淫荡！美乳人妻最后高潮喷水
+
+17:28:06.877 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/392682/index.m3u8?t=1674986288&m=yLpWFvFtqkl8dnmUgiMcaQ
+17:28:11.092 / (NORMAL) 写出meta.json
+17:28:11.143 / (NORMAL) 开始下载文件
+17:28:12.076 / (NORMAL) 读取文件信息...
+17:28:12.117 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x400 [SAR 479:480 DAR 479:320], 25 fps, 25 tbr, 90k tbn, 50 tbc
+17:28:12.117 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+17:28:13.737 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index5.ts
+17:28:13.737 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index8.ts
+17:28:14.751 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/392682/index5.ts
+17:28:14.751 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/392682/index8.ts
+17:28:15.045 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index11.ts
+17:28:15.136 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index10.ts
+17:28:15.430 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index12.ts
+17:28:16.046 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/392682/index11.ts
+17:28:16.140 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/392682/index10.ts
+17:28:16.378 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index5.ts
+17:28:16.436 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/392682/index12.ts
+17:28:17.117 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index13.ts
+17:28:17.391 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/392682/index5.ts
+17:28:17.561 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index16.ts
+17:28:17.755 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index10.ts
+17:28:18.004 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index15.ts
+17:28:18.054 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index12.ts
+17:28:18.130 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/392682/index13.ts
+17:28:18.221 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index17.ts
+17:28:18.578 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/392682/index16.ts
+17:28:18.771 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/392682/index10.ts
+17:28:19.006 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/392682/index15.ts
+17:28:19.069 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/392682/index12.ts
+17:28:19.227 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/392682/index17.ts
+17:28:19.978 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index16.ts
+17:28:20.388 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index10.ts
+17:28:20.391 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index15.ts
+17:28:20.852 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index17.ts
+17:28:20.987 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/392682/index16.ts
+17:28:21.404 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/392682/index15.ts
+17:28:21.404 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/392682/index10.ts
+17:28:21.853 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/392682/index17.ts
+17:28:22.998 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/392682/index10.ts
+17:28:30.751 / (NORMAL) 完成数量 17 of 18
+17:28:30.751 / (NORMAL) 重试次数 1 / 15
+17:28:33.752 / (NORMAL) 开始下载文件
+17:28:36.407 / (NORMAL) 开始合并分片...
+17:28:36.484 / (NORMAL) 结果输出至 [ffreport.log]
+17:28:36.484 / (NORMAL) 任务结束
+
+Task End: 2023/01/29 17:28:36
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\极度淫荡！美乳人妻最后高潮喷水.mp4
+
+

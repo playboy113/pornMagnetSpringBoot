@@ -3,8 +3,9 @@ package com.zhang.crawer.db;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-@ComponentScan
+@Configuration
 public class MyDataSource {
     public static javax.sql.DataSource getDataSource(String connectURI){
         BasicDataSource ds = new BasicDataSource();

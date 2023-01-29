@@ -1,0 +1,45 @@
+﻿LOG 2023/01/29
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/01/29 17:44:58
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/621324/index.m3u8?t=1674987299&m=yC1szifu_YpytAPr2LnKoA --saveName 人妻阿人妻，女人到30开外，就容易出轨偷情
+
+17:44:58.104 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/621324/index.m3u8?t=1674987299&m=yC1szifu_YpytAPr2LnKoA
+17:45:01.770 / (NORMAL) 写出meta.json
+17:45:01.827 / (NORMAL) 开始下载文件
+17:45:03.139 / (NORMAL) 读取文件信息...
+17:45:03.179 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], 60 fps, 60 tbr, 90k tbn, 120 tbc
+17:45:03.179 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+17:45:04.784 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/621324/index9.ts
+17:45:04.848 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/621324/index6.ts
+17:45:05.228 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/621324/index10.ts
+17:45:05.787 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/621324/index1.ts
+17:45:05.788 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/621324/index9.ts
+17:45:05.851 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/621324/index6.ts
+17:45:06.230 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/621324/index10.ts
+17:45:06.796 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/621324/index1.ts
+17:45:07.149 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/621324/index9.ts
+17:45:07.203 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/621324/index6.ts
+17:45:07.723 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/621324/index13.ts
+17:45:08.152 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/621324/index9.ts
+17:45:08.179 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/621324/index14.ts
+17:45:08.215 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/621324/index6.ts
+17:45:08.730 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/621324/index13.ts
+17:45:09.182 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/621324/index14.ts
+17:45:09.308 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/621324/index1.ts
+17:45:09.513 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/621324/index9.ts
+17:45:10.321 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/621324/index1.ts
+17:45:10.357 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/621324/index13.ts
+17:45:10.526 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/621324/index9.ts
+17:45:11.372 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/621324/index13.ts
+17:45:11.900 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/621324/index9.ts
+17:45:18.544 / (NORMAL) 完成数量 15 of 16
+17:45:18.544 / (NORMAL) 重试次数 1 / 15
+17:45:21.556 / (NORMAL) 开始下载文件
+17:45:24.007 / (NORMAL) 开始合并分片...
+17:45:24.116 / (NORMAL) 结果输出至 [ffreport.log]
+17:45:24.116 / (NORMAL) 任务结束
+
+Task End: 2023/01/29 17:45:24
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\人妻阿人妻，女人到30开外，就容易出轨偷情.mp4
+
+

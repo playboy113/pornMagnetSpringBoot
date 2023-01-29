@@ -67,17 +67,24 @@ public class EsSearchImpl implements EsSearchService {
 
     @Override
     public List<String> esAggIndex(String indexName, String aggName, String fileName) throws IOException {
-        //1。先看一下这个库存不存在
-        if (testExist(indexName)){
 
-            //存在则先删除
-            deleteIndex(indexName);
-
-        }
-        //不存在就直接新建
-        createIndex(indexName);
-        //新建后批量导入
+//        try{
+//            //1。先看一下这个库存不存在
+//            if (testExist(indexName)){
+//
+//                //存在则先删除
+//                deleteIndex(indexName);
+//
+//            }
+//            //不存在就直接新建
+//            createIndex(indexName);
+//            //新建后批量导入
+//            bulkRequest(indexName);
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
         bulkRequest(indexName);
+
 
         SearchRequest request = new SearchRequest(indexName);
         request.source().size(0);

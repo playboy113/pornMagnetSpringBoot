@@ -40,10 +40,10 @@
             var magnetUrl = $("#query-url").val();
             var pages = $("#query-pages").val();
             $.ajax({
-                url:'crawerMagnet.do',
+                url:'crawerMagnet.do?magnetUrl='+magnetUrl+'&pages='+pages,
                 data:{
-                    magnetUrl:magnetUrl,
-                    pages:pages
+                    // magnetUrl:magnetUrl,
+                    // pages:pages
                 },
                 type:'post',
                 dataType:'json',

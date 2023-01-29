@@ -1,0 +1,19 @@
+﻿LOG 2023/01/29
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/01/29 06:49:18
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/753075/index.m3u8?t=1674947949&m=O0a29so51YmRAUqHThQ0Mw --saveName “你比我老公厉害多了”同学聚会拿下数学课代表
+
+06:49:18.748 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/753075/index.m3u8?t=1674947949&m=O0a29so51YmRAUqHThQ0Mw
+06:49:21.558 / (NORMAL) 写出meta.json
+06:49:21.603 / (NORMAL) 开始下载文件
+06:49:21.619 / (NORMAL) 读取文件信息...
+06:49:21.682 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336, 30 fps, 30 tbr, 90k tbn, 60 tbc
+06:49:21.682 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+06:49:21.697 / (NORMAL) 开始合并分片...
+06:49:21.854 / (NORMAL) 结果输出至 [ffreport.log]
+06:49:21.854 / (NORMAL) 任务结束
+
+Task End: 2023/01/29 06:49:21
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\“你比我老公厉害多了”同学聚会拿下数学课代表_2023-01-29_06-49-21.mp4
+
+

@@ -2,12 +2,14 @@ package com.zhang.crawer.db;
 
 import com.zhang.crawer.entity.magnet_model;
 import org.apache.commons.dbutils.QueryRunner;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 import java.sql.SQLException;
 import java.util.List;
-@ComponentScan
+@Configuration
 public class MySqlControl {
     static javax.sql.DataSource ds =  MyDataSource.getDataSource("jdbc:mysql://127.0.0.1:3306/magnet?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false");
     static QueryRunner qr = new QueryRunner(ds);
@@ -52,6 +54,7 @@ public class MySqlControl {
             e.printStackTrace();
         }
     }
+
     public static void executeInsert(magnet_model magnet_model){
 
             Object[][] params = new Object[1][9];

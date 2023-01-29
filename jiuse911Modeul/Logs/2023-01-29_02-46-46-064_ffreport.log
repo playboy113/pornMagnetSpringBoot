@@ -1,0 +1,32 @@
+ffmpeg started on 2023-01-29 at 02:47:22
+Report written to "D:/java/GitHub/pornMagnetSpringBoot/jiuse911Modeul/Logs/2023-01-29_02-46-46-064_ffreport.log"
+Command line:
+"D:\\java\\GitHub\\pornMagnetSpringBoot\\ffmpeg.exe" -loglevel warning -i "concat:00.ts|01.ts|02.ts|03.ts|04.ts|05.ts|06.ts|07.ts|08.ts|09.ts|10.ts|11.ts|12.ts|13.ts|14.ts|15.ts|16.ts|17.ts|18.ts|19.ts|20.ts|21.ts|22.ts|23.ts|24.ts|25.ts|26.ts|" -map "0:v?" -map "0:a?" -map "0:s?" -metadata "date=2023-01-29T02:47:22.4038597+08:00" -metadata "encoding_tool=" -metadata "title=" -metadata "copyright=" -metadata "comment=" -metadata:s:a:0 "handler_name=" -metadata:s:a:0 "handler=" -c copy -y -bsf:a aac_adtstoasc "D:\\java\\GitHub\\pornMagnetSpringBoot\\Downloads\\\xc5\xae\xc9\xf1\xca\xa7\xc1\xb5\xb7\xd6\xca\xd6\xa3\xac\xd6\xd5\xd3\xda\xb1\xbb\xce\xd2\xc4\xc3\xcf\xc2\xc1\xcb\xa3\xac\xc3\xbb\xcf\xeb\xb5\xbd\xcf\xc2\xc3\xe6\xd5\xe2\xc3\xb4\xc4\xdb.mp4"
+ffmpeg version N-94813-g85386c36e3-ffmpeg-for-N_m3u8DL-CLI Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 8.2.0 (GCC)
+  libavutil      56. 35.100 / 56. 35.100
+  libavcodec     58. 56.101 / 58. 56.101
+  libavformat    58. 32.104 / 58. 32.104
+  libavfilter     7. 58.102 /  7. 58.102
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswresample   3.  6.100 /  3.  6.100
+Input #0, mpegts, from 'concat:00.ts|01.ts|02.ts|03.ts|04.ts|05.ts|06.ts|07.ts|08.ts|09.ts|10.ts|11.ts|12.ts|13.ts|14.ts|15.ts|16.ts|17.ts|18.ts|19.ts|20.ts|21.ts|22.ts|23.ts|24.ts|25.ts|26.ts|':
+  Duration: 00:04:31.52, start: 1.418667, bitrate: 955 kb/s
+  Program 1 
+    Metadata:
+      service_name    : Service01
+      service_provider: FFmpeg
+    Stream #0:0[0x100]: Video: h264 ([27][0][0][0] / 0x001B), yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], 50 fps, 50 tbr, 90k tbn, 100 tbc
+    Stream #0:1[0x101](zho): Audio: aac ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, 4 kb/s
+Output #0, mp4, to 'D:\java\GitHub\pornMagnetSpringBoot\Downloads\女神失恋分手，终于被我拿下了，没想到下面这么嫩.mp4':
+  Metadata:
+    date            : 2023-01-29T02:47:22.4038597+08:00
+    encoder         : Lavf58.32.104
+    Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], q=2-31, 50 fps, 50 tbr, 90k tbn, 90k tbc
+    Stream #0:1(zho): Audio: aac (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 4 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame=13575 fps=0.0 q=-1.0 Lsize=   29546kB time=00:04:31.50 bitrate= 891.5kbits/s speed=1.92e+03x    
+video:25073kB audio:4143kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.127341%
