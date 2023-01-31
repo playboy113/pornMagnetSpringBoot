@@ -84,6 +84,7 @@ public class porndoController {
     public    Map<String,Object> copyMagnet(String num,HttpServletRequest request){
         Map<String,Object> retMap = new HashMap<>();
         String retMagnet = porndoService.queryMagnetByNum(num);
+        porndoService.insertSelectedRow(num);
         System.out.println(num);
 
         retMap.put("magnet",retMagnet);
@@ -108,6 +109,8 @@ public class porndoController {
         String[] num3 = new String[nums2.size()];
         for (int i=0;i<nums2.size();i++){
             num3[i] = nums2.get(i);
+
+            porndoService.insertSelectedRow(nums2.get(i));
         }
         Map<String,Object> retMap = new HashMap<>();
 
@@ -143,10 +146,22 @@ public class porndoController {
         //将types从string转换为数组
         //System.out.println(types);
         List<String> typesList = JSON.parseArray(types, String.class);
-        String[] typesArr = new String[typesList.size()];
-        for (int i =0;i<typesList.size();i++){
-            typesArr[i] = typesList.get(i);
+        String[] typesArr = null;
+        List<String> allTypes = porndoService.selectAllTypes();
+
+        if(typesList.size()==0){
+            typesArr = new String[allTypes.size()];
+            for (int i=0;i<allTypes.size();i++){
+                typesArr[i] = allTypes.get(i);
+            }
+        }else{
+            typesArr =new String[typesList.size()];
+            for (int i =0;i<typesList.size();i++){
+                typesArr[i] = typesList.get(i);
+            }
         }
+
+
         //System.out.println(Arrays.toString(typesArr));
 
 
@@ -156,9 +171,7 @@ public class porndoController {
         map.put("subline",subline);
         map.put("HD",HD);
         map.put("num",num);
-
         map.put("typesArr",typesArr);
-
         map.put("beginNo",(pageNo-1)*pageSize);
         map.put("pageSize",pageSize);
         map.put("date",date);

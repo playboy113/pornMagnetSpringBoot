@@ -25,6 +25,7 @@ import java.io.IOException;
 import java.util.List;
 
 import static com.zhang.commons.PornIndexConstants.MAPPING_TEMPLATE;
+import static com.zhang.commons.PornIndexConstants.porn_types;
 
 
 @SpringBootTest
@@ -52,8 +53,8 @@ public class PornIndexTest {
     }
     @Test
     void  createIndex() throws IOException {
-        CreateIndexRequest request = new CreateIndexRequest("pornmagnet");
-        request.source(MAPPING_TEMPLATE, XContentType.JSON);
+        CreateIndexRequest request = new CreateIndexRequest("porn_types");
+        request.source(porn_types, XContentType.JSON);
         client.indices().create(request,RequestOptions.DEFAULT);
 
 
@@ -70,7 +71,7 @@ public class PornIndexTest {
     @BeforeEach
     void setUp() {
         client = new RestHighLevelClient(RestClient.builder(
-                HttpHost.create("http://192.168.47.129:9200")
+                HttpHost.create("http://124.71.239.157:9200")
         ));
     }
 

@@ -2,16 +2,14 @@ package com.zhang.crawer.db;
 
 import com.zhang.crawer.entity.magnet_model;
 import org.apache.commons.dbutils.QueryRunner;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 import java.sql.SQLException;
 import java.util.List;
-@Configuration
+@ComponentScan
 public class MySqlControl {
-    static javax.sql.DataSource ds =  MyDataSource.getDataSource("jdbc:mysql://127.0.0.1:3306/magnet?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false");
+    static javax.sql.DataSource ds =  MyDataSource.getDataSource("jdbc:mysql://124.71.239.157:3306/magnet?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false");
     static QueryRunner qr = new QueryRunner(ds);
     static int num = 1;
 
@@ -49,12 +47,11 @@ public class MySqlControl {
 //                    "group by magnet\n" +
 //                    "having count(1) >1) dt)");
 
-            System.out.println("成功插入数据"+data.size()+"条");
+            //System.out.println("成功插入数据"+data.size()+"条");
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-
     public static void executeInsert(magnet_model magnet_model){
 
             Object[][] params = new Object[1][9];
@@ -89,7 +86,7 @@ public class MySqlControl {
 //                    "group by magnet\n" +
 //                    "having count(1) >1) dt)");
 
-            System.out.println("成功插入数据"+magnet_model.getTitle()+"文件数量"+num+"条");
+            //System.out.println("成功插入数据"+magnet_model.getTitle()+"文件数量"+num+"条");
             num++;
         } catch (SQLException e) {
             e.printStackTrace();

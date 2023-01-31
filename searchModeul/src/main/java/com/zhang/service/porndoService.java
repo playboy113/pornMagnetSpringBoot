@@ -18,4 +18,8 @@ public interface porndoService {
     List<magnet_model> queryMagnetBySelectTypes(Map<String,Object> map);
 
     int queryPagesBytypes(Map<String, Object> map);
+
+    List<String> selectAllTypes();
+
+    void insertSelectedRow(String num);
 }

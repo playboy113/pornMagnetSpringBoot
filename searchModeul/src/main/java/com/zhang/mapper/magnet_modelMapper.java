@@ -35,4 +35,8 @@ public interface magnet_modelMapper {
     List<magnet_model> queryMagnetBySelectTypes(Map<String,Object> map);
 
     int queryPagesByTypes(Map<String, Object> map);
+    List<String> selectAllTypes();
+    void insertSelectedRow(String num);
+
+
 }

@@ -69,5 +69,15 @@ public class porndoServiceImpl implements porndoService {
         return magnet_modelMapper.queryPagesByTypes(map);
     }
 
+    @Override
+    public List<String> selectAllTypes() {
+        return magnet_modelMapper.selectAllTypes();
+    }
+
+    @Override
+    public void insertSelectedRow(String num) {
+        magnet_modelMapper.insertSelectedRow(num);
+    }
+
 
 }

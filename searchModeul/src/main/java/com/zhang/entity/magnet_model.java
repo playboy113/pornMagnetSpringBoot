@@ -1,11 +1,19 @@
 package com.zhang.entity;
 
-import lombok.Data;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-@Data
+@EntityScan
 public class magnet_model {
     private int id;
+    private int selected;
+
+    public int getSelected() {
+        return selected;
+    }
+
+    public void setSelected(int selected) {
+        this.selected = selected;
+    }
 
     public int getId() {
         return id;

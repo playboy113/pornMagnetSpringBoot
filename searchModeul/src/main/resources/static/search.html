@@ -32,7 +32,7 @@
     </div>
     <button type="button" class="btn btn-default" id="querySearchBtn">爬！！</button>
 </form>
-<button type="button" id="frontPageBtn" onclick=window.location.href='index.do'>返回主页</button>
+<button type="button" id="frontPageBtn" onclick=window.location.href='http://localhost:8081/porndos.html'>返回主页</button>
 </body>
 <script>
     $(function (){
@@ -40,10 +40,10 @@
             var magnetUrl = $("#query-url").val();
             var pages = $("#query-pages").val();
             $.ajax({
-                url:'crawerMagnet.do?magnetUrl='+magnetUrl+'&pages='+pages,
+                url:'crawerMagnet.do',
                 data:{
-                    // magnetUrl:magnetUrl,
-                    // pages:pages
+                    magnetUrl:magnetUrl,
+                    pages:pages
                 },
                 type:'post',
                 dataType:'json',

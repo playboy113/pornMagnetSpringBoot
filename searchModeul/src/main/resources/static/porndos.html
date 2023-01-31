@@ -98,20 +98,20 @@
 
 
 
-                <!--                <button type="button" class="btn btn-default" id="queryActivityBtn">查询</button>-->
-                <!---->
+                <button type="button" class="btn btn-default" id="queryActivityBtn">查询</button>
+<!---->
             </form>
         </div>
 
-        <!--        类别模块-->
+<!--        类别模块-->
         <div class="btn-group" data-toggle="buttons" id="typesBody">
-            <!--            <label class="btn btn-default"  onclick=SupendButtonClick(this);><input type="checkbox" name="typeName" value="Checkbox 1"  > Checkbox 1</label>-->
-            <!--            <label class="btn btn-default"  onclick=SupendButtonClick(this); >-->
-            <!--                <input type="checkbox" name="typeName" value="Checkbox 2" > Checkbox 2-->
-            <!--            </label>-->
-            <!--            <label class="btn btn-default"  onclick=SupendButtonClick(this);>-->
-            <!--                <input type="checkbox" name="typeName" value="Checkbox 3" > Checkbox 3-->
-            <!--            </label>-->
+<!--            <label class="btn btn-default"  onclick=SupendButtonClick(this);><input type="checkbox" name="typeName" value="Checkbox 1"  > Checkbox 1</label>-->
+<!--            <label class="btn btn-default"  onclick=SupendButtonClick(this); >-->
+<!--                <input type="checkbox" name="typeName" value="Checkbox 2" > Checkbox 2-->
+<!--            </label>-->
+<!--            <label class="btn btn-default"  onclick=SupendButtonClick(this);>-->
+<!--                <input type="checkbox" name="typeName" value="Checkbox 3" > Checkbox 3-->
+<!--            </label>-->
 
 
 
@@ -161,13 +161,13 @@
 
                 </tbody>
 
-            </table>
-            <div id="demo_pag1"></div>
-        </div>
-
-
-
+				</table>
+				<div id="demo_pag1"></div>
     </div>
+
+
+
+</div>
 
 </div>
 </body>
@@ -187,6 +187,7 @@
         queryTypes('porn_types','aggtypes','types');
         //queryActivityByConditionForPage(1,10);
         var typesArr = queryTypesArr('porn_types','aggtypes','types')
+        queryActivityByConditionForPage(1,10)
         //alert(typesArr);
 
 
@@ -277,6 +278,7 @@
                 //遍历activityList，拼接所有行数据
                 var htmlStr="";
                 $.each(data.magnet_models,function (index,obj) {
+
                     htmlStr+="<tr class=\"active\">";
                     htmlStr+="<td><input type=\"checkbox\" value=\""+obj.num+"\"/></td>";
                     htmlStr+="<td> <img src='/images/"+obj.num+".jpg' width='100' height='75' onclick='Big(this)'></td>";
@@ -290,7 +292,12 @@
                     htmlStr+="<td>"+obj.date+"</td>";
 
                     // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
-                    htmlStr+="<td> <button type='button' onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
+                    if (obj.selected ===1){
+                        htmlStr+="<td> <button type='button' class='btn-danger'  onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
+                    }else{
+                        htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
+                    }
+
                     htmlStr+="</tr>";
 
 
@@ -352,6 +359,7 @@
                 if (data.magnet != null){
                     clipboardObj.writeText(data.magnet);
 
+                    alert("复制成功")
                 }else{
                     alert("没有磁链");
                 }
@@ -401,7 +409,7 @@
         });
     };
 
-    //    获取类别
+//    获取类别
     function queryTypes(indexName,aggName,fileName) {
 
         $.ajax({
@@ -449,7 +457,7 @@
 
                 });
                 $("#typesBody").html(htmlStr);
-                queryBySelectTypes(typesArr,1,10);
+                //queryBySelectTypes(typesArr,1,50);
 
 
 
@@ -458,7 +466,7 @@
         })
 
     }
-    //   点击选中
+//   点击选中
     function SupendButtonClick(obj) {
         var checkbox = $(obj);
 
@@ -481,12 +489,12 @@
     //获取类别信息
     function getVals(){
         var res = getRadioRes('typeName');
-        // if (res.length==0){
-        //     queryActivityByConditionForPage(1,10);
-        // }else{
-        //     queryBySelectTypes(res,1,10)
-        // }
-        queryBySelectTypes(res,1,10)
+        if (res.length==0){
+            queryActivityByConditionForPage(1,50);
+        }else{
+            queryBySelectTypes(res,1,50)
+        }
+        //queryBySelectTypes(res,1,10)
 
         //queryBySelectTypes(res,1,10)
         if(res.length < 1){
@@ -558,7 +566,11 @@
                     htmlStr+="<td>"+obj.date+"</td>";
 
                     // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
-                    htmlStr+="<td> <button type='button' onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
+                    if (obj.selected ===1){
+                        htmlStr+="<td> <button type='button' class='btn-danger'  onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
+                    }else{
+                        htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
+                    }
                     htmlStr+="</tr>";
 
 
@@ -608,45 +620,45 @@
     }
     function queryTypesArr(indexName,aggName,fileName){
 
-        var typesArr = new Array();
-        $.ajax({
-            url:'pornMagnet/aggRequest.do?indexName='+indexName+'&aggName='+aggName+'&fileName='+fileName,
-            data:{
-            },
-            type:'post',
-            dataType:'json',
-            success:function(data){
-                var typesList = data.aggList;
-                //alert(data.aggList.length)
-                //alert(typesArr)
-                var htmlStr ="";
-                $.each(data.aggList,function (index,obj) {
-                    typesArr[index] = obj;
-                    //htmlStr+="<label class=\"btn btn-default\"  onclick='SupendButtonClick(this);' ><input type=\"checkbox\" name=\"typeName\" value="+obj+">"+obj+"</label>";
+            var typesArr = new Array();
+            $.ajax({
+                url:'pornMagnet/aggRequest.do?indexName='+indexName+'&aggName='+aggName+'&fileName='+fileName,
+                data:{
+                },
+                type:'post',
+                dataType:'json',
+                success:function(data){
+                    var typesList = data.aggList;
+                    //alert(data.aggList.length)
+                   //alert(typesArr)
+                    var htmlStr ="";
+                    $.each(data.aggList,function (index,obj) {
+                        typesArr[index] = obj;
+                      //htmlStr+="<label class=\"btn btn-default\"  onclick='SupendButtonClick(this);' ><input type=\"checkbox\" name=\"typeName\" value="+obj+">"+obj+"</label>";
 
 
-                    // htmlStr+="<tr class=\"active\">";
-                    // htmlStr+="<td><input type=\"checkbox\" value=\""+obj.num+"\"/></td>";
-                    // htmlStr+="<td> <img src='./images/"+obj.num+".jpg' width='100' height='75' onclick='Big(this)'></td>";
-                    // htmlStr+="<td><a style=\"text-decoration: none; cursor: pointer;\" onclick=\"window.location.href='workbench/activity/detailActivity.do?id="+obj.num+"'\">"+obj.num+"</a></td>";
-                    // htmlStr+="<td>"+obj.title+"</td>";
-                    // htmlStr+="<td>"+obj.subline+"</td>";
-                    // htmlStr+="<td>"+obj.HD+"</td>";
-                    // htmlStr+="<td>"+obj.actress+"</td>";
-                    // htmlStr+="<td>"+obj.types+"</td>";
-                    // htmlStr+="<td>"+obj.producer+"</td>";
-                    // htmlStr+="<td>"+obj.date+"</td>";
-                    //
-                    // // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
-                    // htmlStr+="<td> <button type='button' onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
-                    // htmlStr+="</tr>";
+                        // htmlStr+="<tr class=\"active\">";
+                        // htmlStr+="<td><input type=\"checkbox\" value=\""+obj.num+"\"/></td>";
+                        // htmlStr+="<td> <img src='./images/"+obj.num+".jpg' width='100' height='75' onclick='Big(this)'></td>";
+                        // htmlStr+="<td><a style=\"text-decoration: none; cursor: pointer;\" onclick=\"window.location.href='workbench/activity/detailActivity.do?id="+obj.num+"'\">"+obj.num+"</a></td>";
+                        // htmlStr+="<td>"+obj.title+"</td>";
+                        // htmlStr+="<td>"+obj.subline+"</td>";
+                        // htmlStr+="<td>"+obj.HD+"</td>";
+                        // htmlStr+="<td>"+obj.actress+"</td>";
+                        // htmlStr+="<td>"+obj.types+"</td>";
+                        // htmlStr+="<td>"+obj.producer+"</td>";
+                        // htmlStr+="<td>"+obj.date+"</td>";
+                        //
+                        // // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
+                        // htmlStr+="<td> <button type='button' onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
+                        // htmlStr+="</tr>";
 
-                });
-                //$("#typesBody").html(htmlStr);
-                //alert(typesArr)
-                //return typesArr;
-            }
-        })
+                    });
+                    //$("#typesBody").html(htmlStr);
+                    //alert(typesArr)
+                    //return typesArr;
+                }
+            })
         //alert(typesArr);
 
 

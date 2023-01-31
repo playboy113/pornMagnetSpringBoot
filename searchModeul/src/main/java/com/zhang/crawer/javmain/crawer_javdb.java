@@ -7,21 +7,21 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.springframework.stereotype.Component;
-import org.xml.sax.SAXException;
+import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.net.URLDecoder;
 import java.util.*;
 
-@Component
+@ComponentScan
 public class crawer_javdb {
 
-    public ArrayList<magnet_model> javdb(String url) throws IOException, URISyntaxException, ParserConfigurationException, SAXException {
+    public ArrayList<magnet_model> javdb(String url) throws IOException, URISyntaxException {
 
 
         ArrayList<magnet_model> model_list = new ArrayList<>();
@@ -39,24 +39,17 @@ public class crawer_javdb {
         header.put("Accept-Language", builder.acceptLanguage);
         header.put("Accept-Encoding", builder.acceptEncoding);
 
-        Connection conn = Jsoup.connect(url).userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0").ignoreHttpErrors(true).followRedirects(true).timeout(100000).ignoreContentType(true);
+        Connection conn = Jsoup.connect(url);
         Connection conHeader = conn.headers(header);
-        //Document doc = conHeader.timeout(Integer.MAX_VALUE).get();
-
-
-        Document doc = getDocByPython(url);
-
-
+        Document doc = conHeader.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
         Elements elements = doc.getElementsByClass("item");
 
         try{
             for (Element element : elements) {
                 String inner_url = element.select("a").attr("href");
 
-                //Document inner_doc = Jsoup.connect("https://javdb.com/" + inner_url).timeout(1000*10).get();
-                Document inner_doc = getDocByPython("https://javdb.com" + inner_url);
+                Document inner_doc = Jsoup.connect("https://javdb.com/" + inner_url).timeout(1000*10).get();
                 magnet_model model = new magnet_model();
-                //System.out.println(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim());
 
 
 
@@ -81,7 +74,7 @@ public class crawer_javdb {
                 //获取演员与類別以及片商
                 Elements dess = inner_doc.getElementsByClass("panel-block");
                 for (Element des : dess) {
-                    if (des.select("strong").text().contains("Actor(s):")) {
+                    if (des.select("strong").text().contains("演員")) {
                         model.setActress(des.select("a").text());
 
                         String[] newActressArr = des.select("a").text().split(" ");
@@ -92,7 +85,7 @@ public class crawer_javdb {
 
 
 
-                    } else if (des.select("strong").text().contains("Tags:")) {
+                    } else if (des.select("strong").text().contains("類別")) {
                         model.setTypes(des.select("a").text());
                         String[] newTypesArr = des.select("a").text().split(" ");
                         typesArr = new String[newTypesArr.length];
@@ -101,9 +94,9 @@ public class crawer_javdb {
                         }
 
 
-                    }else if(des.select("strong").text().contains("Released Date:")){
+                    }else if(des.select("strong").text().contains("日期")){
                         model.setDate(des.select("span").text());
-                    }else if(des.select("strong").text().contains("Maker:")){
+                    }else if(des.select("strong").text().contains("片商")){
                         model.setProducer(des.select("span").text());
                     }
                 }
@@ -115,21 +108,21 @@ public class crawer_javdb {
                 Elements inner_elements = inner_doc.getElementsByAttributeValue("class", "magnet-name column is-four-fifths");
                 for (Element inner_ele : inner_elements) {
                     String inner_str = inner_ele.select("div").text();
-                    if (inner_str.contains("HD") && inner_str.contains("Subtitle")) {
+                    if (inner_str.contains("高清") && inner_str.contains("字幕")) {
                         String magenet = inner_ele.select("a").attr("href");
                         magenet = magenet.replace(".torrent", "");
                         model.setMagenet(magenet);
                         model.setSubline("中文字幕");
                         model.setHD("高清");
                         break;
-                    } else if (inner_str.contains("HD") && !inner_str.contains("Subtitle")) {
+                    } else if (inner_str.contains("高清") && !inner_str.contains("字幕")) {
                         String magenet = inner_ele.select("a").first().attr("href");
                         magenet = magenet.replace(".torrent", "");
                         model.setMagenet(magenet);
                         model.setSubline("无");
                         model.setHD("高清");
                         break;
-                    } else if (!inner_str.contains("HD") && inner_str.contains("Subtitle")) {
+                    } else if (!inner_str.contains("高清") && inner_str.contains("字幕")) {
                         String magenet = inner_ele.select("a").first().attr("href");
                         magenet = magenet.replace(".torrent", "");
                         model.setMagenet(magenet);
@@ -165,7 +158,6 @@ public class crawer_javdb {
         OutputStream outputStream=null;
         BufferedOutputStream bos=null;
         try{
-            //System.out.println(ImageUrl);
             urlObj = new URL(ImageUrl);
             conn = urlObj.openConnection();
             conn.setConnectTimeout(3*100000);
@@ -216,36 +208,13 @@ public class crawer_javdb {
 
     }
 
-    public Document getDocByPython(String url) throws IOException, ParserConfigurationException, SAXException {
-        String[] my_args = new String[]{"C:/Users/10460/AppData/Local/Programs/Python/Python310/python","javtest.py","--url="+url};
-        //String[] my_args = new String[]{"cmd","/c","dir"};
-        Process proc = Runtime.getRuntime().exec(my_args);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(proc.getInputStream(),"GBK"));
-        String line = null;
-        String htmlStr = "";
-        while((line = reader.readLine()) != null) {
-            htmlStr += line;
-        }
-        //System.out.println(htmlStr);
-        htmlStr = htmlStr.replaceAll("%(?![0-9a-fA-F]{2})", "%25");
-        String s1 = htmlStr.replaceAll("\\\\x", "%");
-        //s1 = s1.replaceAll("\\s*|\\\r|\\\n|\\\t","");
-        s1 = s1.replaceAll("\\\\n|\\\\t|\\\\r","");
-        String decode = URLDecoder.decode(s1, "utf-8");
-
-
-        //String html1 = htmlStr.replaceAll("\\\\n","");
-
-        return Jsoup.parse(decode);
-    }
 
 
 
 
 
 
-
-    static class Builder{
+    class Builder{
         //设置userAgent库;读者根据需求添加更多userAgent
         String[] userAgentStrs = {"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50",
                 "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50",
@@ -269,6 +238,4 @@ public class crawer_javdb {
         String acceptEncoding = "gzip, deflate";
         String host;
     }
-
-
 }

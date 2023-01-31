@@ -1,9 +1,10 @@
 package com.zhang.service.Impl;
 
 import com.alibaba.fastjson.JSON;
+
 import com.zhang.entity.PornTypes;
 import com.zhang.service.EsSearchService;
-import com.zhang.service.typesService;
+
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.bulk.BulkRequest;
@@ -29,7 +30,7 @@ import static com.zhang.commons.PornIndexConstants.MAPPING_TEMPLATE;
 import static com.zhang.commons.PornIndexConstants.porn_types;
 
 
-@Service
+@Service("EsSearchService")
 @Slf4j
 public class EsSearchImpl implements EsSearchService {
     @Autowired
@@ -67,23 +68,28 @@ public class EsSearchImpl implements EsSearchService {
 
     @Override
     public List<String> esAggIndex(String indexName, String aggName, String fileName) throws IOException {
-
-//        try{
-//            //1。先看一下这个库存不存在
-//            if (testExist(indexName)){
+        //1。先看一下这个库存不存在
+//        if (testExist(indexName)){
 //
-//                //存在则先删除
-//                deleteIndex(indexName);
+//            //存在则先删除
+//            deleteIndex(indexName);
 //
-//            }
-//            //不存在就直接新建
-//            createIndex(indexName);
-//            //新建后批量导入
-//            bulkRequest(indexName);
-//        }catch (Exception e){
-//            e.printStackTrace();
 //        }
-        bulkRequest(indexName);
+        //不存在就直接新建
+        try{
+            if (testExist(indexName)){
+
+            //存在则先删除
+            deleteIndex(indexName);
+
+            }
+            createIndex(indexName);
+            //新建后批量导入
+            bulkRequest(indexName);
+        }catch (Exception e){
+            System.out.println(e.fillInStackTrace());
+        }
+
 
 
         SearchRequest request = new SearchRequest(indexName);
