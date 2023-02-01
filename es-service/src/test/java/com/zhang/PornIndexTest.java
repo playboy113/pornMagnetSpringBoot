@@ -2,9 +2,11 @@ package com.zhang;
 
 import com.alibaba.fastjson.JSON;
 
+import lombok.extern.log4j.Log4j;
 import org.apache.http.HttpHost;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.action.bulk.BulkRequest;
+import org.elasticsearch.action.delete.DeleteRequest;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestClient;
@@ -12,6 +14,10 @@ import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.client.indices.CreateIndexRequest;
 import org.elasticsearch.client.indices.GetIndexRequest;
 import org.elasticsearch.common.xcontent.XContentType;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.reindex.BulkByScrollResponse;
+import org.elasticsearch.index.reindex.DeleteByQueryAction;
+import org.elasticsearch.index.reindex.DeleteByQueryRequest;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -64,6 +70,25 @@ public class PornIndexTest {
     void deleteIndex() throws IOException {
         DeleteIndexRequest req = new DeleteIndexRequest("porn_types");
         client.indices().delete(req,RequestOptions.DEFAULT);
+    }
+    @Test
+    void deleteData(){
+        DeleteByQueryRequest deleteByQueryRequest = new DeleteByQueryRequest();
+        deleteByQueryRequest.setQuery(QueryBuilders.matchAllQuery());
+        deleteByQueryRequest.indices("porn_types");
+        try {
+            //3 通过deleteByQuery来发起删除请求
+            BulkByScrollResponse deleteResponse=client.deleteByQuery(deleteByQueryRequest , RequestOptions.DEFAULT);
+            if(deleteResponse.getDeleted() >=1){
+
+                System.out.println("deleteData,删除成功，删除文档条数: "+deleteResponse.getDeleted()+" ,indexName："+"porn_types");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
     }
 
 

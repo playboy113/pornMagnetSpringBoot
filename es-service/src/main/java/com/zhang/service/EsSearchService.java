@@ -12,4 +12,6 @@ public interface EsSearchService {
     void deleteIndex(String indexName) throws IOException;
 
     boolean testExist(String indexName) throws IOException;
+
+    void deleteAllData(String indexName) throws IOException;
 }

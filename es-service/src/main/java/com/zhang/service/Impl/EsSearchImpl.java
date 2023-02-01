@@ -14,8 +14,12 @@ import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.client.indices.CreateIndexRequest;
+import org.elasticsearch.client.indices.DeleteAliasRequest;
 import org.elasticsearch.client.indices.GetIndexRequest;
 import org.elasticsearch.common.xcontent.XContentType;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.reindex.BulkByScrollResponse;
+import org.elasticsearch.index.reindex.DeleteByQueryRequest;
 import org.elasticsearch.search.aggregations.AggregationBuilders;
 import org.elasticsearch.search.aggregations.Aggregations;
 import org.elasticsearch.search.aggregations.bucket.terms.Terms;
@@ -75,15 +79,17 @@ public class EsSearchImpl implements EsSearchService {
 //            deleteIndex(indexName);
 //
 //        }
-        //不存在就直接新建
-        try{
-            if (testExist(indexName)){
 
-            //存在则先删除
-            deleteIndex(indexName);
+        try{
+            //不存在就直接新建
+            if (!testExist(indexName)){
+                createIndex(indexName);
+
 
             }
-            createIndex(indexName);
+            //清空索引
+            deleteAllData(indexName);
+
             //新建后批量导入
             bulkRequest(indexName);
         }catch (Exception e){
@@ -122,5 +128,14 @@ public class EsSearchImpl implements EsSearchService {
 
 
         return exists;
+    }
+
+    @Override
+    public void deleteAllData(String indexName) throws IOException {
+        DeleteByQueryRequest deleteByQueryRequest = new DeleteByQueryRequest();
+        deleteByQueryRequest.setQuery(QueryBuilders.matchAllQuery());
+        deleteByQueryRequest.indices(indexName);
+
+        client.deleteByQuery(deleteByQueryRequest,RequestOptions.DEFAULT);
     }
 }
