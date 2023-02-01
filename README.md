@@ -1,4 +1,5 @@
 # pornMagnetSpringBoot
+用以javdb网站信息爬取
 大家好啊，这个项目是我用来学习springboot以及elasticsearch还有java基础相关的一些知识。所以可能有些地方写得很拉跨、希望大佬勿喷。
 首先介绍一下这个主要的用途
 
