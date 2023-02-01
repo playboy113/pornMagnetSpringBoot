@@ -37,7 +37,7 @@
 
 
 
-2、配置你本地的mysql连接，修改账号密码。两个模块都要改，在application.yml文件里面，同时还有一个爬虫我文件的地址也要配置，导入建表语句（这里提醒一下，希望最好使用mysql8.0版本）
+2、配置你本地的mysql连接，修改账号密码。两个模块都要改，在application.yml文件里面，同时还有一个爬虫我文件的地址也要配置，导入建表语句magnet.sql（这里提醒一下，使用mysql8.0版本）
 ![1675260463081](https://user-images.githubusercontent.com/105400068/216065238-e383bc66-0b15-4b4b-ae1f-4533bc9ef100.png)
 ![1675260941463](https://user-images.githubusercontent.com/105400068/216067204-967af55c-fbac-4190-ae71-cf146d7b9f26.png)
 ![1675260986539](https://user-images.githubusercontent.com/105400068/216067391-64794a0c-1eec-485f-933f-091c4e9e8923.png)
