@@ -1,0 +1,61 @@
+﻿LOG 2023/02/27
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/27 23:08:11
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/455165/index.m3u8?t=1677512291&m=IzF-OgA5f_9eMYaEA99u5A --saveName [原创]3P极品熟女，老公在家里上火，她出来给男人泻火
+
+23:08:11.363 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/455165/index.m3u8?t=1677512291&m=IzF-OgA5f_9eMYaEA99u5A
+23:08:14.276 / (NORMAL) 写出meta.json
+23:08:14.342 / (NORMAL) 开始下载文件
+23:08:16.498 / (NORMAL) 读取文件信息...
+23:08:16.655 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336, 59.94 fps, 59.94 tbr, 90k tbn, 119.88 tbc
+23:08:16.657 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 134 kb/s
+23:08:17.970 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index8.ts
+23:08:18.622 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index10.ts
+23:08:18.626 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index3.ts
+23:08:18.978 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/455165/index8.ts
+23:08:19.624 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index11.ts
+23:08:19.630 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/455165/index10.ts
+23:08:19.631 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/455165/index3.ts
+23:08:20.640 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/455165/index11.ts
+23:08:20.903 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index3.ts
+23:08:21.311 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index13.ts
+23:08:21.603 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index14.ts
+23:08:21.911 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/455165/index3.ts
+23:08:22.313 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/455165/index13.ts
+23:08:22.608 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/455165/index14.ts
+23:08:22.641 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index15.ts
+23:08:23.086 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index8.ts
+23:08:23.582 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index13.ts
+23:08:23.627 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index17.ts
+23:08:23.652 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/455165/index15.ts
+23:08:24.088 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/455165/index8.ts
+23:08:24.162 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index18.ts
+23:08:24.457 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index19.ts
+23:08:24.586 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/455165/index13.ts
+23:08:24.631 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/455165/index17.ts
+23:08:25.174 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/455165/index18.ts
+23:08:25.469 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/455165/index19.ts
+23:08:25.829 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index20.ts
+23:08:26.137 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index17.ts
+23:08:26.337 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index8.ts
+23:08:26.427 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index18.ts
+23:08:26.717 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index19.ts
+23:08:26.832 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/455165/index20.ts
+23:08:27.142 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/455165/index17.ts
+23:08:27.344 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/455165/index8.ts
+23:08:27.437 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/455165/index18.ts
+23:08:27.720 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/455165/index19.ts
+23:08:29.619 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/455165/index8.ts
+23:08:34.594 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/455165/index13.ts
+23:08:35.601 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/455165/index13.ts
+23:08:39.443 / (NORMAL) 完成数量 20 of 21
+23:08:39.444 / (NORMAL) 重试次数 1 / 15
+23:08:42.457 / (NORMAL) 开始下载文件
+23:08:45.708 / (NORMAL) 开始合并分片...
+23:08:45.949 / (NORMAL) 结果输出至 [ffreport.log]
+23:08:45.950 / (NORMAL) 任务结束
+
+Task End: 2023/02/27 23:08:45
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\[原创]3P极品熟女，老公在家里上火，她出来给男人泻火.mp4
+
+

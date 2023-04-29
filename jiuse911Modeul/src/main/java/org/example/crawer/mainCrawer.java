@@ -36,8 +36,8 @@ public class mainCrawer {
         header.put("Accept-Language", builder.acceptLanguage);
         header.put("Accept-Encoding", builder.acceptEncoding);
 
-        for (int i=1;i<100;i++){
-            Connection connect = Jsoup.connect("https://91porny.com/search?keywords=%E4%BA%BA%E5%A6%BB&view=desc&page="+i);
+        for (int i=1;i<30;i++){
+            Connection connect = Jsoup.connect("https://91porny.com/search?keywords=%E7%9C%9F%E5%AE%9E&view=desc&page="+i);
             Connection headers = connect.headers(header);
             Document document = headers.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
             Elements elements = document.getElementsByClass("colVideoList");
@@ -49,7 +49,7 @@ public class mainCrawer {
                     String title = inner_doc.getElementsByClass("container-title py-3 mb-0").text();
 
                     String video_url = inner_doc.getElementsByClass("videoPlayContainer").first().getElementById("video-play").attr("data-src");
-                    String[] arrExec = new String[]{"D:\\java\\GitHub\\pornMagnetSpringBoot\\jiuse911Modeul\\N_m3u8DL-CLI_v3.0.2.exe",""+video_url,"--saveName",title};
+                    String[] arrExec = new String[]{"D:\\java\\codes\\images\\N_m3u8DL-CLI_v3.0.2.exe",""+video_url,"--saveName",title,"--workDir","D:\\java\\codes\\images"};
                     //String[] arrExec = new String[]{"cmd /c dir"};
                     //String[] arrExec = new String[]{"ipconfig"};
                     Process process = Runtime.getRuntime().exec(arrExec);

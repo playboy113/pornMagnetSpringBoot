@@ -18,4 +18,5 @@ public class pornMagnetApplication {
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
+
 }

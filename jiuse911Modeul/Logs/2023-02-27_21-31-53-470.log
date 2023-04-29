@@ -1,0 +1,39 @@
+﻿LOG 2023/02/27
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/27 21:31:53
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/534488/index.m3u8?t=1677506513&m=xQTkA4gGhD25XZsF-0gVMg --saveName 42岁家政熟女姐姐，两个孩子母亲！高潮面红耳赤
+
+21:31:53.474 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/534488/index.m3u8?t=1677506513&m=xQTkA4gGhD25XZsF-0gVMg
+21:31:57.563 / (NORMAL) 写出meta.json
+21:31:57.644 / (NORMAL) 开始下载文件
+21:31:59.706 / (NORMAL) 读取文件信息...
+21:31:59.843 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 202x360, 30 fps, 30 tbr, 90k tbn, 60 tbc
+21:31:59.845 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, mono, fltp, 3 kb/s
+21:32:02.307 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/534488/index4.ts
+21:32:02.363 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/534488/index10.ts
+21:32:02.559 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/534488/index9.ts
+21:32:03.322 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/534488/index4.ts
+21:32:03.369 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/534488/index10.ts
+21:32:03.504 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/534488/index11.ts
+21:32:03.570 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/534488/index9.ts
+21:32:04.515 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/534488/index11.ts
+21:32:05.229 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/534488/index4.ts
+21:32:05.253 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/534488/index13.ts
+21:32:05.468 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/534488/index9.ts
+21:32:05.479 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/534488/index14.ts
+21:32:06.235 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/534488/index4.ts
+21:32:06.266 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/534488/index13.ts
+21:32:06.482 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/534488/index9.ts
+21:32:06.483 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/534488/index14.ts
+21:32:07.941 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/534488/index13.ts
+21:32:08.185 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/534488/index14.ts
+21:32:08.948 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/534488/index13.ts
+21:32:09.197 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/534488/index14.ts
+21:32:17.324 / (NORMAL) 开始合并分片...
+21:32:17.485 / (NORMAL) 结果输出至 [ffreport.log]
+21:32:17.486 / (NORMAL) 任务结束
+
+Task End: 2023/02/27 21:32:17
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\42岁家政熟女姐姐，两个孩子母亲！高潮面红耳赤.mp4
+
+

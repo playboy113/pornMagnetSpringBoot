@@ -169,6 +169,7 @@
         <select id="queryMagnetByNum" resultType="java.lang.String" parameterType="string">
           select distinct magnet from magnet_db
             where num = #{num}
+            limit 1
         </select>
 <!--  修改被选中的值-->
       <insert id="insertSelectedRow" parameterType="string">

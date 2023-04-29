@@ -8,7 +8,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.zhang</groupId>
     <artifactId>es-service</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>es-service Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>

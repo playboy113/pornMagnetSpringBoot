@@ -1,0 +1,71 @@
+﻿LOG 2023/03/01
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/03/01 19:20:27
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/780943/index.m3u8?t=1677671427&m=wzEvneYWNigLoGHMEGmpLg --saveName 口活一级棒的巨乳高跟坦克少妇【约女主看简介】
+
+19:20:27.683 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/780943/index.m3u8?t=1677671427&m=wzEvneYWNigLoGHMEGmpLg
+19:20:30.996 / (NORMAL) 写出meta.json
+19:20:31.082 / (NORMAL) 开始下载文件
+19:20:33.675 / (NORMAL) 读取文件信息...
+19:20:33.812 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336, 24 fps, 24 tbr, 90k tbn, 48 tbc
+19:20:33.813 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+19:20:35.343 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/780943/index15.ts
+19:20:35.560 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/780943/index1.ts
+19:20:35.562 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/780943/index22.ts
+19:20:36.152 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/780943/index64.ts
+19:20:36.344 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index15.ts
+19:20:36.562 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index1.ts
+19:20:36.578 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index22.ts
+19:20:37.168 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index64.ts
+19:20:39.003 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/780943/index78.ts
+19:20:39.184 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/780943/index22.ts
+19:20:40.010 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index78.ts
+19:20:40.199 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/780943/index22.ts
+19:20:40.263 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/780943/index92.ts
+19:20:41.061 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/780943/index78.ts
+19:20:41.266 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index92.ts
+19:20:41.884 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/780943/index22.ts
+19:20:42.077 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/780943/index78.ts
+19:20:42.244 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/780943/index106.ts
+19:20:42.898 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/780943/index22.ts
+19:20:43.255 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index106.ts
+19:20:44.062 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/780943/index22.ts
+19:21:14.890 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/780943/index78.ts
+19:21:15.901 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/780943/index78.ts
+19:21:32.823 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/780943/index45.ts
+19:21:33.833 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index45.ts
+19:21:42.921 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/780943/index11.ts
+19:21:43.870 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/780943/index45.ts
+19:21:43.931 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index11.ts
+19:21:44.880 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/780943/index45.ts
+19:21:47.699 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/780943/index4.ts
+19:21:48.133 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/780943/index52.ts
+19:21:48.474 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/780943/index89.ts
+19:21:48.707 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index4.ts
+19:21:49.143 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index52.ts
+19:21:49.452 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/780943/index38.ts
+19:21:49.482 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index89.ts
+19:21:50.466 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index38.ts
+19:21:50.795 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/780943/index61.ts
+19:21:51.806 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index61.ts
+19:22:53.626 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/780943/index75.ts
+19:22:54.633 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index75.ts
+19:22:56.315 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/780943/index82.ts
+19:22:57.329 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index82.ts
+19:23:16.920 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/780943/index69.ts
+19:23:17.933 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index69.ts
+19:23:19.961 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/780943/index7.ts
+19:23:20.973 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index7.ts
+19:24:34.586 / (NORMAL) 完成数量 123 of 124
+19:24:34.587 / (NORMAL) 重试次数 1 / 15
+19:24:37.597 / (NORMAL) 开始下载文件
+19:24:47.618 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/780943/index22.ts
+19:24:48.629 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/780943/index22.ts
+19:25:13.173 / (NORMAL) 开始合并分片...
+19:25:13.783 / (NORMAL) 结果输出至 [ffreport.log]
+19:25:13.784 / (NORMAL) 任务结束
+
+Task End: 2023/03/01 19:25:13
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\口活一级棒的巨乳高跟坦克少妇【约女主看简介】.mp4
+
+

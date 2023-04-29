@@ -1,0 +1,57 @@
+﻿LOG 2023/02/26
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/26 17:27:31
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/764234/index.m3u8?t=1677405449&m=D8cnZWHDzsnikIqdCQiqeg --saveName 【2:48超大量流精】刚回国的骚货就被露脸无套3P内射灌精
+
+17:27:31.146 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/764234/index.m3u8?t=1677405449&m=D8cnZWHDzsnikIqdCQiqeg
+17:27:33.625 / (NORMAL) 写出meta.json
+17:27:33.700 / (NORMAL) 开始下载文件
+17:27:35.512 / (NORMAL) 读取文件信息...
+17:27:35.652 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], 30 fps, 30 tbr, 90k tbn, 60 tbc
+17:27:35.654 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+17:27:37.137 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index10.ts
+17:27:37.187 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index5.ts
+17:27:37.334 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index3.ts
+17:27:38.138 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/764234/index10.ts
+17:27:38.174 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index11.ts
+17:27:38.200 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/764234/index5.ts
+17:27:38.340 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/764234/index3.ts
+17:27:39.183 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/764234/index11.ts
+17:27:39.506 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index3.ts
+17:27:39.564 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index5.ts
+17:27:40.086 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index13.ts
+17:27:40.258 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index14.ts
+17:27:40.518 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/764234/index3.ts
+17:27:40.566 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/764234/index5.ts
+17:27:40.670 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index15.ts
+17:27:41.092 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/764234/index13.ts
+17:27:41.264 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/764234/index14.ts
+17:27:41.456 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index3.ts
+17:27:41.526 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index5.ts
+17:27:41.679 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/764234/index15.ts
+17:27:42.417 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index16.ts
+17:27:42.459 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/764234/index3.ts
+17:27:42.536 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/764234/index5.ts
+17:27:43.228 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index18.ts
+17:27:43.403 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index13.ts
+17:27:43.434 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/764234/index16.ts
+17:27:43.814 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index17.ts
+17:27:44.102 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index3.ts
+17:27:44.235 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/764234/index18.ts
+17:27:44.406 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/764234/index13.ts
+17:27:44.824 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/764234/index17.ts
+17:27:45.193 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index18.ts
+17:27:45.353 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/764234/index13.ts
+17:27:46.204 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/764234/index18.ts
+17:27:46.359 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/764234/index13.ts
+17:27:54.968 / (NORMAL) 完成数量 18 of 19
+17:27:54.968 / (NORMAL) 重试次数 1 / 15
+17:27:57.983 / (NORMAL) 开始下载文件
+17:28:03.198 / (NORMAL) 开始合并分片...
+17:28:03.399 / (NORMAL) 结果输出至 [ffreport.log]
+17:28:03.400 / (NORMAL) 任务结束
+
+Task End: 2023/02/26 17:28:03
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\【2.48超大量流精】刚回国的骚货就被露脸无套3P内射灌精.mp4
+
+

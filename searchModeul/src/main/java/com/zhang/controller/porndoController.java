@@ -82,10 +82,12 @@ public class porndoController {
     @RequestMapping("/copyMagnet.do")
     @ResponseBody
     public    Map<String,Object> copyMagnet(String num,HttpServletRequest request){
+        System.out.println("单个copy的controller层");
         Map<String,Object> retMap = new HashMap<>();
         String retMagnet = porndoService.queryMagnetByNum(num);
+        System.out.println("magnet为："+retMagnet);
         porndoService.insertSelectedRow(num);
-        System.out.println(num);
+        //System.out.println(num);
 
         retMap.put("magnet",retMagnet);
         return retMap;
@@ -116,13 +118,16 @@ public class porndoController {
 
 
         List<String> magnetList = porndoService.queryMagnetsByNums(num3);
-        String retStr = "";
+        StringBuilder retStr = new StringBuilder();
         for (int i=0;i<magnetList.size();i++){
-            retStr += magnetList.get(i)+"\n";
+            retStr.append(magnetList.get(i)).append("\r").append("\n");
+
+
         }
+        System.out.println(retStr);
 
         retMap.put("magnetList",magnetList);
-        retMap.put("retStr",retStr);
+        retMap.put("retStr", retStr.toString());
         return retMap;
     }
     @RequestMapping("/searchPage.do")

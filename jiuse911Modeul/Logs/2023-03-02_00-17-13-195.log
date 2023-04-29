@@ -1,0 +1,19 @@
+﻿LOG 2023/03/02
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/03/02 00:17:13
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/779828/index.m3u8?t=1677689234&m=B3L-zc9SdqrP-6X68U0zZg --saveName 3P美容院资深美容医生圆润大奶浑满Q弹
+
+00:17:13.197 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/779828/index.m3u8?t=1677689234&m=B3L-zc9SdqrP-6X68U0zZg
+00:17:22.448 / (NORMAL) 写出meta.json
+00:17:22.509 / (NORMAL) 开始下载文件
+00:17:22.513 / (NORMAL) 读取文件信息...
+00:17:22.634 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], 30 fps, 30 tbr, 90k tbn, 60 tbc
+00:17:22.637 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+00:17:22.654 / (NORMAL) 开始合并分片...
+00:17:23.188 / (NORMAL) 结果输出至 [ffreport.log]
+00:17:23.190 / (NORMAL) 任务结束
+
+Task End: 2023/03/02 00:17:23
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\3P美容院资深美容医生圆润大奶浑满Q弹_2023-03-02_00-17-22.mp4
+
+

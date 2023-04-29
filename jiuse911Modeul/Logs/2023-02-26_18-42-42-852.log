@@ -1,0 +1,75 @@
+﻿LOG 2023/02/26
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/26 18:42:42
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/773286/index.m3u8?t=1677409961&m=PrDecpyTLiT1On4QFzqLEA --saveName 【连续8发，超大剂量】上海19岁大学生4P灌精后续
+
+18:42:42.868 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/773286/index.m3u8?t=1677409961&m=PrDecpyTLiT1On4QFzqLEA
+18:42:46.623 / (NORMAL) 写出meta.json
+18:42:46.671 / (NORMAL) 开始下载文件
+18:42:48.342 / (NORMAL) 读取文件信息...
+18:42:48.451 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], 30 fps, 30 tbr, 90k tbn, 60 tbc
+18:42:48.451 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+18:42:49.948 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index2.ts
+18:42:50.044 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index8.ts
+18:42:50.163 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index3.ts
+18:42:50.959 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/773286/index2.ts
+18:42:51.054 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/773286/index8.ts
+18:42:51.165 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/773286/index3.ts
+18:42:52.334 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index3.ts
+18:42:52.410 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index8.ts
+18:42:52.747 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index11.ts
+18:42:53.313 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index2.ts
+18:42:53.345 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/773286/index3.ts
+18:42:53.424 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/773286/index8.ts
+18:42:53.560 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index16.ts
+18:42:53.683 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index14.ts
+18:42:53.757 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/773286/index11.ts
+18:42:54.262 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index3.ts
+18:42:54.325 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/773286/index2.ts
+18:42:54.350 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index8.ts
+18:42:54.576 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/773286/index16.ts
+18:42:54.636 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index18.ts
+18:42:54.687 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/773286/index14.ts
+18:42:55.118 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index19.ts
+18:42:55.275 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/773286/index3.ts
+18:42:55.354 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/773286/index8.ts
+18:42:55.426 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index11.ts
+18:42:55.638 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/773286/index18.ts
+18:42:55.719 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index16.ts
+18:42:56.130 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/773286/index19.ts
+18:42:56.240 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index20.ts
+18:42:56.270 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index8.ts
+18:42:56.392 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index21.ts
+18:42:56.430 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/773286/index11.ts
+18:42:56.580 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index18.ts
+18:42:56.730 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/773286/index16.ts
+18:42:56.934 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index14.ts
+18:42:57.080 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index19.ts
+18:42:57.250 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/773286/index20.ts
+18:42:57.406 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/773286/index21.ts
+18:42:57.594 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/773286/index18.ts
+18:42:57.942 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/773286/index14.ts
+18:42:58.081 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index11.ts
+18:42:58.086 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/773286/index19.ts
+18:42:58.151 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index16.ts
+18:42:58.206 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index20.ts
+18:42:58.969 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index21.ts
+18:42:59.096 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/773286/index11.ts
+18:42:59.159 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/773286/index16.ts
+18:42:59.222 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/773286/index20.ts
+18:42:59.978 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/773286/index21.ts
+18:43:00.078 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index11.ts
+18:43:00.316 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index16.ts
+18:43:00.361 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/773286/index20.ts
+18:43:01.377 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/773286/index20.ts
+18:43:08.824 / (NORMAL) 完成数量 20 of 23
+18:43:08.824 / (NORMAL) 重试次数 1 / 15
+18:43:11.843 / (NORMAL) 开始下载文件
+18:43:16.247 / (NORMAL) 开始合并分片...
+18:43:16.435 / (NORMAL) 结果输出至 [ffreport.log]
+18:43:16.435 / (NORMAL) 任务结束
+
+Task End: 2023/02/26 18:43:16
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\【连续8发，超大剂量】上海19岁大学生4P灌精后续.mp4
+
+

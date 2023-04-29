@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="a6f3fd69-c0d5-4902-adfe-92d0ef23c471" />
+          <option name="name" value="magnet" />
+          <option name="languageId" value="GenericSQL" />
+          <option name="urls">
+            <array>
+              <option value="file://$USER_HOME$/Desktop/magnet.sql" />
+            </array>
+          </option>
+        </State>
+      </list>
+    </option>
+  </component>
+</project>

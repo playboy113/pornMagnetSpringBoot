@@ -1,0 +1,19 @@
+﻿LOG 2023/02/27
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/27 23:22:53
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/34914/index.m3u8?t=1677513174&m=DSupg1zTkOYKYV-DnOG7QA --saveName 很骚的熟女
+
+23:22:53.928 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/34914/index.m3u8?t=1677513174&m=DSupg1zTkOYKYV-DnOG7QA
+23:22:58.936 / (NORMAL) 写出meta.json
+23:22:59.014 / (NORMAL) 开始下载文件
+23:23:02.733 / (NORMAL) 读取文件信息...
+23:23:02.878 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 320x240, 15 fps, 15 tbr, 90k tbn, 30 tbc
+23:23:02.878 / (NORMAL) PID 0x101: Audio aac, 22050 Hz, mono, fltp, 33 kb/s
+23:23:10.781 / (NORMAL) 开始合并分片...
+23:23:10.926 / (NORMAL) 结果输出至 [ffreport.log]
+23:23:10.926 / (NORMAL) 任务结束
+
+Task End: 2023/02/27 23:23:10
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\很骚的熟女.mp4
+
+

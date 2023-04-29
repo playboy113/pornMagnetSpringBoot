@@ -1,0 +1,19 @@
+﻿LOG 2023/02/26
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/26 21:00:08
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/770021/index.m3u8?t=1677418208&m=CvgVL3xYlcZ1BE-ndST3wQ --saveName 美国留学终于达成百人斩！10.少妇Tiffany
+
+21:00:08.912 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/770021/index.m3u8?t=1677418208&m=CvgVL3xYlcZ1BE-ndST3wQ
+21:00:11.318 / (NORMAL) 写出meta.json
+21:00:11.388 / (NORMAL) 开始下载文件
+21:00:14.151 / (NORMAL) 读取文件信息...
+21:00:16.993 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 202x360 [SAR 405:404 DAR 9:16], 60 fps, 60 tbr, 90k tbn, 120 tbc
+21:00:16.994 / (NORMAL) PID 0x101: Audio aac, 48000 Hz, stereo, fltp, 127 kb/s
+21:00:25.128 / (NORMAL) 开始合并分片...
+21:00:25.313 / (NORMAL) 结果输出至 [ffreport.log]
+21:00:25.318 / (NORMAL) 任务结束
+
+Task End: 2023/02/26 21:00:25
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\美国留学终于达成百人斩！10.少妇Tiffany.mp4
+
+

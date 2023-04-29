@@ -38,7 +38,7 @@ import static com.zhang.commons.PornIndexConstants.porn_types;
 public class PornIndexTest {
     @Autowired
     private RestHighLevelClient client;
-    @Autowired
+    //@Autowired
     //private porndoService porndoService;
 
 //    @Test
@@ -50,58 +50,58 @@ public class PornIndexTest {
 
 
 
-    @Test
-    void testExists() throws IOException {
-        GetIndexRequest request = new GetIndexRequest("porn_types");
-        boolean isExists = client.indices().exists(request, RequestOptions.DEFAULT);
-        System.out.println(isExists);
+//    @Test
+//    void testExists() throws IOException {
+//        GetIndexRequest request = new GetIndexRequest("porn_types");
+//        boolean isExists = client.indices().exists(request, RequestOptions.DEFAULT);
+//        System.out.println(isExists);
+//
+//    }
+//    @Test
+//    void  createIndex() throws IOException {
+//        CreateIndexRequest request = new CreateIndexRequest("porn_types");
+//        request.source(porn_types, XContentType.JSON);
+//        client.indices().create(request,RequestOptions.DEFAULT);
+//
+//
+//    }
 
-    }
-    @Test
-    void  createIndex() throws IOException {
-        CreateIndexRequest request = new CreateIndexRequest("porn_types");
-        request.source(porn_types, XContentType.JSON);
-        client.indices().create(request,RequestOptions.DEFAULT);
-
-
-    }
-
-    @Test
-    void deleteIndex() throws IOException {
-        DeleteIndexRequest req = new DeleteIndexRequest("porn_types");
-        client.indices().delete(req,RequestOptions.DEFAULT);
-    }
-    @Test
-    void deleteData(){
-        DeleteByQueryRequest deleteByQueryRequest = new DeleteByQueryRequest();
-        deleteByQueryRequest.setQuery(QueryBuilders.matchAllQuery());
-        deleteByQueryRequest.indices("porn_types");
-        try {
-            //3 通过deleteByQuery来发起删除请求
-            BulkByScrollResponse deleteResponse=client.deleteByQuery(deleteByQueryRequest , RequestOptions.DEFAULT);
-            if(deleteResponse.getDeleted() >=1){
-
-                System.out.println("deleteData,删除成功，删除文档条数: "+deleteResponse.getDeleted()+" ,indexName："+"porn_types");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-
-    }
+//    @Test
+//    void deleteIndex() throws IOException {
+//        DeleteIndexRequest req = new DeleteIndexRequest("porn_types");
+//        client.indices().delete(req,RequestOptions.DEFAULT);
+//    }
+//    @Test
+//    void deleteData(){
+//        DeleteByQueryRequest deleteByQueryRequest = new DeleteByQueryRequest();
+//        deleteByQueryRequest.setQuery(QueryBuilders.matchAllQuery());
+//        deleteByQueryRequest.indices("porn_types");
+//        try {
+//            //3 通过deleteByQuery来发起删除请求
+//            BulkByScrollResponse deleteResponse=client.deleteByQuery(deleteByQueryRequest , RequestOptions.DEFAULT);
+//            if(deleteResponse.getDeleted() >=1){
+//
+//                System.out.println("deleteData,删除成功，删除文档条数: "+deleteResponse.getDeleted()+" ,indexName："+"porn_types");
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
 
 
-    @BeforeEach
-    void setUp() {
-        client = new RestHighLevelClient(RestClient.builder(
-                HttpHost.create("http://124.71.239.157:9200")
-        ));
-    }
+    //}
 
-    @AfterEach
-    void tearDown() throws IOException {
-        client.close();
-    }
+
+//
+//    @BeforeEach
+//    void setUp() {
+//        client = new RestHighLevelClient(RestClient.builder(
+//                HttpHost.create("http://124.71.239.157:9200")
+//        ));
+//    }
+//
+//    @AfterEach
+//    void tearDown() throws IOException {
+//        client.close();
+//    }
 }

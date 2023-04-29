@@ -41,10 +41,15 @@ public class crawer_javdb {
 
         Connection conn = Jsoup.connect(url);
         Connection conHeader = conn.headers(header);
-        Document doc = conHeader.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
-        Elements elements = doc.getElementsByClass("item");
+
+
+
+
+
 
         try{
+            Document doc = conHeader.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
+            Elements elements = doc.getElementsByClass("item");
             for (Element element : elements) {
                 String inner_url = element.select("a").attr("href");
 
@@ -154,7 +159,8 @@ public class crawer_javdb {
         URLConnection conn=null;
         InputStream inputStream = null;
         BufferedInputStream bis = null;
-        String savePath = "D:\\java\\GitHub\\porndo_magnet\\web\\images";
+        //String savePath = "D:\\github\\pornMagnetSpringBoot\\searchModeul\\src\\main\\resources\\images";
+        String savePath = "D:\\images\\";
         OutputStream outputStream=null;
         BufferedOutputStream bos=null;
         try{

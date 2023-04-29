@@ -42,36 +42,36 @@ import static com.zhang.commons.PornIndexConstants.MAPPING_TEMPLATE;
 
 @SpringBootTest
 public class pornMapTest {
-
-    private RestHighLevelClient client;
-
-
-    @Test
-    void testExists() throws IOException {
-        GetIndexRequest request = new GetIndexRequest("pornmagnet");
-        boolean isExists = client.indices().exists(request, RequestOptions.DEFAULT);
-        System.out.println(isExists);
-
-    }
-
-
-
-    @Test
-    void createSearch() throws IOException {
-        CreateIndexRequest request = new CreateIndexRequest("pornmagnet");
-        request.source(MAPPING_TEMPLATE,XContentType.JSON);
-        client.indices().create(request,RequestOptions.DEFAULT);
-    }
-
-    @BeforeEach
-    void setUp() {
-        client = new RestHighLevelClient(RestClient.builder(
-                HttpHost.create("http://192.168.47.129:9200")
-        ));
-    }
-
-    @AfterEach
-    void tearDown() throws IOException {
-        client.close();
-    }
+//
+//    private RestHighLevelClient client;
+//
+//
+//    @Test
+//    void testExists() throws IOException {
+//        GetIndexRequest request = new GetIndexRequest("pornmagnet");
+//        boolean isExists = client.indices().exists(request, RequestOptions.DEFAULT);
+//        System.out.println(isExists);
+//
+//    }
+//
+//
+//
+//    @Test
+//    void createSearch() throws IOException {
+//        CreateIndexRequest request = new CreateIndexRequest("pornmagnet");
+//        request.source(MAPPING_TEMPLATE,XContentType.JSON);
+//        client.indices().create(request,RequestOptions.DEFAULT);
+//    }
+//
+//    @BeforeEach
+//    void setUp() {
+//        client = new RestHighLevelClient(RestClient.builder(
+//                HttpHost.create("http://192.168.47.129:9200")
+//        ));
+//    }
+//
+//    @AfterEach
+//    void tearDown() throws IOException {
+//        client.close();
+//    }
 }

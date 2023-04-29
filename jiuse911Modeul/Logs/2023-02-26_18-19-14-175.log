@@ -1,0 +1,25 @@
+﻿LOG 2023/02/26
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/26 18:19:14
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/768527/index.m3u8?t=1677408552&m=IWW0OlFO7ScdoqBfad6g2g --saveName 不再发了，寒心
+
+18:19:14.177 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/768527/index.m3u8?t=1677408552&m=IWW0OlFO7ScdoqBfad6g2g
+18:19:17.280 / (NORMAL) 写出meta.json
+18:19:17.345 / (NORMAL) 开始下载文件
+18:19:19.131 / (NORMAL) 读取文件信息...
+18:19:19.277 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], 24 fps, 24 tbr, 90k tbn, 48 tbc
+18:19:19.278 / (NORMAL) PID 0x101: Audio aac, 48000 Hz, stereo, fltp, 132 kb/s
+18:19:20.742 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768527/index5.ts
+18:19:20.921 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768527/index3.ts
+18:19:21.754 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768527/index5.ts
+18:19:21.925 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768527/index3.ts
+18:19:22.875 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768527/index3.ts
+18:19:23.888 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/768527/index3.ts
+18:19:29.118 / (NORMAL) 开始合并分片...
+18:19:29.255 / (NORMAL) 结果输出至 [ffreport.log]
+18:19:29.256 / (NORMAL) 任务结束
+
+Task End: 2023/02/26 18:19:29
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\不再发了，寒心.mp4
+
+

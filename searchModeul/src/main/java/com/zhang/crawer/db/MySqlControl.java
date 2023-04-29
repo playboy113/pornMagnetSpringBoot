@@ -97,11 +97,17 @@ public class MySqlControl {
     public static void insertTypes(String num,String[] splits) throws SQLException {
         String[][] params = new String[1][2];
         params[0][0]=num;
-        for (int i=0;i< splits.length;i++){
-            params[0][1] = splits[i];
+        if(splits == null){
+            params[0][1]=null;
             qr.batch("insert into magnet_type2(num,types) values(?,?)",params);
+        }else{
+            for (int i=0;i< splits.length;i++){
+                params[0][1] = splits[i];
+                qr.batch("insert into magnet_type2(num,types) values(?,?)",params);
 
+            }
         }
+
 
         qr.update("delete from magnet_types where num=''");
     }

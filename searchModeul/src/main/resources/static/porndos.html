@@ -26,6 +26,7 @@
     <script type="text/javascript" src="jquery/bootstrap-datetimepicker-master/locale/bootstrap-datetimepicker.zh-CN.js"></script>
     <script type="text/javascript" src="jquery/bs_pagination-master/js/jquery.bs_pagination.min.js"></script>
     <script type="text/javascript" src="jquery/bs_pagination-master/localization/en.js"></script>
+
     <script type="text/javascript">
 
     </script>
@@ -99,6 +100,9 @@
 
 
                 <button type="button" class="btn btn-default" id="queryActivityBtn">查询</button>
+                
+<!--                <img src=".\images\VOSS-133.jpg" width="600" height="300">-->
+
 <!---->
             </form>
         </div>
@@ -230,9 +234,27 @@
                 type:'post',
                 dataType:'json',
                 success:function (data){
-                    const clipboardObj = navigator.clipboard;
-                    clipboardObj.writeText(data.retStr);
+                    alert("进来了")
+
+
+                    //alert(data.retStr)
+                    //alert(data.magnetList)
+                    const cInput = document.createElement('input')
+                    cInput.value = data.retStr
+
+                    document.body.appendChild(cInput)
+                    cInput.select() // 选取文本域内容;
+                    // 执行浏览器复制命令
+                    // 复制命令会将当前选中的内容复制到剪切板中（这里就是创建的input标签）
+                    // Input要在正常的编辑状态下原生复制方法才会生效
+                    document.execCommand('Copy')
                     alert("复制成功")
+                    //alert("复制成功")
+                    //this.$notifice('success', '复制成功') // antd框架封装的通知,如使用别的UI框架，换掉这句
+
+                    /// 复制成功后再将构造的标签 移除
+                    cInput.remove()
+
                 }
             })
 
@@ -352,17 +374,31 @@
             type:'post',
             dataType:'json',
             success:function(data){
+                //alert(data.magnet)
 
-                const clipboardObj = navigator.clipboard;
+                const cInput = document.createElement('input')
+                cInput.value = data.magnet
+                document.body.appendChild(cInput)
+                cInput.select() // 选取文本域内容;
+                // 执行浏览器复制命令
+                // 复制命令会将当前选中的内容复制到剪切板中（这里就是创建的input标签）
+                // Input要在正常的编辑状态下原生复制方法才会生效
+                document.execCommand('Copy')
+                //this.$notifice('success', '复制成功') // antd框架封装的通知,如使用别的UI框架，换掉这句
+                //alert("复制成功")
+                /// 复制成功后再将构造的标签 移除
+                cInput.remove()
 
 
-                if (data.magnet != null){
-                    clipboardObj.writeText(data.magnet);
 
-                    alert("复制成功")
-                }else{
-                    alert("没有磁链");
-                }
+                // const clipboardObj = navigator.clipboard;
+                // if (data.magnet != null){
+                //     clipboardObj.writeText(data.magnet);
+                //
+                //     alert("复制成功")
+                // }else{
+                //     alert("没有磁链");
+                // }
 
 
             }

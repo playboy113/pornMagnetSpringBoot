@@ -1,0 +1,79 @@
+﻿LOG 2023/02/26
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/26 21:00:27
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/768712/index.m3u8?t=1677418226&m=2ypM2kRL6dQ3Q-JBKbP13w --saveName “我都哭了。你别说了，我好羞耻”OL少妇当着老公被后入3P
+
+21:00:27.136 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/768712/index.m3u8?t=1677418226&m=2ypM2kRL6dQ3Q-JBKbP13w
+21:00:32.098 / (NORMAL) 写出meta.json
+21:00:32.165 / (NORMAL) 开始下载文件
+21:00:34.296 / (NORMAL) 读取文件信息...
+21:00:34.435 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], 30 fps, 30 tbr, 90k tbn, 60 tbc
+21:00:34.437 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+21:00:35.866 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index4.ts
+21:00:35.887 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index6.ts
+21:00:36.134 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index3.ts
+21:00:36.146 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index10.ts
+21:00:36.873 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768712/index4.ts
+21:00:36.889 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768712/index6.ts
+21:00:37.137 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768712/index3.ts
+21:00:37.152 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768712/index10.ts
+21:00:38.034 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index12.ts
+21:00:38.326 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index14.ts
+21:00:38.856 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index13.ts
+21:00:39.044 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768712/index12.ts
+21:00:39.341 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768712/index14.ts
+21:00:39.404 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index16.ts
+21:00:39.743 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index10.ts
+21:00:39.858 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768712/index13.ts
+21:00:39.968 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index12.ts
+21:00:40.269 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index14.ts
+21:00:40.324 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index6.ts
+21:00:40.372 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index17.ts
+21:00:40.412 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768712/index16.ts
+21:00:40.749 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/768712/index10.ts
+21:00:40.982 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/768712/index12.ts
+21:00:41.276 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/768712/index14.ts
+21:00:41.337 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/768712/index6.ts
+21:00:41.383 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768712/index17.ts
+21:00:41.715 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index18.ts
+21:00:41.834 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index10.ts
+21:00:42.056 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index16.ts
+21:00:42.722 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768712/index18.ts
+21:00:42.728 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index14.ts
+21:00:42.844 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/768712/index10.ts
+21:00:42.867 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index20.ts
+21:00:42.868 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index6.ts
+21:00:43.060 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/768712/index16.ts
+21:00:43.435 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index17.ts
+21:00:43.670 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index18.ts
+21:00:43.736 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/768712/index14.ts
+21:00:43.875 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/768712/index6.ts
+21:00:43.876 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768712/index20.ts
+21:00:44.069 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index10.ts
+21:00:44.323 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index22.ts
+21:00:44.450 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/768712/index17.ts
+21:00:44.483 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index16.ts
+21:00:44.666 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index14.ts
+21:00:44.685 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/768712/index18.ts
+21:00:44.785 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index20.ts
+21:00:45.330 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/768712/index22.ts
+21:00:45.486 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/768712/index16.ts
+21:00:45.786 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/768712/index20.ts
+21:00:46.146 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index6.ts
+21:00:46.733 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index20.ts
+21:00:47.090 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index17.ts
+21:00:47.741 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/768712/index20.ts
+21:00:47.898 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/768712/index22.ts
+21:00:48.097 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/768712/index17.ts
+21:00:48.900 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/768712/index22.ts
+21:00:57.425 / (NORMAL) 完成数量 21 of 24
+21:00:57.426 / (NORMAL) 重试次数 1 / 15
+21:01:00.443 / (NORMAL) 开始下载文件
+21:01:05.008 / (NORMAL) 开始合并分片...
+21:01:05.203 / (NORMAL) 结果输出至 [ffreport.log]
+21:01:05.203 / (NORMAL) 任务结束
+
+Task End: 2023/02/26 21:01:05
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\“我都哭了。你别说了，我好羞耻”OL少妇当着老公被后入3P.mp4
+
+
