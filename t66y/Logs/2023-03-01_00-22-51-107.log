@@ -1,0 +1,52 @@
+﻿LOG 2023/03/01
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/03/01 00:22:51
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/530668/index.m3u8?t=1677603168&m=EbMmdXQsZETQG9H7tZAlBA --saveName 真实！第一次约老师！很骚！
+
+00:22:51.109 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/530668/index.m3u8?t=1677603168&m=EbMmdXQsZETQG9H7tZAlBA
+00:22:54.679 / (NORMAL) 写出meta.json
+00:22:54.751 / (NORMAL) 开始下载文件
+00:22:55.653 / (NORMAL) 读取文件信息...
+00:22:55.780 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x354 [SAR 1121:1125 DAR 76:45], 25 fps, 25 tbr, 90k tbn, 50 tbc
+00:22:55.782 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+00:22:56.891 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index2.ts
+00:22:57.730 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index4.ts
+00:22:57.905 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/530668/index2.ts
+00:22:58.018 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index9.ts
+00:22:58.738 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/530668/index4.ts
+00:22:59.022 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/530668/index9.ts
+00:22:59.152 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index12.ts
+00:22:59.763 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index4.ts
+00:22:59.825 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index13.ts
+00:23:00.164 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/530668/index12.ts
+00:23:00.213 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index2.ts
+00:23:00.777 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/530668/index4.ts
+00:23:00.840 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/530668/index13.ts
+00:23:01.229 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/530668/index2.ts
+00:23:01.502 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index15.ts
+00:23:01.774 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index16.ts
+00:23:01.789 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index4.ts
+00:23:02.104 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index17.ts
+00:23:02.308 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index2.ts
+00:23:02.515 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/530668/index15.ts
+00:23:02.779 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/530668/index16.ts
+00:23:02.795 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/530668/index4.ts
+00:23:03.107 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/530668/index17.ts
+00:23:03.189 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index12.ts
+00:23:03.312 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/530668/index2.ts
+00:23:03.533 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index15.ts
+00:23:04.192 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/530668/index12.ts
+00:23:04.307 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index2.ts
+00:23:04.537 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/530668/index15.ts
+00:23:04.660 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/530668/index4.ts
+00:23:13.714 / (NORMAL) 完成数量 17 of 19
+00:23:13.715 / (NORMAL) 重试次数 1 / 15
+00:23:16.723 / (NORMAL) 开始下载文件
+00:23:20.770 / (NORMAL) 开始合并分片...
+00:23:20.926 / (NORMAL) 结果输出至 [ffreport.log]
+00:23:20.927 / (NORMAL) 任务结束
+
+Task End: 2023/03/01 00:23:20
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\真实！第一次约老师！很骚！.mp4
+
+

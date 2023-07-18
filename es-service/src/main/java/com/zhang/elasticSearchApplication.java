@@ -23,7 +23,7 @@ public class elasticSearchApplication {
     @Bean
     public RestHighLevelClient restHighLevelClient(){
         return new RestHighLevelClient(RestClient.builder(
-                HttpHost.create("http://124.71.239.157:9200")
+                HttpHost.create("http://164.88.199.77:9200")
         ));
     }
     @Bean

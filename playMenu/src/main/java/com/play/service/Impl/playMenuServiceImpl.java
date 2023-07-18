@@ -1,8 +1,10 @@
 package com.play.service.Impl;
 
+import com.play.entity.magnet_model;
 import com.play.mapper.magnet_actressMapper;
+import com.play.mapper.magnet_modelMapper;
 import com.play.service.playMenuService;
-import com.play.tools.getLocalFileNames;
+
 import com.play.tools.getLocalFileNamesUserFile;
 import jcifs.smb.SmbException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,11 +13,14 @@ import org.springframework.stereotype.Service;
 
 import java.net.MalformedURLException;
 import java.util.List;
+import java.util.Map;
 
 @Service("playMenu")
 public class playMenuServiceImpl implements playMenuService {
     @Autowired
     private magnet_actressMapper magnet_actressMapper;
+    @Autowired
+    private magnet_modelMapper magnet_modelMapper;
 
     @Override
     public List<String> selectForAllActressInMysql() {
@@ -54,5 +59,10 @@ public class playMenuServiceImpl implements playMenuService {
     @Cacheable(value="selectNumInDB")
     public List<String> selectNumInDB() {
         return magnet_actressMapper.selectNumInDB();
+    }
+
+    @Override
+    public List<magnet_model> queryMagnetByConditions(Map<String, Object> map) {
+        return magnet_modelMapper.queryMagnetByConditions(map);
     }
 }

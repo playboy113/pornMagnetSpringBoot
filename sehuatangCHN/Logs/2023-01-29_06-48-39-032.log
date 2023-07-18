@@ -1,0 +1,19 @@
+﻿LOG 2023/01/29
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/01/29 06:48:39
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/753515/index.m3u8?t=1674947909&m=QAmEuV-NywN6Q0EASWtqNA --saveName “你妹妹能全自动操我，我也可以！”重庆姐妹花-姐姐二次约
+
+06:48:39.032 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/753515/index.m3u8?t=1674947909&m=QAmEuV-NywN6Q0EASWtqNA
+06:48:41.859 / (NORMAL) 写出meta.json
+06:48:41.921 / (NORMAL) 开始下载文件
+06:48:41.952 / (NORMAL) 读取文件信息...
+06:48:41.984 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336, 30 fps, 30 tbr, 90k tbn, 60 tbc
+06:48:41.984 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+06:48:41.999 / (NORMAL) 开始合并分片...
+06:48:42.165 / (NORMAL) 结果输出至 [ffreport.log]
+06:48:42.165 / (NORMAL) 任务结束
+
+Task End: 2023/01/29 06:48:42
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\“你妹妹能全自动操我，我也可以！”重庆姐妹花-姐姐二次约_2023-01-29_06-48-41.mp4
+
+

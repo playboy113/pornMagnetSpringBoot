@@ -1,0 +1,33 @@
+﻿LOG 2023/02/27
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/27 22:04:17
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/253461/index.m3u8?t=1677508457&m=TsBIXMlVrQmRpEVLCkc_0Q --saveName 重磅炸弹！20厘米巨屌黑人操北京极品巨乳美熟女！
+
+22:04:17.716 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/253461/index.m3u8?t=1677508457&m=TsBIXMlVrQmRpEVLCkc_0Q
+22:04:21.350 / (NORMAL) 写出meta.json
+22:04:21.428 / (NORMAL) 开始下载文件
+22:04:22.721 / (NORMAL) 读取文件信息...
+22:04:22.863 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 480x268, 25 fps, 25 tbr, 90k tbn, 50 tbc
+22:04:22.865 / (NORMAL) PID 0x101: Audio aac, 22050 Hz, stereo, fltp, 133 kb/s
+22:04:25.062 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/253461/index10.ts
+22:04:25.072 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/253461/index7.ts
+22:04:25.271 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/253461/index4.ts
+22:04:25.391 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/253461/index2.ts
+22:04:26.074 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/253461/index7.ts
+22:04:26.075 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/253461/index10.ts
+22:04:26.276 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/253461/index4.ts
+22:04:26.401 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/253461/index2.ts
+22:04:27.729 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/253461/index7.ts
+22:04:27.821 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/253461/index2.ts
+22:04:27.928 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/253461/index4.ts
+22:04:28.740 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/253461/index7.ts
+22:04:28.832 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/253461/index2.ts
+22:04:28.941 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/253461/index4.ts
+22:04:36.772 / (NORMAL) 开始合并分片...
+22:04:36.953 / (NORMAL) 结果输出至 [ffreport.log]
+22:04:36.954 / (NORMAL) 任务结束
+
+Task End: 2023/02/27 22:04:36
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\重磅炸弹！20厘米巨屌黑人操北京极品巨乳美熟女！.mp4
+
+

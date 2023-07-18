@@ -1,0 +1,35 @@
+﻿LOG 2023/01/29
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/01/29 18:07:25
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/596918/index.m3u8?t=1674988647&m=M7EpBr-tyl6AS90rBtP_4A --saveName 原创冒死露屌勾引顺风车熟女人妻乘客
+
+18:07:25.014 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/596918/index.m3u8?t=1674988647&m=M7EpBr-tyl6AS90rBtP_4A
+18:07:28.158 / (NORMAL) 写出meta.json
+18:07:28.219 / (NORMAL) 开始下载文件
+18:07:29.865 / (NORMAL) 读取文件信息...
+18:07:29.952 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336, 30 fps, 30 tbr, 90k tbn, 60 tbc
+18:07:29.952 / (NORMAL) PID 0x101: Audio aac, 48000 Hz, stereo, fltp, 112 kb/s
+18:07:31.545 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/596918/index8.ts
+18:07:31.551 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/596918/index4.ts
+18:07:31.961 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/596918/index5.ts
+18:07:32.559 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/596918/index4.ts
+18:07:32.559 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/596918/index8.ts
+18:07:32.967 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/596918/index5.ts
+18:07:33.581 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/596918/index12.ts
+18:07:33.910 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/596918/index8.ts
+18:07:34.409 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/596918/index5.ts
+18:07:34.583 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/596918/index12.ts
+18:07:34.914 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/596918/index8.ts
+18:07:34.987 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/596918/index4.ts
+18:07:35.413 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/596918/index5.ts
+18:07:35.994 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/596918/index4.ts
+18:07:36.252 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/596918/index8.ts
+18:07:37.263 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/596918/index8.ts
+18:07:45.221 / (NORMAL) 开始合并分片...
+18:07:45.336 / (NORMAL) 结果输出至 [ffreport.log]
+18:07:45.336 / (NORMAL) 任务结束
+
+Task End: 2023/01/29 18:07:45
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\原创冒死露屌勾引顺风车熟女人妻乘客.mp4
+
+

@@ -1,0 +1,32 @@
+ffmpeg started on 2023-02-26 at 18:19:29
+Report written to "D:/java/GitHub/pornMagnetSpringBoot/jiuse911Modeul/Logs/2023-02-26_18-19-14-175_ffreport.log"
+Command line:
+"D:\\java\\GitHub\\pornMagnetSpringBoot\\ffmpeg.exe" -loglevel warning -i "concat:00.ts|01.ts|02.ts|03.ts|04.ts|05.ts|06.ts|07.ts|08.ts|09.ts|" -map "0:v?" -map "0:a?" -map "0:s?" -metadata "date=2023-02-26T18:19:29.1234102+08:00" -metadata "encoding_tool=" -metadata "title=" -metadata "copyright=" -metadata "comment=" -metadata:s:a:0 "handler_name=" -metadata:s:a:0 "handler=" -c copy -y -bsf:a aac_adtstoasc "D:\\java\\GitHub\\pornMagnetSpringBoot\\Downloads\\\xb2\xbb\xd4\xd9\xb7\xa2\xc1\xcb\xa3\xac\xba\xae\xd0\xc4.mp4"
+ffmpeg version N-94813-g85386c36e3-ffmpeg-for-N_m3u8DL-CLI Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 8.2.0 (GCC)
+  libavutil      56. 35.100 / 56. 35.100
+  libavcodec     58. 56.101 / 58. 56.101
+  libavformat    58. 32.104 / 58. 32.104
+  libavfilter     7. 58.102 /  7. 58.102
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswresample   3.  6.100 /  3.  6.100
+Input #0, mpegts, from 'concat:00.ts|01.ts|02.ts|03.ts|04.ts|05.ts|06.ts|07.ts|08.ts|09.ts|':
+  Duration: 00:01:38.60, start: 1.462000, bitrate: 624 kb/s
+  Program 1 
+    Metadata:
+      service_name    : Service01
+      service_provider: FFmpeg
+    Stream #0:0[0x100]: Video: h264 ([27][0][0][0] / 0x001B), yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], 24 fps, 24 tbr, 90k tbn, 48 tbc
+    Stream #0:1[0x101](eng): Audio: aac ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, 132 kb/s
+Output #0, mp4, to 'D:\java\GitHub\pornMagnetSpringBoot\Downloads\不再发了，寒心.mp4':
+  Metadata:
+    date            : 2023-02-26T18:19:29.1234102+08:00
+    encoder         : Lavf58.32.104
+    Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], q=2-31, 24 fps, 24 tbr, 90k tbn, 90k tbc
+    Stream #0:1(eng): Audio: aac (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 132 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame= 2366 fps=0.0 q=-1.0 Lsize=    7047kB time=00:01:38.58 bitrate= 585.6kbits/s speed=2.69e+03x    
+video:5433kB audio:1553kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.881736%

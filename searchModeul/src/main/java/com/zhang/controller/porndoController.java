@@ -127,7 +127,7 @@ public class porndoController {
         System.out.println(retStr);
 
         retMap.put("magnetList",magnetList);
-        retMap.put("retStr", retStr.toString());
+        retMap.put("retStr", retStr);
         return retMap;
     }
     @RequestMapping("/searchPage.do")

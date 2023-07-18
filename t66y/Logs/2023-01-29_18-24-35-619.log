@@ -1,0 +1,37 @@
+﻿LOG 2023/01/29
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/01/29 18:24:35
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/102231/index.m3u8?t=1674989677&m=pMb-R-PvIUOVEQ_SACtafQ --saveName 上海人妻,强暴,捆绑,插到抽搐,有验证
+
+18:24:35.619 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/102231/index.m3u8?t=1674989677&m=pMb-R-PvIUOVEQ_SACtafQ
+18:24:39.052 / (NORMAL) 写出meta.json
+18:24:39.123 / (NORMAL) 开始下载文件
+18:24:41.624 / (NORMAL) 读取文件信息...
+18:24:41.685 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 480x270, 30 fps, 30 tbr, 90k tbn, 60 tbc
+18:24:41.685 / (NORMAL) PID 0x101: Audio aac, 22050 Hz, stereo, fltp, 127 kb/s
+18:24:43.355 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/102231/index4.ts
+18:24:43.369 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/102231/index3.ts
+18:24:43.413 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/102231/index6.ts
+18:24:44.037 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/102231/index10.ts
+18:24:44.371 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/102231/index3.ts
+18:24:44.371 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/102231/index4.ts
+18:24:44.419 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/102231/index6.ts
+18:24:45.044 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/102231/index10.ts
+18:24:45.760 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/102231/index3.ts
+18:24:45.784 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/102231/index6.ts
+18:24:45.930 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/102231/index12.ts
+18:24:46.764 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/102231/index13.ts
+18:24:46.766 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/102231/index3.ts
+18:24:46.797 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/102231/index6.ts
+18:24:46.938 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/102231/index12.ts
+18:24:47.777 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/102231/index13.ts
+18:24:48.284 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/102231/index12.ts
+18:24:49.295 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/102231/index12.ts
+18:24:57.719 / (NORMAL) 开始合并分片...
+18:24:57.798 / (NORMAL) 结果输出至 [ffreport.log]
+18:24:57.798 / (NORMAL) 任务结束
+
+Task End: 2023/01/29 18:24:57
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\上海人妻,强暴,捆绑,插到抽搐,有验证.mp4
+
+

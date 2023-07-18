@@ -1,7 +1,11 @@
 package com.play.controller;
 
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.play.config.RedisUtils;
+import com.play.entity.magnet_model;
 import com.play.service.playMenuService;
 import com.play.service.typesService;
 import jcifs.smb.SmbException;
@@ -89,7 +93,7 @@ public class playMenuController {
         for(String n:numList){
             for (String v:videoList){
                 if(v.toUpperCase().contains(n)){
-                    String s = v.replaceAll(":","").replaceAll("\\\\","/");
+                    String s = v.replaceAll(":","/").replaceAll("\\\\","/");
                     resultMap.put(n,"/"+s);
 
                     System.out.println(s.toUpperCase());
@@ -135,16 +139,20 @@ public class playMenuController {
     @RequestMapping("/queryVideosByType.do")
     @ResponseBody
     public Object queryVideosByType(String type) throws SmbException, MalformedURLException {
-        List<String> numList = typesService.selectVideosByType(type);
+         String[] types= JSON.parseArray(type).toArray(new String[0]);
+
+
+        List<String> numList = typesService.selectVideosByType(types);
+
         List<String> videoList = playMenuService.selectLocalFiles();
-        System.out.println(numList);
+
 
 
         Map<String, String> resultMap = new HashMap<String,String>();
         for(String n:numList){
             for (String v:videoList){
                 if(v.toUpperCase().contains(n)){
-                    String s = v.replaceAll(":","").replaceAll("\\\\","/");
+                    String s = v.replaceAll(":","/").replaceAll("\\\\","/");
                     resultMap.put(n,"/"+s);
 
                     System.out.println(s.toUpperCase());
@@ -155,6 +163,39 @@ public class playMenuController {
 
         return resultMap;
 
+
+    }
+    @RequestMapping("/localPornes.do")
+    @ResponseBody
+    public Object queryLocalPornes(String title, String actress, String subline, String HD, String num, String types, String date,String producer) throws SmbException, MalformedURLException {
+        Map<String,Object> map = new HashMap<>();
+        map.put("title",title);
+        map.put("actress",actress);
+        map.put("subline",subline);
+        map.put("HD",HD);
+        map.put("num",num);
+        map.put("types",types);
+
+        map.put("date",date);
+        map.put("producer",producer);
+        //根据条件在mysql数据库中把所有的对象都找出来
+        List<magnet_model> magnetModelList = playMenuService.queryMagnetByConditions(map);
+
+        //本地磁盘中片名
+        List<String> videoList = playMenuService.selectLocalFiles();
+        //最后的结果
+        Map retMap = new HashMap<String,magnet_model>();
+
+        for (magnet_model m:magnetModelList){
+            for (String v:videoList){
+                if (v.toUpperCase().contains(m.getNum())){
+                    String s = v.replaceAll(":","/").replaceAll("\\\\","/");
+                    retMap.put(s,m);
+
+                }
+            }
+        }
+        return retMap;
 
     }
 

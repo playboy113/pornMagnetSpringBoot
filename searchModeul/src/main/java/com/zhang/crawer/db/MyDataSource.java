@@ -10,7 +10,7 @@ public class MyDataSource {
         BasicDataSource ds = new BasicDataSource();
         ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
         ds.setUsername("root");
-        ds.setPassword("root");
+        ds.setPassword("123456");
         ds.setUrl(connectURI);
         return ds;
     }

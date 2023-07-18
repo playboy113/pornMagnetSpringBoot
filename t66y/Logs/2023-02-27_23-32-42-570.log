@@ -1,0 +1,75 @@
+﻿LOG 2023/02/27
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/27 23:32:42
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/679155/index.m3u8?t=1677513763&m=FQ1G947LKsqcVewFdw1zLA --saveName 午休和公司熟女同事偷偷在休息室啪啪，晚上怕被他老公发现
+
+23:32:42.586 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/679155/index.m3u8?t=1677513763&m=FQ1G947LKsqcVewFdw1zLA
+23:32:46.246 / (NORMAL) 写出meta.json
+23:32:46.301 / (NORMAL) 开始下载文件
+23:32:48.100 / (NORMAL) 读取文件信息...
+23:32:48.394 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336, 30 fps, 30 tbr, 90k tbn, 60 tbc
+23:32:48.394 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+23:32:49.785 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index2.ts
+23:32:50.801 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/679155/index2.ts
+23:32:50.915 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index8.ts
+23:32:51.587 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index11.ts
+23:32:51.605 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index10.ts
+23:32:51.920 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/679155/index8.ts
+23:32:52.403 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index12.ts
+23:32:52.591 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/679155/index11.ts
+23:32:52.607 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/679155/index10.ts
+23:32:53.412 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/679155/index12.ts
+23:32:53.867 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index10.ts
+23:32:54.153 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index14.ts
+23:32:54.577 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index8.ts
+23:32:54.875 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/679155/index10.ts
+23:32:55.037 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index12.ts
+23:32:55.068 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index16.ts
+23:32:55.160 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/679155/index14.ts
+23:32:55.584 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/679155/index8.ts
+23:32:55.636 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index17.ts
+23:32:56.043 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/679155/index12.ts
+23:32:56.074 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/679155/index16.ts
+23:32:56.169 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index18.ts
+23:32:56.438 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index14.ts
+23:32:56.640 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/679155/index17.ts
+23:32:57.194 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/679155/index18.ts
+23:32:57.265 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index8.ts
+23:32:57.448 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/679155/index14.ts
+23:32:57.528 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index16.ts
+23:32:58.138 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index12.ts
+23:32:58.198 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index20.ts
+23:32:58.282 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/679155/index8.ts
+23:32:58.542 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/679155/index16.ts
+23:32:58.852 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index21.ts
+23:32:58.868 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index14.ts
+23:32:59.140 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/679155/index12.ts
+23:32:59.203 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/679155/index20.ts
+23:32:59.634 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index8.ts
+23:32:59.836 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index23.ts
+23:32:59.853 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/679155/index21.ts
+23:32:59.869 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/679155/index14.ts
+23:33:00.442 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index12.ts
+23:33:00.842 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/679155/index23.ts
+23:33:00.878 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index25.ts
+23:33:01.071 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index14.ts
+23:33:01.101 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index21.ts
+23:33:01.891 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/679155/index25.ts
+23:33:02.107 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index23.ts
+23:33:02.110 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/679155/index21.ts
+23:33:03.117 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/679155/index23.ts
+23:33:03.437 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/679155/index21.ts
+23:33:04.453 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/679155/index21.ts
+23:33:08.573 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/679155/index16.ts
+23:33:09.578 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/679155/index16.ts
+23:33:13.701 / (NORMAL) 完成数量 23 of 26
+23:33:13.701 / (NORMAL) 重试次数 1 / 15
+23:33:16.719 / (NORMAL) 开始下载文件
+23:33:25.972 / (NORMAL) 开始合并分片...
+23:33:26.201 / (NORMAL) 结果输出至 [ffreport.log]
+23:33:26.217 / (NORMAL) 任务结束
+
+Task End: 2023/02/27 23:33:26
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\午休和公司熟女同事偷偷在休息室啪啪，晚上怕被他老公发现.mp4
+
+

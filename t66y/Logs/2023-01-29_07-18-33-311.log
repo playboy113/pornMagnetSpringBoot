@@ -1,0 +1,75 @@
+﻿LOG 2023/01/29
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/01/29 07:18:33
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/751317/index.m3u8?t=1674949704&m=f4Vqj0uPvdiT0scDDfMHRg --saveName 一个视频教会你PUA，女大学生乖乖听话露脸3P拍视频
+
+07:18:33.311 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/751317/index.m3u8?t=1674949704&m=f4Vqj0uPvdiT0scDDfMHRg
+07:18:36.130 / (NORMAL) 写出meta.json
+07:18:36.193 / (NORMAL) 开始下载文件
+07:18:37.204 / (NORMAL) 读取文件信息...
+07:18:37.243 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], 30 fps, 30 tbr, 90k tbn, 60 tbc
+07:18:37.243 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+07:18:38.467 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index2.ts
+07:18:38.474 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index8.ts
+07:18:38.477 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index3.ts
+07:18:39.419 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index10.ts
+07:18:39.474 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/751317/index8.ts
+07:18:39.474 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/751317/index2.ts
+07:18:39.489 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/751317/index3.ts
+07:18:40.435 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/751317/index10.ts
+07:18:40.667 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index8.ts
+07:18:40.692 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index2.ts
+07:18:40.697 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index3.ts
+07:18:41.395 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index13.ts
+07:18:41.661 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index10.ts
+07:18:41.676 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/751317/index8.ts
+07:18:41.692 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/751317/index2.ts
+07:18:41.708 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/751317/index3.ts
+07:18:42.389 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index15.ts
+07:18:42.399 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/751317/index13.ts
+07:18:42.667 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/751317/index10.ts
+07:18:42.874 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index8.ts
+07:18:42.880 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index2.ts
+07:18:42.898 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index3.ts
+07:18:43.402 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/751317/index15.ts
+07:18:43.411 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index17.ts
+07:18:43.704 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index18.ts
+07:18:43.886 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/751317/index2.ts
+07:18:43.886 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/751317/index8.ts
+07:18:43.891 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index10.ts
+07:18:43.902 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/751317/index3.ts
+07:18:44.398 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index19.ts
+07:18:44.426 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/751317/index17.ts
+07:18:44.610 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index15.ts
+07:18:44.711 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/751317/index18.ts
+07:18:44.901 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/751317/index10.ts
+07:18:45.086 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index2.ts
+07:18:45.088 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index8.ts
+07:18:45.111 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index3.ts
+07:18:45.403 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/751317/index19.ts
+07:18:45.404 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index21.ts
+07:18:45.624 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/751317/index15.ts
+07:18:45.682 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index22.ts
+07:18:45.933 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index18.ts
+07:18:46.086 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index10.ts
+07:18:46.406 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/751317/index21.ts
+07:18:46.691 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/751317/index22.ts
+07:18:46.881 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index15.ts
+07:18:46.942 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/751317/index18.ts
+07:18:47.880 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index22.ts
+07:18:47.891 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/751317/index15.ts
+07:18:48.145 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index18.ts
+07:18:48.892 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/751317/index22.ts
+07:18:49.147 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/751317/index18.ts
+07:18:50.351 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/751317/index18.ts
+07:18:55.512 / (NORMAL) 完成数量 18 of 23
+07:18:55.512 / (NORMAL) 重试次数 1 / 15
+07:18:58.529 / (NORMAL) 开始下载文件
+07:19:04.620 / (NORMAL) 开始合并分片...
+07:19:04.741 / (NORMAL) 结果输出至 [ffreport.log]
+07:19:04.741 / (NORMAL) 任务结束
+
+Task End: 2023/01/29 07:19:04
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\一个视频教会你PUA，女大学生乖乖听话露脸3P拍视频.mp4
+
+

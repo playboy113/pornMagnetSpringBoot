@@ -1,0 +1,39 @@
+﻿LOG 2023/02/27
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/27 23:23:13
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/590257/index.m3u8?t=1677513192&m=GGWPcf0LjWZSj4u1uie06Q --saveName 35岁的知性中年熟女太诱人了
+
+23:23:13.207 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/590257/index.m3u8?t=1677513192&m=GGWPcf0LjWZSj4u1uie06Q
+23:23:18.351 / (NORMAL) 写出meta.json
+23:23:18.481 / (NORMAL) 开始下载文件
+23:23:22.070 / (NORMAL) 读取文件信息...
+23:23:22.207 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x416 [SAR 1839:1841 DAR 137925:95732], 25 fps, 25 tbr, 90k tbn, 50 tbc
+23:23:22.207 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+23:23:23.528 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/590257/index3.ts
+23:23:23.751 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/590257/index6.ts
+23:23:24.001 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/590257/index8.ts
+23:23:24.366 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/590257/index10.ts
+23:23:24.543 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/590257/index3.ts
+23:23:24.761 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/590257/index6.ts
+23:23:25.011 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/590257/index8.ts
+23:23:25.376 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/590257/index10.ts
+23:23:26.049 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/590257/index12.ts
+23:23:26.115 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/590257/index13.ts
+23:23:26.316 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/590257/index8.ts
+23:23:27.023 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/590257/index6.ts
+23:23:27.050 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/590257/index12.ts
+23:23:27.129 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/590257/index13.ts
+23:23:27.326 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/590257/index8.ts
+23:23:28.023 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/590257/index6.ts
+23:23:28.370 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/590257/index13.ts
+23:23:29.281 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/590257/index6.ts
+23:23:29.376 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/590257/index13.ts
+23:23:30.284 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/590257/index6.ts
+23:23:38.248 / (NORMAL) 开始合并分片...
+23:23:38.417 / (NORMAL) 结果输出至 [ffreport.log]
+23:23:38.417 / (NORMAL) 任务结束
+
+Task End: 2023/02/27 23:23:38
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\35岁的知性中年熟女太诱人了.mp4
+
+

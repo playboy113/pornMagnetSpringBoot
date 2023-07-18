@@ -6,5 +6,5 @@ public interface typesService {
 
     List<String> selectAllTypes();
 
-    List<String> selectVideosByType(String type);
+    List<String> selectVideosByType(String[] type);
 }

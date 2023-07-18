@@ -1,0 +1,47 @@
+﻿LOG 2023/01/29
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/01/29 08:29:47
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/748771/index.m3u8?t=1674953978&m=5HLdivKrDmVnaRgHYyZcUg --saveName 把兄弟女友从处女草成母狗！记录18岁母狗的挨草岁月！
+
+08:29:47.967 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/748771/index.m3u8?t=1674953978&m=5HLdivKrDmVnaRgHYyZcUg
+08:29:50.785 / (NORMAL) 写出meta.json
+08:29:50.857 / (NORMAL) 开始下载文件
+08:29:52.153 / (NORMAL) 读取文件信息...
+08:29:52.180 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 202x360, 29 fps, 29 tbr, 90k tbn, 58 tbc
+08:29:52.180 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 128 kb/s
+08:29:53.413 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index2.ts
+08:29:53.426 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index6.ts
+08:29:53.429 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index9.ts
+08:29:54.084 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index10.ts
+08:29:54.426 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/748771/index2.ts
+08:29:54.442 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/748771/index6.ts
+08:29:54.442 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/748771/index9.ts
+08:29:55.086 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/748771/index10.ts
+08:29:55.632 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index6.ts
+08:29:55.642 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index9.ts
+08:29:55.648 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index2.ts
+08:29:56.105 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index13.ts
+08:29:56.277 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index10.ts
+08:29:56.313 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index14.ts
+08:29:56.645 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/748771/index6.ts
+08:29:56.645 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/748771/index9.ts
+08:29:56.661 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/748771/index2.ts
+08:29:57.114 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/748771/index13.ts
+08:29:57.287 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/748771/index10.ts
+08:29:57.319 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/748771/index14.ts
+08:29:57.862 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index6.ts
+08:29:58.297 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index13.ts
+08:29:58.533 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index14.ts
+08:29:58.868 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/748771/index6.ts
+08:29:59.303 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/748771/index13.ts
+08:29:59.540 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/748771/index14.ts
+08:30:00.786 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/748771/index14.ts
+08:30:01.787 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/748771/index14.ts
+08:30:06.408 / (NORMAL) 开始合并分片...
+08:30:06.486 / (NORMAL) 结果输出至 [ffreport.log]
+08:30:06.486 / (NORMAL) 任务结束
+
+Task End: 2023/01/29 08:30:06
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\把兄弟女友从处女草成母狗！记录18岁母狗的挨草岁月！.mp4
+
+

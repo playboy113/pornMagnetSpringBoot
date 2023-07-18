@@ -1,0 +1,32 @@
+ffmpeg started on 2023-01-29 at 06:00:28
+Report written to "D:/java/GitHub/pornMagnetSpringBoot/jiuse911Modeul/Logs/2023-01-29_06-00-02-286_ffreport.log"
+Command line:
+"D:\\java\\GitHub\\pornMagnetSpringBoot\\ffmpeg.exe" -loglevel warning -i "concat:00.ts|01.ts|02.ts|03.ts|04.ts|05.ts|06.ts|07.ts|08.ts|09.ts|10.ts|11.ts|12.ts|13.ts|14.ts|15.ts|16.ts|" -map "0:v?" -map "0:a?" -map "0:s?" -metadata "date=2023-01-29T06:00:28.1687624+08:00" -metadata "encoding_tool=" -metadata "title=" -metadata "copyright=" -metadata "comment=" -metadata:s:a:0 "handler_name=" -metadata:s:a:0 "handler=" -c copy -y -bsf:a aac_adtstoasc "D:\\java\\GitHub\\pornMagnetSpringBoot\\Downloads\\\xd0\xc2\xc5\xae\xd0\xf8\xbc\xaf\xa3\xa1\xa1\xb0\xb0\xa1\xb0\xa1\xce\xd2\xb2\xbb\xd0\xd0\xc1\xcb\xd3\xd6\xd2\xaa\xb8\xdf\xb3\xb1\xc1\xcb\xa3\xa1\xa1\xb1\xcd\xb5\xc7\xe9\xc5\xae\xd3\xd1\xc3\xdb\xcc\xd2\xcd\xce\xcd\xac\xca\xc2\xa3\xa1\xb8\xdf\xb3\xb1\xca\xae\xb6\xe0\xb4\xce.mp4"
+ffmpeg version N-94813-g85386c36e3-ffmpeg-for-N_m3u8DL-CLI Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 8.2.0 (GCC)
+  libavutil      56. 35.100 / 56. 35.100
+  libavcodec     58. 56.101 / 58. 56.101
+  libavformat    58. 32.104 / 58. 32.104
+  libavfilter     7. 58.102 /  7. 58.102
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswresample   3.  6.100 /  3.  6.100
+Input #0, mpegts, from 'concat:00.ts|01.ts|02.ts|03.ts|04.ts|05.ts|06.ts|07.ts|08.ts|09.ts|10.ts|11.ts|12.ts|13.ts|14.ts|15.ts|16.ts|':
+  Duration: 00:02:54.26, start: 1.443444, bitrate: 1069 kb/s
+  Program 1 
+    Metadata:
+      service_name    : Service01
+      service_provider: FFmpeg
+    Stream #0:0[0x100]: Video: h264 ([27][0][0][0] / 0x001B), yuv420p(progressive), 600x336, 30 fps, 30 tbr, 90k tbn, 60 tbc
+    Stream #0:1[0x101](und): Audio: aac ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 4 kb/s
+Output #0, mp4, to 'D:\java\GitHub\pornMagnetSpringBoot\Downloads\新女续集！“啊啊我不行了又要高潮了！”偷情女友蜜桃臀同事！高潮十多次.mp4':
+  Metadata:
+    date            : 2023-01-29T06:00:28.1687624+08:00
+    encoder         : Lavf58.32.104
+    Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 600x336, q=2-31, 30 fps, 30 tbr, 90k tbn, 90k tbc
+    Stream #0:1(und): Audio: aac (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 4 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame= 5227 fps=0.0 q=-1.0 Lsize=   21702kB time=00:02:54.21 bitrate=1020.5kbits/s speed=2.76e+03x    
+video:18931kB audio:2587kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.854250%

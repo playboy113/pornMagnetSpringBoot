@@ -1,0 +1,263 @@
+﻿LOG 2023/02/26
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/26 23:02:31
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/554817/index.m3u8?t=1677425550&m=jAuU7tV4UNrWFN4WwXX1pA --saveName 多人运动爽翻天，上海巨乳熟女就是耐操
+
+23:02:31.130 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/554817/index.m3u8?t=1677425550&m=jAuU7tV4UNrWFN4WwXX1pA
+23:02:35.575 / (NORMAL) 写出meta.json
+23:02:35.638 / (NORMAL) 开始下载文件
+23:02:36.521 / (NORMAL) 读取文件信息...
+23:02:36.659 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x424 [SAR 3897:3908 DAR 292275:207124], 25 fps, 25 tbr, 90k tbn, 50 tbc
+23:02:36.659 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+23:02:38.424 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index3.ts
+23:02:38.706 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index9.ts
+23:02:38.792 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index15.ts
+23:02:39.429 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index3.ts
+23:02:39.646 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index21.ts
+23:02:39.712 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index9.ts
+23:02:39.806 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index15.ts
+23:02:40.335 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index7.ts
+23:02:40.657 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index21.ts
+23:02:40.719 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index9.ts
+23:02:40.733 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index23.ts
+23:02:40.777 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index15.ts
+23:02:41.108 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index17.ts
+23:02:41.349 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index7.ts
+23:02:41.515 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index12.ts
+23:02:41.614 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index25.ts
+23:02:41.727 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index9.ts
+23:02:41.743 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index23.ts
+23:02:41.790 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index15.ts
+23:02:42.120 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index17.ts
+23:02:42.376 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index5.ts
+23:02:42.457 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index7.ts
+23:02:42.529 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index12.ts
+23:02:42.623 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index25.ts
+23:02:43.064 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index23.ts
+23:02:43.378 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index5.ts
+23:02:43.450 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index13.ts
+23:02:43.473 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index7.ts
+23:02:43.650 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index29.ts
+23:02:43.756 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index27.ts
+23:02:44.073 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index23.ts
+23:02:44.151 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index25.ts
+23:02:44.318 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index15.ts
+23:02:44.466 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index13.ts
+23:02:44.478 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index17.ts
+23:02:44.548 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index5.ts
+23:02:44.610 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index19.ts
+23:02:44.655 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index29.ts
+23:02:44.764 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index27.ts
+23:02:45.157 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index25.ts
+23:02:45.330 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index15.ts
+23:02:45.487 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index17.ts
+23:02:45.551 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index5.ts
+23:02:45.565 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index3.ts
+23:02:45.614 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index19.ts
+23:02:45.648 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index23.ts
+23:02:45.799 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index31.ts
+23:02:46.076 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index13.ts
+23:02:46.264 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index2.ts
+23:02:46.577 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index3.ts
+23:02:46.643 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index17.ts
+23:02:46.657 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index23.ts
+23:02:46.658 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index25.ts
+23:02:46.660 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index5.ts
+23:02:46.814 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index31.ts
+23:02:47.097 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index13.ts
+23:02:47.183 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index21.ts
+23:02:47.271 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index2.ts
+23:02:47.277 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index19.ts
+23:02:47.290 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index27.ts
+23:02:47.648 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index17.ts
+23:02:47.664 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index5.ts
+23:02:47.665 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index25.ts
+23:02:47.666 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index3.ts
+23:02:48.197 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index21.ts
+23:02:48.204 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index9.ts
+23:02:48.291 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index19.ts
+23:02:48.298 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index13.ts
+23:02:48.307 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index27.ts
+23:02:48.525 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index2.ts
+23:02:48.644 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index31.ts
+23:02:48.669 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index3.ts
+23:02:48.699 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index17.ts
+23:02:49.219 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index9.ts
+23:02:49.258 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index12.ts
+23:02:49.314 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index13.ts
+23:02:49.378 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index19.ts
+23:02:49.534 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index2.ts
+23:02:49.659 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index31.ts
+23:02:49.669 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index5.ts
+23:02:49.783 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index21.ts
+23:02:50.061 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index3.ts
+23:02:50.174 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index27.ts
+23:02:50.272 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index12.ts
+23:02:50.342 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index7.ts
+23:02:50.343 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index13.ts
+23:02:50.383 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index19.ts
+23:02:50.500 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index9.ts
+23:02:50.526 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index2.ts
+23:02:50.686 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index31.ts
+23:02:50.696 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index6.ts
+23:02:50.792 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index21.ts
+23:02:51.059 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index29.ts
+23:02:51.185 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index27.ts
+23:02:51.359 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index7.ts
+23:02:51.531 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index2.ts
+23:02:51.689 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index31.ts
+23:02:51.695 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index10.ts
+23:02:51.705 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index6.ts
+23:02:52.067 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index29.ts
+23:02:52.309 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index27.ts
+23:02:52.350 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index4.ts
+23:02:52.464 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index15.ts
+23:02:52.629 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index2.ts
+23:02:52.711 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index10.ts
+23:02:52.720 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index14.ts
+23:02:53.285 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index23.ts
+23:02:53.359 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index4.ts
+23:02:53.377 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index7.ts
+23:02:53.399 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index28.ts
+23:02:53.543 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index16.ts
+23:02:53.722 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index14.ts
+23:02:54.018 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index10.ts
+23:02:54.063 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index31.ts
+23:02:54.238 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index12.ts
+23:02:54.397 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index6.ts
+23:02:54.414 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index28.ts
+23:02:54.556 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index16.ts
+23:02:54.584 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index25.ts
+23:02:54.654 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index4.ts
+23:02:54.837 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index24.ts
+23:02:55.028 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index10.ts
+23:02:55.035 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index18.ts
+23:02:55.248 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index12.ts
+23:02:55.405 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index6.ts
+23:02:55.634 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index20.ts
+23:02:55.658 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index4.ts
+23:02:55.774 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index28.ts
+23:02:55.848 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index24.ts
+23:02:55.969 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index19.ts
+23:02:56.038 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index18.ts
+23:02:56.270 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index10.ts
+23:02:56.393 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index14.ts
+23:02:56.471 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index6.ts
+23:02:56.636 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index20.ts
+23:02:56.778 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index28.ts
+23:02:56.827 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index12.ts
+23:02:57.141 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index21.ts
+23:02:57.282 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index10.ts
+23:02:57.407 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index14.ts
+23:02:57.476 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index16.ts
+23:02:57.486 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index6.ts
+23:02:57.946 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index29.ts
+23:02:58.138 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index20.ts
+23:02:58.222 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index24.ts
+23:02:58.316 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index33.ts
+23:02:58.343 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index28.ts
+23:02:58.479 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index16.ts
+23:02:58.688 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index30.ts
+23:02:58.950 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index29.ts
+23:02:59.155 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index20.ts
+23:02:59.162 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index8.ts
+23:02:59.234 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index24.ts
+23:02:59.313 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index22.ts
+23:02:59.328 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index33.ts
+23:02:59.344 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index28.ts
+23:02:59.691 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index30.ts
+23:03:00.141 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index32.ts
+23:03:00.163 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index8.ts
+23:03:00.290 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index16.ts
+23:03:00.320 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index22.ts
+23:03:00.415 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index14.ts
+23:03:00.472 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index24.ts
+23:03:00.536 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index29.ts
+23:03:00.919 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index28.ts
+23:03:00.951 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index26.ts
+23:03:00.953 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index33.ts
+23:03:01.153 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index32.ts
+23:03:01.295 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index16.ts
+23:03:01.420 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index14.ts
+23:03:01.484 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index24.ts
+23:03:01.835 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index8.ts
+23:03:01.835 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index30.ts
+23:03:01.843 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index22.ts
+23:03:01.955 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index33.ts
+23:03:01.955 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/554817/index26.ts
+23:03:01.960 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index18.ts
+23:03:02.632 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index32.ts
+23:03:02.659 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index16.ts
+23:03:02.852 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index22.ts
+23:03:02.852 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index30.ts
+23:03:02.854 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index8.ts
+23:03:02.962 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index18.ts
+23:03:03.256 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index4.ts
+23:03:03.638 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index32.ts
+23:03:03.913 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index8.ts
+23:03:04.269 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index4.ts
+23:03:04.298 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index6.ts
+23:03:04.430 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index18.ts
+23:03:04.915 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index8.ts
+23:03:05.126 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index10.ts
+23:03:05.369 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index4.ts
+23:03:05.435 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index18.ts
+23:03:05.715 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index26.ts
+23:03:05.897 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index30.ts
+23:03:06.295 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index8.ts
+23:03:06.445 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index20.ts
+23:03:06.453 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index18.ts
+23:03:06.726 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/554817/index26.ts
+23:03:06.899 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index30.ts
+23:03:07.003 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index14.ts
+23:03:07.450 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index20.ts
+23:03:08.311 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index24.ts
+23:03:08.447 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/554817/index20.ts
+23:03:08.982 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index22.ts
+23:03:09.995 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index22.ts
+23:03:10.152 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index32.ts
+23:03:11.156 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index32.ts
+23:03:11.213 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index33.ts
+23:03:12.224 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index33.ts
+23:03:12.388 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index26.ts
+23:03:13.133 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index30.ts
+23:03:13.402 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/554817/index26.ts
+23:03:14.366 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index22.ts
+23:03:14.949 / (ERROR) DOWN: 磁盘空间不足。
+ https://cdn3.jiuse.cloud/hls/554817/index32.ts
+23:03:17.108 / (NORMAL) 完成数量 3 of 34

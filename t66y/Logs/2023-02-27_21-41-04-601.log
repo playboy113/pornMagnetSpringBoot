@@ -1,0 +1,419 @@
+﻿LOG 2023/02/27
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/27 21:41:04
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/165696/index.m3u8?t=1677507064&m=2Qn1yt3NXf5O6nZwEv4sYQ --saveName 大东北东北极品熟女情人精编完整版91porn验证福利见
+
+21:41:04.604 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/165696/index.m3u8?t=1677507064&m=2Qn1yt3NXf5O6nZwEv4sYQ
+21:41:08.543 / (NORMAL) 写出meta.json
+21:41:08.620 / (NORMAL) 开始下载文件
+21:41:10.197 / (NORMAL) 读取文件信息...
+21:41:10.353 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 480x268, 25 fps, 25 tbr, 90k tbn, 50 tbc
+21:41:10.354 / (NORMAL) PID 0x101: Audio aac, 22050 Hz, stereo, fltp, 2 kb/s
+21:41:12.584 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index61.ts
+21:41:12.644 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index21.ts
+21:41:13.546 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index101.ts
+21:41:13.550 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index81.ts
+21:41:13.597 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index61.ts
+21:41:13.659 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index21.ts
+21:41:14.560 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index81.ts
+21:41:14.561 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index101.ts
+21:41:15.710 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index21.ts
+21:41:15.900 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index61.ts
+21:41:16.679 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index42.ts
+21:41:16.722 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index21.ts
+21:41:16.750 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index121.ts
+21:41:16.907 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index61.ts
+21:41:17.155 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index101.ts
+21:41:17.685 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index42.ts
+21:41:17.763 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index121.ts
+21:41:18.167 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index101.ts
+21:41:18.547 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index61.ts
+21:41:18.713 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index141.ts
+21:41:19.453 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index42.ts
+21:41:19.555 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index61.ts
+21:41:19.725 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index141.ts
+21:41:19.993 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index12.ts
+21:41:20.466 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index42.ts
+21:41:20.827 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index72.ts
+21:41:21.005 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index12.ts
+21:41:21.096 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index101.ts
+21:41:21.597 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index121.ts
+21:41:21.836 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index72.ts
+21:41:22.099 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index101.ts
+21:41:22.334 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index42.ts
+21:41:22.609 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index121.ts
+21:41:22.787 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index12.ts
+21:41:23.240 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index92.ts
+21:41:23.341 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index42.ts
+21:41:23.486 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index72.ts
+21:41:23.792 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index12.ts
+21:41:23.941 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index101.ts
+21:41:24.256 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index92.ts
+21:41:24.489 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index72.ts
+21:41:24.500 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index82.ts
+21:41:25.508 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index82.ts
+21:41:25.669 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index132.ts
+21:41:25.742 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index53.ts
+21:41:26.079 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index92.ts
+21:41:26.153 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index72.ts
+21:41:26.402 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index22.ts
+21:41:26.605 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index102.ts
+21:41:26.672 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index132.ts
+21:41:26.749 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index53.ts
+21:41:27.008 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index61.ts
+21:41:27.089 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index92.ts
+21:41:27.168 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index72.ts
+21:41:27.415 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index22.ts
+21:41:27.616 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index102.ts
+21:41:28.646 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index3.ts
+21:41:28.676 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index62.ts
+21:41:28.744 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index92.ts
+21:41:28.755 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index152.ts
+21:41:28.817 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index72.ts
+21:41:29.277 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index142.ts
+21:41:29.320 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index102.ts
+21:41:29.559 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index53.ts
+21:41:29.648 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index3.ts
+21:41:29.679 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index62.ts
+21:41:29.758 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index92.ts
+21:41:29.759 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index152.ts
+21:41:30.281 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index142.ts
+21:41:30.328 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index102.ts
+21:41:30.575 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index53.ts
+21:41:31.403 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index62.ts
+21:41:31.572 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index92.ts
+21:41:31.587 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index152.ts
+21:41:31.942 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index33.ts
+21:41:31.950 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index142.ts
+21:41:32.273 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index53.ts
+21:41:32.417 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index62.ts
+21:41:32.590 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index152.ts
+21:41:32.763 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index113.ts
+21:41:32.948 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index33.ts
+21:41:32.963 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index142.ts
+21:41:33.276 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index53.ts
+21:41:33.466 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index93.ts
+21:41:33.650 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index122.ts
+21:41:33.772 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index113.ts
+21:41:34.265 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index152.ts
+21:41:34.474 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index93.ts
+21:41:34.659 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index122.ts
+21:41:34.878 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index142.ts
+21:41:35.279 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index152.ts
+21:41:35.542 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index33.ts
+21:41:35.591 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index113.ts
+21:41:35.758 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index83.ts
+21:41:35.880 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index142.ts
+21:41:36.548 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index33.ts
+21:41:36.594 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index113.ts
+21:41:36.620 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index43.ts
+21:41:36.767 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index83.ts
+21:41:37.292 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index122.ts
+21:41:37.483 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index23.ts
+21:41:37.636 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index43.ts
+21:41:38.303 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index122.ts
+21:41:38.427 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index113.ts
+21:41:38.488 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index23.ts
+21:41:38.507 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index83.ts
+21:41:38.933 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index142.ts
+21:41:39.432 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index113.ts
+21:41:39.510 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index83.ts
+21:41:39.976 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index122.ts
+21:41:40.558 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index23.ts
+21:41:40.605 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index143.ts
+21:41:40.742 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index4.ts
+21:41:40.990 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index122.ts
+21:41:41.106 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index74.ts
+21:41:41.150 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index83.ts
+21:41:41.562 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index23.ts
+21:41:41.608 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index143.ts
+21:41:41.718 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index133.ts
+21:41:41.747 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index4.ts
+21:41:42.121 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index74.ts
+21:41:42.166 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index83.ts
+21:41:42.727 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index133.ts
+21:41:44.838 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index143.ts
+21:41:45.847 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index143.ts
+21:41:46.847 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index74.ts
+21:41:47.864 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index74.ts
+21:41:50.686 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index54.ts
+21:41:51.595 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index23.ts
+21:41:51.701 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index54.ts
+21:41:51.781 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index4.ts
+21:41:52.200 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index83.ts
+21:41:52.601 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index23.ts
+21:41:52.788 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index4.ts
+21:41:54.948 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index34.ts
+21:41:55.878 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index143.ts
+21:41:55.953 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index34.ts
+21:41:56.220 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index44.ts
+21:41:56.883 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index143.ts
+21:41:57.223 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index44.ts
+21:41:58.154 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index114.ts
+21:41:59.164 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index114.ts
+21:42:00.971 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index75.ts
+21:42:01.005 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index95.ts
+21:42:01.637 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index44.ts
+21:42:01.742 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index54.ts
+21:42:01.851 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index15.ts
+21:42:01.986 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index75.ts
+21:42:02.017 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index95.ts
+21:42:02.404 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index65.ts
+21:42:02.624 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index23.ts
+21:42:02.653 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index44.ts
+21:42:02.747 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index54.ts
+21:42:02.812 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index4.ts
+21:42:02.856 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index15.ts
+21:42:03.413 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index65.ts
+21:42:03.805 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index114.ts
+21:42:03.817 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index4.ts
+21:42:04.810 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index114.ts
+21:42:04.919 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index154.ts
+21:42:05.925 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index154.ts
+21:42:06.903 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index143.ts
+21:42:09.966 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index124.ts
+21:42:10.975 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index124.ts
+21:42:12.001 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index75.ts
+21:42:12.032 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index95.ts
+21:42:12.762 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index54.ts
+21:42:13.008 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index75.ts
+21:42:13.038 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index95.ts
+21:42:13.365 / (ERROR) DOWN: 基础连接已经关闭: 发送时发生错误。 https://cdn3.jiuse.cloud/hls/165696/index4.ts
+21:42:13.768 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index54.ts
+21:42:14.838 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index114.ts
+21:42:15.223 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index106.ts
+21:42:15.841 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index114.ts
+21:42:15.937 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index154.ts
+21:42:16.229 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index106.ts
+21:42:16.931 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index144.ts
+21:42:16.946 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index154.ts
+21:42:17.784 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index35.ts
+21:42:17.939 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index144.ts
+21:42:18.793 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index35.ts
+21:42:20.988 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index124.ts
+21:42:21.144 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index136.ts
+21:42:22.012 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index124.ts
+21:42:22.152 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index136.ts
+21:42:23.066 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index95.ts
+21:42:24.079 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index95.ts
+21:42:24.636 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index124.ts
+21:42:24.766 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index115.ts
+21:42:25.013 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index6.ts
+21:42:25.645 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index124.ts
+21:42:25.782 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index115.ts
+21:42:26.014 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index6.ts
+21:42:26.933 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/165696/index85.ts
+21:42:27.937 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index85.ts
+21:42:34.353 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index107.ts
+21:42:34.821 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index145.ts
+21:42:35.362 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index107.ts
+21:42:35.831 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index145.ts
+21:42:36.048 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index6.ts
+21:42:36.938 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index36.ts
+21:42:37.060 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index6.ts
+21:42:37.883 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index155.ts
+21:42:37.945 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index36.ts
+21:42:37.948 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index85.ts
+21:42:38.892 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index155.ts
+21:42:38.953 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index85.ts
+21:42:40.659 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index56.ts
+21:42:41.510 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index137.ts
+21:42:41.589 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/165696/index15.ts
+21:42:41.665 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index56.ts
+21:42:42.523 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index137.ts
+21:42:42.601 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index15.ts
+21:42:46.195 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index7.ts
+21:42:47.203 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index7.ts
+21:42:49.438 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/165696/index65.ts
+21:42:50.444 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index65.ts
+21:42:54.173 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index38.ts
+21:42:54.462 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/165696/index115.ts
+21:42:55.187 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index38.ts
+21:42:55.466 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index115.ts
+21:42:55.974 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index138.ts
+21:42:56.617 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/165696/index24.ts
+21:42:56.985 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index138.ts
+21:42:57.336 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index115.ts
+21:42:57.619 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index24.ts
+21:42:58.351 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index115.ts
+21:42:58.601 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index87.ts
+21:42:59.506 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index24.ts
+21:42:59.606 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index87.ts
+21:43:00.521 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index24.ts
+21:43:00.554 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index138.ts
+21:43:01.564 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index138.ts
+21:43:03.523 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index24.ts
+21:43:03.606 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index138.ts
+21:43:03.609 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index17.ts
+21:43:04.363 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index58.ts
+21:43:04.536 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index24.ts
+21:43:04.614 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index17.ts
+21:43:04.615 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index138.ts
+21:43:05.376 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index58.ts
+21:43:06.509 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index17.ts
+21:43:06.740 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index138.ts
+21:43:07.513 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index17.ts
+21:43:07.559 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index58.ts
+21:43:08.564 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index58.ts
+21:43:09.942 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index17.ts
+21:43:10.028 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index127.ts
+21:43:10.556 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index58.ts
+21:43:10.951 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index17.ts
+21:43:11.029 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index127.ts
+21:43:11.566 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index58.ts
+21:43:11.582 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index88.ts
+21:43:12.591 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index88.ts
+21:43:12.923 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index127.ts
+21:43:13.152 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index78.ts
+21:43:13.928 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index127.ts
+21:43:14.161 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index78.ts
+21:43:14.426 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index40.ts
+21:43:14.893 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index10.ts
+21:43:15.432 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index40.ts
+21:43:15.895 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index10.ts
+21:43:16.268 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index78.ts
+21:43:17.211 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index17.ts
+21:43:17.275 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index78.ts
+21:43:17.807 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index150.ts
+21:43:18.810 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index150.ts
+21:43:19.236 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index46.ts
+21:43:19.402 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index159.ts
+21:43:19.450 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index140.ts
+21:43:20.252 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index46.ts
+21:43:20.275 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index18.ts
+21:43:20.407 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index159.ts
+21:43:20.455 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index140.ts
+21:43:20.494 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index117.ts
+21:43:21.278 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index18.ts
+21:43:21.511 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index117.ts
+21:43:21.576 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index68.ts
+21:43:22.263 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index159.ts
+21:43:22.310 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index59.ts
+21:43:22.343 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index140.ts
+21:43:22.578 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index68.ts
+21:43:23.258 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index119.ts
+21:43:23.277 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index159.ts
+21:43:23.323 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index59.ts
+21:43:23.354 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index140.ts
+21:43:23.373 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index117.ts
+21:43:24.266 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index119.ts
+21:43:24.388 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index117.ts
+21:43:25.263 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index128.ts
+21:43:25.279 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index140.ts
+21:43:25.428 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index68.ts
+21:43:26.123 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index119.ts
+21:43:26.240 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index117.ts
+21:43:26.277 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index128.ts
+21:43:26.292 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index140.ts
+21:43:26.431 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index68.ts
+21:43:26.487 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index89.ts
+21:43:27.127 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index119.ts
+21:43:27.250 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index117.ts
+21:43:27.498 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index89.ts
+21:43:28.185 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index140.ts
+21:43:28.291 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index68.ts
+21:43:28.899 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index161.ts
+21:43:29.226 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index117.ts
+21:43:29.302 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index68.ts
+21:43:29.908 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index161.ts
+21:43:29.909 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index119.ts
+21:43:30.591 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index47.ts
+21:43:30.915 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index119.ts
+21:43:31.158 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index68.ts
+21:43:31.597 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index47.ts
+21:43:31.854 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index160.ts
+21:43:31.868 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index161.ts
+21:43:32.078 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index98.ts
+21:43:32.868 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index160.ts
+21:43:32.883 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index161.ts
+21:43:33.087 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index98.ts
+21:43:33.448 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index69.ts
+21:43:34.464 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index69.ts
+21:43:34.812 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index161.ts
+21:43:35.058 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index98.ts
+21:43:35.185 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index60.ts
+21:43:35.491 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index80.ts
+21:43:35.829 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index161.ts
+21:43:36.061 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index98.ts
+21:43:36.199 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index60.ts
+21:43:36.506 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index80.ts
+21:43:38.124 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index60.ts
+21:43:38.205 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index49.ts
+21:43:38.319 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index69.ts
+21:43:38.388 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index98.ts
+21:43:38.595 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index29.ts
+21:43:39.138 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index60.ts
+21:43:39.215 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index49.ts
+21:43:39.323 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index69.ts
+21:43:39.401 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index98.ts
+21:43:39.600 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index29.ts
+21:43:41.143 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index49.ts
+21:43:41.247 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index69.ts
+21:43:41.294 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index60.ts
+21:43:41.462 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index29.ts
+21:43:42.157 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index49.ts
+21:43:42.252 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index69.ts
+21:43:42.297 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index60.ts
+21:43:42.468 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index29.ts
+21:43:44.253 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index60.ts
+21:43:44.392 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index69.ts
+21:43:45.574 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index29.ts
+21:43:46.587 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index29.ts
+21:43:48.455 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index29.ts
+21:43:49.427 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index98.ts
+21:43:59.058 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/165696/index49.ts
+21:44:00.063 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index49.ts
+21:44:11.639 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/165696/index95.ts
+21:44:28.986 / (NORMAL) 完成数量 145 of 164
+21:44:28.987 / (NORMAL) 重试次数 1 / 15
+21:44:31.998 / (NORMAL) 开始下载文件
+21:44:33.535 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/165696/index68.ts
+21:44:34.547 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index68.ts
+21:44:42.018 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index4.ts
+21:44:42.020 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index23.ts
+21:44:42.021 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index17.ts
+21:44:42.022 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index138.ts
+21:44:42.023 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index72.ts
+21:44:43.029 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index23.ts
+21:44:43.030 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index4.ts
+21:44:43.032 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index72.ts
+21:44:43.033 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index17.ts
+21:44:43.033 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index138.ts
+21:44:44.090 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/165696/index29.ts
+21:44:44.573 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index68.ts
+21:44:45.103 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index29.ts
+21:44:45.583 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index68.ts
+21:44:45.616 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/165696/index92.ts
+21:44:46.626 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index92.ts
+21:44:47.815 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/165696/index95.ts
+21:44:48.822 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index95.ts
+21:44:52.784 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index143.ts
+21:44:53.065 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index4.ts
+21:44:53.066 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index17.ts
+21:44:53.067 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index23.ts
+21:44:53.067 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index72.ts
+21:44:53.068 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index138.ts
+21:44:53.793 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/165696/index143.ts
+21:44:54.073 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index17.ts
+21:44:54.074 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index4.ts
+21:44:54.075 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index23.ts
+21:44:54.076 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index72.ts
+21:44:54.077 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index138.ts
+21:44:55.118 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index29.ts
+21:44:55.613 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index68.ts
+21:44:56.127 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index29.ts
+21:44:56.627 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index68.ts
+21:44:58.868 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index95.ts
+21:44:59.876 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index95.ts
+21:45:03.810 / (ERROR) DOWN: 基础连接已经关闭: 发送时发生错误。 https://cdn3.jiuse.cloud/hls/165696/index143.ts
+21:45:04.118 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/165696/index138.ts
+21:45:04.815 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/165696/index143.ts
+21:45:05.124 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/165696/index138.ts
+21:45:27.580 / (NORMAL) 开始合并分片...
+21:45:28.363 / (NORMAL) 结果输出至 [ffreport.log]
+21:45:28.363 / (NORMAL) 任务结束
+
+Task End: 2023/02/27 21:45:28
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\大东北东北极品熟女情人精编完整版91porn验证福利见.mp4
+
+

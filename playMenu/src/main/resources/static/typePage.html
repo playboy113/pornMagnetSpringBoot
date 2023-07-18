@@ -38,10 +38,7 @@
 
 
 </div>
-<video id="video_id"  width="520" height="360" controls="controls" type="video/mp4">
 
-
-</video>
 
 <script>
 
@@ -64,7 +61,7 @@
         $.each(data.typesList,function (index,obj){
 
           //htmlStr+="<a href='/#' class=\"list-group-item\" onclick='queryForVideosBySelectActress(this)'>"+obj+"</a>";
-          htmlStr+="<li style='margin: 5px' role=\"presentation\" ><a role='button' class=\"active\" onclick='queryVideosByType(this)'>"+obj+"<span class=\"badge\"></span></a></li>"
+          htmlStr+="<li style='margin: 5px' role=\"presentation\" ><a role='button'  onclick='queryVideosByType(this)'>"+obj+"<span class=\"badge\"></span></a></li>"
         });
         $("#typesList").html(htmlStr);
       }
@@ -73,8 +70,22 @@
 
   function queryVideosByType(param) {
 
-      param.parentNode.classList.add("active")
-      var type=param.text;
+    param.parentNode.classList.toggle("active")
+
+
+
+
+
+      var elements = document.getElementsByClassName("active")
+      var array = new Array();
+      var typeStr = "";
+    for (var i = 0; i < elements.length; i++) {
+      array[i]=elements[i].textContent;
+    }
+    var type = JSON.stringify(array)
+
+
+
 
     $.ajax({
       url:"/playMenu/queryVideosByType.do",
@@ -92,7 +103,7 @@
           htmlStr+="<img src='/images/"+index+".jpg' alt=\"...\">";
           htmlStr+="<div class=\"caption\">";
           htmlStr+="<h3>"+index+"</h3>";
-          htmlStr+="<p><a href=\""+obj+"\" class=\"btn btn-primary\" role=\"button\"  onclick='clickToPlay(this)'>点击播放</a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">Button</a></p>";
+          htmlStr+="<p><a href=\""+obj+"\" class=\"btn btn-primary\" role=\"button\" target='_blank'  onclick='clickToPlay(this)'>点击播放</a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">Button</a></p>";
           htmlStr+=" </div>\n" +
                   "    </div>\n" +
                   "  </div>";
@@ -108,12 +119,12 @@
     })
 
   }
-  function clickToPlay(videoPath) {
-    alert(videoPath.href)
-    var path=videoPath.href;
-    document.getElementById("video_id").src=path;
-
-  }
+  // function clickToPlay(videoPath) {
+  //   alert(videoPath.href)
+  //   var path=videoPath.href;
+  //   document.getElementById("video_id").src=path;
+  //
+  // }
 
 </script>
 

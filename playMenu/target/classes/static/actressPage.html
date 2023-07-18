@@ -71,10 +71,10 @@
 
 
 
-<video id="video_id"  width="520" height="360" controls="controls" type="video/mp4" style="display: none">
+<!--<video id="video_id"  width="520" height="360" controls="controls" type="video/mp4" style="display: none">-->
 
 
-</video>
+<!--</video>-->
 
 
 
@@ -141,7 +141,7 @@
           htmlStr+="<img src='/images/"+index+".jpg' alt=\"...\">";
           htmlStr+="<div class=\"caption\">";
           htmlStr+="<h3>"+index+"</h3>";
-          htmlStr+="<p><a href=\""+obj+"\" class=\"btn btn-primary\" role=\"button\"  onclick='clickToPlay(this)'>点击播放</a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">Button</a></p>";
+          htmlStr+="<p><a href=\""+obj+"\" class=\"btn btn-primary\" role=\"button\" target='_blank'  onclick='clickToPlay(this)'>点击播放</a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">Button</a></p>";
           htmlStr+=" </div>\n" +
                   "    </div>\n" +
                   "  </div>";
@@ -157,12 +157,7 @@
 
   }
 
-  function clickToPlay(videoPath) {
-    alert(videoPath.href)
-    var path=videoPath.href;
-    document.getElementById("video_id").src=path;
 
-  }
 
 </script>
 

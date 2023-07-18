@@ -20,7 +20,7 @@ public class getLocalFileNamesUserFile {
 
 
         //SmbFile smbFile = new SmbFile("smb://192.168.1.103/E/12345/", auth);
-        String[] pathList = new String[]{"D:/pornDocs","E:","K:"};
+        String[] pathList = new String[]{"D:","E:","F:"};
 
         for(int i=0;i< pathList.length;i++){
             try{
@@ -46,6 +46,7 @@ public class getLocalFileNamesUserFile {
             for (File f:files){
                 if(f.isDirectory()){
                     getFileName(f,fileName);
+                    System.out.println(fileName);
                 }else if(f.toString().contains(".mp4")){
                     fileName.add(f.getPath());
                 }

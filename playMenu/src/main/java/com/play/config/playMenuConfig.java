@@ -8,8 +8,9 @@ public class playMenuConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //registry.addResourceHandler("/images/**").addResourceLocations("file:D:/github/pornMagnetSpringBoot/searchModeul/src/main/resources/images/");
-        registry.addResourceHandler("/images/**").addResourceLocations("file:D:/github/pornMagnetSpringBoot/searchModeul/src/main/resources/images/");
+        registry.addResourceHandler("/images/**").addResourceLocations("file:E:/images/");
         registry.addResourceHandler("/D/**").addResourceLocations("file:D:/");
+        registry.addResourceHandler("/E/**").addResourceLocations("file:E:/");
         registry.addResourceHandler("/F/**").addResourceLocations("file:F:/");
         registry.addResourceHandler("/K/**").addResourceLocations("file:K:/");
     }

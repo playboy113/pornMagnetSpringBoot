@@ -1,0 +1,23 @@
+﻿LOG 2023/02/26
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/26 22:52:55
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/368411/index.m3u8?t=1677424975&m=1uYId7OVPBf3S6DSZqqLww --saveName 原创操K罩杯巨乳妹子
+
+22:52:55.904 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/368411/index.m3u8?t=1677424975&m=1uYId7OVPBf3S6DSZqqLww
+22:53:03.016 / (NORMAL) 写出meta.json
+22:53:03.087 / (NORMAL) 开始下载文件
+22:53:07.696 / (NORMAL) 读取文件信息...
+22:53:07.829 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 320x240, 29.97 fps, 29.97 tbr, 90k tbn, 59.94 tbc
+22:53:07.829 / (NORMAL) PID 0x101: Audio aac, 22050 Hz, stereo, fltp, 120 kb/s
+22:53:09.639 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/368411/index7.ts
+22:53:10.641 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/368411/index7.ts
+22:53:17.863 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/368411/index1.ts
+22:53:18.867 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/368411/index1.ts
+22:53:21.980 / (NORMAL) 开始合并分片...
+22:53:22.139 / (NORMAL) 结果输出至 [ffreport.log]
+22:53:22.139 / (NORMAL) 任务结束
+
+Task End: 2023/02/26 22:53:22
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\原创操K罩杯巨乳妹子.mp4
+
+

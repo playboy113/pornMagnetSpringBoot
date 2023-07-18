@@ -1,26 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/magnetChange/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jiuse911Modeul" />
+        <module name="t66y" />
         <module name="searchModeul" />
-        <module name="playMenu" />
+        <module name="magnetChange02" />
         <module name="es-service" />
+        <module name="jiuse911Modeul" />
+        <module name="playMenu" />
+        <module name="sehuatangCHN" />
+        <module name="flowersList" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="collections" target="17" />
+      <module name="magnetChange" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="collections" options="-parameters" />
       <module name="es-service" options="-parameters" />
+      <module name="flowersList" options="-parameters" />
       <module name="jiuse911Modeul" options="-parameters" />
+      <module name="magnetChange" options="-parameters" />
+      <module name="magnetChange02" options="-parameters" />
       <module name="playMenu" options="-parameters" />
       <module name="searchModeul" options="-parameters" />
+      <module name="sehuatangCHN" options="-parameters" />
+      <module name="t66y" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,5 +1,6 @@
 package com.zhang.crawer.javmain;
 
+import com.zhang.commons.setHeader;
 import com.zhang.crawer.db.MySqlControl;
 import com.zhang.crawer.entity.magnet_model;
 import org.jsoup.Connection;
@@ -29,6 +30,7 @@ public class crawer_javdb {
 
         //设置请求头
         Builder builder = new Builder();
+        setHeader.setUp();
         builder.host = "https://javdb.com/";
         Map<String, String> header = new HashMap<String, String>();
         header.put("Host", builder.host);
@@ -53,7 +55,7 @@ public class crawer_javdb {
             for (Element element : elements) {
                 String inner_url = element.select("a").attr("href");
 
-                Document inner_doc = Jsoup.connect("https://javdb.com/" + inner_url).timeout(1000*10).get();
+                Document inner_doc = Jsoup.connect("https://javdb.com/" + inner_url).timeout(Integer.MAX_VALUE).get();
                 magnet_model model = new magnet_model();
 
 
@@ -61,6 +63,7 @@ public class crawer_javdb {
 
                 //获取番号
                 model.setNum(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim());
+                System.out.println(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim());
 
                 //获取封面图片并下载
                 String coverImg = inner_doc.getElementsByAttributeValue("class", "video-cover").attr("src");
@@ -160,7 +163,7 @@ public class crawer_javdb {
         InputStream inputStream = null;
         BufferedInputStream bis = null;
         //String savePath = "D:\\github\\pornMagnetSpringBoot\\searchModeul\\src\\main\\resources\\images";
-        String savePath = "D:\\images\\";
+        String savePath = "E:\\images\\";
         OutputStream outputStream=null;
         BufferedOutputStream bos=null;
         try{

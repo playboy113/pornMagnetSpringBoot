@@ -1,9 +1,11 @@
 package com.play.service;
 
+import com.play.entity.magnet_model;
 import jcifs.smb.SmbException;
 
 import java.net.MalformedURLException;
 import java.util.List;
+import java.util.Map;
 
 public interface playMenuService {
 
@@ -16,4 +18,5 @@ public interface playMenuService {
     List<String> selectActressByNums(List<String> nums);
 
     List<String> selectNumInDB();
+    List<magnet_model> queryMagnetByConditions(Map<String,Object> map);
 }

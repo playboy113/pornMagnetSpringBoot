@@ -1,0 +1,32 @@
+ffmpeg started on 2023-01-29 at 08:30:06
+Report written to "D:/java/GitHub/pornMagnetSpringBoot/jiuse911Modeul/Logs/2023-01-29_08-29-47-952_ffreport.log"
+Command line:
+"D:\\java\\GitHub\\pornMagnetSpringBoot\\ffmpeg.exe" -loglevel warning -i "concat:00.ts|01.ts|02.ts|03.ts|04.ts|05.ts|06.ts|07.ts|08.ts|09.ts|10.ts|11.ts|12.ts|13.ts|14.ts|" -map "0:v?" -map "0:a?" -map "0:s?" -metadata "date=2023-01-29T08:30:06.4084573+08:00" -metadata "encoding_tool=" -metadata "title=" -metadata "copyright=" -metadata "comment=" -metadata:s:a:0 "handler_name=" -metadata:s:a:0 "handler=" -c copy -y -bsf:a aac_adtstoasc "D:\\java\\GitHub\\pornMagnetSpringBoot\\Downloads\\\xb0\xd1\xd0\xd6\xb5\xdc\xc5\xae\xd3\xd1\xb4\xd3\xb4\xa6\xc5\xae\xb2\xdd\xb3\xc9\xc4\xb8\xb9\xb7\xa3\xa1\xbc\xc7\xc2\xbc18\xcb\xea\xc4\xb8\xb9\xb7\xb5\xc4\xb0\xa4\xb2\xdd\xcb\xea\xd4\xc2\xa3\xa1.mp4"
+ffmpeg version N-94813-g85386c36e3-ffmpeg-for-N_m3u8DL-CLI Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 8.2.0 (GCC)
+  libavutil      56. 35.100 / 56. 35.100
+  libavcodec     58. 56.101 / 58. 56.101
+  libavformat    58. 32.104 / 58. 32.104
+  libavfilter     7. 58.102 /  7. 58.102
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswresample   3.  6.100 /  3.  6.100
+Input #0, mpegts, from 'concat:00.ts|01.ts|02.ts|03.ts|04.ts|05.ts|06.ts|07.ts|08.ts|09.ts|10.ts|11.ts|12.ts|13.ts|14.ts|':
+  Duration: 00:02:23.40, start: 1.445744, bitrate: 414 kb/s
+  Program 1 
+    Metadata:
+      service_name    : Service01
+      service_provider: FFmpeg
+    Stream #0:0[0x100]: Video: h264 ([27][0][0][0] / 0x001B), yuv420p(progressive), 202x360, 29 fps, 29 tbr, 90k tbn, 58 tbc
+    Stream #0:1[0x101](und): Audio: aac ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 128 kb/s
+Output #0, mp4, to 'D:\java\GitHub\pornMagnetSpringBoot\Downloads\把兄弟女友从处女草成母狗！记录18岁母狗的挨草岁月！.mp4':
+  Metadata:
+    date            : 2023-01-29T08:30:06.4084573+08:00
+    encoder         : Lavf58.32.104
+    Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 202x360, q=2-31, 29 fps, 29 tbr, 90k tbn, 90k tbc
+    Stream #0:1(und): Audio: aac (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame= 4158 fps=0.0 q=-1.0 Lsize=    6682kB time=00:02:23.38 bitrate= 381.8kbits/s speed=2.3e+03x    
+video:4232kB audio:2265kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.847362%

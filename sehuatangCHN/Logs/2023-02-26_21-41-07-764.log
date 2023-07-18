@@ -1,0 +1,33 @@
+﻿LOG 2023/02/26
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/26 21:41:07
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/451051/index.m3u8?t=1677420667&m=HfIBLDZatQepoEjkjRz6dg --saveName 风骚人妻满脸涨红韵味十足
+
+21:41:07.766 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/451051/index.m3u8?t=1677420667&m=HfIBLDZatQepoEjkjRz6dg
+21:41:10.499 / (NORMAL) 写出meta.json
+21:41:10.564 / (NORMAL) 开始下载文件
+21:41:11.637 / (NORMAL) 读取文件信息...
+21:41:11.796 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x526 [SAR 1247:1251 DAR 124700:109671], 25 fps, 25 tbr, 90k tbn, 50 tbc
+21:41:11.798 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+21:41:13.208 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/451051/index3.ts
+21:41:13.522 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/451051/index7.ts
+21:41:13.669 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/451051/index2.ts
+21:41:14.216 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/451051/index3.ts
+21:41:14.530 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/451051/index7.ts
+21:41:14.683 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/451051/index2.ts
+21:41:24.700 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/451051/index2.ts
+21:41:25.603 / (ERROR) DOWN: 操作已超时。 https://cdn3.jiuse.cloud/hls/451051/index5.ts
+21:41:25.711 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/451051/index2.ts
+21:41:26.615 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/451051/index5.ts
+21:41:36.632 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/451051/index5.ts
+21:41:37.644 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/451051/index5.ts
+21:41:47.684 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/451051/index5.ts
+21:41:48.693 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/451051/index5.ts
+21:41:52.759 / (NORMAL) 开始合并分片...
+21:41:52.932 / (NORMAL) 结果输出至 [ffreport.log]
+21:41:52.933 / (NORMAL) 任务结束
+
+Task End: 2023/02/26 21:41:52
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\风骚人妻满脸涨红韵味十足.mp4
+
+

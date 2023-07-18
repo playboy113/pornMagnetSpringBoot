@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.util.List;
 @ComponentScan
 public class MySqlControl {
-    static javax.sql.DataSource ds =  MyDataSource.getDataSource("jdbc:mysql://124.71.239.157:3306/magnet?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false");
+    static javax.sql.DataSource ds =  MyDataSource.getDataSource("jdbc:mysql://164.88.199.77:3306/magnet?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false");
     static QueryRunner qr = new QueryRunner(ds);
     static int num = 1;
 

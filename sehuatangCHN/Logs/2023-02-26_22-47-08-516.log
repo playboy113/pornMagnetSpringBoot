@@ -1,0 +1,56 @@
+﻿LOG 2023/02/26
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/26 22:47:08
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/550200/index.m3u8?t=1677424628&m=6zsaRGgh_bZqk_PxxhJyaw --saveName (官琪）5P暴操人妻巨乳大屁股（露脸）
+
+22:47:08.516 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/550200/index.m3u8?t=1677424628&m=6zsaRGgh_bZqk_PxxhJyaw
+22:47:14.374 / (NORMAL) 基础连接已经关闭: 发送时发生错误。
+22:47:14.374 / (ERROR) 基础连接已经关闭: 发送时发生错误。
+22:47:21.756 / (NORMAL) 写出meta.json
+22:47:21.817 / (NORMAL) 开始下载文件
+22:47:22.703 / (NORMAL) 读取文件信息...
+22:47:22.871 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 202x360, 30 fps, 30 tbr, 90k tbn, 60 tbc
+22:47:22.871 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 124 kb/s
+22:47:24.383 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index3.ts
+22:47:24.826 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index10.ts
+22:47:25.391 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/550200/index3.ts
+22:47:25.833 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/550200/index10.ts
+22:47:26.587 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index3.ts
+22:47:26.612 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index12.ts
+22:47:27.596 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/550200/index3.ts
+22:47:27.628 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/550200/index12.ts
+22:47:27.830 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index10.ts
+22:47:28.141 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index15.ts
+22:47:28.175 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index14.ts
+22:47:28.692 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index12.ts
+22:47:28.692 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index3.ts
+22:47:28.842 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/550200/index10.ts
+22:47:29.142 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/550200/index15.ts
+22:47:29.189 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/550200/index14.ts
+22:47:29.694 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/550200/index12.ts
+22:47:29.694 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/550200/index3.ts
+22:47:30.038 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index18.ts
+22:47:30.172 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index14.ts
+22:47:30.172 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index15.ts
+22:47:30.690 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index3.ts
+22:47:30.948 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index12.ts
+22:47:31.046 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/550200/index18.ts
+22:47:31.189 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/550200/index14.ts
+22:47:31.189 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/550200/index15.ts
+22:47:31.962 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/550200/index12.ts
+22:47:32.715 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index18.ts
+22:47:32.907 / (ERROR) DOWN: 操作超时 https://cdn3.jiuse.cloud/hls/550200/index7.ts
+22:47:33.092 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/550200/index12.ts
+22:47:33.724 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/550200/index18.ts
+22:47:33.913 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/550200/index7.ts
+22:47:41.188 / (NORMAL) 完成数量 17 of 19
+22:47:41.196 / (NORMAL) 重试次数 1 / 15
+22:47:44.211 / (NORMAL) 开始下载文件
+22:47:49.138 / (NORMAL) 开始合并分片...
+22:47:49.284 / (NORMAL) 结果输出至 [ffreport.log]
+22:47:49.284 / (NORMAL) 任务结束
+
+Task End: 2023/02/26 22:47:49
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\(官琪）5P暴操人妻巨乳大屁股（露脸）.mp4
+
+

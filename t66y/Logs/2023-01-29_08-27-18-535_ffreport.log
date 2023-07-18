@@ -1,0 +1,32 @@
+ffmpeg started on 2023-01-29 at 08:27:49
+Report written to "D:/java/GitHub/pornMagnetSpringBoot/jiuse911Modeul/Logs/2023-01-29_08-27-18-535_ffreport.log"
+Command line:
+"D:\\java\\GitHub\\pornMagnetSpringBoot\\ffmpeg.exe" -loglevel warning -i "concat:00.ts|01.ts|02.ts|03.ts|04.ts|05.ts|06.ts|07.ts|08.ts|09.ts|10.ts|11.ts|12.ts|13.ts|14.ts|15.ts|16.ts|17.ts|18.ts|19.ts|20.ts|21.ts|22.ts|" -map "0:v?" -map "0:a?" -map "0:s?" -metadata "date=2023-01-29T08:27:49.8708953+08:00" -metadata "encoding_tool=" -metadata "title=" -metadata "copyright=" -metadata "comment=" -metadata:s:a:0 "handler_name=" -metadata:s:a:0 "handler=" -c copy -y -bsf:a aac_adtstoasc "D:\\java\\GitHub\\pornMagnetSpringBoot\\Downloads\\3\xc8\xcb\xd2\xbb\xc6\xf0\xa3\xa1JK\xc3\xc3\xc3\xc3\xb1\xbb\xc4\xda\xc9\xe4\xba\xf3\xd7\xd4\xbc\xba\xc8\xa5\xb2\xde\xcb\xf9\xb3\xe5\xcf\xb4\xb8\xc9\xbe\xbb\xba\xf3\xbc\xcc\xd0\xf8\xa3\xa8\xc4\xda\xd3\xd0\xc1\xaa\xcf\xb5\xb7\xbd\xca\xbd\xa3\xa9.mp4"
+ffmpeg version N-94813-g85386c36e3-ffmpeg-for-N_m3u8DL-CLI Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 8.2.0 (GCC)
+  libavutil      56. 35.100 / 56. 35.100
+  libavcodec     58. 56.101 / 58. 56.101
+  libavformat    58. 32.104 / 58. 32.104
+  libavfilter     7. 58.102 /  7. 58.102
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswresample   3.  6.100 /  3.  6.100
+Input #0, mpegts, from 'concat:00.ts|01.ts|02.ts|03.ts|04.ts|05.ts|06.ts|07.ts|08.ts|09.ts|10.ts|11.ts|12.ts|13.ts|14.ts|15.ts|16.ts|17.ts|18.ts|19.ts|20.ts|21.ts|22.ts|':
+  Duration: 00:04:07.85, start: 1.462089, bitrate: 643 kb/s
+  Program 1 
+    Metadata:
+      service_name    : Service01
+      service_provider: FFmpeg
+    Stream #0:0[0x100]: Video: h264 ([27][0][0][0] / 0x001B), yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], 23.98 fps, 23.98 tbr, 90k tbn, 47.95 tbc
+    Stream #0:1[0x101](eng): Audio: aac ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, 4 kb/s
+Output #0, mp4, to 'D:\java\GitHub\pornMagnetSpringBoot\Downloads\3人一起！JK妹妹被内射后自己去厕所冲洗干净后继续（内有联系方式）.mp4':
+  Metadata:
+    date            : 2023-01-29T08:27:49.8708953+08:00
+    encoder         : Lavf58.32.104
+    Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], q=2-31, 23.98 fps, 23.98 tbr, 90k tbn, 90k tbc
+    Stream #0:1(eng): Audio: aac (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 4 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame= 5942 fps=0.0 q=-1.0 Lsize=   18350kB time=00:04:07.85 bitrate= 606.5kbits/s speed=3.33e+03x    
+video:14877kB audio:3281kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.056080%

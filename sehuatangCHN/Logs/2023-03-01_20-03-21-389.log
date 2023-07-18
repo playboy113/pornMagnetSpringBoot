@@ -1,0 +1,19 @@
+﻿LOG 2023/03/01
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/03/01 20:03:21
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/780856/index.m3u8?t=1677674001&m=QJ6j6BIkm2hI0Fu2Zv-emQ --saveName 女车模的大长腿
+
+20:03:21.392 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/780856/index.m3u8?t=1677674001&m=QJ6j6BIkm2hI0Fu2Zv-emQ
+20:03:24.473 / (NORMAL) 写出meta.json
+20:03:24.556 / (NORMAL) 开始下载文件
+20:03:24.563 / (NORMAL) 读取文件信息...
+20:03:24.690 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], 29.97 fps, 29.97 tbr, 90k tbn, 59.94 tbc
+20:03:24.692 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 6 kb/s
+20:03:24.720 / (NORMAL) 开始合并分片...
+20:03:25.445 / (NORMAL) 结果输出至 [ffreport.log]
+20:03:25.446 / (NORMAL) 任务结束
+
+Task End: 2023/03/01 20:03:25
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\女车模的大长腿_2023-03-01_20-03-24.mp4
+
+

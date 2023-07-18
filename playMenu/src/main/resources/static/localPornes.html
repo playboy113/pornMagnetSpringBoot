@@ -1,0 +1,651 @@
+
+<html lang="en">
+
+<head>
+  <base href="<%=basePath%>">
+  <meta charset="UTF-8">
+  <title>本地视频</title>
+  <style>
+    .el-table .warning-row {
+      background: oldlace;
+    }
+
+    .el-table .success-row {
+      background: #f0f9eb;
+    }
+
+
+  </style>
+  <link href="jquery/bootstrap_3.3.0/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="jquery/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" type="text/css" href="jquery/bs_pagination-master/css/jquery.bs_pagination.min.css">
+
+  <script type="text/javascript" src="jquery/jquery-1.11.1-min.js"></script>
+  <script type="text/javascript" src="jquery/bootstrap_3.3.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="jquery/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js"></script>
+  <script type="text/javascript" src="jquery/bootstrap-datetimepicker-master/locale/bootstrap-datetimepicker.zh-CN.js"></script>
+  <script type="text/javascript" src="jquery/bs_pagination-master/js/jquery.bs_pagination.min.js"></script>
+  <script type="text/javascript" src="jquery/bs_pagination-master/localization/en.js"></script>
+
+  <script type="text/javascript">
+
+  </script>
+</head>
+<body>
+
+<div id="outerdiv" style="position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.7); z-index: 2; width: 100%; height: 100%; display: none;">
+  <div id="innerdiv" style="position: absolute;">
+    <img id="bigimg" style="border: 5px solid #fff;" src="" />
+  </div>
+</div>
+
+<div style="position: relative; top: -20px; left: 0px; width: 100%; height: 100%;">
+  <div style="width: 100%; position: absolute;top: 5px; left: 10px;">
+
+    <div class="btn-toolbar" role="toolbar" style="height: 80px;">
+      <form class="form-inline" role="form" style="position: relative;top: 8%; left: 5px;">
+
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">番号</div>
+            <input class="form-control" type="text" id="query-num">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">标题</div>
+            <input class="form-control" type="text" id="query-title">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">女优</div>
+            <input class="form-control" type="text" id="query-actress">
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">HD</div>
+            <input class="form-control" type="text" id="query-HD" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">中文字幕</div>
+            <input class="form-control" type="text" id="query-subline">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">类别</div>
+            <input class="form-control" type="text" id="query-types">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">片商</div>
+            <input class="form-control" type="text" id="query-producer">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">日期</div>
+            <input class="form-control" type="text" id="query-date">
+          </div>
+        </div>
+
+
+
+        <button type="button" class="btn btn-default" id="queryActivityBtn">查询</button>
+
+        <!--                <img src=".\images\VOSS-133.jpg" width="600" height="300">-->
+
+        <!---->
+      </form>
+    </div>
+
+    <!--        类别模块-->
+    <div class="btn-group" data-toggle="buttons" id="typesBody">
+      <!--            <label class="btn btn-default"  onclick=SupendButtonClick(this);><input type="checkbox" name="typeName" value="Checkbox 1"  > Checkbox 1</label>-->
+      <!--            <label class="btn btn-default"  onclick=SupendButtonClick(this); >-->
+      <!--                <input type="checkbox" name="typeName" value="Checkbox 2" > Checkbox 2-->
+      <!--            </label>-->
+      <!--            <label class="btn btn-default"  onclick=SupendButtonClick(this);>-->
+      <!--                <input type="checkbox" name="typeName" value="Checkbox 3" > Checkbox 3-->
+      <!--            </label>-->
+
+
+
+    </div>
+    <div>
+      <label>
+        <button type="button" class="btn btn-success" onclick="getVals()">确认类别</button>
+      </label>
+    </div>
+    <div id="types_pag1"></div>
+
+
+
+    <div class="btn-toolbar" role="toolbar" style="background-color: #F7F7F7; height: 50px; position: relative;top: 5px;">
+      <div class="btn-group" style="position: relative; top: 18%;">
+        <button type="button" class="btn btn-primary" id="createActivityBtn"><span class="glyphicon glyphicon-plus"></span> 创建</button>
+        <button type="button" class="btn btn-default" id="editActivityBtn"><span class="glyphicon glyphicon-pencil"></span> 修改</button>
+        <button type="button" class="btn btn-danger" id="deleteActivityBtn"><span class="glyphicon glyphicon-minus"></span> 删除</button>
+      </div>
+      <div class="btn-group" style="position: relative; top: 18%;">
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#importActivityModal" ><span class="glyphicon glyphicon-import"></span> 上传列表数据（导入）</button>
+        <button id="copyMagnetsAllBtn" type="button" class="btn btn-default"><span class="glyphicon glyphicon-export"></span> 批量复制</button>
+        <button id="searchPageBtn" type="button" class="btn btn-default" onclick=window.location.href='search.html'><span class="glyphicon glyphicon-export"></span> 跳转搜索页</button>
+      </div>
+    </div>
+    <div style="position: relative;top: 10px;">
+      <table class="table table-hover">
+        <thead>
+        <tr style="color: #B3B3B3;">
+          <td><input type="checkbox" id="chckAll"/></td>
+          <td>缩略图</td>
+          <td>番号</td>
+          <td>标题</td>
+          <td>字幕</td>
+          <td>高清</td>
+          <td>女优</td>
+          <td>类别</td>
+          <td>片商</td>
+          <td>日期</td>
+
+
+          <td>磁链</td>
+
+        </tr>
+        </thead>
+        <tbody id="tBody">
+
+        </tbody>
+
+      </table>
+      <div id="demo_pag1"></div>
+    </div>
+
+
+
+  </div>
+
+</div>
+</body>
+
+<script src="js/vue.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="js/axios-0.18.0.js"></script>
+
+<script>
+
+
+  $(function(){
+
+    queryActivityByConditionForPage()
+
+
+
+
+
+
+    $("#queryActivityBtn").click(function () {
+      //查询所有符合条件数据的第一页以及所有符合条件数据的总条数;
+      queryActivityByConditionForPage();
+    });
+    $("#chckAll").click(function () {
+      //如果"全选"按钮是选中状态，则列表中所有checkbox都选中
+      /*if(this.checked==true){
+          $("#tBody input[type='checkbox']").prop("checked",true);
+      }else{
+          $("#tBody input[type='checkbox']").prop("checked",false);
+      }*/
+
+      $("#tBody input[type='checkbox']").prop("checked",this.checked);
+    });
+
+    $("#copyMagnetsAllBtn").click(function (){
+      var checkedNums = $("#tBody input[type='checkbox']:checked");
+      if (checkedNums.size()==0){
+        alert("请选择要复制的番号！！");
+        return;
+      }
+      var nums = "";
+      $.each(checkedNums,function (){
+        nums +=this.value+"&";
+      });
+
+      nums =nums.substr(0,nums.length-1);
+
+      $.ajax({
+        url:'pornMagnet/queryMagnetsByNums.do',
+        data:{
+          nums:nums
+        },
+        type:'post',
+        dataType:'json',
+        success:function (data){
+          alert("进来了")
+
+
+          //alert(data.retStr)
+          //alert(data.magnetList)
+          const cInput = document.createElement('input')
+          cInput.value = data.retStr
+
+          document.body.appendChild(cInput)
+          cInput.select() // 选取文本域内容;
+          // 执行浏览器复制命令
+          // 复制命令会将当前选中的内容复制到剪切板中（这里就是创建的input标签）
+          // Input要在正常的编辑状态下原生复制方法才会生效
+          document.execCommand('Copy')
+          alert("复制成功")
+          //alert("复制成功")
+          //this.$notifice('success', '复制成功') // antd框架封装的通知,如使用别的UI框架，换掉这句
+
+          /// 复制成功后再将构造的标签 移除
+          cInput.remove()
+
+        }
+      })
+
+    })
+
+  });
+  function queryActivityByConditionForPage() {
+    //收集参数
+    var title=$("#query-title").val();
+    var actress=$("#query-actress").val();
+    var subline=$("#query-subline").val();
+    var HD=$("#query-HD").val();
+    var num=$("#query-num").val();
+    var types=$("#query-types").val();
+    var date=$("#query-date").val();
+    var producer=$("#query-producer").val();
+
+    //var pageNo=1;
+    //var pageSize=10;
+    //发送请求
+    $.ajax({
+      url:'/playMenu/localPornes.do',
+      data:{
+        title:title,
+        actress:actress,
+        subline:subline,
+        HD:HD,
+        num:num,
+        types:types,
+        date:date,
+        producer:producer,
+
+
+      },
+      type:'post',
+      dataType:'json',
+      success:function (data) {
+
+        //显示总条数
+        //$("#totalRowsB").text(data.totalRows);
+        //显示市场活动的列表
+        //遍历activityList，拼接所有行数据
+        var htmlStr="";
+        $.each(data,function (index,obj) {
+
+          htmlStr+="<tr class=\"active\">";
+          htmlStr+="<td><input type=\"checkbox\" value=\""+obj.num+"\"/></td>";
+          htmlStr+="<td> <img src='/images/"+obj.num+".jpg' width='100' height='75' onclick='Big(this)'></td>";
+          htmlStr+="<td><a style=\"text-decoration: none; cursor: pointer;\" onclick=\"window.location.href='workbench/activity/detailActivity.do?id="+obj.num+"'\">"+obj.num+"</a></td>";
+          htmlStr+="<td>"+obj.title+"</td>";
+          htmlStr+="<td>"+obj.subline+"</td>";
+          htmlStr+="<td>"+obj.HD+"</td>";
+          htmlStr+="<td>"+obj.actress+"</td>";
+          htmlStr+="<td>"+obj.types+"</td>";
+          htmlStr+="<td>"+obj.producer+"</td>";
+          htmlStr+="<td>"+obj.date+"</td>";
+
+          // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
+
+
+          htmlStr+="<td> <a href='"+index+"' target='_blank' role='button'  onclick='clickToPlay(this)' value=\""+index+"\">点击播放</td>";
+
+
+          htmlStr+="</tr>";
+
+
+
+        });
+        $("#tBody").html(htmlStr);
+        //计算总页数
+
+
+        //对容器调用bs_pagination工具函数,显示翻页信息
+
+      }
+    });
+  }
+  //放大图片的函数
+  function Big(obj) {
+    imgShow("#outerdiv", "#innerdiv", "#bigimg", obj);
+  }
+  function clickToPlay(_this){
+    var target = _this.value
+
+
+
+
+
+  }
+
+
+  function imgShow(outerdiv, innerdiv, bigimg, _this) {
+    var src = _this.src;//获取当前点击的pimg元素中的src属性
+    $(bigimg).attr("src", src);//设置#bigimg元素的src属性
+
+    /*获取当前点击图片的真实大小，并显示弹出层及大图*/
+    $("<img/>").attr("src", src).load(function () {
+      var windowW = $(window).width();//获取当前窗口宽度
+      var windowH = $(window).height();//获取当前窗口高度
+      var realWidth = this.width;//获取图片真实宽度
+      var realHeight = this.height;//获取图片真实高度
+      var imgWidth, imgHeight;
+      var scale = 0.8;//缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放
+
+      if (realHeight > windowH * scale) {//判断图片高度
+        imgHeight = windowH * scale;//如大于窗口高度，图片高度进行缩放
+        imgWidth = imgHeight / realHeight * realWidth;//等比例缩放宽度
+        if (imgWidth > windowW * scale) {//如宽度扔大于窗口宽度
+          imgWidth = windowW * scale;//再对宽度进行缩放
+        }
+      } else if (realWidth > windowW * scale) {//如图片高度合适，判断图片宽度
+        imgWidth = windowW * scale;//如大于窗口宽度，图片宽度进行缩放
+        imgHeight = imgWidth / realWidth * realHeight;//等比例缩放高度
+      } else {//如果图片真实高度和宽度都符合要求，高宽不变
+        imgWidth = realWidth;
+        imgHeight = realHeight;
+      }
+      $(bigimg).css("width", imgWidth);//以最终的宽度对图片缩放
+
+      var w = (windowW - imgWidth) / 2;//计算图片与窗口左边距
+      var h = (windowH - imgHeight) / 2;//计算图片与窗口上边距
+      $(innerdiv).css({ "top": h, "left": w });//设置#innerdiv的top和left属性
+      $(outerdiv).fadeIn("fast");//淡入显示#outerdiv及.pimg
+    });
+
+    $(outerdiv).click(function () {//再次点击淡出消失弹出层
+      $(this).fadeOut("fast");
+    });
+  };
+
+  //    获取类别
+  function queryTypes(indexName,aggName,fileName) {
+
+    $.ajax({
+      url:'pornMagnet/aggRequest.do?indexName='+indexName+'&aggName='+aggName+'&fileName='+fileName,
+      data:{
+
+
+      },
+      type:'post',
+      dataType:'json',
+      success:function(data){
+        var typesList = data.aggList;
+        //alert(data.aggList.length)
+        var typesArr = new Array(data.aggList.length);
+
+
+
+        //alert(typesArr)
+        var htmlStr ="";
+        $.each(data.aggList,function (index,obj) {
+          typesArr[index] = obj;
+
+
+
+          htmlStr+="<label class=\"btn btn-default\"  onclick='SupendButtonClick(this);' ><input type=\"checkbox\" name=\"typeName\" value="+obj+">"+obj+"</label>";
+
+
+          // htmlStr+="<tr class=\"active\">";
+          // htmlStr+="<td><input type=\"checkbox\" value=\""+obj.num+"\"/></td>";
+          // htmlStr+="<td> <img src='./images/"+obj.num+".jpg' width='100' height='75' onclick='Big(this)'></td>";
+          // htmlStr+="<td><a style=\"text-decoration: none; cursor: pointer;\" onclick=\"window.location.href='workbench/activity/detailActivity.do?id="+obj.num+"'\">"+obj.num+"</a></td>";
+          // htmlStr+="<td>"+obj.title+"</td>";
+          // htmlStr+="<td>"+obj.subline+"</td>";
+          // htmlStr+="<td>"+obj.HD+"</td>";
+          // htmlStr+="<td>"+obj.actress+"</td>";
+          // htmlStr+="<td>"+obj.types+"</td>";
+          // htmlStr+="<td>"+obj.producer+"</td>";
+          // htmlStr+="<td>"+obj.date+"</td>";
+          //
+          // // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
+          // htmlStr+="<td> <button type='button' onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
+          // htmlStr+="</tr>";
+
+
+
+        });
+        $("#typesBody").html(htmlStr);
+        //queryBySelectTypes(typesArr,1,50);
+
+
+
+
+      }
+    })
+
+  }
+  //   点击选中
+  function SupendButtonClick(obj) {
+    var checkbox = $(obj);
+
+    var unchecked = checkbox.prop("checked");
+    // alert(unchecked)
+
+
+
+
+    // if (obj.getAttribute('class')==="btn btn-default"|| obj.getAttribute('class')==="btn btn-default active"){
+    //     obj.setAttribute('class',"btn btn-primary")
+    //
+    //
+    // }else{
+    //    obj.setAttribute('class',"btn btn-default")
+    //
+    //
+    // }
+  }
+  //获取类别信息
+  function getVals(){
+    var res = getRadioRes('typeName');
+    if (res.length==0){
+      queryActivityByConditionForPage(1,50);
+    }else{
+      queryBySelectTypes(res,1,50)
+    }
+    //queryBySelectTypes(res,1,10)
+
+    //queryBySelectTypes(res,1,10)
+    if(res.length < 1){
+      mui.toast('请选择');
+      return;
+    }
+    mui.toast(res);
+  }
+  function getRadioRes(className){
+    var rdsObj = document.getElementsByName(className);/*获取值*/
+    //alert(rdsObj.length);
+    //queryBySelectTypes(selectTypes,pageNo,pageSize)
+    var checkVal = new Array();
+    var k = 0;
+    for(i = 0; i< rdsObj.length; i++){
+      if(rdsObj[i].checked){
+        checkVal[k] = rdsObj[i].value;
+        k++;
+      }
+    }
+    return checkVal;
+  }
+  //根据类别信息查找
+  function queryBySelectTypes(selectTypes,pageNo,pageSize){
+    var title=$("#query-title").val();
+    var actress=$("#query-actress").val();
+    var subline=$("#query-subline").val();
+    var HD=$("#query-HD").val();
+    var num=$("#query-num").val();
+    var types = JSON.stringify(selectTypes);
+    var date=$("#query-date").val();
+    var producer=$("#query-producer").val();
+
+    $.ajax({
+      url:'pornMagnet/queryMagnetsByTypes.do',
+      data:{
+        title:title,
+        actress:actress,
+        subline:subline,
+        HD:HD,
+        num:num,
+        types:types,
+        date:date,
+        producer:producer,
+        pageNo: pageNo,
+        pageSize:pageSize
+
+
+
+      },
+      type:'post',
+      dataType:'json',
+      success:function(data){
+
+
+        var htmlStr = "";
+        $.each(data.magnet_models,function (index,obj) {
+
+          htmlStr+="<tr class=\"active\">";
+          htmlStr+="<td><input type=\"checkbox\" value=\""+obj.num+"\"/></td>";
+          htmlStr+="<td> <img src='/images/"+obj.num+".jpg' width='100' height='75' onclick='Big(this)'></td>";
+          htmlStr+="<td><a style=\"text-decoration: none; cursor: pointer;\" onclick=\"window.location.href='workbench/activity/detailActivity.do?id="+obj.num+"'\">"+obj.num+"</a></td>";
+          htmlStr+="<td>"+obj.title+"</td>";
+          htmlStr+="<td>"+obj.subline+"</td>";
+          htmlStr+="<td>"+obj.HD+"</td>";
+          htmlStr+="<td>"+obj.actress+"</td>";
+          htmlStr+="<td>"+obj.types+"</td>";
+          htmlStr+="<td>"+obj.producer+"</td>";
+          htmlStr+="<td>"+obj.date+"</td>";
+
+          // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
+          if (obj.selected ===1){
+            htmlStr+="<td> <button type='button' class='btn-danger'  onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
+          }else{
+            htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
+          }
+          htmlStr+="</tr>";
+
+
+
+        });
+        $("#tBody").html(htmlStr);
+        //计算总页数
+        var totalPages=1;
+        if(data.totalRows%pageSize==0){
+          totalPages=data.totalRows/pageSize;
+        }else{
+          totalPages=parseInt(data.totalRows/pageSize)+1;
+        }
+
+        //对容器调用bs_pagination工具函数,显示翻页信息
+        $("#demo_pag1").bs_pagination({
+          currentPage:pageNo,//当前页号,相当于pageNo
+
+          rowsPerPage:pageSize,//每页显示条数,相当于pageSize
+          totalRows:data.totalRows,//总条数
+          totalPages: totalPages,  //总页数,必填参数.
+
+          visiblePageLinks:5,//最多可以显示的卡片数
+
+          showGoToPage:true,//是否显示"跳转到"部分,默认true--显示
+          showRowsPerPage:true,//是否显示"每页显示条数"部分。默认true--显示
+          showRowsInfo:true,//是否显示记录的信息，默认true--显示
+
+          //用户每次切换页号，都自动触发本函数;
+          //每次返回切换页号之后的pageNo和pageSize
+          onChangePage: function(event,pageObj) { // returns page_num and rows_per_page after a link has clicked
+            //js代码
+            //alert(pageObj.currentPage);
+            //alert(pageObj.rowsPerPage);
+            //queryActivityByConditionForPage(pageObj.currentPage,pageObj.rowsPerPage);
+            queryBySelectTypes(selectTypes,pageObj.currentPage,pageObj.rowsPerPage)
+          }
+        });
+
+
+      }
+    })
+
+
+
+
+  }
+  function queryTypesArr(indexName,aggName,fileName){
+
+    var typesArr = new Array();
+    $.ajax({
+      url:'pornMagnet/aggRequest.do?indexName='+indexName+'&aggName='+aggName+'&fileName='+fileName,
+      data:{
+      },
+      type:'post',
+      dataType:'json',
+      success:function(data){
+        var typesList = data.aggList;
+        //alert(data.aggList.length)
+        //alert(typesArr)
+        var htmlStr ="";
+        $.each(data.aggList,function (index,obj) {
+          typesArr[index] = obj;
+          //htmlStr+="<label class=\"btn btn-default\"  onclick='SupendButtonClick(this);' ><input type=\"checkbox\" name=\"typeName\" value="+obj+">"+obj+"</label>";
+
+
+          // htmlStr+="<tr class=\"active\">";
+          // htmlStr+="<td><input type=\"checkbox\" value=\""+obj.num+"\"/></td>";
+          // htmlStr+="<td> <img src='./images/"+obj.num+".jpg' width='100' height='75' onclick='Big(this)'></td>";
+          // htmlStr+="<td><a style=\"text-decoration: none; cursor: pointer;\" onclick=\"window.location.href='workbench/activity/detailActivity.do?id="+obj.num+"'\">"+obj.num+"</a></td>";
+          // htmlStr+="<td>"+obj.title+"</td>";
+          // htmlStr+="<td>"+obj.subline+"</td>";
+          // htmlStr+="<td>"+obj.HD+"</td>";
+          // htmlStr+="<td>"+obj.actress+"</td>";
+          // htmlStr+="<td>"+obj.types+"</td>";
+          // htmlStr+="<td>"+obj.producer+"</td>";
+          // htmlStr+="<td>"+obj.date+"</td>";
+          //
+          // // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
+          // htmlStr+="<td> <button type='button' onclick='copyMagnet(this)' value=\""+obj.num+"\">磁链</td>";
+          // htmlStr+="</tr>";
+
+        });
+        //$("#typesBody").html(htmlStr);
+        //alert(typesArr)
+        //return typesArr;
+      }
+    })
+    //alert(typesArr);
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</html>

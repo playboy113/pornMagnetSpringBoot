@@ -36,8 +36,8 @@ public class mainCrawer {
         header.put("Accept-Language", builder.acceptLanguage);
         header.put("Accept-Encoding", builder.acceptEncoding);
 
-        for (int i=1;i<30;i++){
-            Connection connect = Jsoup.connect("https://91porny.com/search?keywords=%E7%9C%9F%E5%AE%9E&view=desc&page="+i);
+        for (int i=1;i<15;i++){
+            Connection connect = Jsoup.connect("https://91porny.com/video/category/recent-favorite/"+i);
             Connection headers = connect.headers(header);
             Document document = headers.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
             Elements elements = document.getElementsByClass("colVideoList");

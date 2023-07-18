@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.flowers.mapper.FlowlistsMapper">
+    <resultMap id="BaseResultMap" type="com.flowers.entity.flower">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="age" column="age" jdbcType="VARCHAR"/>
+            <result property="tall" column="tall" jdbcType="VARCHAR"/>
+            <result property="breast" column="breast" jdbcType="VARCHAR"/>
+            <result property="price" column="price" jdbcType="VARCHAR"/>
+            <result property="service" column="service" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="city" column="city" jdbcType="VARCHAR"/>
+            <result property="locate" column="locate" jdbcType="VARCHAR"/>
+            <result property="introduce" column="introduce" jdbcType="VARCHAR"/>
+            <result property="report" column="report" jdbcType="VARCHAR"/>
+            <result property="picUrl" column="picUrl" jdbcType="VARCHAR"/>
+            <result property="weight" column="weight" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="updateTime" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,age,
+        tall,breast,price,
+        service,type,city,
+        locate,introduce,report,
+        picUrl,weight,updateTime
+    </sql>
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from flowlists
+        where  id = #{id,jdbcType=INTEGER} 
+    </select>
+    <select id="selectAll" resultType="com.flowers.entity.flower">
+        select
+            id,name,age,
+            tall,breast,price,
+            service,type,city,
+            locate,introduce,report,
+            picUrl,weight,updateTime
+        from flowlists
+
+    </select>
+
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        delete from flowlists
+        where  id = #{id,jdbcType=INTEGER} 
+    </delete>
+    <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.flowers.entity.flower" useGeneratedKeys="true">
+        insert into flowlists
+        ( id,name,age
+        ,tall,breast,price
+        ,service,type,city
+        ,locate,introduce,report
+        ,picUrl,weight)
+        values (#{id,jdbcType=INTEGER},#{name,jdbcType=VARCHAR},#{age,jdbcType=VARCHAR}
+        ,#{tall,jdbcType=VARCHAR},#{breast,jdbcType=VARCHAR},#{price,jdbcType=VARCHAR}
+        ,#{service,jdbcType=VARCHAR},#{type,jdbcType=VARCHAR},#{city,jdbcType=VARCHAR}
+        ,#{locate,jdbcType=VARCHAR},#{introduce,jdbcType=VARCHAR},#{report,jdbcType=VARCHAR}
+        ,#{picurl,jdbcType=VARCHAR},#{weight,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.flowers.entity.flower" useGeneratedKeys="true">
+        insert into flowlists
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+                <if test="id != null">id,</if>
+                <if test="name != null">name,</if>
+                <if test="age != null">age,</if>
+                <if test="tall != null">tall,</if>
+                <if test="breast != null">breast,</if>
+                <if test="price != null">price,</if>
+                <if test="service != null">service,</if>
+                <if test="type != null">type,</if>
+                <if test="city != null">city,</if>
+                <if test="locate != null">locate,</if>
+                <if test="introduce != null">introduce,</if>
+                <if test="report != null">report,</if>
+                <if test="picurl != null">picUrl,</if>
+                <if test="weight != null">weight,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+                <if test="id != null">#{id,jdbcType=INTEGER},</if>
+                <if test="name != null">#{name,jdbcType=VARCHAR},</if>
+                <if test="age != null">#{age,jdbcType=VARCHAR},</if>
+                <if test="tall != null">#{tall,jdbcType=VARCHAR},</if>
+                <if test="breast != null">#{breast,jdbcType=VARCHAR},</if>
+                <if test="price != null">#{price,jdbcType=VARCHAR},</if>
+                <if test="service != null">#{service,jdbcType=VARCHAR},</if>
+                <if test="type != null">#{type,jdbcType=VARCHAR},</if>
+                <if test="city != null">#{city,jdbcType=VARCHAR},</if>
+                <if test="locate != null">#{locate,jdbcType=VARCHAR},</if>
+                <if test="introduce != null">#{introduce,jdbcType=VARCHAR},</if>
+                <if test="report != null">#{report,jdbcType=VARCHAR},</if>
+                <if test="picurl != null">#{picurl,jdbcType=VARCHAR},</if>
+                <if test="weight != null">#{weight,jdbcType=VARCHAR},</if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.flowers.entity.flower">
+        update flowlists
+        <set>
+                <if test="name != null">
+                    name = #{name,jdbcType=VARCHAR},
+                </if>
+                <if test="age != null">
+                    age = #{age,jdbcType=VARCHAR},
+                </if>
+                <if test="tall != null">
+                    tall = #{tall,jdbcType=VARCHAR},
+                </if>
+                <if test="breast != null">
+                    breast = #{breast,jdbcType=VARCHAR},
+                </if>
+                <if test="price != null">
+                    price = #{price,jdbcType=VARCHAR},
+                </if>
+                <if test="service != null">
+                    service = #{service,jdbcType=VARCHAR},
+                </if>
+                <if test="type != null">
+                    type = #{type,jdbcType=VARCHAR},
+                </if>
+                <if test="city != null">
+                    city = #{city,jdbcType=VARCHAR},
+                </if>
+                <if test="locate != null">
+                    locate = #{locate,jdbcType=VARCHAR},
+                </if>
+                <if test="introduce != null">
+                    introduce = #{introduce,jdbcType=VARCHAR},
+                </if>
+                <if test="report != null">
+                    report = #{report,jdbcType=VARCHAR},
+                </if>
+                <if test="picurl != null">
+                    picUrl = #{picurl,jdbcType=VARCHAR},
+                </if>
+                <if test="weight != null">
+                    weight = #{weight,jdbcType=VARCHAR},
+                </if>
+        </set>
+        where   id = #{id,jdbcType=INTEGER} 
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.flowers.entity.flower">
+        update flowlists
+        set 
+            name =  #{name,jdbcType=VARCHAR},
+            age =  #{age,jdbcType=VARCHAR},
+            tall =  #{tall,jdbcType=VARCHAR},
+            breast =  #{breast,jdbcType=VARCHAR},
+            price =  #{price,jdbcType=VARCHAR},
+            service =  #{service,jdbcType=VARCHAR},
+            type =  #{type,jdbcType=VARCHAR},
+            city =  #{city,jdbcType=VARCHAR},
+            locate =  #{locate,jdbcType=VARCHAR},
+            introduce =  #{introduce,jdbcType=VARCHAR},
+            report =  #{report,jdbcType=VARCHAR},
+            picUrl =  #{picurl,jdbcType=VARCHAR},
+            weight =  #{weight,jdbcType=VARCHAR}
+        where   id = #{id,jdbcType=INTEGER} 
+    </update>
+</mapper>

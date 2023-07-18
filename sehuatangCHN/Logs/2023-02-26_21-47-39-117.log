@@ -1,0 +1,45 @@
+﻿LOG 2023/02/26
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/02/26 21:47:39
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/624642/index.m3u8?t=1677421058&m=XSEn9LTcl8exGvLcZM-Thg --saveName 韵味十足的上海少妇，喜欢的一键三连
+
+21:47:39.119 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/624642/index.m3u8?t=1677421058&m=XSEn9LTcl8exGvLcZM-Thg
+21:47:42.064 / (NORMAL) 写出meta.json
+21:47:42.130 / (NORMAL) 开始下载文件
+21:47:43.613 / (NORMAL) 读取文件信息...
+21:47:43.737 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336 [SAR 224:225 DAR 16:9], 30 fps, 30 tbr, 90k tbn, 60 tbc
+21:47:43.738 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+21:47:45.973 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/624642/index6.ts
+21:47:46.314 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/624642/index7.ts
+21:47:46.980 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/624642/index6.ts
+21:47:47.321 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/624642/index7.ts
+21:47:48.097 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/624642/index6.ts
+21:47:48.539 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/624642/index7.ts
+21:47:49.087 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/624642/index11.ts
+21:47:49.106 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/624642/index6.ts
+21:47:49.542 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/624642/index7.ts
+21:47:50.098 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/624642/index11.ts
+21:47:51.493 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/624642/index7.ts
+21:47:51.654 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/624642/index6.ts
+21:47:52.079 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/624642/index11.ts
+21:47:52.191 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/624642/index14.ts
+21:47:52.309 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/624642/index13.ts
+21:47:52.504 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/624642/index7.ts
+21:47:52.659 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/624642/index6.ts
+21:47:53.091 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn3.jiuse.cloud/hls/624642/index11.ts
+21:47:53.201 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/624642/index14.ts
+21:47:53.324 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn3.jiuse.cloud/hls/624642/index13.ts
+21:47:53.709 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/624642/index7.ts
+21:47:54.973 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn3.jiuse.cloud/hls/624642/index11.ts
+21:47:55.978 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn3.jiuse.cloud/hls/624642/index11.ts
+21:48:06.546 / (NORMAL) 完成数量 19 of 20
+21:48:06.546 / (NORMAL) 重试次数 1 / 15
+21:48:09.551 / (NORMAL) 开始下载文件
+21:48:15.715 / (NORMAL) 开始合并分片...
+21:48:15.972 / (NORMAL) 结果输出至 [ffreport.log]
+21:48:15.975 / (NORMAL) 任务结束
+
+Task End: 2023/02/26 21:48:15
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\韵味十足的上海少妇，喜欢的一键三连.mp4
+
+

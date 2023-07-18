@@ -14,7 +14,7 @@ public class testMain {
 
     private static List<File> fileList = new ArrayList<>();
     public static void main(String[] args) throws MalformedURLException, SmbException {
-        String path = "K:";
+        String path = "D:";
         File file = new File(path);
         loadFileList(file);
         //System.out.println(fileList);
@@ -26,7 +26,7 @@ public class testMain {
         // 判断这个路径是文件还是文件夹
         if(file.isDirectory()){
             File[] files = file.listFiles();
-            System.out.println(Arrays.toString(files));
+            //System.out.println(Arrays.toString(files));
             if(files == null || files.length == 0 ){
                 return;
             }
@@ -60,6 +60,7 @@ public class testMain {
                     System.out.println(f.getPath());
                     getFileName(f,fileName);
                 }else if(f.toString().contains(".mp4")){
+                    System.out.println(f.getPath());
                     fileName.add(f.getPath());
                 }
             }

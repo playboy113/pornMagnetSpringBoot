@@ -2,7 +2,7 @@ server:
   port: 8083
 spring:
   datasource:
-    url: jdbc:mysql://164.88.199.205:3306/magnet?useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://164.88.199.77:3306/magnet?useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -20,7 +20,7 @@ spring:
   mvc:
     static-path-pattern: /**
   redis:
-    host: localhost
+    host: 164.88.199.77
     port: 6379
     client-type: lettuce
     lettuce:

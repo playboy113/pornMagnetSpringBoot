@@ -1,0 +1,19 @@
+﻿LOG 2023/01/29
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\Logs
+Task Start: 2023/01/29 06:48:29
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\jiuse911Modeul\N_m3u8DL-CLI_v3.0.2.exe https://cdn3.jiuse.cloud/hls/753661/index.m3u8?t=1674947900&m=cLn3AiNIw-8tzRyTEEIFGA --saveName 女朋友要我带她认识我兄弟我拍了片发91算不算带她认识兄弟们了
+
+06:48:29.956 / (NORMAL) 开始解析 https://cdn3.jiuse.cloud/hls/753661/index.m3u8?t=1674947900&m=cLn3AiNIw-8tzRyTEEIFGA
+06:48:32.761 / (NORMAL) 写出meta.json
+06:48:32.820 / (NORMAL) 开始下载文件
+06:48:32.820 / (NORMAL) 读取文件信息...
+06:48:32.852 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x340, 30 fps, 30 tbr, 90k tbn, 60 tbc
+06:48:32.852 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 4 kb/s
+06:48:32.884 / (NORMAL) 开始合并分片...
+06:48:33.046 / (NORMAL) 结果输出至 [ffreport.log]
+06:48:33.046 / (NORMAL) 任务结束
+
+Task End: 2023/01/29 06:48:33
+File: D:\java\GitHub\pornMagnetSpringBoot\Downloads\女朋友要我带她认识我兄弟我拍了片发91算不算带她认识兄弟们了_2023-01-29_06-48-32.mp4
+
+

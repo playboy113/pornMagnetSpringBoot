@@ -5,6 +5,7 @@ import com.play.service.typesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Service("typesService")
@@ -17,7 +18,8 @@ public class typesServiceImpl implements typesService {
     }
 
     @Override
-    public List<String> selectVideosByType(String type) {
-        return magnet_typesMapper.selectVideosByType(type);
+    public List<String> selectVideosByType(String[] types) {
+
+        return magnet_typesMapper.selectVideosByType(types);
     }
 }

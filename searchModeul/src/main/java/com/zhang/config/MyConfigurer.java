@@ -8,6 +8,6 @@ public class MyConfigurer implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //registry.addResourceHandler("/images/**").addResourceLocations("file:D:/github/pornMagnetSpringBoot/searchModeul/src/main/resources/images/");
-        registry.addResourceHandler("/images/**").addResourceLocations("file:D:/images/");
+        registry.addResourceHandler("/images/**").addResourceLocations("file:E:/images/");
     }
 }

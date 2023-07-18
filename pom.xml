@@ -11,6 +11,10 @@
     <module>es-service</module>
       <module>playMenu</module>
 
+    <module>magnetChange02</module>
+
+    <module>flowersList</module>
+
   </modules>
 
   <parent>

@@ -15,7 +15,7 @@ import java.util.List;
 public interface magnet_typesMapper {
     List<String> selectAllTypes();
 
-    List<String> selectVideosByType(String type);
+    List<String> selectVideosByType(String[] type);
 
 
 

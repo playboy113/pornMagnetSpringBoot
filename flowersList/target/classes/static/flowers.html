@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>探花列表</title>
+  <link href="jquery/bootstrap_3.3.0/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="jquery/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" type="text/css" href="jquery/bs_pagination-master/css/jquery.bs_pagination.min.css">
+
+  <script type="text/javascript" src="jquery/jquery-1.11.1-min.js"></script>
+  <script type="text/javascript" src="jquery/bootstrap_3.3.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="jquery/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js"></script>
+  <script type="text/javascript" src="jquery/bootstrap-datetimepicker-master/locale/bootstrap-datetimepicker.zh-CN.js"></script>
+  <script type="text/javascript" src="jquery/bs_pagination-master/js/jquery.bs_pagination.min.js"></script>
+  <script type="text/javascript" src="jquery/bs_pagination-master/localization/en.js"></script>
+
+  <script type="text/javascript">
+
+  </script>
+</head>
+
+<body>
+<div style="position: relative; top: -20px; left: 0px; width: 100%; height: 100%;">
+  <div style="width: 100%; position: absolute;top: 5px; left: 10px;">
+
+    <div class="btn-toolbar" role="toolbar" style="height: 80px;">
+      <form class="form-inline" role="form" style="position: relative;top: 8%; left: 5px;">
+
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">编号</div>
+            <input class="form-control" type="text" id="query-num">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">姓名</div>
+            <input class="form-control" type="text" id="query-title">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">年龄</div>
+            <input class="form-control" type="text" id="query-actress">
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">身高</div>
+            <input class="form-control" type="text" id="query-HD" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">体重</div>
+            <input class="form-control" type="text" id="query-subline">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">胸部</div>
+            <input class="form-control" type="text" id="query-types">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">价格</div>
+            <input class="form-control" type="text" id="query-producer">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">服务</div>
+            <input class="form-control" type="text" id="query-date">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">城市</div>
+            <input class="form-control" type="text" id="query-city">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">地区</div>
+            <input class="form-control" type="text" id="query-locate">
+          </div>
+        </div>
+
+
+
+        <button type="button" class="btn btn-default" id="queryActivityBtn">查询</button>
+
+        <!--                <img src=".\images\VOSS-133.jpg" width="600" height="300">-->
+
+        <!---->
+      </form>
+    </div>
+
+    <!--        类别模块-->
+    <div class="btn-group" data-toggle="buttons" id="typesBody">
+      <!--            <label class="btn btn-default"  onclick=SupendButtonClick(this);><input type="checkbox" name="typeName" value="Checkbox 1"  > Checkbox 1</label>-->
+      <!--            <label class="btn btn-default"  onclick=SupendButtonClick(this); >-->
+      <!--                <input type="checkbox" name="typeName" value="Checkbox 2" > Checkbox 2-->
+      <!--            </label>-->
+      <!--            <label class="btn btn-default"  onclick=SupendButtonClick(this);>-->
+      <!--                <input type="checkbox" name="typeName" value="Checkbox 3" > Checkbox 3-->
+      <!--            </label>-->
+
+
+
+    </div>
+    <div>
+      <label>
+        <button type="button" class="btn btn-success" onclick="getVals()">确认类别</button>
+      </label>
+    </div>
+    <div id="types_pag1"></div>
+
+
+
+    <div class="btn-toolbar" role="toolbar" style="background-color: #F7F7F7; height: 50px; position: relative;top: 5px;">
+      <div class="btn-group" style="position: relative; top: 18%;">
+        <button type="button" class="btn btn-primary" id="createActivityBtn"><span class="glyphicon glyphicon-plus"></span> 创建</button>
+        <button type="button" class="btn btn-default" id="editActivityBtn"><span class="glyphicon glyphicon-pencil"></span> 修改</button>
+        <button type="button" class="btn btn-danger" id="deleteActivityBtn"><span class="glyphicon glyphicon-minus"></span> 删除</button>
+      </div>
+      <div class="btn-group" style="position: relative; top: 18%;">
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#importActivityModal" ><span class="glyphicon glyphicon-import"></span> 上传列表数据（导入）</button>
+        <button id="copyMagnetsAllBtn" type="button" class="btn btn-default"><span class="glyphicon glyphicon-export"></span> 批量复制</button>
+        <button id="searchPageBtn" type="button" class="btn btn-default" onclick=window.location.href='search.html'><span class="glyphicon glyphicon-export"></span> 跳转搜索页</button>
+      </div>
+    </div>
+    <div style="position: relative;top: 10px;">
+      <table class="table table-hover">
+        <thead>
+        <tr style="color: #B3B3B3;">
+          <td><input type="checkbox" id="chckAll"/></td>
+          <td>编号</td>
+          <td>姓名</td>
+          <td>年龄</td>
+          <td>身高</td>
+          <td>体重</td>
+          <td>胸部</td>
+          <td>价格</td>
+          <td>服务</td>
+          <td>类型</td>
+          <td>城市</td>
+          <td>地区</td>
+          <td>更新时间</td>
+          <td>操作</td>
+
+
+        </tr>
+        </thead>
+        <tbody id="tBody">
+
+        </tbody>
+
+      </table>
+      <div id="demo_pag1"></div>
+    </div>
+
+
+
+  </div>
+</div>
+
+</body>
+<script src="js/vue.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="js/axios-0.18.0.js"></script>
+<script>
+  $(function(){
+    queryAll()
+  });
+
+  function queryAll(){
+    $.ajax({
+      url:'flower/selectAll.do',
+      data:{
+
+
+      },
+      type:'post',
+      dataType:'json',
+      success:function (data) {
+
+        //显示总条数
+        //$("#totalRowsB").text(data.totalRows);
+        //显示市场活动的列表
+        //遍历activityList，拼接所有行数据
+        var htmlStr="";
+        $.each(data.flowers,function (index,obj) {
+
+          htmlStr+="<tr class=\"active\">";
+          htmlStr+="<td><input type=\"checkbox\" value=\""+obj.id+"\"/></td>";
+
+          htmlStr+="<td>"+obj.id+"</td>";
+          htmlStr+="<td>"+obj.name+"</td>";
+          htmlStr+="<td>"+obj.age+"</td>";
+          htmlStr+="<td>"+obj.tall+"</td>";
+          htmlStr+="<td>"+obj.weight+"</td>";
+          htmlStr+="<td>"+obj.breast+"</td>";
+          htmlStr+="<td>"+obj.price+"</td>";
+          htmlStr+="<td>"+obj.service+"</td>";
+          htmlStr+="<td>"+obj.type+"</td>";
+          htmlStr+="<td>"+obj.city+"</td>";
+          htmlStr+="<td>"+obj.locate+"</td>";
+          htmlStr+="<td>"+obj.updateTime+"</td>";
+          htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">复制</td>";
+          htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">更新</td>";
+          htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">删除</td>";
+
+          // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
+
+
+          htmlStr+="</tr>";
+
+
+
+        });
+        $("#tBody").html(htmlStr);
+      }
+    });
+  }
+
+
+
+</script>
+</html>
