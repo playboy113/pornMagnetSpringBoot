@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>探花列表</title>
+  <meta charset="UTF-8">
+  <title>探花列表</title>
   <link href="jquery/bootstrap_3.3.0/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="jquery/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css">
   <link rel="stylesheet" type="text/css" href="jquery/bs_pagination-master/css/jquery.bs_pagination.min.css">
@@ -17,6 +17,28 @@
   <script type="text/javascript">
 
   </script>
+  <style>
+    .modal-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* 半透明的遮罩层 */
+      z-index: 9999; /* 使其处于最顶层 */
+    }
+
+    /* 模态表单的内容样式 */
+    .modal-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -94,11 +116,17 @@
 
         <button type="button" class="btn btn-default" id="queryActivityBtn">查询</button>
 
-        <!--                <img src=".\images\VOSS-133.jpg" width="600" height="300">-->
+        <!--                < img src=".\images\VOSS-133.jpg" width="600" height="300">-->
 
         <!---->
       </form>
     </div>
+
+
+
+
+
+
 
     <!--        类别模块-->
     <div class="btn-group" data-toggle="buttons" id="typesBody">
@@ -124,7 +152,7 @@
 
     <div class="btn-toolbar" role="toolbar" style="background-color: #F7F7F7; height: 50px; position: relative;top: 5px;">
       <div class="btn-group" style="position: relative; top: 18%;">
-        <button type="button" class="btn btn-primary" id="createActivityBtn"><span class="glyphicon glyphicon-plus"></span> 创建</button>
+        <button type="button" class="btn btn-primary" id="createActivityBtn"  data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus"></span> 创建</button>
         <button type="button" class="btn btn-default" id="editActivityBtn"><span class="glyphicon glyphicon-pencil"></span> 修改</button>
         <button type="button" class="btn btn-danger" id="deleteActivityBtn"><span class="glyphicon glyphicon-minus"></span> 删除</button>
       </div>
@@ -134,6 +162,98 @@
         <button id="searchPageBtn" type="button" class="btn btn-default" onclick=window.location.href='search.html'><span class="glyphicon glyphicon-export"></span> 跳转搜索页</button>
       </div>
     </div>
+
+    <!--    弹出表单模块-->
+    <div  class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+              插入新信息
+            </h4>
+          </div>
+          <form id="form_data" >
+            <div class="modal-body" style="height: 500px;width: 90%">
+              花名： <input type="text" id="name" name="name" style="width: 40%"/>
+              年龄： <input type="text" id="age" name="age" style="width: 40%"/>
+
+              身高： <input type="text" id="tall" name="tall" style="width: 23%"/>
+              体重： <input type="text" id="weight" name="weight" style="width: 23%"/>
+              胸部： <input type="text" id="breast" name="breast" style="width: 23%"/>
+
+              价格： <input type="text" id="price" name="price" style="width: 23%"/>
+              类型： <input type="text" id="type" name="type" style="width: 23%"/>
+
+              城市： <input type="text" id="city" name="city" style="width: 23%"/>
+              地区： <input type="text" id="locate" name="locate" style="width: 23%"/>
+              电话： <input type="text" id="phone" name="phone" style="width: 23%"/>
+              微信： <input type="text" id="wechat" name="wechat" style="width: 23%"/>
+              qq： <input type="text" id="qq" name="locate" style="width: 23%"/>
+              介绍： <input type="text" id="introduce" name="introduce" style="width: 60%;height: 100px"/>
+              评价： <input type="text" id="report" name="report" style="width: 100%;height: 100px"/>
+
+              更新时间： <input type="date" id="updateTime" name="updateTime" style="width: 100%"/>
+              <input type="hidden" id="act" value="add" name="act" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+              </button>
+              <button type="button" onclick="add_info()" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                提交更改
+              </button>
+            </div>
+          </form>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal -->
+    </div>
+
+<!--    插入图片窗口-->
+    <div  class="modal fade" id="picModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              &times;
+            </button>
+            <h4 class="modal-title" >
+              导入图片
+            </h4>
+          </div>
+          <form id="form_pic"  enctype="multipart/form-data" >
+            <div class="modal-body" style="height: 500px;width: 90%">
+              <input type="file" name="file" id="picFile" multiple>
+              <button id="pic-btn" type="submit" onclick="upload()" >上传</button>
+
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+              </button>
+              <button type="button" onclick="add_pic()" class="btn btn-primary" data-toggle="modal" data-target="#picModal">
+                导入图片
+              </button>
+            </div>
+          </form>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal -->
+    </div>
+
+
+    <div id="modalContainer" class="modal-container" style="display: none;">
+      <!-- 表单内容 -->
+      <form id="picForm">
+        <input type="file" name="file"  multiple>
+        <button  type="submit" onclick="upload()" >上传</button>
+        <button type="button" onclick="open_close()">关闭</button>
+      </form>
+
+    </div>
+
+
+
     <div style="position: relative;top: 10px;">
       <table class="table table-hover">
         <thead>
@@ -151,6 +271,9 @@
           <td>城市</td>
           <td>地区</td>
           <td>更新时间</td>
+          <td>微信</td>
+          <td>电话</td>
+          <td>qq</td>
           <td>操作</td>
 
 
@@ -179,6 +302,101 @@
   $(function(){
     queryAll()
   });
+
+
+  function upload(){
+
+      var formdata=new FormData(document.getElementById("picForm"));
+
+    $.ajax({
+      url: 'flower/upload.do',
+      data:
+        formdata,
+      type: 'post',
+      dataType: 'json',
+      processData:false,//必须要写
+      contentType:false,//必须要写
+      success: function (data) {
+        alert(data)
+
+      }
+    });
+  }
+
+
+
+  function open_close(){
+    if (document.getElementById("modalContainer").style.display === 'none') {
+      document.getElementById("modalContainer").style.display = 'block';
+    } else {
+      document.getElementById("modalContainer").style.display = 'none';
+    }
+  }
+  function open1(_this){
+    const picForm = document.getElementById("picForm");
+    const newInput = document.createElement("input");
+    newInput.type='text';
+    newInput.name="name";
+    newInput.value=_this.value;
+
+    picForm.appendChild(newInput)
+    open_close()
+
+
+  }
+
+
+
+  //添加新的条目
+  function add_info() {
+    var name = $("#name").val();
+    var age = $("#age").val();
+    var tall = $("#tall").val();
+    var breast = $("#breast").val();
+    var price = $("#price").val();
+    var service = $("#service").val();
+    var type = $("#type").val();
+    var city = $("#city").val();
+    var locate = $("#locate").val();
+    var introduce = $("#introduce").val();
+    var report = $("#report").val();
+    var weight = $("#weight").val();
+    var updateTime = $("#updateTime").val();
+    var wechat = $("#wechat").val();
+    var phone = $("#phone").val();
+    var qq = $("#qq").val();
+    $.ajax({
+      url: 'flower/insertNew.do',
+      data: {
+        name:name,
+        age:age,
+        tall:tall,
+        breast:breast,
+        price:price,
+        servic:service,
+        type:type,
+        city:city,
+        locate:locate,
+        introduce:introduce,
+        report:report,
+        weight:weight,
+        updateTime:updateTime,
+        wechat:wechat,
+        phone:phone,
+        qq:qq
+      },
+      type: 'post',
+      dataType: 'json',
+      success: function (data) {
+        alert("插入完毕")
+
+      }
+
+
+    });
+  }
+
+
 
   function queryAll(){
     $.ajax({
@@ -213,6 +431,10 @@
           htmlStr+="<td>"+obj.city+"</td>";
           htmlStr+="<td>"+obj.locate+"</td>";
           htmlStr+="<td>"+obj.updateTime+"</td>";
+          htmlStr+="<td>"+obj.wechat+"</td>";
+          htmlStr+="<td>"+obj.phone+"</td>";
+          htmlStr+="<td>"+obj.qq+"</td>";
+          htmlStr+="<td> <button type='button'   onclick='open1(this)'  value=\""+obj.id+"\">导入图片</td>";
           htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">复制</td>";
           htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">更新</td>";
           htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">删除</td>";

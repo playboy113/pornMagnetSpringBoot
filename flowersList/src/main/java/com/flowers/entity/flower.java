@@ -20,6 +20,34 @@ public class flower {
     private String weight;
     private String updateTime;
 
+    private String wechat;
+    private String phone;
+    private String qq;
+
+    public String getWechat() {
+        return wechat;
+    }
+
+    public void setWechat(String wechat) {
+        this.wechat = wechat;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getQq() {
+        return qq;
+    }
+
+    public void setQq(String qq) {
+        this.qq = qq;
+    }
+
     public String getUpdateTime() {
         return updateTime;
     }
