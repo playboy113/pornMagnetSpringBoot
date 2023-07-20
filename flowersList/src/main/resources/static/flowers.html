@@ -17,28 +17,6 @@
   <script type="text/javascript">
 
   </script>
-  <style>
-    .modal-container {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* 半透明的遮罩层 */
-      z-index: 9999; /* 使其处于最顶层 */
-    }
-
-    /* 模态表单的内容样式 */
-    .modal-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #fff;
-      padding: 20px;
-    }
-  </style>
 </head>
 
 <body>
@@ -210,7 +188,7 @@
       </div><!-- /.modal -->
     </div>
 
-<!--    插入图片窗口-->
+    <!--    插入图片窗口-->
     <div  class="modal fade" id="picModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -222,7 +200,7 @@
               导入图片
             </h4>
           </div>
-          <form id="form_pic"  enctype="multipart/form-data" >
+          <form id="form_pic"  enctype="multipart/form-data" style="width: 700px">
             <div class="modal-body" style="height: 500px;width: 90%">
               <input type="file" name="file" id="picFile" multiple>
               <button id="pic-btn" type="submit" onclick="upload()" >上传</button>
@@ -241,7 +219,7 @@
       </div><!-- /.modal -->
     </div>
 
-
+<!--导入图片-->
     <div id="modalContainer" class="modal-container" style="display: none;">
       <!-- 表单内容 -->
       <form id="picForm">
@@ -251,6 +229,7 @@
       </form>
 
     </div>
+
 
 
 
@@ -303,21 +282,36 @@
     queryAll()
   });
 
-
   function upload(){
 
-      var formdata=new FormData(document.getElementById("picForm"));
+    var formdata=new FormData(document.getElementById("picForm"));
 
     $.ajax({
       url: 'flower/upload.do',
       data:
-        formdata,
+      formdata,
       type: 'post',
       dataType: 'json',
       processData:false,//必须要写
       contentType:false,//必须要写
       success: function (data) {
         alert(data)
+
+      }
+    });
+  }
+  function copyInfo(_this){
+
+    var num = _this.value;
+    $.ajax({
+      url: 'flower/copyInfo.do',
+      data: {
+        num:num
+      },
+      type: 'post',
+      dataType: 'json',
+      success: function (data) {
+        navigator.clipboard.writeText(data.info)
 
       }
     });
@@ -344,8 +338,6 @@
 
 
   }
-
-
 
   //添加新的条目
   function add_info() {
@@ -395,6 +387,82 @@
 
     });
   }
+  function queryInfo(){
+    var id = $("#query-id").val();
+    var name = $("#query-name").val();
+    var age = $("#query-age").val();
+    var tall = $("#query-tall").val();
+    var weight = $("#query-weight").val();
+    var breast= $("#query-breast").val();
+    var service= $("#query-service").val();
+    var city= $("#query-city").val();
+    var locate= $("#query-locate").val();
+    var price= $("#query-price").val();
+    $.ajax({
+      url: 'flower/queryInfo.do',
+      data: {
+        id:id,
+        name:name,
+        age:age,
+        tall:tall,
+        breast:breast,
+        price:price,
+        servic:service,
+
+        city:city,
+        locate:locate,
+
+        weight:weight,
+
+      },
+      type: 'post',
+      dataType: 'json',
+      success: function (data) {
+        //显示总条数
+        //$("#totalRowsB").text(data.totalRows);
+        //显示市场活动的列表
+        //遍历activityList，拼接所有行数据
+        var htmlStr="";
+        $.each(data.flowersList,function (index,obj) {
+
+          htmlStr+="<tr class=\"active\">";
+          htmlStr+="<td><input type=\"checkbox\" value=\""+obj.id+"\"/></td>";
+
+          htmlStr+="<td>"+obj.id+"</td>";
+          htmlStr+="<td>"+obj.name+"</td>";
+          htmlStr+="<td>"+obj.age+"</td>";
+          htmlStr+="<td>"+obj.tall+"</td>";
+          htmlStr+="<td>"+obj.weight+"</td>";
+          htmlStr+="<td>"+obj.breast+"</td>";
+          htmlStr+="<td>"+obj.price+"</td>";
+          htmlStr+="<td>"+obj.service+"</td>";
+          htmlStr+="<td>"+obj.type+"</td>";
+          htmlStr+="<td>"+obj.city+"</td>";
+          htmlStr+="<td>"+obj.locate+"</td>";
+          htmlStr+="<td>"+obj.updateTime+"</td>";
+          htmlStr+="<td>"+obj.wechat+"</td>";
+          htmlStr+="<td>"+obj.phone+"</td>";
+          htmlStr+="<td>"+obj.qq+"</td>";
+          htmlStr+="<td> <button type='button'   onclick='open1(this)'  value=\""+obj.id+"\">导入图片</td>";
+          htmlStr+="<td> <button type='button'  onclick='copyInfo(this)' value=\""+obj.id+"\">复制</td>";
+          htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">更新</td>";
+          htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">删除</td>";
+
+          // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
+
+
+          htmlStr+="</tr>";
+
+
+
+        });
+        $("#tBody").html(htmlStr);
+      }
+
+
+
+    });
+  }
 
 
 
@@ -434,8 +502,8 @@
           htmlStr+="<td>"+obj.wechat+"</td>";
           htmlStr+="<td>"+obj.phone+"</td>";
           htmlStr+="<td>"+obj.qq+"</td>";
-          htmlStr+="<td> <button type='button'   onclick='open1(this)'  value=\""+obj.id+"\">导入图片</td>";
-          htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">复制</td>";
+          htmlStr+="<td> <button type='button'  onclick='open1(this)'   value=\""+obj.id+"\">上传图片</td>";
+          htmlStr+="<td> <button type='button'  onclick='copyInfo(this)' value=\""+obj.id+"\">复制</td>";
           htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">更新</td>";
           htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">删除</td>";
 

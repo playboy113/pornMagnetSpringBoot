@@ -18,6 +18,8 @@ public interface FlowlistsMapper {
     List<flower> selectAll() ;
 
     void insertNew(Map<String,Object> map);
+    List<flower> queryInfo(Map<String,Object> map);
+    flower selectById(int id);
 
 
 

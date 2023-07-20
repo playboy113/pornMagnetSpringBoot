@@ -25,4 +25,14 @@ public class flowServiceImpl implements flowService {
     public void insertNew(Map<String, Object> map) {
         flowlistsMapper.insertNew(map);
     }
+
+    @Override
+    public List<flower> queryInfo(Map<String, Object> map) {
+        return flowlistsMapper.queryInfo(map);
+    }
+
+    @Override
+    public flower selectById(int id) {
+        return flowlistsMapper.selectById(id);
+    }
 }

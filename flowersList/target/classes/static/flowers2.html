@@ -17,6 +17,28 @@
   <script type="text/javascript">
 
   </script>
+  <style>
+    .modal-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* 半透明的遮罩层 */
+      z-index: 9999; /* 使其处于最顶层 */
+    }
+
+    /* 模态表单的内容样式 */
+    .modal-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -29,20 +51,20 @@
         <div class="form-group">
           <div class="input-group">
             <div class="input-group-addon">编号</div>
-            <input class="form-control" type="text" id="query-num">
+            <input class="form-control" type="text" id="query-id">
           </div>
         </div>
         <div class="form-group">
           <div class="input-group">
             <div class="input-group-addon">姓名</div>
-            <input class="form-control" type="text" id="query-title">
+            <input class="form-control" type="text" id="query-name">
           </div>
         </div>
 
         <div class="form-group">
           <div class="input-group">
             <div class="input-group-addon">年龄</div>
-            <input class="form-control" type="text" id="query-actress">
+            <input class="form-control" type="text" id="query-age">
           </div>
         </div>
 
@@ -50,31 +72,31 @@
         <div class="form-group">
           <div class="input-group">
             <div class="input-group-addon">身高</div>
-            <input class="form-control" type="text" id="query-HD" />
+            <input class="form-control" type="text" id="query-tall" />
           </div>
         </div>
         <div class="form-group">
           <div class="input-group">
             <div class="input-group-addon">体重</div>
-            <input class="form-control" type="text" id="query-subline">
+            <input class="form-control" type="text" id="query-weight">
           </div>
         </div>
         <div class="form-group">
           <div class="input-group">
             <div class="input-group-addon">胸部</div>
-            <input class="form-control" type="text" id="query-types">
+            <input class="form-control" type="text" id="query-breast">
           </div>
         </div>
         <div class="form-group">
           <div class="input-group">
             <div class="input-group-addon">价格</div>
-            <input class="form-control" type="text" id="query-producer">
+            <input class="form-control" type="text" id="query-price">
           </div>
         </div>
         <div class="form-group">
           <div class="input-group">
             <div class="input-group-addon">服务</div>
-            <input class="form-control" type="text" id="query-date">
+            <input class="form-control" type="text" id="query-service">
           </div>
         </div>
         <div class="form-group">
@@ -92,7 +114,7 @@
 
 
 
-        <button type="button" class="btn btn-default" id="queryActivityBtn">查询</button>
+        <button type="button" class="btn btn-default" id="queryActivityBtn" onclick="queryInfo()">查询</button>
 
         <!--                < img src=".\images\VOSS-133.jpg" width="600" height="300">-->
 
@@ -142,7 +164,7 @@
     </div>
 
     <!--    弹出表单模块-->
-    <div  class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div  class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top: 50%">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -153,7 +175,7 @@
               插入新信息
             </h4>
           </div>
-          <form id="form_data" >
+          <form id="form_data" style="width: 700px">
             <div class="modal-body" style="height: 500px;width: 90%">
               花名： <input type="text" id="name" name="name" style="width: 40%"/>
               年龄： <input type="text" id="age" name="age" style="width: 40%"/>
@@ -188,6 +210,7 @@
       </div><!-- /.modal -->
     </div>
 
+
     <!--    插入图片窗口-->
     <div  class="modal fade" id="picModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -219,7 +242,7 @@
       </div><!-- /.modal -->
     </div>
 
-<!--导入图片-->
+
     <div id="modalContainer" class="modal-container" style="display: none;">
       <!-- 表单内容 -->
       <form id="picForm">
@@ -229,7 +252,6 @@
       </form>
 
     </div>
-
 
 
 
@@ -282,14 +304,15 @@
     queryAll()
   });
 
+
   function upload(){
 
-    var formdata=new FormData(document.getElementById("picForm"));
+      var formdata=new FormData(document.getElementById("picForm"));
 
     $.ajax({
       url: 'flower/upload.do',
       data:
-      formdata,
+        formdata,
       type: 'post',
       dataType: 'json',
       processData:false,//必须要写
@@ -339,6 +362,8 @@
 
   }
 
+
+
   //添加新的条目
   function add_info() {
     var name = $("#name").val();
@@ -383,7 +408,6 @@
         alert("插入完毕")
 
       }
-
 
     });
   }
@@ -502,7 +526,7 @@
           htmlStr+="<td>"+obj.wechat+"</td>";
           htmlStr+="<td>"+obj.phone+"</td>";
           htmlStr+="<td>"+obj.qq+"</td>";
-          htmlStr+="<td> <button type='button'  onclick='open1(this)'   value=\""+obj.id+"\">上传图片</td>";
+          htmlStr+="<td> <button type='button'   onclick='open1(this)'  value=\""+obj.id+"\">导入图片</td>";
           htmlStr+="<td> <button type='button'  onclick='copyInfo(this)' value=\""+obj.id+"\">复制</td>";
           htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">更新</td>";
           htmlStr+="<td> <button type='button'  onclick='copyMagnet(this)' value=\""+obj.num+"\">删除</td>";

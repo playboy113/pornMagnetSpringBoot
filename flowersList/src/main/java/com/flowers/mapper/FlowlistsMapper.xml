@@ -182,4 +182,53 @@
             weight =  #{weight,jdbcType=VARCHAR}
         where   id = #{id,jdbcType=INTEGER}
     </update>
+    <select id="queryInfo" resultType="com.flowers.entity.flower" parameterType="map">
+        select  id,name,age,
+        tall,breast,price,
+        service,type,city,
+        locate,introduce,report,
+        picUrl,weight,updateTime,wechat,phone,qq
+        from flowlists
+        <where>
+            <if test="id != null and id != ''">
+                and id = #{id}
+
+            </if>
+            <if test="name != null and name != ''">
+                and name like '%' #{name} '%'
+            </if>
+            <if test="age != null and age != ''">
+                and age like '%' #{age} '%'
+            </if>
+            <if test="tall != null and tall != ''">
+                and tall like '%' #{tall} '%'
+            </if>
+            <if test="weight != null and weight != ''">
+                and weight like '%' #{weight} '%'
+            </if>
+            <if test="breast != null and breast != ''">
+                and breast like '%' #{breast} '%'
+            </if>
+            <if test="price != null and price != ''">
+                and price like '%' #{price} '%'
+            </if>
+            <if test="city != null and city != ''">
+                and city like '%' #{city} '%'
+            </if>
+            <if test="locate != null and locate != ''">
+                and locate like '%' #{locate} '%'
+            </if>
+
+        </where>
+
+
+    </select>
+    <select id="selectById" resultType="com.flowers.entity.flower" parameterType="integer">
+        select id,name,age,
+               tall,breast,price,
+               service,type,city,
+               locate,introduce,report,
+               picUrl,weight,updateTime,wechat,phone,qq
+        from flowlists where id = #{id}
+    </select>
 </mapper>

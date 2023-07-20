@@ -97,6 +97,43 @@ public class flowerController {
 
         return "success";
     }
+    @RequestMapping("/queryInfo.do")
+    @ResponseBody
+    public Map<String,Object> queryInfo(Integer id,String name,String age,String tall,String weight,String breast,String service,String city,String locate,String price){
+        HashMap<String, Object> map = new HashMap<>();
+
+        map.put("id",id);
+        map.put("name",name);
+        map.put("age",age);
+        map.put("tall",tall);
+        map.put("weight",weight);
+        map.put("breast",breast);
+        map.put("service",service);
+        map.put("city",city);
+        map.put("locate",locate);
+        map.put("price",price);
+
+        List<flower> flowersList = flowService.queryInfo(map);
+
+        HashMap<String, Object> retMap = new HashMap<>();
+        retMap.put("flowersList",flowersList);
+        return retMap;
+
+
+    }
+    @RequestMapping("/copyInfo.do")
+    @ResponseBody
+    public HashMap<Object, Object> copyInfo(String num){
+        System.out.println(num);
+        Integer id = Integer.valueOf(num);
+        HashMap<Object, Object> retMap = new HashMap<>();
+        flower selectedFlower = flowService.selectById(id);
+        String info  = "编号："+selectedFlower.getId()+"      姓名："+selectedFlower.getName()+"                       年龄："+selectedFlower.getAge()+"\n\n身高："+selectedFlower.getTall()+
+                "              体重:"+selectedFlower.getWeight()+"            胸："+selectedFlower.getBreast()+"\n\n城市：#"+selectedFlower.getCity()+"             地区:#"+selectedFlower.getLocate()+
+                "\n\n价格："+selectedFlower.getPrice()+"                 服务："+selectedFlower.getService()+"\n\n介绍："+selectedFlower.getIntroduce()+"\n\n探访报告:"+selectedFlower.getReport();
+        retMap.put("info",info);
+        return retMap;
+    }
 
 
 }
