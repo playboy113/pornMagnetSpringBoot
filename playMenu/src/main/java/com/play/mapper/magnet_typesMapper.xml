@@ -22,6 +22,7 @@
     </select>
     <select id="selectAllTypes" resultType="java.lang.String">
         select distinct types from magnet_type2
+        where num in (select distinct num from magnet_videos_locate)
     </select>
     <select id="selectVideosByType" resultType="java.lang.String" parameterType="map">
         select distinct num from magnet_type2

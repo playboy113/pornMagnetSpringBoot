@@ -1,0 +1,33 @@
+server:
+  port: 8084
+spring:
+  datasource:
+
+    dbcp2:
+      max-idle: 10
+      max-wait-millis: 10000
+      min-idle: 5
+      initial-size: 5
+      validation-query: SELECT 1
+      test-on-borrow: false
+      test-while-idle: true
+      time-between-eviction-runs-millis: 18800
+  mvc:
+    static-path-pattern: /**
+  web:
+    resources:
+      static-locations: classpath:/META-INF/resources/, classpath:/resources/, classpath:/static/, classpath:/public/, classpath:/templates/,file:${myconfig.locations}
+myconfig:
+  locations: D:/images/
+logging:
+  level:
+    cn.itcast: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS
+  #mybatis-plus:
+  #  configuration:
+  #    map-underscore-to-camel-case: true
+  #  type-aliases-package: cn.itcast.hotel.pojo
+mybatis-plus:
+  mapper-locations:
+    classpath: com/example/_91pornyy

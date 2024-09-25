@@ -1,8 +1,10 @@
 package com.zhang.crawer.entity;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @EntityScan
+@TableName(value ="magnet_db")
 public class magnet_model {
 
     private String num;//番号
@@ -24,6 +26,16 @@ public class magnet_model {
     private String date;
 
     private String producer;
+
+    private String series;
+
+    public String getSeries() {
+        return series;
+    }
+
+    public void setSeries(String series) {
+        this.series = series;
+    }
 
     public String getProducer() {
         return producer;

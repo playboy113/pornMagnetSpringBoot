@@ -37,7 +37,8 @@ public class porndoController {
 
     @RequestMapping("/porndos.do")
     @ResponseBody
-    public  Object queryByConditionForPage(String title, String actress, String subline, String HD, String num, String types, String date,String producer,Integer pageNo, Integer pageSize) throws IOException {
+    public  Object queryByConditionForPage(String title, String actress, String subline, String HD, String num, String types, String date,String producer,String series,Integer pageNo, Integer pageSize) throws IOException {
+        System.out.println("進來了");
         Map<String,Object> map = new HashMap<>();
         map.put("title",title);
         map.put("actress",actress);
@@ -49,7 +50,8 @@ public class porndoController {
         map.put("pageSize",pageSize);
         map.put("date",date);
         map.put("producer",producer);
-
+        map.put("series",series);
+        System.out.println(series);
         List<magnet_model> magnet_models = porndoService.queryMagnetByConditions(map);
         int totalRows = porndoService.queryCountOfMagnet(map);
         Map<String,Object> retMap = new HashMap<>();
@@ -135,19 +137,19 @@ public class porndoController {
         return "search";
     }
 
-    @RequestMapping("/aggRequest.do")
-    public Map<String,Object> aggIndex(@PathParam("indexName") String indexName, @PathParam("aggName") String aggName, @PathParam("fileName") String fileName){
-        Map<String,Object> retMap = new HashMap<>();
-        List<String> aggList = porndoService.queryAggIndex(indexName,aggName,fileName);
-
-        retMap.put("aggList",aggList);
-        return retMap;
-
-    }
+//    @RequestMapping("/aggRequest.do")
+//    public Map<String,Object> aggIndex(@PathParam("indexName") String indexName, @PathParam("aggName") String aggName, @PathParam("fileName") String fileName){
+//        Map<String,Object> retMap = new HashMap<>();
+//        List<String> aggList = porndoService.queryAggIndex(indexName,aggName,fileName);
+//
+//        retMap.put("aggList",aggList);
+//        return retMap;
+//
+//    }
 
     //根据选择的类别筛选
     @RequestMapping("/queryMagnetsByTypes.do")
-    public Object queryMagnetBySelectTypes(String title, String actress, String subline, String HD, String num, String types, String date, String producer, Integer pageNo, Integer pageSize){
+    public Object queryMagnetBySelectTypes(String title, String actress, String subline, String HD, String num, String types, String date, String producer,String series, Integer pageNo, Integer pageSize){
         //将types从string转换为数组
         //System.out.println(types);
         List<String> typesList = JSON.parseArray(types, String.class);
@@ -181,6 +183,8 @@ public class porndoController {
         map.put("pageSize",pageSize);
         map.put("date",date);
         map.put("producer",producer);
+        map.put("series",series);
+        System.out.println(series);
         List<magnet_model> magnet_models = porndoService.queryMagnetBySelectTypes(map);
         int totalRows = porndoService.queryPagesBytypes(map);
         Map<String,Object> retMap = new HashMap<>();

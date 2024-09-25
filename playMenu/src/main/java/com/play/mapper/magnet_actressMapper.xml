@@ -49,6 +49,17 @@
       </foreach>
 
   </select>
+    <select id="selectAllNums" resultType="java.lang.String">
+      select distinct num from magnet_db
+    </select>
+  <select id="selectAllNumsInLocate" resultType="java.lang.String">
+    select distinct num from magnet_videos_locate
+  </select>
+  <select id="selectLocateByNum" resultType="java.lang.String">
+    select distinct  locate from magnet_videos_locate
+    where num = #{num}
+
+  </select>
 
 
 </mapper>

@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.util.List;
 @ComponentScan
 public class MySqlControl {
-    static javax.sql.DataSource ds =  MyDataSource.getDataSource("jdbc:mysql://164.88.199.77:3306/magnet?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false");
+    static javax.sql.DataSource ds =  MyDataSource.getDataSource("jdbc:mysql://192.168.1.109:3306/magnet?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false");
     static QueryRunner qr = new QueryRunner(ds);
     static int num = 1;
 
@@ -54,7 +54,7 @@ public class MySqlControl {
     }
     public static void executeInsert(magnet_model magnet_model){
 
-            Object[][] params = new Object[1][9];
+            Object[][] params = new Object[1][10];
             params[0][0] = magnet_model.getTitle();
             params[0][1] = magnet_model.getActress();
             params[0][2] = magnet_model.getSubline();
@@ -64,10 +64,11 @@ public class MySqlControl {
             params[0][6] = magnet_model.getTypes();
             params[0][7] = magnet_model.getDate();
             params[0][8] = magnet_model.getProducer();
+            params[0][9] = magnet_model.getSeries();
 
 
         try {
-            qr.batch("insert into magnet_db(title,actress,subline,HD,magnet,num,types,date,producer) values (?,?,?,?,?,?,?,?,?)",params);
+            qr.batch("insert into magnet_db(title,actress,subline,HD,magnet,num,types,date,producer,series) values (?,?,?,?,?,?,?,?,?,?)",params);
 //            qr.execute("delete from magnet_db where magnet in (\n" +
 //                    "    select\n" +
 //                    "       t.magnet\n" +

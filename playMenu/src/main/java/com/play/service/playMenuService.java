@@ -19,4 +19,10 @@ public interface playMenuService {
 
     List<String> selectNumInDB();
     List<magnet_model> queryMagnetByConditions(Map<String,Object> map);
+    List<String> selectAllNums();
+
+
+    List<String> selectNumsInLocates();
+
+    String selectLocateByNum(String num);
 }

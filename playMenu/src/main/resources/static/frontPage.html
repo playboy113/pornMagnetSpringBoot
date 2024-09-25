@@ -9,6 +9,20 @@
 <script src="https://cdn.jsdelivr.cn/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<link href="jquery/bootstrap_3.3.0/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="jquery/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css" href="jquery/bs_pagination-master/css/jquery.bs_pagination.min.css">
+
+<script type="text/javascript" src="jquery/jquery-1.11.1-min.js"></script>
+<script type="text/javascript" src="jquery/bootstrap_3.3.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="jquery/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="jquery/bootstrap-datetimepicker-master/locale/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="jquery/bs_pagination-master/js/jquery.bs_pagination.min.js"></script>
+<script type="text/javascript" src="jquery/bs_pagination-master/localization/en.js"></script>
+
+<script type="text/javascript">
+
+</script>
 
 
 <div class="jumbotron">
@@ -25,11 +39,32 @@
         <div class="jumbotron">
             <h1>展示所有的文件列表</h1>
             <p>...</p>
-            <p><a class="btn btn-primary btn-lg" href="./localPornes.html" role="button">点击进入</a></p>
+            <p><a class="btn btn-primary btn-lg" href="./porndos.html" role="button">点击进入</a></p>
         </div>
     </div>
 </div>
 
+<script>
+    $(function (){
+        freshAllVideos()
+
+    })
+
+    function freshAllVideos() {
+
+
+
+        $.ajax({
+            url:"/playMenu/freshAllVideos.do",
+            data:{},
+            type:'post',
+            dataType:'json',
+            success:function (data){
+                alert("成功")
+            }
+        });
+    }
+</script>
 
 </body>
 </html>

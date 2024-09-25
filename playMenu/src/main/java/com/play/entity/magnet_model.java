@@ -5,14 +5,14 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 @EntityScan
 public class magnet_model {
     private int id;
-    private int selected;
+    private String locate;
 
-    public int getSelected() {
-        return selected;
+    public String getLocate() {
+        return locate;
     }
 
-    public void setSelected(int selected) {
-        this.selected = selected;
+    public void setLocate(String locate) {
+        this.locate = locate;
     }
 
     public int getId() {

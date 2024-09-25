@@ -65,4 +65,19 @@ public class playMenuServiceImpl implements playMenuService {
     public List<magnet_model> queryMagnetByConditions(Map<String, Object> map) {
         return magnet_modelMapper.queryMagnetByConditions(map);
     }
+
+    @Override
+    public List<String> selectAllNums() {
+        return magnet_actressMapper.selectAllNums();
+    }
+
+    @Override
+    public List<String> selectNumsInLocates() {
+        return magnet_actressMapper.selectAllNumsInLocate();
+    }
+
+    @Override
+    public String selectLocateByNum(String num) {
+        return magnet_actressMapper.selectLocateByNum(num);
+    }
 }

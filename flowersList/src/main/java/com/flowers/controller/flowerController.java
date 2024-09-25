@@ -124,14 +124,36 @@ public class flowerController {
     @RequestMapping("/copyInfo.do")
     @ResponseBody
     public HashMap<Object, Object> copyInfo(String num){
-        System.out.println(num);
+
         Integer id = Integer.valueOf(num);
         HashMap<Object, Object> retMap = new HashMap<>();
         flower selectedFlower = flowService.selectById(id);
         String info  = "编号："+selectedFlower.getId()+"      姓名："+selectedFlower.getName()+"                       年龄："+selectedFlower.getAge()+"\n\n身高："+selectedFlower.getTall()+
                 "              体重:"+selectedFlower.getWeight()+"            胸："+selectedFlower.getBreast()+"\n\n城市：#"+selectedFlower.getCity()+"             地区:#"+selectedFlower.getLocate()+
                 "\n\n价格："+selectedFlower.getPrice()+"                 服务："+selectedFlower.getService()+"\n\n介绍："+selectedFlower.getIntroduce()+"\n\n探访报告:"+selectedFlower.getReport();
-        retMap.put("info",info);
+
+        StringBuilder info2 = new StringBuilder();
+        info2.append("编号：").append(selectedFlower.getId());
+        info2.append("      姓名："+selectedFlower.getName());
+        info2.append("                       年龄："+selectedFlower.getAge());
+        info2.append("\n\n身高："+selectedFlower.getTall());
+        info2.append("              体重:"+selectedFlower.getWeight());
+        info2.append("            胸："+selectedFlower.getBreast());
+        info2.append("\n\n城市：#"+selectedFlower.getCity());
+        info2.append("             地区:#"+selectedFlower.getLocate());
+        info2.append("\n\n价格："+selectedFlower.getPrice());
+        if(selectedFlower.getService()!=null){
+            info2.append("                 服务："+selectedFlower.getService());
+        }
+        if(!selectedFlower.getIntroduce().equals("")){
+            info2.append("\n\n介绍："+selectedFlower.getIntroduce());
+        }
+        if(!selectedFlower.getReport().equals("")){
+            info2.append("\n\n探访报告:"+selectedFlower.getReport());
+        }
+        
+
+        retMap.put("info",info2);
         return retMap;
     }
 

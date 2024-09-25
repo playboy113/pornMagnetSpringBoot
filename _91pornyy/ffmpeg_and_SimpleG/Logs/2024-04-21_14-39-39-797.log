@@ -1,0 +1,111 @@
+﻿LOG 2024/04/21
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Logs
+Task Start: 2024/04/21 14:39:39
+Task CommandLine: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\N_m3u8DL-CLI_v3.0.2.exe https://cdn2.jiuse2.cloud/hls/657559/index.m3u8?t=1713681626&m=ZKjnHuclaFy9uNtW8CO0Sw --saveName 黑丝御姐深情吃鸡吧，淫荡不堪，(终结篇) --workDir D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Downloads
+
+14:39:39.833 / (NORMAL) 开始解析 https://cdn2.jiuse2.cloud/hls/657559/index.m3u8?t=1713681626&m=ZKjnHuclaFy9uNtW8CO0Sw
+14:39:41.387 / (NORMAL) 写出meta.json
+14:39:41.477 / (NORMAL) 开始下载文件
+14:39:42.540 / (NORMAL) 读取文件信息...
+14:39:42.669 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336, 30 fps, 30 tbr, 90k tbn, 60.02 tbc
+14:39:42.669 / (NORMAL) PID 0x101: Audio aac, 22050 Hz, stereo, fltp, 2 kb/s
+14:39:43.141 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index7.ts
+14:39:43.330 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index9.ts
+14:39:43.356 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index8.ts
+14:39:43.986 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index10.ts
+14:39:43.991 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index11.ts
+14:39:44.166 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index7.ts
+14:39:44.339 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index9.ts
+14:39:44.368 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index8.ts
+14:39:44.654 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index7.ts
+14:39:44.760 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index13.ts
+14:39:44.803 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index9.ts
+14:39:44.837 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index8.ts
+14:39:45.007 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index11.ts
+14:39:45.075 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index10.ts
+14:39:45.537 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index10.ts
+14:39:45.669 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn2.jiuse2.cloud/hls/657559/index7.ts
+14:39:45.762 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index13.ts
+14:39:45.808 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn2.jiuse2.cloud/hls/657559/index9.ts
+14:39:45.839 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn2.jiuse2.cloud/hls/657559/index8.ts
+14:39:46.126 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index7.ts
+14:39:46.268 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index9.ts
+14:39:46.305 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index14.ts
+14:39:46.495 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index8.ts
+14:39:46.553 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn2.jiuse2.cloud/hls/657559/index10.ts
+14:39:46.955 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index15.ts
+14:39:47.010 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index10.ts
+14:39:47.127 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn2.jiuse2.cloud/hls/657559/index7.ts
+14:39:47.283 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn2.jiuse2.cloud/hls/657559/index9.ts
+14:39:47.314 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index14.ts
+14:39:47.500 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn2.jiuse2.cloud/hls/657559/index8.ts
+14:39:47.601 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index7.ts
+14:39:47.766 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index9.ts
+14:39:47.771 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index14.ts
+14:39:47.938 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index17.ts
+14:39:47.965 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index15.ts
+14:39:48.012 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn2.jiuse2.cloud/hls/657559/index10.ts
+14:39:48.058 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index18.ts
+14:39:48.067 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index8.ts
+14:39:48.135 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index19.ts
+14:39:48.450 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index15.ts
+14:39:48.482 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index10.ts
+14:39:48.729 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index21.ts
+14:39:48.773 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn2.jiuse2.cloud/hls/657559/index14.ts
+14:39:48.944 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index22.ts
+14:39:48.945 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index17.ts
+14:39:49.067 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index18.ts
+14:39:49.113 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index23.ts
+14:39:49.145 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index19.ts
+14:39:49.425 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index17.ts
+14:39:49.453 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn2.jiuse2.cloud/hls/657559/index15.ts
+14:39:49.560 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index18.ts
+14:39:49.608 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index19.ts
+14:39:49.732 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index21.ts
+14:39:49.924 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index15.ts
+14:39:49.954 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index22.ts
+14:39:50.130 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index23.ts
+14:39:50.413 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index22.ts
+14:39:50.431 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn2.jiuse2.cloud/hls/657559/index17.ts
+14:39:50.514 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index24.ts
+14:39:50.606 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index23.ts
+14:39:50.624 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn2.jiuse2.cloud/hls/657559/index18.ts
+14:39:50.625 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn2.jiuse2.cloud/hls/657559/index19.ts
+14:39:50.646 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index25.ts
+14:39:50.901 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index17.ts
+14:39:50.927 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn2.jiuse2.cloud/hls/657559/index15.ts
+14:39:51.098 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index18.ts
+14:39:51.102 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index19.ts
+14:39:51.422 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn2.jiuse2.cloud/hls/657559/index22.ts
+14:39:51.531 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index24.ts
+14:39:51.610 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn2.jiuse2.cloud/hls/657559/index23.ts
+14:39:51.657 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index25.ts
+14:39:51.905 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn2.jiuse2.cloud/hls/657559/index17.ts
+14:39:52.087 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index23.ts
+14:39:52.110 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn2.jiuse2.cloud/hls/657559/index18.ts
+14:39:52.110 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn2.jiuse2.cloud/hls/657559/index19.ts
+14:39:52.119 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index25.ts
+14:39:52.267 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index24.ts
+14:39:52.359 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index17.ts
+14:39:52.568 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index18.ts
+14:39:52.568 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index19.ts
+14:39:53.100 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn2.jiuse2.cloud/hls/657559/index23.ts
+14:39:53.131 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn2.jiuse2.cloud/hls/657559/index25.ts
+14:39:53.270 / (ERROR) DOWN: AUTO RETRY 2/3 https://cdn2.jiuse2.cloud/hls/657559/index24.ts
+14:39:53.821 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index25.ts
+14:39:53.966 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index24.ts
+14:39:54.834 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn2.jiuse2.cloud/hls/657559/index25.ts
+14:39:54.980 / (ERROR) DOWN: AUTO RETRY 3/3 https://cdn2.jiuse2.cloud/hls/657559/index24.ts
+14:40:00.680 / (NORMAL) 完成数量 19 of 26
+14:40:00.680 / (NORMAL) 重试次数 1 / 15
+14:40:03.687 / (NORMAL) 开始下载文件
+14:40:04.348 / (ERROR) DOWN: 远程服务器返回错误: (503) 服务器不可用。 https://cdn2.jiuse2.cloud/hls/657559/index9.ts
+14:40:05.365 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse2.cloud/hls/657559/index9.ts
+14:40:10.523 / (NORMAL) 开始合并分片...
+14:40:10.667 / (NORMAL) 结果输出至 [ffreport.log]
+14:40:10.667 / (NORMAL) 任务结束
+
+Task End: 2024/04/21 14:40:10
+File: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Downloads\黑丝御姐深情吃鸡吧，淫荡不堪，(终结篇).mp4
+
+

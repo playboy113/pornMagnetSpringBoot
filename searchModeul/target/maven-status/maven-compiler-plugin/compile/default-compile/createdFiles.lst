@@ -1,3 +1,4 @@
+com\zhang\crawer\javmain\crawer_javbooks_db.class
 com\zhang\commons\setHeader.class
 com\zhang\crawer\db\MySqlControl.class
 com\zhang\pornMagnetApplication.class
@@ -5,13 +6,18 @@ com\zhang\entity\magnet_model.class
 com\zhang\crawer\entity\magnet_model.class
 com\zhang\service\porndoService.class
 com\zhang\commons\ReturnObject.class
+com\zhang\crawer\javmain\crawer_javbt$Builder.class
 com\zhang\service\Impl\porndoServiceImpl.class
 com\zhang\crawer\javmain\crawer_javdb.class
 com\zhang\mapper\magnet_modelMapper.class
 com\zhang\commons\Contants.class
 com\zhang\crawer\db\MyDataSource.class
+com\zhang\crawer\javmain\crawer_javbooks_db$Builder.class
 com\zhang\config\MyConfigurer.class
+com\zhang\crawer\javmain\crawer_javbt.class
 com\zhang\crawer\javmain\crawer_javdb$Builder.class
 com\zhang\controller\searchPageController.class
+com\zhang\crawer\javmain\crawer_books$Builder.class
 com\zhang\controller\porndoController.class
 com\zhang\entity\User.class
+com\zhang\crawer\javmain\crawer_books.class

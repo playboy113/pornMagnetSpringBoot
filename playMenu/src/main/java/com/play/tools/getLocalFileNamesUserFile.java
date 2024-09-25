@@ -20,7 +20,8 @@ public class getLocalFileNamesUserFile {
 
 
         //SmbFile smbFile = new SmbFile("smb://192.168.1.103/E/12345/", auth);
-        String[] pathList = new String[]{"D:","E:","F:"};
+        //String[] pathList = new String[]{"D:\\pornDocs"};
+        String[] pathList = new String[]{"D:\\pornDocs","E:\\1021","D:\\4.2","G:\\0817_2","G:\\0817chun","G:\\0821-2chun","G:\\0821chun","F:\\0923","F:\\1001-2","D:\\1001","D:\\1021","D:\\佐山爱纯","E:\\12345","H:\\0130","H:\\0228","H:\\1001","H:\\1222"};
 
         for(int i=0;i< pathList.length;i++){
             try{
@@ -43,13 +44,20 @@ public class getLocalFileNamesUserFile {
 
         try{
             File[] files = file.listFiles();
+            assert files != null;
             for (File f:files){
-                if(f.isDirectory()){
-                    getFileName(f,fileName);
-                    System.out.println(fileName);
-                }else if(f.toString().contains(".mp4")){
-                    fileName.add(f.getPath());
+                try{
+                    if(f.isDirectory()){
+                        getFileName(f,fileName);
+                        System.out.println(fileName);
+                    }else if(f.toString().contains(".mp4")){
+                        fileName.add(f.getPath());
+                    }
+                }catch(NullPointerException e){
+                    e.printStackTrace();
                 }
+
+
             }
         }catch (Exception e){
             e.printStackTrace();

@@ -1,0 +1,16 @@
+﻿LOG 2024/04/21
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\Logs
+Task Start: 2024/04/21 12:40:01
+Task CommandLine: "D:\java\GitHub\pornMagnetSpringBoot\N_m3u8DL-CLI_v3.0.2.exe" 
+
+12:40:01.715 / (NORMAL) 开始解析 https://cdn2.jiuse2.cloud/hls/958090/index.m3u8?t=1713674033&m=pP7Bi61mL43STmqXpv5XeA
+12:40:02.228 / (NORMAL) 远程服务器返回错误: (410) 不再存在。
+12:40:02.228 / (ERROR) 远程服务器返回错误: (410) 不再存在。
+12:40:03.685 / (NORMAL) 远程服务器返回错误: (410) 不再存在。
+12:40:03.686 / (ERROR) 远程服务器返回错误: (410) 不再存在。
+12:40:05.142 / (NORMAL) 远程服务器返回错误: (410) 不再存在。
+12:40:05.142 / (ERROR) 远程服务器返回错误: (410) 不再存在。
+12:40:06.818 / (NORMAL) 远程服务器返回错误: (410) 不再存在。
+12:40:06.818 / (ERROR) 远程服务器返回错误: (410) 不再存在。
+12:40:08.446 / (NORMAL) 远程服务器返回错误: (410) 不再存在。
+12:40:08.447 / (ERROR) 远程服务器返回错误: (410) 不再存在。

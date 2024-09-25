@@ -22,6 +22,7 @@ import java.util.*;
 @ComponentScan
 public class crawer_javdb {
 
+
     public ArrayList<magnet_model> javdb(String url) throws IOException, URISyntaxException {
 
 
@@ -49,13 +50,17 @@ public class crawer_javdb {
 
 
 
+
         try{
             Document doc = conHeader.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
             Elements elements = doc.getElementsByClass("item");
             for (Element element : elements) {
                 String inner_url = element.select("a").attr("href");
 
+
+
                 Document inner_doc = Jsoup.connect("https://javdb.com/" + inner_url).timeout(Integer.MAX_VALUE).get();
+                //Document inner_doc = Jsoup.connect("https://javdb.com/v/OX2rMB").timeout(Integer.MAX_VALUE).get();
                 magnet_model model = new magnet_model();
 
 
@@ -106,45 +111,41 @@ public class crawer_javdb {
                         model.setDate(des.select("span").text());
                     }else if(des.select("strong").text().contains("片商")){
                         model.setProducer(des.select("span").text());
+                    }else if(des.select("strong").text().contains("系列")){
+                        model.setSeries(des.select("span").text());
                     }
                 }
                 //插入类别
                 MySqlControl.insertTypes(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim(),typesArr);
                 MySqlControl.insertActress(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim(),actressArr);
-
+                int flag = 0;
+                String magenet_noSub = null;
                 //获取画质与字幕、磁力链接
                 Elements inner_elements = inner_doc.getElementsByAttributeValue("class", "magnet-name column is-four-fifths");
                 for (Element inner_ele : inner_elements) {
                     String inner_str = inner_ele.select("div").text();
-                    if (inner_str.contains("高清") && inner_str.contains("字幕")) {
+
+                    if (inner_str.contains("字幕")) {
                         String magenet = inner_ele.select("a").attr("href");
-                        magenet = magenet.replace(".torrent", "");
+                        if (magenet.contains(".torrent")){
+                            magenet = magenet.replace(".torrent", "");
+                        }
+                        flag = 1;
                         model.setMagenet(magenet);
                         model.setSubline("中文字幕");
                         model.setHD("高清");
                         break;
-                    } else if (inner_str.contains("高清") && !inner_str.contains("字幕")) {
-                        String magenet = inner_ele.select("a").first().attr("href");
-                        magenet = magenet.replace(".torrent", "");
-                        model.setMagenet(magenet);
-                        model.setSubline("无");
-                        model.setHD("高清");
-                        break;
-                    } else if (!inner_str.contains("高清") && inner_str.contains("字幕")) {
-                        String magenet = inner_ele.select("a").first().attr("href");
-                        magenet = magenet.replace(".torrent", "");
-                        model.setMagenet(magenet);
-                        model.setSubline("中文字幕");
-                        model.setHD("无");
-                        break;
-                    } else {
-                        String magenet = inner_ele.select("a").first().attr("href");
-                        magenet = magenet.replace(".torrent", "");
-                        model.setMagenet(magenet);
-                        model.setSubline("无");
-                        model.setHD("无");
-                        break;
+                    }else{
+                         magenet_noSub = inner_ele.select("a").attr("href");
+                        magenet_noSub = magenet_noSub.replace(".torrent", "");
+
                     }
+
+                }
+                if (flag == 0){
+                    model.setMagenet(magenet_noSub);
+                    model.setSubline("无");
+                    model.setHD("高清");
 
                 }
                 model_list.add(model);
@@ -223,7 +224,7 @@ public class crawer_javdb {
 
 
 
-    class Builder{
+     class Builder{
         //设置userAgent库;读者根据需求添加更多userAgent
         String[] userAgentStrs = {"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50",
                 "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50",

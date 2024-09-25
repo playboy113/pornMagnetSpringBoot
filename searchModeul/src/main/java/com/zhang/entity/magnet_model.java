@@ -88,6 +88,15 @@ public class magnet_model {
     private String date;
 
     private String producer;
+    private String series;
+
+    public String getSeries() {
+        return series;
+    }
+
+    public void setSeries(String series) {
+        this.series = series;
+    }
 
     public String getProducer() {
         return producer;

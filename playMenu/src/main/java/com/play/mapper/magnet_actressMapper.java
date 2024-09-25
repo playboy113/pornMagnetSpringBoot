@@ -24,6 +24,17 @@ public interface magnet_actressMapper {
 
     List<String> selectNumInDB();
 
+    List<String> selectAllNums();
+
+    List<String> selectAllNumsInLocate();
+
+    String selectLocateByNum(String num);
+
+
+
+
+
+
 
 
 

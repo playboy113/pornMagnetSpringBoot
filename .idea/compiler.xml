@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/magnetChange/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/_91porny/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
@@ -16,21 +17,27 @@
         <module name="es-service" />
         <module name="jiuse911Modeul" />
         <module name="playMenu" />
+        <module name="literotica" />
+        <module name="_91pornyy" />
         <module name="sehuatangCHN" />
         <module name="flowersList" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="_91porny" target="1.8" />
       <module name="collections" target="17" />
       <module name="magnetChange" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="_91porny" options="-parameters" />
+      <module name="_91pornyy" options="-parameters" />
       <module name="collections" options="-parameters" />
       <module name="es-service" options="-parameters" />
       <module name="flowersList" options="-parameters" />
       <module name="jiuse911Modeul" options="-parameters" />
+      <module name="literotica" options="-parameters" />
       <module name="magnetChange" options="-parameters" />
       <module name="magnetChange02" options="-parameters" />
       <module name="playMenu" options="-parameters" />

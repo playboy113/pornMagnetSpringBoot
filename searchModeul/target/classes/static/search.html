@@ -23,13 +23,18 @@
             <input class="form-control" type="text" id="query-url">
         </div>
         <div class="input-group">
-            <div class="input-group-addon">页数</div>
+            <div class="input-group-addon">开始页数</div>
             <input class="form-control" type="text" id="query-pages">
+        </div>
+        <div class="input-group">
+            <div class="input-group-addon">结束页数</div>
+            <input class="form-control" type="text" id="query-stop">
         </div>
 
 
 
     </div>
+
     <button type="button" class="btn btn-default" id="querySearchBtn">爬！！</button>
 </form>
 <button type="button" id="frontPageBtn" onclick=window.location.href='http://localhost:8081/porndos.html'>返回主页</button>
@@ -39,11 +44,13 @@
         $("#querySearchBtn").click(function(){
             var magnetUrl = $("#query-url").val();
             var pages = $("#query-pages").val();
+            var stop = $("#query-stop").val();
             $.ajax({
                 url:'crawerMagnet.do',
                 data:{
                     magnetUrl:magnetUrl,
-                    pages:pages
+                    pages:pages,
+                    stop:stop
                 },
                 type:'post',
                 dataType:'json',

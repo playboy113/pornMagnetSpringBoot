@@ -2,9 +2,9 @@ server:
   port: 8082
 spring:
   datasource:
-    url: jdbc:mysql://164.88.199.77:3306/magnet?useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://127.0.0.1:3306/magnet?useSSL=false&allowPublicKeyRetrieval=true
     username: root
-    password: 123456
+    password: moshoushijie1996
     driver-class-name: com.mysql.cj.jdbc.Driver
     dbcp2:
       max-idle: 10

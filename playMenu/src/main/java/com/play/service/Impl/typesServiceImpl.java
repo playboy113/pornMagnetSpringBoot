@@ -22,4 +22,6 @@ public class typesServiceImpl implements typesService {
 
         return magnet_typesMapper.selectVideosByType(types);
     }
+
+
 }

@@ -3,8 +3,8 @@ import java.util.Arrays;
 
 public class magnetChange {
     public static void main(String[] args) throws IOException {
-        String inputFileName = "Downloads/magnet.txt";
-        String OutputFileName = "Downloads/output.txt";
+        String inputFileName = "D:\\java\\GitHub\\pornMagnetSpringBoot\\Downloads\\magnet.txt";
+        String OutputFileName = "D:\\java\\GitHub\\pornMagnetSpringBoot\\Downloads\\output.txt";
 
         BufferedReader reader = new BufferedReader(new FileReader(inputFileName));
         BufferedWriter writer = new BufferedWriter(new FileWriter(OutputFileName));

@@ -96,6 +96,12 @@
                         <input class="form-control" type="text" id="query-date">
                     </div>
                 </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">系列</div>
+                        <input class="form-control" type="text" id="query-series">
+                    </div>
+                </div>
 
 
 
@@ -139,6 +145,8 @@
                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#importActivityModal" ><span class="glyphicon glyphicon-import"></span> 上传列表数据（导入）</button>
                 <button id="copyMagnetsAllBtn" type="button" class="btn btn-default"><span class="glyphicon glyphicon-export"></span> 批量复制</button>
                 <button id="searchPageBtn" type="button" class="btn btn-default" onclick=window.location.href='search.html'><span class="glyphicon glyphicon-export"></span> 跳转搜索页</button>
+                <button id="booksPageBtn" type="button" class="btn btn-default" onclick=window.location.href='javbooks.html'><span class="glyphicon glyphicon-export"></span> 跳转javbooks搜索</button>
+                <button id="books_DBPageBtn" type="button" class="btn btn-default" onclick=window.location.href='javbooks_db.html'><span class="glyphicon glyphicon-export"></span> 跳转javbooks_db搜索</button>
             </div>
         </div>
         <div style="position: relative;top: 10px;">
@@ -155,6 +163,7 @@
                     <td>类别</td>
                     <td>片商</td>
                     <td>日期</td>
+                    <td>系列</td>
 
 
                     <td>磁链</td>
@@ -271,6 +280,7 @@
         var types=$("#query-types").val();
         var date=$("#query-date").val();
         var producer=$("#query-producer").val();
+        var series=$("#query-series").val();
 
         //var pageNo=1;
         //var pageSize=10;
@@ -286,6 +296,7 @@
                 types:types,
                 date:date,
                 producer:producer,
+                series:series,
                 pageNo:pageNo,
                 pageSize:pageSize
 
@@ -312,6 +323,7 @@
                     htmlStr+="<td>"+obj.types+"</td>";
                     htmlStr+="<td>"+obj.producer+"</td>";
                     htmlStr+="<td>"+obj.date+"</td>";
+                    htmlStr+="<td>"+obj.series+"</td>";
 
                     // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
                     if (obj.selected ===1){
@@ -563,6 +575,7 @@
         var types = JSON.stringify(selectTypes);
         var date=$("#query-date").val();
         var producer=$("#query-producer").val();
+        var series=$("#query-series").val();
 
         $.ajax({
             url:'pornMagnet/queryMagnetsByTypes.do',
@@ -575,6 +588,7 @@
                 types:types,
                 date:date,
                 producer:producer,
+                series:series,
                 pageNo: pageNo,
                 pageSize:pageSize
 
@@ -600,6 +614,7 @@
                     htmlStr+="<td>"+obj.types+"</td>";
                     htmlStr+="<td>"+obj.producer+"</td>";
                     htmlStr+="<td>"+obj.date+"</td>";
+                    htmlStr+="<td>"+obj.series+"</td>";
 
                     // htmlStr+="<td> <button type='button' onclick=\"window.location.href='copyMagnet.do?num=ekw-077'\">磁链</td>";
                     if (obj.selected ===1){

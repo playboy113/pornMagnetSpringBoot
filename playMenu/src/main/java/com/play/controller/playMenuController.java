@@ -6,6 +6,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.play.config.RedisUtils;
 import com.play.entity.magnet_model;
+import com.play.fresh.db.MySqlControl;
 import com.play.service.playMenuService;
 import com.play.service.typesService;
 import jcifs.smb.SmbException;
@@ -21,6 +22,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.OutputStream;
 import java.net.MalformedURLException;
 import java.util.*;
@@ -47,32 +49,49 @@ public class playMenuController {
 
 
 
+
         return retMap;
+    }
+    //起手先把所有硬盘里map4文件存入sql空间
+    @RequestMapping("/freshAllVideos.do")
+    public Object freshAllVideos() throws SmbException, MalformedURLException {
+        System.out.println("已經進入fresh层");
+        //找出本地列表
+        List<String> videoList = playMenuService.selectLocalFiles();
+        List<String> numList = playMenuService.selectAllNums();
+        Map<String, String> resultMap = new HashMap<String,String>();
+
+        for (String v:videoList){
+            for(String n:numList){
+                if(v.toUpperCase().contains(n.toUpperCase()) || v.toUpperCase().contains(n.toUpperCase().replaceAll("-",""))){
+                    System.out.println(v);
+                    String s = v.replaceAll(":","/").replaceAll("\\\\","/");
+                    resultMap.put(n,"/"+s);
+
+                    //System.out.println(s.toUpperCase());
+
+                }
+            }
+        }
+        System.out.println("准备插入表");
+
+        MySqlControl.executeInsert(resultMap);
+        return null;
+
+
     }
     @RequestMapping("/queryForActressInLocal")
     @ResponseBody
     @Cacheable(value="queryForActressInLocal")
     public Object queryForActressInLocal() throws SmbException, MalformedURLException {
+
+
+
         LinkedHashMap<String, List<String>> actressMap = new LinkedHashMap<>();
-        List<String> videoList = playMenuService.selectLocalFiles();
-        List<String> numList = playMenuService.selectNumInDB();
-        List<String> slectNumList=new ArrayList<>();
-        if(Boolean.FALSE.equals(redisUtils.hasKey("slectNumList"))){
-            System.out.println("查询mysql数据库");
-            int flag=1;
-            for(String n:numList){
-                for (String v:videoList){
-                    if(v.toUpperCase().contains(n)){
-                        slectNumList.add(n);
-                        System.out.println("正在开通"+(flag+=1));
-                    }
-                }
-            }
-        }else{
-            slectNumList = Collections.singletonList(redisUtils.get("slectNumList"));
-        }
-        List<String> actressList = playMenuService.selectActressByNums(slectNumList);
-        actressMap.put("actress",actressList);
+        List<String> numsInLocates = playMenuService.selectNumsInLocates();
+        List<String> actressByNums = playMenuService.selectActressByNums(numsInLocates);
+
+        actressMap.put("actress",actressByNums);
         return actressMap;
 
     }
@@ -83,28 +102,21 @@ public class playMenuController {
     @RequestMapping("/queryForVideosBySelectActress.do")
     @ResponseBody
     public Object queryForVideosBySelectActress(String selectActress) throws SmbException, MalformedURLException {
-
-        List<String> numList = playMenuService.selectNumByActress(selectActress);
-        List<String> videoList = playMenuService.selectLocalFiles();
-
-
-
+        //这个女优全部的番号
+        List<String> numListInMysql = playMenuService.selectNumByActress(selectActress);
+        //本地的所有番号
+        List<String> numsInLocates = playMenuService.selectNumsInLocates();
+        numsInLocates.retainAll(numListInMysql);
+        System.out.println(numsInLocates);
         Map<String, String> resultMap = new HashMap<String,String>();
-        for(String n:numList){
-            for (String v:videoList){
-                if(v.toUpperCase().contains(n)){
-                    String s = v.replaceAll(":","/").replaceAll("\\\\","/");
-                    resultMap.put(n,"/"+s);
-
-                    System.out.println(s.toUpperCase());
-
-                }
-            }
+        for(String n:numsInLocates){
+                    //resultMap.put(n,"/"+s);
+            String s = playMenuService.selectLocateByNum(n);
+            String locate = s.replaceAll(":","/").replaceAll("\\\\","/");
+            resultMap.put(n,locate);
+            System.out.println(locate);
         }
-
         return resultMap;
-
-
     }
     @RequestMapping("/showVideo")
     public void showVideo(HttpServletResponse response, @RequestParam("fileName")String fileName) {
@@ -128,11 +140,12 @@ public class playMenuController {
         }
     }
 
-    @RequestMapping("/queryAllTypesInMysql.do")
+    @RequestMapping("/queryAllTypesInLocal.do")
     @ResponseBody
     public Object queryAllTypesInMysql(){
         Map<String, List<String>> retMap = new HashMap<>();
         List<String> typesList = typesService.selectAllTypes();
+        System.out.println(typesList);
         retMap.put("typesList",typesList);
         return retMap;
     }
@@ -141,24 +154,22 @@ public class playMenuController {
     public Object queryVideosByType(String type) throws SmbException, MalformedURLException {
          String[] types= JSON.parseArray(type).toArray(new String[0]);
 
-
+        //该种类下的所有番号
         List<String> numList = typesService.selectVideosByType(types);
-
-        List<String> videoList = playMenuService.selectLocalFiles();
-
-
+        //本地所有番号
+        List<String> numsInLocates = playMenuService.selectNumsInLocates();
+        //两个集合的交集
+        numsInLocates.retainAll(numList);
 
         Map<String, String> resultMap = new HashMap<String,String>();
-        for(String n:numList){
-            for (String v:videoList){
-                if(v.toUpperCase().contains(n)){
-                    String s = v.replaceAll(":","/").replaceAll("\\\\","/");
-                    resultMap.put(n,"/"+s);
+        for(String n:numsInLocates){
+            String s = playMenuService.selectLocateByNum(n);
+            String locate = s.replaceAll(":","/").replaceAll("\\\\","/");
+            resultMap.put(n,locate);
 
-                    System.out.println(s.toUpperCase());
 
-                }
-            }
+
+
         }
 
         return resultMap;
@@ -196,6 +207,33 @@ public class playMenuController {
             }
         }
         return retMap;
+
+    }
+
+    @RequestMapping("/porndos.do")
+    @ResponseBody
+    public  Object queryByConditionForPage(String title, String actress, String subline, String HD, String num, String types, String date,String producer,Integer pageNo, Integer pageSize) throws IOException {
+        Map<String,Object> map = new HashMap<>();
+        map.put("title",title);
+        map.put("actress",actress);
+        map.put("subline",subline);
+        map.put("HD",HD);
+        map.put("num",num);
+        map.put("types",types);
+        map.put("beginNo",(pageNo-1)*pageSize);
+        map.put("pageSize",pageSize);
+        map.put("date",date);
+        map.put("producer",producer);
+
+        List<magnet_model> magnet_models = playMenuService.queryMagnetByConditions(map);
+        int totalRows = 50;
+        Map<String,Object> retMap = new HashMap<>();
+        retMap.put("magnet_models",magnet_models);
+        retMap.put("totalRows",totalRows);
+        return retMap;
+
+
+
 
     }
 

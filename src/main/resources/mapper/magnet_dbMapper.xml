@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.magnet_dbMapper">
+
+    <resultMap id="BaseResultMap" type="generator.domain.magnet_db">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="types" column="types" jdbcType="VARCHAR"/>
+            <result property="actress" column="actress" jdbcType="VARCHAR"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="magnet" column="magnet" jdbcType="VARCHAR"/>
+            <result property="subline" column="subline" jdbcType="VARCHAR"/>
+            <result property="num" column="num" jdbcType="VARCHAR"/>
+            <result property="date" column="date" jdbcType="VARCHAR"/>
+            <result property="hd" column="HD" jdbcType="VARCHAR"/>
+            <result property="producer" column="producer" jdbcType="VARCHAR"/>
+            <result property="series" column="series" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,types,actress,
+        title,magnet,subline,
+        num,date,HD,
+        producer,series
+    </sql>
+</mapper>

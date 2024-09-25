@@ -48,7 +48,6 @@ public class mainCrawer {
         driver.get(rmdownUrl);
 
 
-        System.out.println(element.getText());
 
 
     }

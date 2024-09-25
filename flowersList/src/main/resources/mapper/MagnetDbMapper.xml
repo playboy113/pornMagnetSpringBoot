@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.MagnetDbMapper">
+
+    <resultMap id="BaseResultMap" type="generator.domain.MagnetDb">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="types" column="types" jdbcType="VARCHAR"/>
+            <result property="actress" column="actress" jdbcType="VARCHAR"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="magnet" column="magnet" jdbcType="VARCHAR"/>
+            <result property="subline" column="subline" jdbcType="VARCHAR"/>
+            <result property="num" column="num" jdbcType="VARCHAR"/>
+            <result property="date" column="date" jdbcType="VARCHAR"/>
+            <result property="hd" column="HD" jdbcType="VARCHAR"/>
+            <result property="producer" column="producer" jdbcType="VARCHAR"/>
+            <result property="series" column="series" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,types,actress,
+        title,magnet,subline,
+        num,date,HD,
+        producer,series
+    </sql>
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from magnet_db
+        where  id = #{id,jdbcType=INTEGER} 
+    </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        delete from magnet_db
+        where  id = #{id,jdbcType=INTEGER} 
+    </delete>
+    <insert id="insert" keyColumn="id" keyProperty="id" parameterType="generator.domain.MagnetDb" useGeneratedKeys="true">
+        insert into magnet_db
+        ( id,types,actress
+        ,title,magnet,subline
+        ,num,date,HD
+        ,producer,series)
+        values (#{id,jdbcType=INTEGER},#{types,jdbcType=VARCHAR},#{actress,jdbcType=VARCHAR}
+        ,#{title,jdbcType=VARCHAR},#{magnet,jdbcType=VARCHAR},#{subline,jdbcType=VARCHAR}
+        ,#{num,jdbcType=VARCHAR},#{date,jdbcType=VARCHAR},#{hd,jdbcType=VARCHAR}
+        ,#{producer,jdbcType=VARCHAR},#{series,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="generator.domain.MagnetDb" useGeneratedKeys="true">
+        insert into magnet_db
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+                <if test="id != null">id,</if>
+                <if test="types != null">types,</if>
+                <if test="actress != null">actress,</if>
+                <if test="title != null">title,</if>
+                <if test="magnet != null">magnet,</if>
+                <if test="subline != null">subline,</if>
+                <if test="num != null">num,</if>
+                <if test="date != null">date,</if>
+                <if test="hd != null">HD,</if>
+                <if test="producer != null">producer,</if>
+                <if test="series != null">series,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+                <if test="id != null">#{id,jdbcType=INTEGER},</if>
+                <if test="types != null">#{types,jdbcType=VARCHAR},</if>
+                <if test="actress != null">#{actress,jdbcType=VARCHAR},</if>
+                <if test="title != null">#{title,jdbcType=VARCHAR},</if>
+                <if test="magnet != null">#{magnet,jdbcType=VARCHAR},</if>
+                <if test="subline != null">#{subline,jdbcType=VARCHAR},</if>
+                <if test="num != null">#{num,jdbcType=VARCHAR},</if>
+                <if test="date != null">#{date,jdbcType=VARCHAR},</if>
+                <if test="hd != null">#{hd,jdbcType=VARCHAR},</if>
+                <if test="producer != null">#{producer,jdbcType=VARCHAR},</if>
+                <if test="series != null">#{series,jdbcType=VARCHAR},</if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="generator.domain.MagnetDb">
+        update magnet_db
+        <set>
+                <if test="types != null">
+                    types = #{types,jdbcType=VARCHAR},
+                </if>
+                <if test="actress != null">
+                    actress = #{actress,jdbcType=VARCHAR},
+                </if>
+                <if test="title != null">
+                    title = #{title,jdbcType=VARCHAR},
+                </if>
+                <if test="magnet != null">
+                    magnet = #{magnet,jdbcType=VARCHAR},
+                </if>
+                <if test="subline != null">
+                    subline = #{subline,jdbcType=VARCHAR},
+                </if>
+                <if test="num != null">
+                    num = #{num,jdbcType=VARCHAR},
+                </if>
+                <if test="date != null">
+                    date = #{date,jdbcType=VARCHAR},
+                </if>
+                <if test="hd != null">
+                    HD = #{hd,jdbcType=VARCHAR},
+                </if>
+                <if test="producer != null">
+                    producer = #{producer,jdbcType=VARCHAR},
+                </if>
+                <if test="series != null">
+                    series = #{series,jdbcType=VARCHAR},
+                </if>
+        </set>
+        where   id = #{id,jdbcType=INTEGER} 
+    </update>
+    <update id="updateByPrimaryKey" parameterType="generator.domain.MagnetDb">
+        update magnet_db
+        set 
+            types =  #{types,jdbcType=VARCHAR},
+            actress =  #{actress,jdbcType=VARCHAR},
+            title =  #{title,jdbcType=VARCHAR},
+            magnet =  #{magnet,jdbcType=VARCHAR},
+            subline =  #{subline,jdbcType=VARCHAR},
+            num =  #{num,jdbcType=VARCHAR},
+            date =  #{date,jdbcType=VARCHAR},
+            HD =  #{hd,jdbcType=VARCHAR},
+            producer =  #{producer,jdbcType=VARCHAR},
+            series =  #{series,jdbcType=VARCHAR}
+        where   id = #{id,jdbcType=INTEGER} 
+    </update>
+</mapper>
