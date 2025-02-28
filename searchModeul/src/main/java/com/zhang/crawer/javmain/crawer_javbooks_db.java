@@ -4,6 +4,7 @@ import com.ibm.icu.text.Transliterator;
 import com.zhang.commons.setHeader;
 import com.zhang.crawer.db.MySqlControl;
 import com.zhang.crawer.entity.magnet_model;
+import lombok.val;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -50,14 +51,6 @@ public class crawer_javbooks_db {
         cookies.put("theme","auto");
         cookies.put("locale","zh");
 
-
-
-
-
-
-
-
-
         try{
             Document doc = conHeader.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
 
@@ -65,102 +58,122 @@ public class crawer_javbooks_db {
             for (Element element : elements) {
                 String inner_url = element.select("a").attr("href");
 
-
-                Document inner_doc = Jsoup.connect(inner_url).timeout(Integer.MAX_VALUE).get();
-
-
-                magnet_model model = new magnet_model();
-                //获取标题
-                String str = inner_doc.getElementsByAttributeValue("id", "title").text();
-
-                model.setTitle(str);
-
-                List<String> infobox = inner_doc.getElementsByClass("infobox").eachText();
-                //获取番号
-                if (infobox.get(0).indexOf(' ') == -1) {
-                    model.setNum(infobox.get(0).substring(infobox.get(0).indexOf('：') + 1));
-                } else {
-                    model.setNum(infobox.get(0).substring(infobox.get(0).indexOf('：') + 1, infobox.get(0).indexOf(' ')));
-                }
-                System.out.println(model.getNum());
-
-                //获取日期
-                model.setDate(infobox.get(1).substring(infobox.get(1).indexOf('：') + 1));
-
-                //获取片商
-                model.setProducer(infobox.get(4).substring(infobox.get(4).indexOf('：') + 1));
-
-                //获取系列
-                model.setSeries(infobox.get(6).substring(infobox.get(6).indexOf('：') + 1));
-
-                //获取女优
-
-                model.setActress(infobox.get(8).substring(infobox.get(8).indexOf('：') + 1));
-
-                //获取类别
-
-                Transliterator simplToTrad = Transliterator.getInstance("Simplified-Traditional");
-                String traditionalChinese = simplToTrad.transliterate(infobox.get(7).substring(infobox.get(7).indexOf('：') + 1));
-                model.setTypes(traditionalChinese);
-                //获取封面图
-                String coverImg = inner_doc.getElementsByAttributeValue("class", "info_cg").select("img").attr("src");
-                downloadImages(model.getNum(),coverImg);
-
-                List<String> content_bt_url = inner_doc.getElementsByClass("content_bt_url").eachAttr("href");
+                try {
+                    Document inner_doc = Jsoup.connect(inner_url).timeout(Integer.MAX_VALUE).get();
 
 
+                    magnet_model model = new magnet_model();
+                    //获取标题
+                    String str = inner_doc.getElementsByAttributeValue("id", "title").text();
 
-                //获取磁链
-//                Document javPage = Jsoup.connect("https://javdb.com/search?q=" + model.getNum()+"&f=all").timeout(Integer.MAX_VALUE).get();
-                Document javPage = Jsoup.connect("https://javdb.com/search?q=" + model.getNum() + "&f=all").cookies(cookies).timeout(Integer.MAX_VALUE).get();
+                    model.setTitle(str);
 
-                String jav_inner = javPage.getElementsByClass("item").first().select("a").attr("href");
-
-                Document javdb_inDoc = Jsoup.connect("https://javdb.com/" + jav_inner).timeout(Integer.MAX_VALUE).get();
-                //获取画质与字幕、磁力链接
-                int flag = 0;
-                String magenet_noSub = null;
-                Elements inner_elements = javdb_inDoc.getElementsByAttributeValue("class", "magnet-name column is-four-fifths");
-                for (Element inner_ele : inner_elements) {
-                    String inner_str = inner_ele.select("div").text();
-
-                    if (inner_str.contains("字幕")) {
-                        String magenet = inner_ele.select("a").attr("href");
-                        if (magenet.contains(".torrent")) {
-                            magenet = magenet.replace(".torrent", "");
-                        }
-                        flag = 1;
-
-                        model.setMagenet(magenet);
-                        model.setSubline("中文字幕");
-                        model.setHD("高清");
-                        break;
+                    List<String> infobox = inner_doc.getElementsByClass("infobox").eachText();
+                    //获取番号
+                    if (infobox.get(0).indexOf(' ') == -1) {
+                        model.setNum(infobox.get(0).substring(infobox.get(0).indexOf('：') + 1));
                     } else {
-                        magenet_noSub = inner_ele.select("a").attr("href");
-                        magenet_noSub = magenet_noSub.replace(".torrent", "");
+                        model.setNum(infobox.get(0).substring(infobox.get(0).indexOf('：') + 1, infobox.get(0).indexOf(' ')));
+                    }
+                    System.out.println(model.getNum());
 
+                    //获取日期
+                    model.setDate(infobox.get(1).substring(infobox.get(1).indexOf('：') + 1));
+
+                    //获取片商
+                    model.setProducer(infobox.get(4).substring(infobox.get(4).indexOf('：') + 1));
+
+                    //获取系列
+                    model.setSeries(infobox.get(6).substring(infobox.get(6).indexOf('：') + 1));
+
+                    //获取女优
+
+                    model.setActress(infobox.get(8).substring(infobox.get(8).indexOf('：') + 1));
+
+                    //获取类别
+
+                    Transliterator simplToTrad = Transliterator.getInstance("Simplified-Traditional");
+                    String traditionalChinese = simplToTrad.transliterate(infobox.get(7).substring(infobox.get(7).indexOf('：') + 1));
+                    model.setTypes(traditionalChinese);
+                    //获取封面图
+                    String coverImg = inner_doc.getElementsByAttributeValue("class", "info_cg").select("img").attr("src");
+                    downloadImages(model.getNum(),coverImg);
+
+                    List<String> content_bt_url = inner_doc.getElementsByClass("content_bt_url").eachAttr("href");
+
+                    //获取磁链
+//                Document javPage = Jsoup.connect("https://javdb.com/search?q=" + model.getNum()+"&f=all").timeout(Integer.MAX_VALUE).get();
+                    Connection connDB = Jsoup.connect("https://javdb.com/search?q=" + model.getNum() + "&f=all");
+                    Connection headersDB = connDB.headers(header);
+                    try{
+                        Document javPage= headersDB.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
+
+                        String jav_inner = javPage.getElementsByClass("item").select("a").attr("href");
+
+
+                        Connection connDBinner = Jsoup.connect("https://javdb.com/" + jav_inner);
+                        Connection headersDBinner = connDBinner.headers(header);
+
+                        try{
+                            Document javdb_inDoc=headersDBinner.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
+
+                            //获取画质与字幕、磁力链接
+                            int flag = 0;
+                            String magenet_noSub = null;
+                            Elements inner_elements = javdb_inDoc.getElementsByAttributeValue("class", "magnet-name column is-four-fifths");
+                            for (Element inner_ele : inner_elements) {
+                                String inner_str = inner_ele.select("div").text();
+
+                                if (inner_str.contains("字幕")) {
+                                    String magenet = inner_ele.select("a").attr("href");
+                                    if (magenet.contains(".torrent")) {
+                                        magenet = magenet.replace(".torrent", "");
+                                    }
+                                    flag = 1;
+
+                                    model.setMagenet(magenet);
+                                    model.setSubline("中文字幕");
+                                    model.setHD("高清");
+                                    break;
+                                } else {
+                                    magenet_noSub = inner_ele.select("a").attr("href");
+                                    magenet_noSub = magenet_noSub.replace(".torrent", "");
+
+                                }
+
+                            }
+                            if (flag == 0) {
+                                model.setMagenet(magenet_noSub);
+                                model.setSubline("无");
+                                model.setHD("高清");
+
+                            }
+                            model_list.add(model);
+                            MySqlControl.executeInsert(model);
+                        }catch (Exception e){
+                            // 捕获算术异常或空指针异常
+                            System.err.println("Error occurred: " + e.getMessage() + ". Skipping this iteration.");
+                            continue;
+                        }
+
+
+
+                    }catch (Exception e){
+                        // 捕获算术异常或空指针异常
+                        System.err.println("Error occurred: " + e.getMessage() + ". Skipping this iteration.");
+                        continue;
                     }
 
+                }catch (Exception e){
+                    // 捕获算术异常或空指针异常
+                    System.err.println("Error occurred: " + e.getMessage() + ". Skipping this iteration.");
+                    continue;
                 }
-                if (flag == 0) {
-                    model.setMagenet(magenet_noSub);
-                    model.setSubline("无");
-                    model.setHD("高清");
-
-                }
-                model_list.add(model);
-                MySqlControl.executeInsert(model);
-
-
-//
-
             }
         }catch(Exception e){
             e.printStackTrace();
-
         }
         return model_list;
-
     }
     public static void downloadImages(String fileName, String ImageUrl){
         URL urlObj = null;
@@ -168,7 +181,7 @@ public class crawer_javbooks_db {
         InputStream inputStream = null;
         BufferedInputStream bis = null;
         //String savePath = "D:\\github\\pornMagnetSpringBoot\\searchModeul\\src\\main\\resources\\images";
-        String savePath = "E:\\images\\";
+        String savePath = "D:\\images\\";
         OutputStream outputStream=null;
         BufferedOutputStream bos=null;
         try{

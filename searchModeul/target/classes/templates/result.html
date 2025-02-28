@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="<%=basePath%>">
+    <meta charset="UTF-8">
+    <title>Mysql磁力库</title>
+    <style>
+        .el-table .warning-row {
+            background: oldlace;
+        }
+
+        .el-table .success-row {
+            background: #f0f9eb;
+        }
+
+
+    </style>
+    <link th:src="@{/jquery/bootstrap_3.3.0/css/bootstrap.min.css}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" th:href="@{/jquery/bootstrap_3.3.0/css/bootstrap.min.css}">
+    <link rel="stylesheet" type="text/script" th:href="@{/jquery/bootstrap_3.3.0/js/bootstrap.min.js}">
+    <link rel="stylesheet" type="text/script" th:src="@{/jquery/bootstrap_3.3.0/js/bootstrap.min.js}">
+
+    <script th:src="@{/jquery/jquery-1.11.1-min.js}" type="text/javascript"></script>
+    <script th:src="@{/jquery/bootstrap_3.3.0/css/bootstrap.min.css}" type="text/css"></script>
+    <script th:src="@{/jquery/bootstrap_3.3.0/js/bootstrap.min.js}" type="text/javascript"></script>
+
+    <!--    <script th:src="@{/jquery/bootstrap_3.3.0/css/bootstrap.min.css}" type="text/css" rel="stylesheet"></script>-->
+    <script th:src="@{/js/vue.js}" type="text/javascript"></script>
+    <script th:src="@{/js/axios-0.18.0.js}" type="text/javascript"></script>
+    <script th:src="@{/jquery/bs_pagination-master/localization/en.js}"></script>
+    <script th:src="@{/jquery/bs_pagination-master/js/jquery.bs_pagination.min.js}"></script>
+    <script th:src="@{/jquery/bootstrap-datetimepicker-master/locale/bootstrap-datetimepicker.zh-CN.js}"></script>
+    <script th:src="@{/jquery/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js}"></script>
+    <!--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+    <!--    &lt;!&ndash; 引入组件库 &ndash;&gt;-->
+    <!--    <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+    <!--    <link href="jquery/bootstrap_3.3.0/css/bootstrap.min.css" type="text/css" rel="stylesheet" />-->
+    <!--    <link rel="stylesheet" type="text/css" href="jquery/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css">-->
+    <!--    <link rel="stylesheet" type="text/css" href="jquery/bs_pagination-master/css/jquery.bs_pagination.min.css">-->
+
+    <!--    <script type="text/javascript" src="jquery/jquery-1.11.1-min.js"></script>-->
+    <!--    <script type="text/javascript" src="jquery/bootstrap_3.3.0/js/bootstrap.min.js"></script>-->
+    <!--    <script type="text/javascript" src="jquery/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js"></script>-->
+    <!--    <script type="text/javascript" src="jquery/bootstrap-datetimepicker-master/locale/bootstrap-datetimepicker.zh-CN.js"></script>-->
+    <!--    <script type="text/javascript" src="jquery/bs_pagination-master/js/jquery.bs_pagination.min.js"></script>-->
+    <!--    <script type="text/javascript" src="jquery/bs_pagination-master/localization/en.js"></script>-->
+    <!--    <script type="text/javascript" src="jquery/jquery-1.11.1-min.js"></script>-->
+
+    <script type="text/javascript">
+
+    </script>
+</head>
+<link th:src="@{/jquery/bootstrap_3.3.0/css/bootstrap.min.css}" type="text/css" rel="stylesheet">
+<body>
+<div id="outerdiv"
+     style="position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.7); z-index: 2; width: 100%; height: 100%; display: none;">
+    <div id="innerdiv" style="position: absolute;">
+        <img id="bigimg" style="border: 5px solid #fff;" src=""/>
+    </div>
+</div>
+
+<div style="position: relative; top: -20px; left: 0px; width: 100%; height: 100%;">
+    <div style="width: 100%; position: absolute;top: 5px; left: 10px;">
+
+        <div class="btn-toolbar" role="toolbar" style="height: 80px;">
+            <form class="form-inline" role="form" style="position: relative;top: 8%; left: 5px;">
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">番号</div>
+                        <input class="form-control" type="text" id="query-num">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">标题</div>
+                        <input class="form-control" type="text" id="query-title">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">女优</div>
+                        <input class="form-control" type="text" id="query-actress"
+                               th:value="${map != null ? map.get('actress'):null}">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">HD</div>
+                        <input class="form-control" type="text" id="query-HD"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">中文字幕</div>
+                        <input class="form-control" type="text" id="query-subline">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">类别</div>
+                        <input class="form-control" type="text" id="query-types"
+                               th:value="${map != null ? map.get('types'):null}">
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">片商</div>
+                        <input class="form-control" type="text" id="query-producer"
+                               th:value="${map != null ? map.get('producer'):null}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">日期</div>
+                        <input class="form-control" type="text" id="query-date">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">系列</div>
+                        <input class="form-control" type="text" id="query-series"
+                               th:value="${map != null ? map.get('series'):null}">
+                    </div>
+                </div>
+
+
+                <button type="button" class="btn btn-default" id="queryActivityBtn"
+                        onclick="queryActivityByConditionForPage(1,50)">查询
+                </button>
+
+                <!--                <img src=".\images\VOSS-133.jpg" width="600" height="300">-->
+
+                <!---->
+            </form>
+        </div>
+
+        <!--        类别模块-->
+        <div class="btn-group" data-toggle="buttons" id="typesBody">
+            <!--            <label class="btn btn-default"  onclick=SupendButtonClick(this);><input type="checkbox" name="typeName" value="Checkbox 1"  > Checkbox 1</label>-->
+            <!--            <label class="btn btn-default"  onclick=SupendButtonClick(this); >-->
+            <!--                <input type="checkbox" name="typeName" value="Checkbox 2" > Checkbox 2-->
+            <!--            </label>-->
+            <!--            <label class="btn btn-default"  onclick=SupendButtonClick(this);>-->
+            <!--                <input type="checkbox" name="typeName" value="Checkbox 3" > Checkbox 3-->
+            <!--            </label>-->
+
+
+        </div>
+        <div>
+            <label>
+                <button type="button" class="btn btn-success" onclick="getVals()">确认类别</button>
+            </label>
+        </div>
+        <div id="types_pag1"></div>
+
+
+        <div class="btn-toolbar" role="toolbar"
+             style="background-color: #F7F7F7; height: 50px; position: relative;top: 5px;">
+            <div class="btn-group" style="position: relative; top: 18%;">
+                <button type="button" class="btn btn-primary" id="createActivityBtn"><span
+                        class="glyphicon glyphicon-plus"></span> 创建
+                </button>
+                <button type="button" class="btn btn-default" id="editActivityBtn"><span
+                        class="glyphicon glyphicon-pencil"></span> 修改
+                </button>
+                <button type="button" class="btn btn-danger" id="deleteActivityBtn"><span
+                        class="glyphicon glyphicon-minus"></span> 删除
+                </button>
+            </div>
+            <div class="btn-group" style="position: relative; top: 18%;">
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#importActivityModal"
+                        onclick=colVideoUrl()><span class="glyphicon glyphicon-import"></span> 上传列表数据（导入）
+                </button>
+                <button id="copyMagnetsAllBtn" type="button" class="btn btn-default"><span
+                        class="glyphicon glyphicon-export"></span> 批量复制
+                </button>
+                <button id="searchPageBtn" type="button" class="btn btn-default"
+                        onclick=window.location.href='search.html'><span class="glyphicon glyphicon-export"></span>
+                    跳转搜索页
+                </button>
+                <button id="booksPageBtn" type="button" class="btn btn-default"
+                        onclick=window.location.href='javbooks.html'><span class="glyphicon glyphicon-export"></span>
+                    跳转javbooks搜索
+                </button>
+                <button id="books_DBPageBtn" type="button" class="btn btn-default"
+                        onclick=window.location.href='javbooks_db.html'><span class="glyphicon glyphicon-export"></span>
+                    跳转javbooks_db搜索
+                </button>
+                <button id="downloadCover" type="button" class="btn btn-default"
+                        onclick=window.location.href='downloadCover.html'><span
+                        class="glyphicon glyphicon-export"></span> 跳转封面下载
+                </button>
+                <button id="subPorndos" type="button" class="btn btn-default" onclick=newWindows()><span
+                        class="glyphicon glyphicon-export"></span>新开窗口
+                </button>
+            </div>
+
+
+        </div>
+        <div style="position: relative;top: 10px;">
+            <table class="table table-hover">
+                <thead>
+                <tr style="color: #B3B3B3;">
+                    <th><input type="checkbox" id="chckAll"/></th>
+                    <th>图片</th>
+                    <th>编号</th>
+                    <th>标题</th>
+
+                    <th>演员</th>
+                    <th>类型</th>
+                    <th>制作商</th>
+                    <th>日期</th>
+                    <th>系列</th>
+                    <th>磁链</th>
+                </tr>
+                </thead>
+                <tbody id="person-view">
+                <tr th:each="model, iterStat : ${magnet_models}">
+                    <td th:text="${iterStat.count}"></td>
+                    <td>
+                        <img th:src="${'/images/' + model.num + '.jpg'}" width='100' height='75' onclick='Big(this)' alt="Image"/>
+                    </td>
+                    <td th:text="${model.num}"></td>
+                    <td th:text="${model.title}"></td>
+
+
+                    <td class="actress">
+                            <span th:if="${model.actress != null}">
+                                <th:block th:each="actre : ${model.actress.split(' ')}">
+                                    <a th:href="${'/pornMagnet/search?actress=' + actre.toLowerCase()}"
+                                       th:text="${actre}"
+                                       th:value="${actre}"
+                                       target="_blank"></a>&nbsp;
+                                </th:block>
+                            </span>
+                    </td>
+                    <td class="types">
+                    <span th:if="${model.types != null}">
+                                <th:block th:each="type : ${model.types.split(' ')}">
+                                    <a th:href="${'/pornMagnet/search?types=' + type.toLowerCase()}"
+                                       th:text="${type}"
+                                       th:value="${type}"
+                                       target="_blank"></a>&nbsp;
+                                </th:block>
+                            </span>
+                    </td>
+                    <td class="producer">
+                        <span th:if="${model.producer} != null">
+                        <a th:text="${model.producer}"
+                           th:href="${'/pornMagnet/search?producer=' + model.producer.toLowerCase()}" target="_blank">
+                        </a>
+                        </span>
+                    </td>
+
+
+                    <td th:text="${model.date}"></td>
+                    <td class="series">
+                        <span th:if="${model.series} != null">
+                        <a th:text="${model.series}"
+                           th:href="${'/pornMagnet/search?series=' + model.series.toLowerCase()}" target="_blank"></a>
+                        </span>
+                    </td>
+
+                    <td>
+                        <a th:if="${model.magnet} != null"
+                           th:href="${model.magnet}"
+                           target="_blank">
+                            磁链
+                        </a>
+                        <span th:if="${model.magnet} == null">无磁链</span>
+                    </td>
+                    <td>
+                        <a th:if="${model.locate} != null"
+                           th:href="${model.locate}"
+                           target="_blank">
+                            播放
+                        </a>
+                        <span th:if="${model.locate} == null">播放</span>
+                    </td>
+                </tr>
+
+
+                </tbody>
+
+            </table>
+            <!--                翻页函数-->
+            <nav aria-label="...">
+                <ul class="pager">
+                    <li><a href="#" id="previous">Previous</a></li>
+                    <li><input type="text" th:value="${map != null ? map.get('beginNo'):1}" id='currentPage'></li>
+                    <li><a id="next" onclick="nextButton()">Next</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="js/axios-0.18.0.js"></script>
+
+<!--函数-->
+<script>
+
+
+    $(function () {
+
+
+    });
+
+
+    function searchByTypes(_this) {
+        var selectType = _this;
+        alert(selectType)
+        window.open("/pornMagnet/search?types=" + selectType, "_blank")
+
+    }
+
+    function nextButton() {
+
+        // 假设后端返回了 totalPages
+
+
+        queryActivityByConditionForPage(parseInt(currentPage = document.getElementById('currentPage').value) + 1, 50)
+
+    }
+
+    function queryActivityByConditionForPage(pageNo, pageSize) {
+
+        //收集参数
+        var title = $("#query-title").val();
+        var actress = $("#query-actress").val();
+        var subline = $("#query-subline").val();
+        var HD = $("#query-HD").val();
+        var num = $("#query-num").val();
+        var types = $("#query-types").val();
+        var date = $("#query-date").val();
+        var producer = $("#query-producer").val();
+        var series = $("#query-series").val();
+
+
+        window.location.href = "/pornMagnet/search?title=" + title + '&actress=' + actress + '&subline=' + subline + '&HD=' + HD + '&num=' + num + '&types=' + types + '&date=' + date + '&producer=' + producer + '&series=' + series + '&pageNo=' + pageNo + '&pageSize=' + pageSize;
+
+
+        //var pageNo=1;
+        //var pageSize=10;
+        //发送请求
+        // $.ajax({
+        //     url: '/pornMagnet/search?title='+title+'&actress='+actress+'&subline='+subline+'&HD='+HD+'&num='+num+'&types='+types+'&date='+date+'&producer='+producer+'&series='+series+'&pageNo='+pageNo+'&pageSize='+pageSize,
+        //     data: {
+        //         // title: title,
+        //         // actress: actress,
+        //         // subline: subline,
+        //         // HD: HD,
+        //         // num: num,
+        //         // types: types,
+        //         // date: date,
+        //         // producer: producer,
+        //         // series: series,
+        //         // pageNo: pageNo,
+        //         // pageSize: pageSize
+        //
+        //     },
+        //     type: 'post',
+        //     dataType: 'json',
+        //     success: function (data) {
+        //         alert("fanhui")
+        //         $("#person-view").html(data)
+        //
+        //
+        //
+        //
+        //     }
+        // });
+    }
+
+    function Big(obj) {
+        imgShow("#outerdiv", "#innerdiv", "#bigimg", obj);
+    }
+    function imgShow(outerdiv, innerdiv, bigimg, _this) {
+        var src = _this.src;//获取当前点击的pimg元素中的src属性
+        $(bigimg).attr("src", src);//设置#bigimg元素的src属性
+
+        /*获取当前点击图片的真实大小，并显示弹出层及大图*/
+        $("<img/>").attr("src", src).load(function () {
+            var windowW = $(window).width();//获取当前窗口宽度
+            var windowH = $(window).height();//获取当前窗口高度
+            var realWidth = this.width;//获取图片真实宽度
+            var realHeight = this.height;//获取图片真实高度
+            var imgWidth, imgHeight;
+            var scale = 0.8;//缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放
+
+            if (realHeight > windowH * scale) {//判断图片高度
+                imgHeight = windowH * scale;//如大于窗口高度，图片高度进行缩放
+                imgWidth = imgHeight / realHeight * realWidth;//等比例缩放宽度
+                if (imgWidth > windowW * scale) {//如宽度扔大于窗口宽度
+                    imgWidth = windowW * scale;//再对宽度进行缩放
+                }
+            } else if (realWidth > windowW * scale) {//如图片高度合适，判断图片宽度
+                imgWidth = windowW * scale;//如大于窗口宽度，图片宽度进行缩放
+                imgHeight = imgWidth / realWidth * realHeight;//等比例缩放高度
+            } else {//如果图片真实高度和宽度都符合要求，高宽不变
+                imgWidth = realWidth;
+                imgHeight = realHeight;
+            }
+            $(bigimg).css("width", imgWidth);//以最终的宽度对图片缩放
+
+            var w = (windowW - imgWidth) / 2;//计算图片与窗口左边距
+            var h = (windowH - imgHeight) / 2;//计算图片与窗口上边距
+            $(innerdiv).css({"top": h, "left": w});//设置#innerdiv的top和left属性
+            $(outerdiv).fadeIn("fast");//淡入显示#outerdiv及.pimg
+        });
+
+        $(outerdiv).click(function () {//再次点击淡出消失弹出层
+            $(this).fadeOut("fast");
+        });
+    };
+    function colVideoUrl() {
+        $.ajax({
+            url: 'pornMagnet/colVideoUrl.do',
+            data: {},
+            type: 'post',
+            dataType: 'json',
+            success: function (data) {
+                alert('开始收集')
+
+            }
+        })
+    }
+
+
+</script>
+</html>

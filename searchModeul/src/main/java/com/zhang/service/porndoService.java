@@ -22,4 +22,8 @@ public interface porndoService {
     List<String> selectAllTypes();
 
     void insertSelectedRow(String num);
+
+    List<magnet_model> selectBytype(String type);
+
+    List<String> haveUrlNum();
 }

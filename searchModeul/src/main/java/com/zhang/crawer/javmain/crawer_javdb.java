@@ -45,12 +45,6 @@ public class crawer_javdb {
         Connection conn = Jsoup.connect(url);
         Connection conHeader = conn.headers(header);
 
-
-
-
-
-
-
         try{
             Document doc = conHeader.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
             Elements elements = doc.getElementsByClass("item");
@@ -58,98 +52,104 @@ public class crawer_javdb {
                 String inner_url = element.select("a").attr("href");
 
 
+               try{
 
-                Document inner_doc = Jsoup.connect("https://javdb.com/" + inner_url).timeout(Integer.MAX_VALUE).get();
-                //Document inner_doc = Jsoup.connect("https://javdb.com/v/OX2rMB").timeout(Integer.MAX_VALUE).get();
-                magnet_model model = new magnet_model();
-
-
-
-
-                //获取番号
-                model.setNum(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim());
-                System.out.println(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim());
-
-                //获取封面图片并下载
-                String coverImg = inner_doc.getElementsByAttributeValue("class", "video-cover").attr("src");
-                downloadImages(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text(),coverImg);
-
-                //获取标题
-                String str = inner_doc.getElementsByTag("h2").text();
-                if (str.length()==0){
-                    model.setTitle(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text());
-                }else{
-                    model.setTitle(str.substring(str.indexOf(" "), str.length()-1));
-                }
-
-                String[] typesArr=null;
-                String[] actressArr=null;
-                //获取演员与類別以及片商
-                Elements dess = inner_doc.getElementsByClass("panel-block");
-                for (Element des : dess) {
-                    if (des.select("strong").text().contains("演員")) {
-                        model.setActress(des.select("a").text());
-
-                        String[] newActressArr = des.select("a").text().split(" ");
-                        actressArr = new String[newActressArr.length];
-                        for (int i=0;i< newActressArr.length;i++){
-                            actressArr[i] = newActressArr[i];
-                        }
+                   Document inner_doc = Jsoup.connect("https://javdb.com/" + inner_url).timeout(Integer.MAX_VALUE).get();
+                   //Document inner_doc = Jsoup.connect("https://javdb.com/v/OX2rMB").timeout(Integer.MAX_VALUE).get();
+                   magnet_model model = new magnet_model();
 
 
 
-                    } else if (des.select("strong").text().contains("類別")) {
-                        model.setTypes(des.select("a").text());
-                        String[] newTypesArr = des.select("a").text().split(" ");
-                        typesArr = new String[newTypesArr.length];
-                        for (int i=0;i< newTypesArr.length;i++){
-                                typesArr[i] = newTypesArr[i];
-                        }
+
+                   //获取番号
+                   model.setNum(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim());
+                   System.out.println(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim());
+
+                   //获取封面图片并下载
+                   String coverImg = inner_doc.getElementsByAttributeValue("class", "video-cover").attr("src");
+                   downloadImages(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text(),coverImg);
+
+                   //获取标题
+                   String str = inner_doc.getElementsByTag("h2").text();
+                   if (str.length()==0){
+                       model.setTitle(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text());
+                   }else{
+                       model.setTitle(str.substring(str.indexOf(" "), str.length()-1));
+                   }
+
+                   String[] typesArr=null;
+                   String[] actressArr=null;
+                   //获取演员与類別以及片商
+                   Elements dess = inner_doc.getElementsByClass("panel-block");
+                   for (Element des : dess) {
+                       if (des.select("strong").text().contains("演員")) {
+                           model.setActress(des.select("a").text());
+
+                           String[] newActressArr = des.select("a").text().split(" ");
+                           actressArr = new String[newActressArr.length];
+                           for (int i=0;i< newActressArr.length;i++){
+                               actressArr[i] = newActressArr[i];
+                           }
 
 
-                    }else if(des.select("strong").text().contains("日期")){
-                        model.setDate(des.select("span").text());
-                    }else if(des.select("strong").text().contains("片商")){
-                        model.setProducer(des.select("span").text());
-                    }else if(des.select("strong").text().contains("系列")){
-                        model.setSeries(des.select("span").text());
-                    }
-                }
-                //插入类别
-                MySqlControl.insertTypes(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim(),typesArr);
-                MySqlControl.insertActress(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim(),actressArr);
-                int flag = 0;
-                String magenet_noSub = null;
-                //获取画质与字幕、磁力链接
-                Elements inner_elements = inner_doc.getElementsByAttributeValue("class", "magnet-name column is-four-fifths");
-                for (Element inner_ele : inner_elements) {
-                    String inner_str = inner_ele.select("div").text();
 
-                    if (inner_str.contains("字幕")) {
-                        String magenet = inner_ele.select("a").attr("href");
-                        if (magenet.contains(".torrent")){
-                            magenet = magenet.replace(".torrent", "");
-                        }
-                        flag = 1;
-                        model.setMagenet(magenet);
-                        model.setSubline("中文字幕");
-                        model.setHD("高清");
-                        break;
-                    }else{
-                         magenet_noSub = inner_ele.select("a").attr("href");
-                        magenet_noSub = magenet_noSub.replace(".torrent", "");
+                       } else if (des.select("strong").text().contains("類別")) {
+                           model.setTypes(des.select("a").text());
+                           String[] newTypesArr = des.select("a").text().split(" ");
+                           typesArr = new String[newTypesArr.length];
+                           for (int i=0;i< newTypesArr.length;i++){
+                               typesArr[i] = newTypesArr[i];
+                           }
 
-                    }
 
-                }
-                if (flag == 0){
-                    model.setMagenet(magenet_noSub);
-                    model.setSubline("无");
-                    model.setHD("高清");
+                       }else if(des.select("strong").text().contains("日期")){
+                           model.setDate(des.select("span").text());
+                       }else if(des.select("strong").text().contains("片商")){
+                           model.setProducer(des.select("span").text());
+                       }else if(des.select("strong").text().contains("系列")){
+                           model.setSeries(des.select("span").text());
+                       }
+                   }
+                   //插入类别
+                   MySqlControl.insertTypes(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim(),typesArr);
+                   MySqlControl.insertActress(inner_doc.getElementsByAttributeValue("class", "panel-block first-block").select("span").text().trim(),actressArr);
+                   int flag = 0;
+                   String magenet_noSub = null;
+                   //获取画质与字幕、磁力链接
+                   Elements inner_elements = inner_doc.getElementsByAttributeValue("class", "magnet-name column is-four-fifths");
+                   for (Element inner_ele : inner_elements) {
+                       String inner_str = inner_ele.select("div").text();
 
-                }
-                model_list.add(model);
-                MySqlControl.executeInsert(model);
+                       if (inner_str.contains("字幕")) {
+                           String magenet = inner_ele.select("a").attr("href");
+                           if (magenet.contains(".torrent")){
+                               magenet = magenet.replace(".torrent", "");
+                           }
+                           flag = 1;
+                           model.setMagenet(magenet);
+                           model.setSubline("中文字幕");
+                           model.setHD("高清");
+                           break;
+                       }else{
+                           magenet_noSub = inner_ele.select("a").attr("href");
+                           magenet_noSub = magenet_noSub.replace(".torrent", "");
+
+                       }
+
+                   }
+                   if (flag == 0){
+                       model.setMagenet(magenet_noSub);
+                       model.setSubline("无");
+                       model.setHD("高清");
+
+                   }
+                   model_list.add(model);
+                   MySqlControl.executeInsert(model);
+               }catch (Exception e){
+                   e.printStackTrace();
+
+               }
+
 
             }
         }catch(Exception e){
@@ -164,7 +164,7 @@ public class crawer_javdb {
         InputStream inputStream = null;
         BufferedInputStream bis = null;
         //String savePath = "D:\\github\\pornMagnetSpringBoot\\searchModeul\\src\\main\\resources\\images";
-        String savePath = "E:\\images\\";
+        String savePath = "D:\\images\\";
         OutputStream outputStream=null;
         BufferedOutputStream bos=null;
         try{
@@ -190,10 +190,6 @@ public class crawer_javdb {
                 bos.write(buffer,0,len);
             }
             //System.out.println("info:"+ImageUrl+"download success,fileName="+fileName);
-
-
-
-
         }catch(Exception e){
             e.printStackTrace();
         }finally{
@@ -215,15 +211,7 @@ public class crawer_javdb {
                 throw new RuntimeException(e);
             }
         }
-
     }
-
-
-
-
-
-
-
      class Builder{
         //设置userAgent库;读者根据需求添加更多userAgent
         String[] userAgentStrs = {"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50",

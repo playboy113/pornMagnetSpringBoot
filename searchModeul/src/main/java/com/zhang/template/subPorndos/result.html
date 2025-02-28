@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Magnet Models</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            width: 100px;
+            height: 75px;
+        }
+        .types a {
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .types a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>Magnet Models Data</h1>
+<table>
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>图片</th>
+        <th>编号</th>
+        <th>标题</th>
+        <th>副标题</th>
+        <th>格式</th>
+        <th>演员</th>
+        <th>类型</th>
+        <th>制作商</th>
+        <th>日期</th>
+        <th>系列</th>
+        <th>磁链</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="model, iterStat : ${magnet_models}">
+        <td th:text="${iterStat.count}"></td>
+        <td>
+            <img th:src="${model.num != null ? ('/images/' + model.num + '.jpg') : '@{/default.jpg'}" alt="Image"/>
+        </td>
+        <td th:text="${model.num}"></td>
+        <td th:text="${model.title}"></td>
+        <td th:text="${model.subline}"></td>
+        <td th:text="${model.HD}"></td>
+        <td th:text="${model.actress}"></td>
+        <td class="types">
+                    <span th:if="${model.types} != null">
+                        <a th:each="type : ${model.types.split(' ')}"
+                           th:href="${'/type/' + type.toLowerCase()}"
+                           th:text="${type}">
+                        </a>
+                    </span>
+        </td>
+        <td th:text="${model.producer}"></td>
+        <td th:text="${model.date}"></td>
+        <td th:text="${model.series}"></td>
+        <td>
+            <a th:if="${model.magnet} != null"
+               th:href="${model.magnet}"
+               target="_blank">
+                磁链
+            </a>
+            <span th:if="${model.magnet} == null">无磁链</span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -37,6 +37,10 @@ public interface magnet_modelMapper {
     int queryPagesByTypes(Map<String, Object> map);
     List<String> selectAllTypes();
     void insertSelectedRow(String num);
+    List<magnet_model> selectBytype(String type);
+
+    List<String> haveUrlNum();
+
 
 
 }

@@ -101,9 +101,15 @@
       </if>
     </trim>
   </insert>
-  <select id="selectAll" resultMap="BaseResultMap">
-        select title,actress,subline,HD,magnet,num,types,date,producer,id,series
-        from magnet_db
+  <select id="selectAll" resultMap="BaseResultMap"  parameterType="map">
+        select m.title,m.actress,m.subline,m.HD,m.magnet,m.num,m.types,m.date,m.producer,m.id,m.series,vl.locate
+        from magnet_db m
+        left join magnet_videos_locate vl
+        on m.num = vl.num
+        order by m.date desc
+          limit 1,50
+
+
   </select>
   <select id="queryCountOfMagnet" resultType="java.lang.Integer" parameterType="map">
     select distinct count(magnet) as counts
@@ -142,10 +148,13 @@
   </select>
   <select id="queryMagnetByConditions" resultMap="BaseResultMap" parameterType="map">
 
-    select distinct m.title,m.actress,m.subline,m.HD,m.magnet,m.num,m.types,m.date,m.producer,m.series,s.selected
+    select distinct m.title,m.actress,m.subline,m.HD,m.magnet,m.num,m.types,m.date,m.producer,m.series,s.selected,vl.locate
     from magnet_db m
     left join magnet_selected s
     on m.num=s.num
+    left join magnet_videos_locate vl
+    on m.num = vl.num
+
     <where>
       <if test="actress != null and actress != ''">
         and m.actress like '%' #{actress} '%'
@@ -188,6 +197,15 @@
             where num = #{num}
             limit 1
         </select>
+
+<!--  根据类别查找-->
+  <select id="selectBytype" resultMap="BaseResultMap" parameterType="string">
+    select distinct m.title,m.actress,m.subline,m.HD,m.magnet,m.num,m.types,m.date,m.producer,m.series
+    from magnet_db m
+    where
+     m.types like '%' #{type} '%'
+    limit 1,50
+  </select>
 <!--  修改被选中的值-->
       <insert id="insertSelectedRow" parameterType="string">
         insert into magnet_selected(num,selected) values(#{num},1)
@@ -289,4 +307,11 @@
       <select id="selectAllTypes" resultType="java.lang.String">
         SELECT distinct types FROM magnet_type2 limit 100
       </select>
+  <select id="haveUrlNum" resultType="java.lang.String">
+    select distinct  num
+    from magnet_videos_locate
+    where locate is not null
+  </select>
+
+
     </mapper>

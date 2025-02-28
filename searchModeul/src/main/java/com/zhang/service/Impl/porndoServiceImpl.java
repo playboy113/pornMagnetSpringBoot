@@ -35,6 +35,7 @@ public class porndoServiceImpl implements porndoService {
     @Override
     public List<magnet_model> queryMagnetByConditions(Map<String, Object> map) {
         return magnet_modelMapper.queryMagnetByConditions(map);
+
     }
 
     @Override
@@ -80,5 +81,15 @@ public class porndoServiceImpl implements porndoService {
         magnet_modelMapper.insertSelectedRow(num);
     }
 
+
+    @Override
+    public  List<magnet_model> selectBytype(String type) {
+        return magnet_modelMapper.selectBytype(type);
+    }
+
+    @Override
+    public  List<String> haveUrlNum() {
+        return magnet_modelMapper.haveUrlNum();
+    }
 
 }

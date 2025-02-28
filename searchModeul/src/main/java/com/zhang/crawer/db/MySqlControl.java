@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.util.List;
 @ComponentScan
 public class MySqlControl {
-    static javax.sql.DataSource ds =  MyDataSource.getDataSource("jdbc:mysql://192.168.1.109:3306/magnet?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false");
+    static javax.sql.DataSource ds =  MyDataSource.getDataSource("jdbc:mysql://192.168.31.113:3306/magnet?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false");
     static QueryRunner qr = new QueryRunner(ds);
     static int num = 1;
 
@@ -121,6 +121,17 @@ public class MySqlControl {
             qr.batch("insert into magnet_actress(num,actress) values(?,?)",params);
         }
         qr.update("delete from magnet_actress where num=''");
+
+    }
+    public static void insertNumUrls(String num, String url) throws SQLException {
+
+        String[][] params = new String[1][2];
+        params[0][0] = num;
+        params[0][1] = url;
+        qr.batch("insert into magnet_videos_locate(num,locate) values(?,?)",params);
+        qr.update("delete from magnet_videos_locate where locate is null");
+
+
 
     }
 }

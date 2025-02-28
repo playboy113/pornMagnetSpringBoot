@@ -90,6 +90,16 @@ public class magnet_model {
     private String producer;
     private String series;
 
+    private String locate;
+
+    public String getLocate() {
+        return locate;
+    }
+
+    public void setLocate(String locate) {
+        this.locate = locate;
+    }
+
     public String getSeries() {
         return series;
     }
