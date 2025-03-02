@@ -27,7 +27,7 @@ import java.util.*;
 public class porndoController {
     @Autowired
     private porndoService porndoService;
-    @RequestMapping("/index")
+    @RequestMapping("/indexindex")
     @ResponseBody
     public Object index(HttpServletRequest request){
 //        List<magnet_model> magnet_models = porndoService.selectAll();
@@ -39,6 +39,7 @@ public class porndoController {
         playHtml playHtml = new playHtml();
         for(magnet_model model1:magnet_models1){
             model1.setLocate(playHtml.playingHtml(model1.getNum()));
+            model1.setTypes(model1.getTypes().replaceAll("、"," "));
         }
         retMap.put("magnet_models",magnet_models1);
         int pageNums = magnet_models.size()/50;
@@ -120,19 +121,7 @@ public class porndoController {
         retMap.put("magnet",retMagnet);
         return retMap;
     }
-    //播放
-    @RequestMapping("/playVideo.do")
-    @ResponseBody
-    public Map<String,Object> playVideo(String num){
 
-        playHtml playHtml = new playHtml();
-        String videoUrl = playHtml.playingHtml(num);
-
-
-        Map<String,Object> retMap = new HashMap<>();
-        retMap.put("url1",videoUrl);
-        return retMap;
-    }
     //收集播放链接
     @RequestMapping("/colVideoUrl.do")
     @ResponseBody
@@ -231,7 +220,7 @@ public class porndoController {
                                            @RequestParam(value = "pageSize",required = false)Integer pageSize){
         //将types从string转换为数组
         //System.out.println(types);
-        System.out.println("已经传进来了，types是:"+types);
+
         if (pageNo == null){
             pageNo =1;
         }
@@ -261,12 +250,15 @@ public class porndoController {
         map.put("series",series);
 
 
-
+//用来获取根据条件的map
         List<magnet_model> magnet_models = porndoService.queryMagnetByConditions(map);
+
+
         //根据查找到的列表匹配播放地址
         playHtml playHtml = new playHtml();
         for(magnet_model model1:magnet_models){
-            model1.setLocate(playHtml.playingHtml(model1.getNum()));
+
+            model1.setTypes(model1.getTypes().replaceAll("、"," "));
 
         }
 
@@ -274,14 +266,35 @@ public class porndoController {
 //        int totalRows = porndoService.queryCountOfMagnet(map);
         Map<String,Object> retMap = new HashMap<>();
 
+
         retMap.put("magnet_models",magnet_models);
-        retMap.put("totalRows",map.get("types"));
+
+        //        用来获取总页数的map
+        map.replace("beginNo",1);
+        map.replace("pageSize",Integer.MAX_VALUE);
+        Integer totalPages = (int) Math.floor(porndoService.queryMagnetByConditions(map).size()/50);
+
+        retMap.put("totalPages","总页数为 "+totalPages+" 页");
         map.replace("beginNo",pageNo);
+        map.replace("pageSize",pageSize);
+
 
         retMap.put("map",map);
 
 
+
         return new ModelAndView("result",retMap);
+
+    }
+    @RequestMapping("/playVideo")
+    @ResponseBody
+    public Object playVideo(@RequestParam(value="num") String num){
+        playHtml playHtml = new playHtml();
+        String Url = playHtml.playingHtml(num);
+        Map<String,Object> retMap = new HashMap<>();
+        retMap.put("url",Url);
+        return retMap;
+
 
     }
 

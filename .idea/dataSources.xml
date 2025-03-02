@@ -8,11 +8,16 @@
       <jdbc-url>jdbc:mysql://192.168.47.128:3306/magnet</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="magnet@localhost" uuid="f499bf80-c5f3-4ebd-8b7b-bcefb8e4a087">
+    <data-source source="LOCAL" name="@127.0.0.1" uuid="f499bf80-c5f3-4ebd-8b7b-bcefb8e4a087">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/magnet</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="com.intellij.clouds.kubernetes.db.host.port" />
+        <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
+        <property name="com.intellij.clouds.kubernetes.db.container.port" />
+      </jdbc-additional-properties>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
     <data-source source="LOCAL" name="magnet@192.168.1.103" uuid="dcc6b7f3-74fc-4a58-9e56-7f8ae357e9c4">

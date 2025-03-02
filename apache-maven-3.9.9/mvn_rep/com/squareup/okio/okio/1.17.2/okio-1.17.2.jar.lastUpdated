@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Mar 01 00:35:48 CST 2025
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1740760548271
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact com.squareup.okio\:okio\:jar\:1.17.2 from/to central (https\://repo.maven.apache.org/maven2)\: repo.maven.apache.org

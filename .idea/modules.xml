@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/es-service/es-service.iml" filepath="$PROJECT_DIR$/es-service/es-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flowersList/flowersList.iml" filepath="$PROJECT_DIR$/flowersList/flowersList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/literotica/literotica.iml" filepath="$PROJECT_DIR$/literotica/literotica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/magnetChange02/magnetChange02.iml" filepath="$PROJECT_DIR$/magnetChange02/magnetChange02.iml" />
       <module fileurl="file://$PROJECT_DIR$/collections/src/main/main.iml" filepath="$PROJECT_DIR$/collections/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/playMenu/playMenu.iml" filepath="$PROJECT_DIR$/playMenu/playMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/searchModeul/searchModeul.iml" filepath="$PROJECT_DIR$/searchModeul/searchModeul.iml" />
       <module fileurl="file://$PROJECT_DIR$/collections/src/test/test.iml" filepath="$PROJECT_DIR$/collections/src/test/test.iml" />
     </modules>
   </component>
