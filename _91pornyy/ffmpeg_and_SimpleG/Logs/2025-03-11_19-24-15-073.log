@@ -1,0 +1,22 @@
+﻿LOG 2025/03/11
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Logs
+Task Start: 2025/03/11 19:24:15
+Task CommandLine: "D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\N_m3u8DL-CLI_v3.0.2.exe" "https://cdn2.jiuse3.cloud/hls/1025635/index.m3u8?t=1741692265&m=AiVpLQwSL98dKk5c-y0JPA" --saveName "index" 
+
+19:24:15.074 / (NORMAL) 开始解析 https://cdn2.jiuse3.cloud/hls/1025635/index.m3u8?t=1741692265&m=AiVpLQwSL98dKk5c-y0JPA
+19:24:17.259 / (NORMAL) 写出meta.json
+19:24:17.338 / (NORMAL) 开始下载文件
+19:24:17.342 / (NORMAL) 读取文件信息...
+19:24:17.391 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 720x404, 30 fps, 30 tbr, 90k tbn, 60 tbc
+19:24:17.391 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 131 kb/s
+19:24:17.414 / (NORMAL) 完成数量 92 of 79
+19:24:17.414 / (NORMAL) 重试次数 1 / 15
+19:24:20.421 / (NORMAL) 开始下载文件
+19:24:20.429 / (NORMAL) 完成数量 92 of 79
+19:24:20.430 / (NORMAL) 重试次数 2 / 15
+19:24:23.446 / (NORMAL) 开始下载文件
+19:24:23.449 / (NORMAL) 完成数量 92 of 79
+19:24:23.450 / (NORMAL) 重试次数 3 / 15
+19:24:24.304 / (NORMAL) 强制退出: 强制
+
+Task End: 2025/03/11 19:24:24

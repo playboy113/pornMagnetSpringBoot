@@ -22,6 +22,7 @@ public class downloadController {
     public Map<String,Object> crawerMagnet(String magnetUrl, Integer start_pages, Integer finish_pages) throws IOException, URISyntaxException {
         System.out.println("进来了");
         setHeader.setUp();
+        System.out.println(start_pages);
         int currentPage = start_pages;
 
         String currentUrl = magnetUrl.substring(0,magnetUrl.length()-1);

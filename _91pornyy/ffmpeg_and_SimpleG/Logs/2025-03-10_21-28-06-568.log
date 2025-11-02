@@ -1,0 +1,19 @@
+﻿LOG 2025/03/10
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Logs
+Task Start: 2025/03/10 21:28:06
+Task CommandLine: "D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\N_m3u8DL-CLI_v3.0.2.exe" "https://cdn2.jiuse3.cloud/hls/1055835/index.m3u8?t=1741613255&m=W6w0jAAsMP8u1G6mwLqK3w" --saveName "4d5de794f6be4cf0c8e4" 
+
+21:28:06.570 / (NORMAL) 开始解析 https://cdn2.jiuse3.cloud/hls/1055835/index.m3u8?t=1741613255&m=W6w0jAAsMP8u1G6mwLqK3w
+21:28:09.751 / (NORMAL) 写出meta.json
+21:28:09.825 / (NORMAL) 开始下载文件
+21:28:12.051 / (NORMAL) 读取文件信息...
+21:28:12.222 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 720x404, 30 fps, 30 tbr, 90k tbn, 60 tbc
+21:28:12.222 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 131 kb/s
+21:29:04.793 / (NORMAL) 开始合并分片...
+21:29:05.143 / (NORMAL) 结果输出至 [ffreport.log]
+21:29:05.143 / (NORMAL) 任务结束
+
+Task End: 2025/03/10 21:29:05
+File: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Downloads\4d5de794f6be4cf0c8e4.mp4
+
+

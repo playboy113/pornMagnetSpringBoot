@@ -1,0 +1,21 @@
+﻿LOG 2025/03/11
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Logs
+Task Start: 2025/03/11 19:26:33
+Task CommandLine: "D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\N_m3u8DL-CLI_v3.0.2.exe" "https://cdn2.jiuse3.cloud/hls/1030558/index.m3u8?t=1741692434&m=DX1BQNXIqBffFySQbcJEqQ" --saveName "学舞蹈的母狗优点就是可以满足各种操b姿势 只管蹂躏就好了" 
+
+19:26:33.028 / (NORMAL) 开始解析 https://cdn2.jiuse3.cloud/hls/1030558/index.m3u8?t=1741692434&m=DX1BQNXIqBffFySQbcJEqQ
+19:26:35.287 / (NORMAL) 写出meta.json
+19:26:35.371 / (NORMAL) 开始下载文件
+19:26:36.559 / (NORMAL) 读取文件信息...
+19:26:36.608 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 404x720, 30 fps, 30 tbr, 90k tbn, 60 tbc
+19:26:36.609 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 147 kb/s
+19:27:04.405 / (ERROR) DOWN: 操作超时 https://cdn2.jiuse3.cloud/hls/1030558/index54.ts
+19:27:05.411 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse3.cloud/hls/1030558/index54.ts
+19:27:16.273 / (NORMAL) 开始合并分片...
+19:27:16.694 / (NORMAL) 结果输出至 [ffreport.log]
+19:27:16.694 / (NORMAL) 任务结束
+
+Task End: 2025/03/11 19:27:16
+File: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Downloads\学舞蹈的母狗优点就是可以满足各种操b姿势 只管蹂躏就好了.mp4
+
+

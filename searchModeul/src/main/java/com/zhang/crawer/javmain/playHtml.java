@@ -13,9 +13,10 @@ import java.util.*;
 public class playHtml {
     public String playingHtml(String num){
 
+
         playHtml.Builder builder = new playHtml.Builder();
         setHeader.setUp();
-        builder.host = "https://missav.ws/cn/";
+        builder.host = "https://netflav.com/";
         Map<String, String> header = new HashMap<String, String>();
         header.put("Host", builder.host);
         header.put("User-Agent",
@@ -26,7 +27,7 @@ public class playHtml {
         header.put("Accept-Encoding", builder.acceptEncoding);
         header.put("Cookie", builder.Cookie);
 
-        Connection conn = Jsoup.connect("https://missav.ws/cn/search/"+num);
+        Connection conn = Jsoup.connect("https://netflav.com/search?type=title&keyword="+num);
         Connection conHeader = conn.headers(header);
         HashMap<String, String> cookies = new HashMap<>();
         cookies.put("_ym_uid","171707630251817401");
@@ -40,40 +41,94 @@ public class playHtml {
         cookies.put("theme","auto");
         cookies.put("locale","zh");
         HashMap<String,String> videosHtml = new HashMap();
+        String url = null;
         try {
             Document doc = conHeader.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
-            Elements elements = doc.getElementsByClass("relative aspect-w-16 aspect-h-9 rounded overflow-hidden shadow-lg");
-            for (Element ele:elements){
-                String url = ele.select("a").attr("href");
-                String text = ele.select("a").text();
-                videosHtml.put(text,url);
+            Element grid_0_cell = doc.getElementsByClass("grid_0_cell").first();
+            url = grid_0_cell.select("a").attr("href");
 
 
 
-            }
+
+
+
 
         } catch (Exception e) {
             // 捕获算术异常或空指针异常
             System.err.println("Error occurred: " + e.getMessage() + ". Skipping this iteration.");
             e.printStackTrace();
         }
-        String finalURL = null;
 
-        for (String key:videosHtml.keySet()){
-            if(key.contains("中文字幕") ){
-                finalURL = videosHtml.get(key);
-                break;
-
-            } else if (key.contains("无码影片")) {
-                finalURL = videosHtml.get(key);
+        String finalURL = "https://netflav.com"+url;
 
 
-            }else{
-                finalURL = videosHtml.get(key);
-            }
-        }
+        System.out.println(finalURL);
 
         return finalURL;
+
+
+    }
+    public String missavPlay(String num){
+
+
+            playHtml.Builder builder = new playHtml.Builder();
+            setHeader.setUp();
+            builder.host = "https://missav.ws/cn/";
+            Map<String, String> header = new HashMap<String, String>();
+            header.put("Host", builder.host);
+            header.put("User-Agent",
+                    builder.userAgentList.get(new Random().nextInt(builder.userAgentSize)));
+            header.put("Accept", builder.accept);
+            header.put("Referer", builder.refererList.get(new Random().nextInt(builder.refererSize)));
+            header.put("Accept-Language", builder.acceptLanguage);
+            header.put("Accept-Encoding", builder.acceptEncoding);
+            header.put("Cookie", builder.Cookie);
+
+            Connection conn = Jsoup.connect("https://missav.ws/cn/search/"+num);
+            Connection conHeader = conn.headers(header);
+            HashMap<String, String> cookies = new HashMap<>();
+            cookies.put("_ym_uid","171707630251817401");
+            cookies.put("_ym_d","1717076302");
+            cookies.put("over18","1");
+            cookies.put("_ym_isad","2");
+            cookies.put("cf_clearance","Ap9GiMT8IYzKe1WI673G3tnu77I4NGde1uYsZ9MqyDI-1717077016-1.0.1.1-9u.snyZDm2JX6WBe0GsJuUuL5Bc26MioEqlf.qmZcAAK6LNVV_np4CdJVeoU1kQazCKAJ8Emyen3rXv3Yz6w4w");
+            cookies.put("_rucaptcha_session_id","ea9f156b851631a25bba42956eb52c42");
+            cookies.put("remember_me_token","eyJfcmFpbHMiOnsibWVzc2FnZSI6IklrcE5OVTV2YUZGSFlWZERhR3BWV1ZkUlFqUTJJZz09IiwiZXhwIjoiMjAyNC0wNi0wNlQxNDowNTozNS4wMDBaIiwicHVyIjoiY29va2llLnJlbWVtYmVyX21lX3Rva2VuIn19--13fe257537cbac1d2038c7c01c4ff3ade7086ed0; _jdb_session=gcHqgSYLTJGeZ7qngsHX1oTRSJZMMsvbp1c8ca4cY6dqdNR2kLkclaVAKKi5sy62J7t8J81YUv%2B41RlaCpfrpgRm%2FrUo4tG7Eqs0uF6SRwWnyPSJNXljWIhT92dZLFRigaVYRS47JSbi3HxwPm90gnHbXQAKRGFX1%2BgZrdFpzjTwqgt9tBJo5wol4ioyyUJpZbXdWuKy0j2cfvv%2FZ%2F%2BwC21qMKHZPvI2zh99pKp69ylXc003TiyCH3vQ%2F82O3jad2dLDK3cmQnW3K838M9mziNSMWYFkkfXBCMapZfgLwKbm%2BTUHXiFPSPwCJPZ0T%2B5Tg2aso0OJ1SCciNDxeQaMKN2cd3aHtEVS%2FfjqG7YKy0aG8MFPVUxXjcbLUG3%2FaMM%2FVMo%3D--ruNuNs2eIO6MuBwA--iM77fVUqLLtJOb9yzpZjMQ%3D%3D");
+            cookies.put("list_mode","h");
+            cookies.put("theme","auto");
+            cookies.put("locale","zh");
+            HashMap<String,String> videosHtml = new HashMap();
+            try {
+                Document doc = conHeader.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
+                Elements elements = doc.getElementsByClass("relative aspect-w-16 aspect-h-9 rounded overflow-hidden shadow-lg");
+                for (Element ele:elements){
+                    String url = ele.select("a").attr("href");
+                    String text = ele.select("a").text();
+                    videosHtml.put(text,url);
+
+
+                }
+
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            String finalURL = null;
+
+            for (String key:videosHtml.keySet()){
+                if(key.contains("中文字幕") ){
+                    finalURL = videosHtml.get(key);
+                    break;
+
+                } else if (key.contains("无码影片")) {
+                    finalURL = videosHtml.get(key);
+
+
+                }else{
+                    finalURL = videosHtml.get(key);
+                }
+            }
+            return finalURL;
+
 
 
     }

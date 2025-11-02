@@ -1,0 +1,19 @@
+﻿LOG 2025/03/11
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Logs
+Task Start: 2025/03/11 19:25:01
+Task CommandLine: "D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\N_m3u8DL-CLI_v3.0.2.exe" "https://cdn2.jiuse3.cloud/hls/1025635/index.m3u8?t=1741692265&m=AiVpLQwSL98dKk5c-y0JPA" --saveName "这只母狗有点操腻了 有没有新少妇" 
+
+19:25:01.684 / (NORMAL) 开始解析 https://cdn2.jiuse3.cloud/hls/1025635/index.m3u8?t=1741692265&m=AiVpLQwSL98dKk5c-y0JPA
+19:25:03.906 / (NORMAL) 写出meta.json
+19:25:03.986 / (NORMAL) 开始下载文件
+19:25:05.287 / (NORMAL) 读取文件信息...
+19:25:05.338 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 720x404, 30 fps, 30 tbr, 90k tbn, 60 tbc
+19:25:05.340 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 131 kb/s
+19:25:45.063 / (NORMAL) 开始合并分片...
+19:25:45.529 / (NORMAL) 结果输出至 [ffreport.log]
+19:25:45.530 / (NORMAL) 任务结束
+
+Task End: 2025/03/11 19:25:45
+File: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Downloads\这只母狗有点操腻了 有没有新少妇.mp4
+
+

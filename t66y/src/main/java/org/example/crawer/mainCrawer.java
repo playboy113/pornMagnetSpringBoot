@@ -11,14 +11,12 @@ import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
+import java.nio.file.*;
 import java.util.*;
 
 public class mainCrawer {
     public static String proxyHost = "127.0.0.1";
-    public static String proxyPort = "7890";
+    public static String proxyPort = "7897";
 
     public static void main(String[] args) throws IOException {
 
@@ -30,7 +28,7 @@ public class mainCrawer {
         System.setProperty("https.proxyPort", proxyPort);
 
         Builder builder = new Builder();
-        builder.host = "https://t66y.com/";
+        builder.host = "https://cn.pornhub.com/";
         Map<String, String> header = new HashMap<String, String>();
         header.put("Host", builder.host);
         header.put("User-Agent",
@@ -40,19 +38,38 @@ public class mainCrawer {
         header.put("Accept-Language", builder.acceptLanguage);
         header.put("Accept-Encoding", builder.acceptEncoding);
 
-        for (int i=21;i<40;i++){
+        for (int i=1;i<3;i++){
             System.out.println("开始下载第"+i+"个网页");
-            Connection connect = Jsoup.connect("https://t66y.com/thread0806.php?fid=16&search=&page="+i);
+            Connection connect = Jsoup.connect("https://cn.pornhub.com/pornstar/alex-adams/videos/upload?page="+i);
             Connection headers = connect.headers(header);
             try{
                 Document document = headers.timeout(Integer.MAX_VALUE).ignoreContentType(true).ignoreHttpErrors(true).get();
-                Elements elements = document.getElementsByClass("tr3 t_one tac");
-                int num=1;
+                Elements elements = document.getElementsByClass("phimage");
+
+                
                 for (Element ele:elements){
-                    String attr = ele.getElementsByAttributeValue("target", "_blank").attr("href");
-                    downloadDir("https://t66y.com/"+attr,header);
+                    System.out.println(ele);
+                    String attr = null;
+                    if (ele.getElementsByClass("latestThumb fade  videoPreviewBg linkVideoThumb js-linkVideoThumb img ").attr("href").length()>1){
+                        attr =ele.getElementsByClass("latestThumb fade  videoPreviewBg linkVideoThumb js-linkVideoThumb img ").attr("href");
+                    } else if (ele.getElementsByClass(" fade fadeUp videoPreviewBg linkVideoThumb js-linkVideoThumb img").attr("href").length()>1) {
+                        attr =ele.getElementsByClass(" fade fadeUp videoPreviewBg linkVideoThumb js-linkVideoThumb img").attr("href");
+                    }
+
+
+                    String content = "https://cn.pornhub.com"+attr+"\r\n";
+                    Path target = Paths.get("D:\\java\\GitHub\\pornMagnetSpringBoot\\t66y\\pornhubHtml.txt");   // 目标路径
+
+                    // 自动创建父目录、UTF-8 写入
+                    Files.createDirectories(target.getParent());
+                    Files.write(target,                       // 目标文件
+                            content.getBytes("UTF-8"),   // 字节数组
+                            StandardOpenOption.CREATE,
+                            StandardOpenOption.APPEND); // 存在则清空
+
+//                    downloadDir("https://t66y.com/"+attr,header);
                     //System.out.println("开始下载第"+num+"个网页");
-                    num++;
+
                 }
             }catch(IOException e){
                 e.printStackTrace();

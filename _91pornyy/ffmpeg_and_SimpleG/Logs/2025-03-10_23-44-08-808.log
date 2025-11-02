@@ -1,0 +1,9 @@
+﻿LOG 2025/03/10
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Logs
+Task Start: 2025/03/10 23:44:08
+Task CommandLine: "D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\N_m3u8DL-CLI_v3.0.2.exe" "https://www.youtube.com/watch?v=Y7aZfU6u2lU" --saveName "4d5de794f6be4cf0c8e4" 
+
+23:44:08.831 / (NORMAL) 开始解析 https://www.youtube.com/watch?v=Y7aZfU6u2lU
+23:44:10.372 / (NORMAL) 强制退出: 强制
+
+Task End: 2025/03/10 23:44:10

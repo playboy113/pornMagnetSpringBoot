@@ -1,0 +1,19 @@
+﻿LOG 2025/03/11
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Logs
+Task Start: 2025/03/11 19:25:42
+Task CommandLine: "D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\N_m3u8DL-CLI_v3.0.2.exe" "https://cdn2.jiuse3.cloud/hls/1062969/index.m3u8?t=1741692381&m=Xp0Hz0ZMfGjM-maQdptkAQ" --saveName "补点上次没发的 母狗要站起来蹬 玩坏也不心疼" 
+
+19:25:42.573 / (NORMAL) 开始解析 https://cdn2.jiuse3.cloud/hls/1062969/index.m3u8?t=1741692381&m=Xp0Hz0ZMfGjM-maQdptkAQ
+19:25:45.388 / (NORMAL) 写出meta.json
+19:25:45.482 / (NORMAL) 开始下载文件
+19:25:46.757 / (NORMAL) 读取文件信息...
+19:25:46.811 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 404x720, 30 fps, 30 tbr, 90k tbn, 60 tbc
+19:25:46.812 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 123 kb/s
+19:26:12.270 / (NORMAL) 开始合并分片...
+19:26:12.830 / (NORMAL) 结果输出至 [ffreport.log]
+19:26:12.831 / (NORMAL) 任务结束
+
+Task End: 2025/03/11 19:26:12
+File: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Downloads\补点上次没发的 母狗要站起来蹬 玩坏也不心疼.mp4
+
+

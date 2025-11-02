@@ -1,0 +1,21 @@
+﻿LOG 2025/03/11
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Logs
+Task Start: 2025/03/11 19:35:26
+Task CommandLine: "D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\N_m3u8DL-CLI_v3.0.2.exe" "https://cdn2.jiuse3.cloud/hls/837554/index.m3u8?t=1741692955&m=pGOaTu5FsOWjq-oTu-w7lw" --saveName "视频重发小母狗上面下面都很好玩这腰臀比要你会怎么操" 
+
+19:35:26.300 / (NORMAL) 开始解析 https://cdn2.jiuse3.cloud/hls/837554/index.m3u8?t=1741692955&m=pGOaTu5FsOWjq-oTu-w7lw
+19:35:28.643 / (NORMAL) 写出meta.json
+19:35:28.729 / (NORMAL) 开始下载文件
+19:35:29.902 / (NORMAL) 读取文件信息...
+19:35:29.956 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 202x360, 30 fps, 30 tbr, 90k tbn, 60 tbc
+19:35:29.956 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 120 kb/s
+19:35:48.172 / (ERROR) DOWN: 操作超时 https://cdn2.jiuse3.cloud/hls/837554/index53.ts
+19:35:49.178 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse3.cloud/hls/837554/index53.ts
+19:35:52.527 / (NORMAL) 开始合并分片...
+19:35:52.857 / (NORMAL) 结果输出至 [ffreport.log]
+19:35:52.857 / (NORMAL) 任务结束
+
+Task End: 2025/03/11 19:35:52
+File: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Downloads\视频重发小母狗上面下面都很好玩这腰臀比要你会怎么操.mp4
+
+

@@ -1,0 +1,20 @@
+﻿LOG 2025/03/11
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Logs
+Task Start: 2025/03/11 19:21:09
+Task CommandLine: "D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\N_m3u8DL-CLI_v3.0.2.exe" "https://cdn2.jiuse3.cloud/hls/1055835/index.m3u8?t=1741692085&m=fjm6zOX6L-qaUWToWryC1Q" --saveName "index" 
+
+19:21:09.450 / (NORMAL) 开始解析 https://cdn2.jiuse3.cloud/hls/1055835/index.m3u8?t=1741692085&m=fjm6zOX6L-qaUWToWryC1Q
+19:21:11.808 / (NORMAL) 写出meta.json
+19:21:11.914 / (NORMAL) 开始下载文件
+19:21:14.543 / (NORMAL) 读取文件信息...
+19:21:14.779 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 720x404, 30 fps, 30 tbr, 90k tbn, 60 tbc
+19:21:14.779 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 131 kb/s
+19:22:03.474 / (ERROR) 另一个进程正在使用此文件，因此该进程无法访问此文件。
+19:22:08.432 / (NORMAL) 开始合并分片...
+19:22:08.834 / (NORMAL) 结果输出至 [ffreport.log]
+19:22:08.834 / (NORMAL) 任务结束
+
+Task End: 2025/03/11 19:22:08
+File: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Downloads\index.mp4
+
+

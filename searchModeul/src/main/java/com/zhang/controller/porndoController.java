@@ -67,7 +67,7 @@ public class porndoController {
         map.put("HD",HD);
         map.put("num",num);
         map.put("types",types);
-        map.put("beginNo",1);
+        map.put("beginNo",(pageNo-1)*pageSize);
         map.put("pageSize",pageSize);
         map.put("date",date);
         map.put("producer",producer);
@@ -82,8 +82,9 @@ public class porndoController {
         retMap.put("totalRows",totalRows);
 
         model.addAttribute("magnet_models",magnet_models);
-//        return new ModelAndView("result",retMap);
-        return "result";
+     //   return new ModelAndView("result",retMap);
+      //  return "result";
+        return retMap;
 
 
 
@@ -243,7 +244,7 @@ public class porndoController {
         map.put("HD",HD);
         map.put("num",num);
         map.put("types",types);
-        map.put("beginNo",(pageNo-1)*pageSize+1);
+        map.put("beginNo",(pageNo-1)*pageSize);
         map.put("pageSize",pageSize);
         map.put("date",date);
         map.put("producer",producer);
@@ -286,16 +287,24 @@ public class porndoController {
         return new ModelAndView("result",retMap);
 
     }
-    @RequestMapping("/playVideo")
+    @RequestMapping("/playVideo.do")
     @ResponseBody
-    public Object playVideo(@RequestParam(value="num") String num){
+    public Object playVideo(String num){
+
         playHtml playHtml = new playHtml();
-        String Url = playHtml.playingHtml(num);
+        String Url = playHtml.missavPlay(num);
+
         Map<String,Object> retMap = new HashMap<>();
-        retMap.put("url",Url);
+        retMap.put("url1",Url);
         return retMap;
 
 
+    }
+    @RequestMapping("/downloadLocate.do")
+    @ResponseBody
+    public Object downloadLocate(){
+
+        return "下载完成";
     }
 
 

@@ -1,0 +1,61 @@
+﻿LOG 2025/03/11
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Logs
+Task Start: 2025/03/11 19:23:01
+Task CommandLine: "D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\N_m3u8DL-CLI_v3.0.2.exe" "https://cdn2.jiuse3.cloud/hls/1030558/index.m3u8?t=1741692155&m=640HoMeeZeyERMLmDPbm8g" --saveName "index" 
+
+19:23:01.373 / (NORMAL) 开始解析 https://cdn2.jiuse3.cloud/hls/1030558/index.m3u8?t=1741692155&m=640HoMeeZeyERMLmDPbm8g
+19:23:03.540 / (NORMAL) 写出meta.json
+19:23:03.617 / (NORMAL) 开始下载文件
+19:23:03.621 / (NORMAL) 读取文件信息...
+19:23:03.672 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 720x404, 30 fps, 30 tbr, 90k tbn, 60 tbc
+19:23:03.673 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 131 kb/s
+19:23:03.689 / (NORMAL) 完成数量 92 of 82
+19:23:03.689 / (NORMAL) 重试次数 1 / 15
+19:23:06.696 / (NORMAL) 开始下载文件
+19:23:06.699 / (NORMAL) 完成数量 92 of 82
+19:23:06.699 / (NORMAL) 重试次数 2 / 15
+19:23:09.718 / (NORMAL) 开始下载文件
+19:23:09.719 / (NORMAL) 完成数量 92 of 82
+19:23:09.720 / (NORMAL) 重试次数 3 / 15
+19:23:12.728 / (NORMAL) 开始下载文件
+19:23:12.731 / (NORMAL) 完成数量 92 of 82
+19:23:12.731 / (NORMAL) 重试次数 4 / 15
+19:23:15.743 / (NORMAL) 开始下载文件
+19:23:15.744 / (NORMAL) 完成数量 92 of 82
+19:23:15.744 / (NORMAL) 重试次数 5 / 15
+19:23:18.758 / (NORMAL) 开始下载文件
+19:23:18.760 / (NORMAL) 完成数量 92 of 82
+19:23:18.760 / (NORMAL) 重试次数 6 / 15
+19:23:21.766 / (NORMAL) 开始下载文件
+19:23:21.769 / (NORMAL) 完成数量 92 of 82
+19:23:21.770 / (NORMAL) 重试次数 7 / 15
+19:23:24.776 / (NORMAL) 开始下载文件
+19:23:24.779 / (NORMAL) 完成数量 92 of 82
+19:23:24.779 / (NORMAL) 重试次数 8 / 15
+19:23:27.783 / (NORMAL) 开始下载文件
+19:23:27.787 / (NORMAL) 完成数量 92 of 82
+19:23:27.787 / (NORMAL) 重试次数 9 / 15
+19:23:30.799 / (NORMAL) 开始下载文件
+19:23:30.803 / (NORMAL) 完成数量 92 of 82
+19:23:30.803 / (NORMAL) 重试次数 10 / 15
+19:23:33.822 / (NORMAL) 开始下载文件
+19:23:33.824 / (NORMAL) 完成数量 92 of 82
+19:23:33.826 / (NORMAL) 重试次数 11 / 15
+19:23:36.828 / (NORMAL) 开始下载文件
+19:23:36.831 / (NORMAL) 完成数量 92 of 82
+19:23:36.831 / (NORMAL) 重试次数 12 / 15
+19:23:39.836 / (NORMAL) 开始下载文件
+19:23:39.839 / (NORMAL) 完成数量 92 of 82
+19:23:39.839 / (NORMAL) 重试次数 13 / 15
+19:23:42.848 / (NORMAL) 开始下载文件
+19:23:42.852 / (NORMAL) 完成数量 92 of 79
+19:23:42.853 / (NORMAL) 重试次数 14 / 15
+19:23:45.866 / (NORMAL) 开始下载文件
+19:23:45.869 / (NORMAL) 完成数量 92 of 79
+19:23:45.869 / (NORMAL) 重试次数 15 / 15
+19:23:48.885 / (NORMAL) 开始下载文件
+19:23:48.888 / (NORMAL) 完成数量 92 of 79
+19:23:48.888 / (NORMAL) 重试次数 16 / 15
+19:23:51.904 / (NORMAL) 开始下载文件
+19:23:51.907 / (NORMAL) 完成数量 92 of 79
+19:23:51.908 / (ERROR) 下载失败, 程序退出

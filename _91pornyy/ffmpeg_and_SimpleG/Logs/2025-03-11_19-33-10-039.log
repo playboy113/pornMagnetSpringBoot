@@ -1,0 +1,25 @@
+﻿LOG 2025/03/11
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Logs
+Task Start: 2025/03/11 19:33:10
+Task CommandLine: "D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\N_m3u8DL-CLI_v3.0.2.exe" "https://cdn2.jiuse3.cloud/hls/937697/index.m3u8?t=1741692832&m=Utjpci4-0A2SS_89ULQZ9w" --saveName "“想被大鸡吧丑男操”只有小母狗的库存了 且看且珍惜" 
+
+19:33:10.040 / (NORMAL) 开始解析 https://cdn2.jiuse3.cloud/hls/937697/index.m3u8?t=1741692832&m=Utjpci4-0A2SS_89ULQZ9w
+19:33:13.613 / (NORMAL) 写出meta.json
+19:33:13.708 / (NORMAL) 开始下载文件
+19:33:14.906 / (NORMAL) 读取文件信息...
+19:33:14.969 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 600x336, 30 fps, 30 tbr, 90k tbn, 60 tbc
+19:33:14.969 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 128 kb/s
+19:33:39.242 / (ERROR) DOWN: 操作超时 https://cdn2.jiuse3.cloud/hls/937697/index23.ts
+19:33:39.706 / (ERROR) DOWN: 操作超时 https://cdn2.jiuse3.cloud/hls/937697/index35.ts
+19:33:40.248 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse3.cloud/hls/937697/index23.ts
+19:33:40.711 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse3.cloud/hls/937697/index35.ts
+19:33:45.617 / (ERROR) DOWN: 操作超时 https://cdn2.jiuse3.cloud/hls/937697/index84.ts
+19:33:46.620 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse3.cloud/hls/937697/index84.ts
+19:33:51.579 / (NORMAL) 开始合并分片...
+19:33:52.081 / (NORMAL) 结果输出至 [ffreport.log]
+19:33:52.082 / (NORMAL) 任务结束
+
+Task End: 2025/03/11 19:33:52
+File: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Downloads\“想被大鸡吧丑男操”只有小母狗的库存了 且看且珍惜.mp4
+
+

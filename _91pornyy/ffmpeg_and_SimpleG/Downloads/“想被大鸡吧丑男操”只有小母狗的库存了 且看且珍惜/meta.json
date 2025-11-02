@@ -1,0 +1,610 @@
+{
+  "m3u8": "https://cdn2.jiuse3.cloud/hls/937697/index.m3u8?t=1741692832&m=Utjpci4-0A2SS_89ULQZ9w",
+  "m3u8BaseUri": "https://cdn2.jiuse3.cloud/hls/937697/",
+  "updateTime": "2025-03-11T19:33:13.6138744+08:00",
+  "m3u8Info": {
+    "originalCount": 99,
+    "count": 99,
+    "vod": true,
+    "targetDuration": 8,
+    "totalDuration": 818.299967000001,
+    "segments": [
+      [
+        {
+          "index": 0,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index0.ts"
+        },
+        {
+          "index": 1,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index1.ts"
+        },
+        {
+          "index": 2,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index2.ts"
+        },
+        {
+          "index": 3,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index3.ts"
+        },
+        {
+          "index": 4,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index4.ts"
+        },
+        {
+          "index": 5,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index5.ts"
+        },
+        {
+          "index": 6,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index6.ts"
+        },
+        {
+          "index": 7,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index7.ts"
+        },
+        {
+          "index": 8,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index8.ts"
+        },
+        {
+          "index": 9,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index9.ts"
+        },
+        {
+          "index": 10,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index10.ts"
+        },
+        {
+          "index": 11,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index11.ts"
+        },
+        {
+          "index": 12,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index12.ts"
+        },
+        {
+          "index": 13,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index13.ts"
+        },
+        {
+          "index": 14,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index14.ts"
+        },
+        {
+          "index": 15,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index15.ts"
+        },
+        {
+          "index": 16,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index16.ts"
+        },
+        {
+          "index": 17,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index17.ts"
+        },
+        {
+          "index": 18,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index18.ts"
+        },
+        {
+          "index": 19,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index19.ts"
+        },
+        {
+          "index": 20,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index20.ts"
+        },
+        {
+          "index": 21,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index21.ts"
+        },
+        {
+          "index": 22,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index22.ts"
+        },
+        {
+          "index": 23,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index23.ts"
+        },
+        {
+          "index": 24,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index24.ts"
+        },
+        {
+          "index": 25,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index25.ts"
+        },
+        {
+          "index": 26,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index26.ts"
+        },
+        {
+          "index": 27,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index27.ts"
+        },
+        {
+          "index": 28,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index28.ts"
+        },
+        {
+          "index": 29,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index29.ts"
+        },
+        {
+          "index": 30,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index30.ts"
+        },
+        {
+          "index": 31,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index31.ts"
+        },
+        {
+          "index": 32,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index32.ts"
+        },
+        {
+          "index": 33,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index33.ts"
+        },
+        {
+          "index": 34,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index34.ts"
+        },
+        {
+          "index": 35,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index35.ts"
+        },
+        {
+          "index": 36,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index36.ts"
+        },
+        {
+          "index": 37,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index37.ts"
+        },
+        {
+          "index": 38,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index38.ts"
+        },
+        {
+          "index": 39,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index39.ts"
+        },
+        {
+          "index": 40,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index40.ts"
+        },
+        {
+          "index": 41,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index41.ts"
+        },
+        {
+          "index": 42,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index42.ts"
+        },
+        {
+          "index": 43,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index43.ts"
+        },
+        {
+          "index": 44,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index44.ts"
+        },
+        {
+          "index": 45,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index45.ts"
+        },
+        {
+          "index": 46,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index46.ts"
+        },
+        {
+          "index": 47,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index47.ts"
+        },
+        {
+          "index": 48,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index48.ts"
+        },
+        {
+          "index": 49,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index49.ts"
+        },
+        {
+          "index": 50,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index50.ts"
+        },
+        {
+          "index": 51,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index51.ts"
+        },
+        {
+          "index": 52,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index52.ts"
+        },
+        {
+          "index": 53,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index53.ts"
+        },
+        {
+          "index": 54,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index54.ts"
+        },
+        {
+          "index": 55,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index55.ts"
+        },
+        {
+          "index": 56,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index56.ts"
+        },
+        {
+          "index": 57,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index57.ts"
+        },
+        {
+          "index": 58,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index58.ts"
+        },
+        {
+          "index": 59,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index59.ts"
+        },
+        {
+          "index": 60,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index60.ts"
+        },
+        {
+          "index": 61,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index61.ts"
+        },
+        {
+          "index": 62,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index62.ts"
+        },
+        {
+          "index": 63,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index63.ts"
+        },
+        {
+          "index": 64,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index64.ts"
+        },
+        {
+          "index": 65,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index65.ts"
+        },
+        {
+          "index": 66,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index66.ts"
+        },
+        {
+          "index": 67,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index67.ts"
+        },
+        {
+          "index": 68,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index68.ts"
+        },
+        {
+          "index": 69,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index69.ts"
+        },
+        {
+          "index": 70,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index70.ts"
+        },
+        {
+          "index": 71,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index71.ts"
+        },
+        {
+          "index": 72,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index72.ts"
+        },
+        {
+          "index": 73,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index73.ts"
+        },
+        {
+          "index": 74,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index74.ts"
+        },
+        {
+          "index": 75,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index75.ts"
+        },
+        {
+          "index": 76,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index76.ts"
+        },
+        {
+          "index": 77,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index77.ts"
+        },
+        {
+          "index": 78,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index78.ts"
+        },
+        {
+          "index": 79,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index79.ts"
+        },
+        {
+          "index": 80,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index80.ts"
+        },
+        {
+          "index": 81,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index81.ts"
+        },
+        {
+          "index": 82,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index82.ts"
+        },
+        {
+          "index": 83,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index83.ts"
+        },
+        {
+          "index": 84,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index84.ts"
+        },
+        {
+          "index": 85,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index85.ts"
+        },
+        {
+          "index": 86,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index86.ts"
+        },
+        {
+          "index": 87,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index87.ts"
+        },
+        {
+          "index": 88,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index88.ts"
+        },
+        {
+          "index": 89,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index89.ts"
+        },
+        {
+          "index": 90,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index90.ts"
+        },
+        {
+          "index": 91,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index91.ts"
+        },
+        {
+          "index": 92,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index92.ts"
+        },
+        {
+          "index": 93,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index93.ts"
+        },
+        {
+          "index": 94,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index94.ts"
+        },
+        {
+          "index": 95,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index95.ts"
+        },
+        {
+          "index": 96,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index96.ts"
+        },
+        {
+          "index": 97,
+          "method": "NONE",
+          "duration": 8.333333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index97.ts"
+        },
+        {
+          "index": 98,
+          "method": "NONE",
+          "duration": 1.633333,
+          "segUri": "https://cdn2.jiuse3.cloud/hls/937697/index98.ts"
+        }
+      ]
+    ]
+  }
+}

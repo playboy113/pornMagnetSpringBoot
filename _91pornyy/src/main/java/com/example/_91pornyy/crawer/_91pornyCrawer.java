@@ -40,7 +40,7 @@ public class _91pornyCrawer {
                 Elements colVideoList = doc.getElementsByClass("colVideoList");
                 for (Element colVideo : colVideoList) {
                     String inner_url = colVideo.select("a").attr("href");
-                    Document inner_doc = Jsoup.connect("https://91porny.com/" + inner_url).timeout(Integer.MAX_VALUE).get();
+                    Document inner_doc = Jsoup.connect("https://91porny.com" + inner_url).timeout(Integer.MAX_VALUE).get();
                     String m3u8 = inner_doc.getElementById("video-play").attr("data-src");
                     String title = inner_doc.getElementsByClass("container-title py-3 mb-0").text();
 

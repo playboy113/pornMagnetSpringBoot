@@ -18,6 +18,10 @@ public class magnet_model {
     }
 
     private String title;
+    private String chineseTitle;
+
+
+
     private String magenet;
     private String types;
     private String actress;
@@ -75,6 +79,13 @@ public class magnet_model {
 
     public void setHD(String HD) {
         this.HD = HD;
+    }
+    public String getChineseTitle() {
+        return chineseTitle;
+    }
+
+    public void setChineseTitle(String chineseTitle) {
+        this.chineseTitle = chineseTitle;
     }
 
 

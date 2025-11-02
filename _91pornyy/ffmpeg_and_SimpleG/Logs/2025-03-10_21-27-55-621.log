@@ -1,0 +1,15 @@
+﻿LOG 2025/03/10
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Logs
+Task Start: 2025/03/10 21:27:55
+Task CommandLine: "D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\N_m3u8DL-CLI_v3.0.2.exe" "https://91porny.com/video/view/4d5de794f6be4cf0c8e4" --saveName "4d5de794f6be4cf0c8e4" 
+
+21:27:55.621 / (NORMAL) 开始解析 https://91porny.com/video/view/4d5de794f6be4cf0c8e4
+21:27:56.341 / (NORMAL) 远程服务器返回错误: (403) 已禁止。
+21:27:56.342 / (ERROR) 远程服务器返回错误: (403) 已禁止。
+21:27:57.621 / (NORMAL) 远程服务器返回错误: (403) 已禁止。
+21:27:57.621 / (ERROR) 远程服务器返回错误: (403) 已禁止。
+21:27:58.923 / (NORMAL) 远程服务器返回错误: (403) 已禁止。
+21:27:58.923 / (ERROR) 远程服务器返回错误: (403) 已禁止。
+21:28:00.156 / (NORMAL) 强制退出: 强制
+
+Task End: 2025/03/10 21:28:00

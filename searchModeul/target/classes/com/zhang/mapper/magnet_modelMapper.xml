@@ -148,7 +148,7 @@
   </select>
   <select id="queryMagnetByConditions" resultMap="BaseResultMap" parameterType="map">
 
-    select distinct m.title,m.actress,m.subline,m.HD,m.magnet,m.num,m.types,m.date,m.producer,m.series,s.selected,vl.locate
+    select distinct m.title,m.chineseTitle,m.actress,m.subline,m.HD,m.magnet,m.num,m.types,m.date,m.producer,m.series,s.selected,vl.locate
     from magnet_db m
     left join magnet_selected s
     on m.num=s.num

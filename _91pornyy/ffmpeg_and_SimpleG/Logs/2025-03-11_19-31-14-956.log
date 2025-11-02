@@ -1,0 +1,21 @@
+﻿LOG 2025/03/11
+Save Path: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Logs
+Task Start: 2025/03/11 19:31:14
+Task CommandLine: "D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\N_m3u8DL-CLI_v3.0.2.exe" "https://cdn2.jiuse3.cloud/hls/1025147/index.m3u8?t=1741692692&m=1E8VEsPhRol_yBi4rZR4Xg" --saveName "之前播放错误现重发 母狗的逼又一次被操烂了" 
+
+19:31:14.958 / (NORMAL) 开始解析 https://cdn2.jiuse3.cloud/hls/1025147/index.m3u8?t=1741692692&m=1E8VEsPhRol_yBi4rZR4Xg
+19:31:17.018 / (NORMAL) 写出meta.json
+19:31:17.159 / (NORMAL) 开始下载文件
+19:31:18.637 / (NORMAL) 读取文件信息...
+19:31:18.709 / (NORMAL) PID 0x100: Video h264, yuv420p(progressive), 404x720, 30 fps, 30 tbr, 90k tbn, 60 tbc
+19:31:18.710 / (NORMAL) PID 0x101: Audio aac, 44100 Hz, stereo, fltp, 124 kb/s
+19:31:51.552 / (ERROR) DOWN: 操作已超时。 https://cdn2.jiuse3.cloud/hls/1025147/index44.ts
+19:31:52.566 / (ERROR) DOWN: AUTO RETRY 1/3 https://cdn2.jiuse3.cloud/hls/1025147/index44.ts
+19:31:56.873 / (NORMAL) 开始合并分片...
+19:31:57.230 / (NORMAL) 结果输出至 [ffreport.log]
+19:31:57.230 / (NORMAL) 任务结束
+
+Task End: 2025/03/11 19:31:57
+File: D:\java\GitHub\pornMagnetSpringBoot\_91pornyy\ffmpeg_and_SimpleG\Downloads\之前播放错误现重发 母狗的逼又一次被操烂了.mp4
+
+

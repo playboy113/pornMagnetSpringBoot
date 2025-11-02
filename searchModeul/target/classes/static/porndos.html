@@ -166,10 +166,19 @@
                         onclick=window.location.href='javbooks_db.html'><span class="glyphicon glyphicon-export"></span>
                     跳转javbooks_db搜索
                 </button>
+                <button id="downloadLocate" type="button" class="btn btn-default"
+                        onclick=window.location.href='javbt.html'>
+                    <span class="glyphicon glyphicon-export"></span> 跳转javbt下载
+                </button>
+                <button id="downloadJavbus" type="button" class="btn btn-default"
+                        onclick=window.location.href='javbus.html'>
+                    <span class="glyphicon glyphicon-export"></span> 跳转javbus下载
+                </button>
                 <button id="downloadCover" type="button" class="btn btn-default"
                         onclick=window.location.href='downloadCover.html'><span
                         class="glyphicon glyphicon-export"></span> 跳转封面下载
                 </button>
+
                 <button id="subPorndos" type="button" class="btn btn-default" onclick=newWindows()><span
                         class="glyphicon glyphicon-export"></span>新开窗口
                 </button>
@@ -337,7 +346,7 @@
         })
 
     });
-
+    //目前可用
     function queryActivityByConditionForPage(pageNo, pageSize) {
         //收集参数
         var title = $("#query-title").val();
@@ -411,7 +420,8 @@
                     } else {
                         htmlStr += "<td> <button type='button'  onclick='copyMagnet(this)' value=\"" + obj.num + "\">磁链</td>";
                     }
-                    htmlStr += "<td> <button type='button'  onclick='playVideo(this)' value=\"" + obj.num + "\">播放</td>";
+                    // htmlStr += "<td> <button type='button'  onclick='playVideo(this)' value=\"" + obj.num + "\">播放</td>";
+                    htmlStr += "<td> <button type='button'   onclick=\"window.open('https://missav.ws/cn/" + obj.num + "')\">播放</td>";
 
                     htmlStr += "</tr>";
 
@@ -462,6 +472,8 @@
     function playVideo(_this) {
         var num = _this.value;
 
+
+
         $.ajax({
             url: 'pornMagnet/playVideo.do',
             data: {
@@ -472,7 +484,10 @@
             success: function (data) {
 
 
-                window.open(data.url1, "_blank");
+                if (data.url1 != null) {
+                    window.open(data.url1, "_blank");
+                }
+
 
             }
 
@@ -732,7 +747,8 @@
                     } else {
                         htmlStr += "<td> <button type='button'  onclick='copyMagnet(this)' value=\"" + obj.num + "\">磁链</td>";
                     }
-                    htmlStr += "<td> <button type='button'  onclick='playVideo(this)' value=\"" + obj.num + "\">播放</td>";
+                    // htmlStr += "<td> <button type='button'  onclick='playVideo(this)' value=\"" + obj.num + "\">播放</td>";
+                    // htmlStr += "<td> <button type='button'   onclick=\"window.open('https://missav.ws/cn/USAG-082')\">播放</td>";
                     htmlStr += "</tr>";
 
 
@@ -901,6 +917,19 @@
         newWindow.document.open();
         newWindow.document.write(currentHTML);
         newWindow.document.close();
+    }
+    function newWindows() {
+        $.ajax({
+            url: 'pornMagnet/downloadLocate.do',
+            data: {},
+            type: 'post',
+            dataType: 'json',
+            success: function (data) {
+                alert('开始收集')
+
+            }
+        })
+
     }
 
 

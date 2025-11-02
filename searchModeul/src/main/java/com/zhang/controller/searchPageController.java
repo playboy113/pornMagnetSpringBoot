@@ -3,10 +3,7 @@ package com.zhang.controller;
 import com.zhang.commons.setHeader;
 import com.zhang.crawer.entity.magnet_model;
 
-import com.zhang.crawer.javmain.crawer_books;
-import com.zhang.crawer.javmain.crawer_javbooks_db;
-import com.zhang.crawer.javmain.crawer_javdb;
-import com.zhang.crawer.javmain.downloadCover;
+import com.zhang.crawer.javmain.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -534,6 +531,116 @@ public Map<String,Object> crawerBooks(String magnetUrl,Integer pages,Integer sto
 
 
 
+        Map<String,Object> retMap = new HashMap<>();
+        retMap.put("result","完成");
+        return retMap;
+    }
+
+    @RequestMapping("/crawerJavbt.do")
+    @ResponseBody
+    public Map<String,Object> crawerJavbt(String magnetUrl,Integer pages,Integer stop) throws IOException, URISyntaxException {
+        setHeader.setUp();
+
+        int result =0;
+        if (magnetUrl.contains("censored")) {
+            result = magnetUrl.indexOf("page=");
+            String begin = magnetUrl.substring(0,result+5);
+
+            System.out.println("一共准备下载"+(stop-pages)+"页");
+
+            for (int i =pages;i<stop;i++){
+                String url = magnetUrl;
+                crawer_javbt crawer_javdb = new crawer_javbt();
+                System.out.println("正在下載第"+begin+i+"");
+                ArrayList<magnet_model> javdb = crawer_javdb.javbt(begin+i+"");
+                //MySqlControl.executeInsert(javdb);
+            }
+
+        } else if (magnetUrl.contains("categorybt_")) {
+            result = magnetUrl.indexOf("categorybt_");
+            String begin = magnetUrl.substring(0,result+11);
+            String end=magnetUrl.substring(result+12,magnetUrl.length());
+            System.out.println("一共准备下载"+(stop-pages)+"页");
+
+            for (int i =pages;i<stop;i++){
+                String url = magnetUrl;
+                crawer_javbooks_db crawer_javdb = new crawer_javbooks_db();
+                System.out.println("正在下載第"+i+"/"+stop+"頁");
+                ArrayList<magnet_model> javdb = crawer_javdb.javbooks_db(begin+i+".htm");
+                //MySqlControl.executeInsert(javdb);
+            }
+
+        }
+        Map<String,Object> retMap = new HashMap<>();
+        retMap.put("result","完成");
+        return retMap;
+    }
+    @RequestMapping("/crawerJavbus.do")
+    @ResponseBody
+    public Map<String,Object> crawer_Javbus(String magnetUrl,Integer pages,Integer stop) throws IOException, URISyntaxException {
+        setHeader.setUp();
+
+        int result =0;
+        if (magnetUrl.contains("genre")) {
+            result = magnetUrl.length();
+            String begin = magnetUrl.substring(0,result-1);
+
+            System.out.println("一共准备下载"+(stop-pages)+"页");
+
+            for (int i =pages;i<stop;i++){
+                String url = magnetUrl;
+                crawer_javbus crawer_javbus = new crawer_javbus();
+                System.out.println("正在下載第"+begin+i+"");
+                ArrayList<magnet_model> javdb = crawer_javbus.javbus(begin+i+"");
+                //MySqlControl.executeInsert(javdb);
+            }
+
+        }else if(magnetUrl.contains("studio")){
+            result = magnetUrl.length();
+            String begin = magnetUrl.substring(0,result-1);
+
+            System.out.println("一共准备下载"+(stop-pages)+"页");
+
+            for (int i =pages;i<stop;i++){
+                String url = magnetUrl;
+                crawer_javbus crawer_javbus = new crawer_javbus();
+                System.out.println("正在下載第"+begin+i+"");
+                ArrayList<magnet_model> javdb = crawer_javbus.javbus(begin+i+"");
+                //MySqlControl.executeInsert(javdb);
+            }
+
+
+        }else if(magnetUrl.contains("label")){
+            result = magnetUrl.length();
+            String begin = magnetUrl.substring(0,result-1);
+
+            System.out.println("一共准备下载"+(stop-pages)+"页");
+
+            for (int i =pages;i<stop;i++){
+                String url = magnetUrl;
+                crawer_javbus crawer_javbus = new crawer_javbus();
+                System.out.println("正在下載第"+begin+i+"");
+                ArrayList<magnet_model> javdb = crawer_javbus.javbus(begin+i+"");
+                //MySqlControl.executeInsert(javdb);
+            }
+
+
+
+        } else {
+            result = magnetUrl.length();
+            String begin = magnetUrl.substring(0,result-1);
+
+            System.out.println("一共准备下载"+(stop-pages)+"页");
+
+            for (int i =pages;i<stop;i++){
+                String url = magnetUrl;
+                crawer_javbus crawer_javbus = new crawer_javbus();
+                System.out.println("正在下載第"+begin+i+"");
+                ArrayList<magnet_model> javdb = crawer_javbus.javbus(begin+i+"");
+                //MySqlControl.executeInsert(javdb);
+            }
+
+        }
         Map<String,Object> retMap = new HashMap<>();
         retMap.put("result","完成");
         return retMap;
